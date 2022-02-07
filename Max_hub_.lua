@@ -3339,7 +3339,7 @@ end
 local AutoFarm = StarServer:Channel("DangFarm")
 
 
-AutoFarm:Toggle("Auto Farm TP(100hp an nut Bypass truoc)", _G.AutoFarmLevel, function(vu)
+AutoFarm:Toggle("Auto Farm TP(100hp su dung Bypass truoc)", _G.AutoFarmLevel, function(vu)
     _G.AutoFarmtp = vu
 end)
 
