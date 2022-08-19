@@ -1,4 +1,3 @@
-repeat wait(20) until game:IsLoaded()
 _G.Block_ID_list = {"heodaichien","quanthengoc","catngocne","kiemsicui","chienkhanvang","songnuocnoi","nuocduoidat","daucungphu","taybapchui","chuitayne","chanvangkhe","quanthun","badaoquan","quancamap","aocaheo","catimden","quatraicay","naocaheo","runglongxanh","khibanha","sungcaheo","gahacam","vitanhsang","longcaothu","thudaibi","thanphapne","haoculi","chaibongson","haodaunhot","traidangne","giotnuocheo","noicaovot","nhuthenay","thansieuthe","vitkhunglong","heohoasen","gamualua","danhtandi","heosungrang","dungsibuon","danhgiacngu","quagiotrua","chieumuabay","heomongto","taiheoxanh","taithocon","canhbuomxinh","hoabongphan","caihopvip","canoikho","chenbadao","daomaphap","sieuphapsu","suthayne","suphuga","chugatrong","danhcaidau","songthanhlich"} --  keyword
 _G.Status1 = true
 _G.Key = "MonkeService-Key53-dangee-omg"
