@@ -1,0 +1,145 @@
+repeat wait(10) until game:IsLoaded()
+_G.Team = "Pirate"
+_G.LogInventory = {"Spikey Trident","Saber", "Pale Scarf", "Valkyrie Helm", "Bisento", "Kabucha", "Shisui", "Saddi", "Wando", "Buddy Sword", "Midnight Blade", "Tushita", "Dark Dagger", "Rengoku", "Yama", "Hallow Scythe", "Koku", "Dark Blade", "Dragon Trident", "True Triple Katana", "Pole V2", "Canvander" }
+_G.LogMelee = { "Superhuman", "Electric Claw", "Dragon Talon", "Sharkman Karate", "Death Step" }
+_G.Webhook = "https://discord.com/api/webhooks/1007104097784176650/aGqGNd8zyGFPoQg4Di-BEFMOthQ3sXo3LsqmdRFR7bpBxhLT0_KkK3k08G0O5zE1_CvS"
+_G.BestSheet = ""
+_G.LineToken = ""
+_G.LogMode = "" 
+-- LogMode: loop, lv.max, awakened, lv.max + awakened
+_G.LoopTime = 1-60 -- per minute
+_G.AutoShutDown = false
+_G.FastAttack = false
+_G.RandomBone = false
+_G.AutoBuso = false
+_G.AutoObservation = false
+_G.FpsBoost = false
+_G.FpsCap = 30
+_G.CloseUI = false
+_G.WhiteScreen = false
+_G.SetID = true
+_G.HideUI = true
+
+_G.RAMWebServer = {
+   ["Port"] = 7963;
+   ["Password"] = "danghihi2273";
+   ["AutoDescription"] = true;
+   ["AutoDescriptionTime"] = 5; -- per minute
+   ["AutoRejoin"] = false;
+   ["AutoHopFlee"] = false;
+}
+loadstring(game:HttpGet'https://kaitan-tool.store/script.lua')()
+game:service('VirtualInputManager'):SendKeyEvent(true, "RightControl", false, game)
+repeat wait(3) until game:IsLoaded()
+_G.Fruit1 = {
+    ['BuyFruit'] = true, -- true / false
+    ['SelectDevil'] = {"Dragon-Dragon","Venom-Venom","Shadow-Shadow",
+"Dough-Dough","Human-Human: Buddha","Soul-Soul","Control-Control",
+"Rumble-Rumble","Paw-Paw","Quake-Quake","String-String","Quake-Quake","Ice-Ice","Dark-Dark"},
+    ['SinperFruit_mode'] = false
+}
+_G.Setting1 = {['WhiteScreen'] = true}
+
+if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
+    _G.Setting1['Team'] = "Pirates"  -- Marines / Pirates
+    _G.Setting1['FPS_Boost'] = true -- true / false 
+    _G.Setting1['AutoRedeem'] = true -- true / false
+    _G.Setting1['RedeemOnLv'] = 10
+    _G.Setting1['HideUI'] = true
+    _G.farmer1 = {
+        ['AutoFarm'] = true, -- true / false
+    
+        ['Mastery_Farm'] = true, -- true / false
+        ['Mastery_Mode'] = "Fruit", --"Fruit", "Gun","Sword"
+        ['FruitMastery_MaxLv'] = true
+    }
+    _G.tool1 = {
+        ['AutoMeleeWeapon'] = true, -- true / false
+        ['Make_Melee'] = {"Superhuman","Electric Claw"}
+    }
+    _G.Shop1 = {
+        ['BuyEctoplasItem'] = true,
+        ['BuyCommon'] = true,
+        ['BuyHaki'] = true ,-- autobuy Buso haki Skyjump
+        ['BuyKabcha'] = true, -- true / false
+        ['BuyBisento'] = true,
+        ['BuyPole2'] = true
+    }
+_G.SaveSettingSync = {
+    ['3meleebe'] = false ,
+    ['Block_All_Hop'] = false,
+
+    ['BuyHakiColor'] = false,
+    ['BuyLegndarySword'] = true,
+    ['AutoSetting_Skill'] = true,
+
+    ['WebHookUrl'] = "https://discord.com/api/webhooks/959628737702404158/0JbwIawlk2dYrPKggS6a9G-qd9AxuLngVMsnjO7UTqh6VrC8uZeV1wkMktlKQHaFmyJd",
+    ['BestSheetUrl'] = "",
+    ['LineToken'] = ''
+}
+    _G.Fruit1['RandomFruit'] = true
+    _G.Fruit1['StoreFruit'] = true
+    _G.Fruit1['BringFruit'] = true
+    _G.Fullystats = true
+    if game.PlaceId == 2753915549 then -- sea1
+        _G.farmer1['Farm_Mode'] =  "Level"
+        _G.sea_I = {
+            ['AutoSea2'] = true, -- true
+            ['Open_Saber'] = true,
+            ['Pole_v1'] = true
+        }
+    elseif game.PlaceId == 4442272183 then -- sea2
+        _G.farmer1['Farm_Mode'] =  "Level"
+        _G.sea_II = {
+            ['AutoSea3'] = true, -- true
+            ['Bartilo'] = true,
+            ['AutoFlower'] = false,
+            ['AutoDarkbeard'] = true
+        }
+        _G.Raid1 = {
+            ['AutoRaid'] = true, -- true / false
+            ['RaidMode'] = "Awake Skill",-- "Raid Normal" , "Awake Skill"
+            ['GetFruit_Method'] = "FruitInventory + BringFruit"-- "BringFruit" , "BringFruit + Hop" , "FruitInventory" , "FruitInventory + BringFruit" , "FruitInventory + BringFruit + Hop"
+        
+        }
+    elseif game.PlaceId == 7449423635 then -- sea3
+        _G.sea_III = {
+            ['AutoScythe'] = false,
+            ['BuddySword'] = false,
+            ['AutoRipIndra'] = true,
+            ['AutoCakePrince'] = false,
+            ['Canvander'] = false,
+            ['Tushita'] = false,
+            ['EliteHunt'] = false,
+            ['Elite_mode'] = "Yama"--"Elite","Yama","Yama Hop on 2400","God Chalice"
+        }
+        _G.Raid1 = {
+            ['AutoRaid'] = true, -- true / false
+            ['RaidMode'] = "Awake Skill",-- "Raid Normal" , "Awake Skill"
+            ['GetFruit_Method'] = "FruitInventory + BringFruit"-- "BringFruit" , "BringFruit + Hop" , "FruitInventory" , "FruitInventory + BringFruit" , "FruitInventory + BringFruit + Hop"
+        
+        }
+        _G.farmer1['Farm_Mode'] =  "Level , Bone" --  "Level" / "Bone" /  "Level , Bone"  / "Level , NearMob" /  "Ectoplas" / "Rengoku" / "DripMama" / "NearMob"
+        _G.Shop1['BoneTrade'] = true
+    end
+local isExecuted = false
+local request = syn and syn.request or http and http.request or http_request or fluxus and fluxus.request or getgenv().request or request
+
+task.spawn(function()
+	repeat task.wait() until isExecuted == true
+
+end);
+
+(function()
+	_G.Key = 'Table-840B-F9NP-ZO7P-XSAV'
+	_G.DiscordId = '1026479528492675174'
+	local Status, Script;
+	repeat
+	    task.wait()
+	    Status, Script = pcall(request, { Url = 'https://www.tablehub.net/api/v2/script' });
+	until
+	    Status == true and Script ~= nil
+	    
+	loadstring(Script.Body)();
+	isExecuted = true
+end)()
