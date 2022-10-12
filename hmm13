@@ -1,4 +1,3 @@
-repeat wait(10) until game:IsLoaded()
 _G.Team = "Pirate"
 _G.LogInventory = {"Spikey Trident","Saber", "Pale Scarf", "Valkyrie Helm", "Bisento", "Kabucha", "Shisui", "Saddi", "Wando", "Buddy Sword", "Midnight Blade", "Tushita", "Dark Dagger", "Rengoku", "Yama", "Hallow Scythe", "Koku", "Dark Blade", "Dragon Trident", "True Triple Katana", "Pole V2", "Canvander" }
 _G.LogMelee = { "Superhuman", "Electric Claw", "Dragon Talon", "Sharkman Karate", "Death Step" }
