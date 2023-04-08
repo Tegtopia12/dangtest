@@ -5,7 +5,7 @@
     "SelectedWeaponType": "Melee",
     "WebhookWhenMirage": false,
     "PingEveryone": false,
-    "AutoUpgradeRace": false,
+    "AutoUpgradeRace": true,
     "Attack No CD Aura": false,
     "BypassTrial_Ghoul": false,
     "Team": "Pirates",
@@ -24,9 +24,9 @@
     "AutoBuyGear": false,
     "PlayerAura": false,
     "Farm": false,
-    "AutoGhoulQuest_Hop": true,
+    "AutoGhoulQuest_Hop": false,
     "BypassTrial_Human": false,
     "Tween Speed": 300,
     "Double Quest": false,
-    "AutoGhoulQuest": true
+    "AutoGhoulQuest": false
   }
