@@ -12,7 +12,7 @@
   "Hop Delay": 1,
   "BypassTrial_Fish": true,
   "Panic Mode": false,
-  "WebhookWhenMoon": false,
+  "WebhookWhenMoon": true,
   "Ignore Y": true,
   "MoveCamToMoon": false,
   "PlayerAuraAimbot": false,
@@ -28,5 +28,7 @@
   "BypassTrial_Human": true,
   "Tween Speed": 300,
   "Double Quest": false,
+  "PingEveryone":true,
+    "WebhookUrl":"https://discord.com/api/webhooks/1092917374912573470/X8oUJjminiK8afjdTTcjGpXJZkm9uLHeevhHvGeE7rrHvTIpHO2LV5PutwMVBTEcj9WY",
   "Hop Near": false
 }
