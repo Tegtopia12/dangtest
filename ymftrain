@@ -28,5 +28,5 @@
   "BypassTrial_Human": true,
   "Tween Speed": 300,
   "Double Quest": false,
-  "Hop Near": true
+  "Hop Near": false
 }
