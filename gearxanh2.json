@@ -9,7 +9,7 @@
   "Attack No CD Aura": false,
   "BypassTrial_Ghoul": false,
   "Team": "Pirates",
-  "Hop Delay": 3,
+  "Hop Delay": 1,
   "BypassTrial_Fish": false,
   "Panic Mode": false,
   "WebhookWhenMoon": false,
