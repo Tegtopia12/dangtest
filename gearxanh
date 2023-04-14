@@ -1,11 +1,11 @@
 {
-    "AutoPullLever": false,
+    "AutoPullLever": true,
     "MethodFarm": "Level",
     "BypassTrial_Mink": false,
     "SelectedWeaponType": "Melee",
     "WebhookWhenMirage": true,
     "PingEveryone": false,
-    "AutoUpgradeRace": true,
+    "AutoUpgradeRace": false,
     "Attack No CD Aura": false,
     "BypassTrial_Ghoul": false,
     "Team": "Pirates",
@@ -28,8 +28,6 @@
     "BypassTrial_Human": false,
     "Tween Speed": 300,
     "Double Quest": false,
-    "PingEveryone":true,
-    "WebhookUrl":"https://discord.com/api/webhooks/1096158259745931389/EL_NliLcMnoa_5qH3BjudATDmEc8JwBajSGzSy_oQElwbDApIjY6EHxhn7cmPILSuWlV",
     "HopUntilMoon":false,
     "AutoGhoulQuest": false
   }
