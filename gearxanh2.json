@@ -4,7 +4,7 @@
   "BypassTrial_Mink": false,
   "SelectedWeaponType": "Melee",
   "WebhookWhenMirage": false,
-  "PingEveryone": false,
+  "PingEveryone": true,
   "AutoUpgradeRace": true,
   "Attack No CD Aura": false,
   "BypassTrial_Ghoul": false,
@@ -27,5 +27,6 @@
   "AutoGhoulQuest_Hop": false,
   "BypassTrial_Human": false,
   "Tween Speed": 300,
+  "WebhookUrl":"https://discord.com/api/webhooks/1096158259745931389/EL_NliLcMnoa_5qH3BjudATDmEc8JwBajSGzSy_oQElwbDApIjY6EHxhn7cmPILSuWlV",
   "Double Quest": false
 }
