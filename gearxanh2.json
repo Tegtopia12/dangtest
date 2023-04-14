@@ -3,7 +3,7 @@
   "MethodFarm": "Level",
   "BypassTrial_Mink": false,
   "SelectedWeaponType": "Melee",
-  "WebhookWhenMirage": false,
+  "WebhookWhenMirage": true,
   "PingEveryone": true,
   "AutoUpgradeRace": true,
   "Attack No CD Aura": false,
