@@ -30,7 +30,7 @@
 "Find Mirage Island":false,
 "Find Full Moon":false,
 "CoolDown Webhook":10,
-"Auto Rejoin":true,
+"Auto Rejoin":false,
 "Auto Send Webhook [If Full Moon]":false,
 "No Fog":false,
 "Auto Ancient One Quest":true,
