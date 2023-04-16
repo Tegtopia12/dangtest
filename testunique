@@ -27,7 +27,7 @@
 "Auto Pull Lever":true,
 "Fly Speed":1,
 "Teleport To Gear":true,
-"Find Mirage Island":true,
+"Find Mirage Island":false,
 "Find Full Moon":false,
 "CoolDown Webhook":10,
 "Auto Rejoin":true,
