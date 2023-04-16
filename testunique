@@ -33,7 +33,7 @@
 "Auto Rejoin":true,
 "Auto Send Webhook [If Full Moon]":false,
 "No Fog":false,
-"Auto Ancient One Quest":false,
+"Auto Ancient One Quest":true,
 "Fly":false,"Full Moon Webhook Link":""},
 "Main":{"Auto Yama Sword":false,
 "Mob Aura":false,
