@@ -1,0 +1,168 @@
+if not game:IsLoaded() then game:IsLoaded():Wait(5) end
+_G.Fruit1 = {
+    ['BuyFruit'] = true, -- true / false
+['MainFruit'] = {
+        [1] = "Dough-Dough",
+        [2] = "Dragon-Dragon",
+        [3] = "Leopard-Leopard",
+    },
+    ['SelectDevil'] = {
+[1] = "Dough-Dough",
+[2] = "Bird-Bird: Phoenix",
+[3] = "Dragon-Dragon",
+[4] = "Spirit-Spirit",
+[5] = "Blizzard-Blizzard",
+[6] = "Leopard-Leopard",
+[7] = "Venom-Venom",
+[8] = "Human-Human: Buddha",
+[9] = "Rumble-Rumble",
+[10] = "Shadow-Shadow",
+[11] = "Magma-Magma",
+[12] = "Quake-Quake",
+      [13] = "Flame-Flame",
+      [14] = "Ice-Ice",
+      [15] = "Love-Love",
+    },
+    ['SinperFruit_mode'] = true
+}
+
+_G.Race1 = {
+    ['RaceSniper'] = true, -- true / false
+    ['Select_Want_Race'] = {"Mink"}, 
+}
+
+_G.RamSetting1 = {
+    ["Enable"] = true,
+    ["Delay"] = 120,
+    ["Description"] = {
+        [1] = "Race",
+        [2] = "Soul Guitar",
+        [3] = "CDK",
+        [4] = "Fruit",
+	[5] = "Beli",
+	[6] = "Mirror",
+        [7] = "Valkyrie",
+    }
+}
+_G.Setting1 = {['WhiteScreen'] = true}
+
+if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
+    _G.Setting1['Team'] = "Pirates"  -- Marines / Pirates
+    _G.Setting1['FPS_Boost'] = true -- true / false 
+    _G.Setting1['AutoRedeem'] = true -- true / false
+    _G.Setting1['RedeemOnLv'] = 10
+    _G.Setting1['HideUI'] = true
+    _G.farmer1 = {
+        ['AutoFarm'] = true, -- true / false
+    	["GetMaterialGodhuman"] = true,
+        ['Mastery_Farm'] = true, -- true / false
+        ['Mastery_Mode'] = "Sword", --"Fruit", "Gun","Sword"
+        ['FruitMastery_MaxLv'] = false,
+['AllSwordMas_MaxLv'] = true
+    }
+_G.Sword_Farm = {"Saber","Shisui","Tushita","Hallow Scythe","Spikey Trident","Dark Dagger","Buddy Sword","Yama","Saddi","Wando","True Triple Katana","Rengoku","Dark Blade","Canvander","Pole (2nd Form)","Dragon Trident"}
+
+    _G.tool1 = {
+        ['AutoMeleeWeapon'] = true, -- true / false
+        ['Make_Melee'] = {"Superhuman", "Death Step","Sharkman Karate","Electric Claw","Dargon Talon","Godhuman"}
+    }
+    _G.Shop1 = {
+        ['BuyEctoplasItem'] = true,
+        ['BuyCommon'] = true,
+        ['BuyHaki'] = true ,-- autobuy Buso haki Skyjump
+        ['BuyKabcha'] = true, -- true / false
+        ['BuyBisento'] = true,
+['BuyTrueTripleKatana'] = true,
+['CandyTrade'] = true,
+['BoneTrade'] = true,
+        ['BuyPole2'] = true
+    }
+_G.SaveSettingSync = {
+    ['3meleebe'] = true,
+    ['Block_All_Hop'] = true,
+['HopNoMob'] = true,
+
+    ['BuyHakiColor'] = true,
+    ['BuyLegndarySword'] = true,
+    ['AutoSetting_Skill'] = true,
+
+    ['WebHookUrl'] = "https://discordapp.com/api/webhooks/1027683735363137597/pSPs61dwM9D6H3kKovSsefex4NpCEcti2BmPv8b8cM756HmSHEFQkYUu0Z5KsEd08gxI",
+    ['BestSheetUrl'] = "",
+    ['LineToken'] = ''
+}
+    _G.Fruit1['RandomFruit'] = true
+    _G.Fruit1['StoreFruit'] = true
+    _G.Fruit1['BringFruit'] = true
+    _G.Fullystats = true
+    if game.PlaceId == 2753915549 then -- sea1
+        _G.farmer1['Farm_Mode'] =  {"Level"}
+        _G.sea_I = {
+            ['AutoSea2'] = true, -- true
+['SecretQuest'] = true,
+            ['Open_Saber'] = true,
+            ['Pole_v1'] = true
+        }
+    elseif game.PlaceId == 4442272183 then -- sea2
+        _G.farmer1['Farm_Mode'] =  {"Level","Ectoplas","Rengoku"}
+        _G.sea_II = {
+            ['AutoSea3'] = true, -- true
+            ['Bartilo'] = true,
+            ['AutoFlower'] = true,
+['EvoRaceV3'] = true,
+            ['AutoDarkbeard'] = true
+        }
+        _G.Raid1 = {
+            ['AutoRaid'] = true, -- true / false
+['ChipCant_StoreFruit'] = true,
+            ['RaidMode'] = "Awake Skill",-- "Raid Normal" , "Awake Skill"
+            ['GetFruit_Method'] = "FruitInventory + BringFruit"-- "BringFruit" , "BringFruit + Hop" , "FruitInventory" , "FruitInventory + BringFruit" , "FruitInventory + BringFruit + Hop"
+        
+        }
+    elseif game.PlaceId == 7449423635 then -- sea3
+        _G.sea_III = {
+           ['AutoCDK'] = true,
+            ['SoulGuitar'] = true,
+            ['RainbowHaki'] = true,
+            ['PirateRaid'] = true,
+            ['Scythe'] = true,
+            ['BuddySword'] = true,
+            ['DarkDager'] = true,
+            ['SpikeyTrident'] = true,
+            ['Canvander'] = true,
+            ['Tushita'] = true,
+            ['EliteHunt'] = true,
+            ['Elite_mode'] = "Yama"--"Elite","Yama","Yama Hop on Max","God Chalice"
+        }
+        _G.Raid1 = {
+            ['AutoRaid'] = true, -- true / false
+['ChipCant_StoreFruit'] = true,
+            ['RaidMode'] = "Awake Skill",-- "Raid Normal" , "Awake Skill"
+            ['GetFruit_Method'] = "FruitInventory + BringFruit"-- "BringFruit" , "BringFruit + Hop" , "FruitInventory" , "FruitInventory + BringFruit" , "FruitInventory + BringFruit + Hop"
+        
+        }
+        _G.farmer1['Farm_Mode'] =  {"Level" ,"Bone","DripMama","Cocoa"} --  "Level" / "Bone" /  "Level , Bone"  / "Level , NearMob" /  "Ectoplas" / "Rengoku" / "DripMama" / "NearMob"
+        _G.Shop1['BoneTrade'] = true
+    end
+
+task.spawn(function()
+    local errorProtect = tick()
+    repeat task.wait(5) until _G.isTablehubLoaded == true or tick() - errorProtect > 60
+    if tick() - errorProtect > 60 then
+        game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer, game.JobId)
+    end
+    while wait(120) do
+local RAMAccount = loadstring(game:HttpGet'https://raw.githubusercontent.com/ic3w0lf22/Roblox-Account-Manager/master/RAMAccount.lua')()
+local MyAccount = RAMAccount.new(game:GetService'Players'.LocalPlayer.Name)
+local sea1 = 2753915549
+local sea2 = 4442272183
+local sea3 = 7449423635
+MyAccount:SetField("LV", game:GetService("Players").LocalPlayer.Data.Level.Value)
+local args = {
+			[1] = "BuyGodhuman"
+		}
+		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+MyAccount:SetField("GOD", game:GetService("Players").LocalPlayer.WeaponAssetCache:FindFirstChild("Godhuman"))
+MyAccount:SetField("Sea", game.PlaceId == sea3)
+    MyAccount:SetAlias(""..MyAccount:GetField("LV")..": "..MyAccount:GetField("Sea")..": "..MyAccount:GetField("GOD"))
+end
+end);
