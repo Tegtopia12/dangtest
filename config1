@@ -4,8 +4,6 @@ _G.Fruit1 = {
         [1] = "Dough-Dough",
 	[2] = "Leopard-Leopard",
         [3] = "Blizzard-Blizzard",
-	[4] = "Spirit-Spirit",
-	[5] = "Dragon-Dragon",
     },
     ['SelectDevil'] = {
 [1] = "Dough-Dough",
