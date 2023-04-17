@@ -1,0 +1,16 @@
+{"Funcs":{
+"AutoTrial":{"Enable":true,
+"Team":["besieuvang6293","besieuvang6678"]},
+"Webhook":{
+"FullMoonPing":true,
+"CupPing":false,
+"FullMoonNotify":true,
+"MirageNotify":true,
+"Url":"https://discord.com/api/webhooks/1097494471463153694/ZndJqEqrifLJtCKXa6eVzdacor1-a0-xW-tsAhHLlh8qCnABHLLBnUp06mZfhw0D4LH2",
+"FistPing":false,
+"MiragePing":true},
+"Finder":{
+"Mirage":true,
+"FullMoon":true,
+"Enable":false},
+"AutoRejoinOnDisconnect":false,}}}
