@@ -2,16 +2,18 @@ _G.Fruit1 = {
     ['BuyFruit'] = true, -- true / false
 ['MainFruit'] = {
         [1] = "Dough-Dough",
-        [2] = "Dragon-Dragon",
-        [3] = "Leopard-Leopard",
+	[2] = "Leopard-Leopard",
+        [3] = "Blizzard-Blizzard",
+	[4] = "Spirit-Spirit",
+	[5] = "Dragon-Dragon",
     },
     ['SelectDevil'] = {
 [1] = "Dough-Dough",
 [2] = "Bird-Bird: Phoenix",
 [3] = "Dragon-Dragon",
-[4] = "Spirit-Spirit",
+[4] = "Leopard-Leopard",
 [5] = "Blizzard-Blizzard",
-[6] = "Leopard-Leopard",
+[6] = "Spirit-Spirit",
 [7] = "Venom-Venom",
 [8] = "Human-Human: Buddha",
 [9] = "Rumble-Rumble",
@@ -20,19 +22,18 @@ _G.Fruit1 = {
 [12] = "Quake-Quake",
       [13] = "Flame-Flame",
       [14] = "Ice-Ice",
-      [15] = "Love-Love",
     },
     ['SinperFruit_mode'] = true
 }
 
 _G.Race1 = {
     ['RaceSniper'] = true, -- true / false
-    ['Select_Want_Race'] = {"Mink"}, 
+    ['Select_Want_Race'] = {"Human"}, 
 }
 
 _G.RamSetting1 = {
     ["Enable"] = true,
-    ["Delay"] = 120,
+    ["Delay"] = 90,
     ["Description"] = {
         [1] = "Race",
         [2] = "Soul Guitar",
@@ -41,6 +42,7 @@ _G.RamSetting1 = {
 	[5] = "Beli",
 	[6] = "Mirror",
         [7] = "Valkyrie",
+	
     }
 }
 _G.Setting1 = {['WhiteScreen'] = true}
@@ -55,11 +57,11 @@ if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
         ['AutoFarm'] = true, -- true / false
     	["GetMaterialGodhuman"] = true,
         ['Mastery_Farm'] = true, -- true / false
-        ['Mastery_Mode'] = "Sword", --"Fruit", "Gun","Sword"
-        ['FruitMastery_MaxLv'] = false,
+        ['Mastery_Mode'] = "Fruit", "Sword", --"Fruit", "Gun","Sword"
+        ['FruitMastery_MaxLv'] = true, 
 ['AllSwordMas_MaxLv'] = true
     }
-_G.Sword_Farm = {"Saber","Shisui","Tushita","Hallow Scythe","Spikey Trident","Dark Dagger","Buddy Sword","Yama","Saddi","Wando","True Triple Katana","Rengoku","Dark Blade","Canvander","Pole (2nd Form)","Dragon Trident"}
+_G.Sword_Farm = {"Cursed Dual Katana","Saber","Shisui","Tushita","Hallow Scythe","Spikey Trident","Dark Dagger","Buddy Sword","Yama","Saddi","Wando","True Triple Katana","Rengoku","Dark Blade","Canvander","Pole (2nd Form)","Dragon Trident"}
 
     _G.tool1 = {
         ['AutoMeleeWeapon'] = true, -- true / false
@@ -85,7 +87,7 @@ _G.SaveSettingSync = {
     ['BuyLegndarySword'] = true,
     ['AutoSetting_Skill'] = true,
 
-    ['WebHookUrl'] = "https://discordapp.com/api/webhooks/1027683735363137597/pSPs61dwM9D6H3kKovSsefex4NpCEcti2BmPv8b8cM756HmSHEFQkYUu0Z5KsEd08gxI",
+    ['WebHookUrl'] = "",
     ['BestSheetUrl'] = "",
     ['LineToken'] = ''
 }
