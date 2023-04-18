@@ -1,3 +1,4 @@
+if PlaceId == 4520749081 or PlaceId == 6381829480 or PlaceId == 5931540094 then
 _G.Auto_Farm_Kaitun = true 
 _G.FastFarm = true 
 _G.Have_Bounty = true
@@ -26,3 +27,40 @@ _G.UpStats_Sword = true
 _G.UpStats_Fruits = false
 
 _G.KaitunMode = true 
+elseif PlaceId == 2753915549 or PlaceId == 4442272183 or PlaceId == 7449423635 then
+_G.Teams = "Pirates" -- "Pirates" / "Marines"
+
+_G.Auto_Kill_Player_Quest = true
+
+_G.Auto_Farm_Kaitun = true 
+_G.Neon_Part = false 
+
+_G.Setting_Close_Ui = true
+_G.WhiteScreen = true 
+_G.Boost_Fps = true
+_G.RTXMode = false 
+
+_G.FpsS = 15 
+_G.LockFps = true 
+
+_G.Select_Eat_Fruit = { -- Select Fruits Eat
+ "Human-Human: Buddha",
+ "Magma-Magma",
+ "Rumble-Rumble",
+ "String-String",
+ "Dark-Dark",
+ "Light-Light",
+ "Quake-Quake",
+ "Ice-Ice",
+ "Flame-Flame",
+}
+
+_G.Sheet_Start = true 
+_G.Sheet_Url = "" 
+_G.Wait_Sheets = 1500 
+
+_G.RACCM_Start = true 
+_G.Wait_RACCM = 60 
+
+_G.KaitunMode = true 
+end
