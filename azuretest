@@ -1,6 +1,6 @@
 {"Funcs":{
 "AutoTrial":{"Enable":true,
-"Team":["besieuvang1011","besieuvang9929"]},
+"Team":["besieuvang1011","besieuvang9929","besieuhong1304"]},
 "AutoFarm":{"CheckOwnerShip":true,"Aura":true,"Mastery":false,"LimitDist":true,"DistAura":2000,"Enable":false},"AutoClick":{"HitBox":true,"Enable":true,"Aura":true},"AutoCyborg":{"Enable":false,"Hop":false},"StatsWatcher":{"Enable":false},"AutoHakiPad":{"Enable":false},"AutoRacev2":{"Enable":false},"AutoLaw":{"Enable":false,"StopOnCoreBrain":false,"StopOnKoko":false},"BringMob":{"Enable":false,"Radius":300},"AutoCDK":{"Enable":false},
 "Webhook":{
 "FullMoonPing":true,
