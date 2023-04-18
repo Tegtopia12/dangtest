@@ -1,0 +1,28 @@
+_G.Auto_Farm_Kaitun = true 
+_G.FastFarm = true 
+_G.Have_Bounty = true
+_G.Invisible = false
+_G.Boost_Fps = false 
+_G.Setting_Close_Ui = true
+_G.WhiteScreen = true
+_G.Fps_Cap = 30 -- Set Fps
+_G.SelcetFruits = { -- Select Fruits Eat
+    'PhoenixPhoenix',
+    'DoughDough',
+    'DragonDragon',
+'LeopardLeopard',
+    'HumanHuman',
+    'StringString',
+    'ShadowShadow',
+   'RumbleRumble',
+    'FlameFlame',
+    'MagmaMagma',
+    'LightLight'
+}
+
+_G.UpStats_Defense = true
+_G.UpStats_Melee = false
+_G.UpStats_Sword = true
+_G.UpStats_Fruits = false
+
+_G.KaitunMode = true 
