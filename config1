@@ -119,6 +119,7 @@ _G.SaveSettingSync = {
         }
     elseif game.PlaceId == 7449423635 then -- sea3
         _G.sea_III = {
+	["AutoPullLever"] = true,
            ['AutoCDK'] = true,
             ['SoulGuitar'] = true,
             ['RainbowHaki'] = true,
