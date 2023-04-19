@@ -1,0 +1,144 @@
+_G.Fruit1 = {
+    ['BuyFruit'] = true, -- true / false
+['MainFruit'] = {
+        [1] = "Dough-Dough",
+	[2] = "Leopard-Leopard",
+        [3] = "Blizzard-Blizzard",
+    },
+    ['SelectDevil'] = {
+[1] = "Dough-Dough",
+[2] = "Bird-Bird: Phoenix",
+[3] = "Dragon-Dragon",
+[4] = "Leopard-Leopard",
+[5] = "Blizzard-Blizzard",
+[6] = "Spirit-Spirit",
+[7] = "Venom-Venom",
+[8] = "Human-Human: Buddha",
+[9] = "Rumble-Rumble",
+[10] = "Shadow-Shadow",
+[11] = "Magma-Magma",
+[12] = "Quake-Quake",
+      [13] = "Flame-Flame",
+      [14] = "Ice-Ice",
+    },
+    ['SinperFruit_mode'] = true
+}
+
+_G.Race1 = {
+    ['RaceSniper'] = false, -- true / false
+    ['Select_Want_Race'] = {"Human"}, 
+}
+
+_G.RamSetting1 = {
+    ["Enable"] = true,
+    ["Delay"] = 90,
+    ["Description"] = {
+        [1] = "Race",
+        [2] = "Soul Guitar",
+        [3] = "CDK",
+        [4] = "Fruit",
+	[5] = "Beli",
+	[6] = "Mirror",
+        [7] = "Valkyrie",
+	
+    }
+}
+_G.Setting1 = {['WhiteScreen'] = true}
+
+if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
+    _G.Setting1['Team'] = "Pirates"  -- Marines / Pirates
+    _G.Setting1['FPS_Boost'] = true -- true / false 
+    _G.Setting1['AutoRedeem'] = true -- true / false
+    _G.Setting1['RedeemOnLv'] = 10
+    _G.Setting1['HideUI'] = true
+    _G.farmer1 = {
+        ['AutoFarm'] = true, -- true / false
+    	["GetMaterialGodhuman"] = true,
+        ['Mastery_Farm'] = true, -- true / false
+        ['Mastery_Mode'] = "Fruit", "Sword", --"Fruit", "Gun","Sword"
+        ['FruitMastery_MaxLv'] = true, 
+['AllSwordMas_MaxLv'] = true
+    }
+_G.Sword_Farm = {"Cursed Dual Katana","Saber","Shisui","Tushita","Hallow Scythe","Spikey Trident","Dark Dagger","Buddy Sword","Yama","Saddi","Wando","True Triple Katana","Rengoku","Dark Blade","Canvander","Pole (2nd Form)","Dragon Trident"}
+
+    _G.tool1 = {
+        ['AutoMeleeWeapon'] = true, -- true / false
+        ['Make_Melee'] = {"Superhuman", "Death Step","Sharkman Karate","Electric Claw","Dargon Talon","Godhuman"}
+    }
+    _G.Shop1 = {
+        ['BuyEctoplasItem'] = true,
+        ['BuyCommon'] = true,
+        ['BuyHaki'] = true ,-- autobuy Buso haki Skyjump
+        ['BuyKabcha'] = true, -- true / false
+        ['BuyBisento'] = true,
+['BuyTrueTripleKatana'] = true,
+['CandyTrade'] = true,
+['BoneTrade'] = true,
+        ['BuyPole2'] = true
+    }
+_G.SaveSettingSync = {
+    ['3meleebe'] = true,
+    ['Block_All_Hop'] = true,
+['HopNoMob'] = true,
+
+    ['BuyHakiColor'] = true,
+    ['BuyLegndarySword'] = true,
+    ['AutoSetting_Skill'] = true,
+
+    ['WebHookUrl'] = "",
+    ['BestSheetUrl'] = "",
+    ['LineToken'] = ''
+}
+    _G.Fruit1['RandomFruit'] = true
+    _G.Fruit1['StoreFruit'] = true
+    _G.Fruit1['BringFruit'] = true
+    _G.Fullystats = true
+    if game.PlaceId == 2753915549 then -- sea1
+        _G.farmer1['Farm_Mode'] =  {"Level"}
+        _G.sea_I = {
+            ['AutoSea2'] = true, -- true
+['SecretQuest'] = true,
+            ['Open_Saber'] = true,
+            ['Pole_v1'] = true
+        }
+    elseif game.PlaceId == 4442272183 then -- sea2
+        _G.farmer1['Farm_Mode'] =  {"Level","Ectoplas","Rengoku"}
+        _G.sea_II = {
+            ['AutoSea3'] = true, -- true
+            ['Bartilo'] = true,
+            ['AutoFlower'] = true,
+['EvoRaceV3'] = true,
+            ['AutoDarkbeard'] = true
+        }
+        _G.Raid1 = {
+            ['AutoRaid'] = true, -- true / false
+['ChipCant_StoreFruit'] = true,
+            ['RaidMode'] = "Awake Skill",-- "Raid Normal" , "Awake Skill"
+            ['GetFruit_Method'] = "FruitInventory + BringFruit"-- "BringFruit" , "BringFruit + Hop" , "FruitInventory" , "FruitInventory + BringFruit" , "FruitInventory + BringFruit + Hop"
+        
+        }
+    elseif game.PlaceId == 7449423635 then -- sea3
+        _G.sea_III = {
+           ['AutoCDK'] = true,
+            ['SoulGuitar'] = true,
+            ['RainbowHaki'] = true,
+            ['PirateRaid'] = true,
+            ['Scythe'] = true,
+            ['BuddySword'] = true,
+            ['DarkDager'] = true,
+            ['SpikeyTrident'] = true,
+            ['Canvander'] = true,
+            ['Tushita'] = true,
+            ['EliteHunt'] = true,
+            ['Elite_mode'] = "Yama"--"Elite","Yama","Yama Hop on Max","God Chalice"
+        }
+        _G.Raid1 = {
+            ['AutoRaid'] = true, -- true / false
+['ChipCant_StoreFruit'] = true,
+            ['RaidMode'] = "Awake Skill",-- "Raid Normal" , "Awake Skill"
+            ['GetFruit_Method'] = "FruitInventory + BringFruit"-- "BringFruit" , "BringFruit + Hop" , "FruitInventory" , "FruitInventory + BringFruit" , "FruitInventory + BringFruit + Hop"
+        
+        }
+        _G.farmer1['Farm_Mode'] =  {"Level" ,"Bone","DripMama","Cocoa"} --  "Level" / "Bone" /  "Level , Bone"  / "Level , NearMob" /  "Ectoplas" / "Rengoku" / "DripMama" / "NearMob"
+        _G.Shop1['BoneTrade'] = true
+    end
