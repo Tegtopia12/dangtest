@@ -1,5 +1,5 @@
 
-    while wait(120) do
+    while wait(10) do
     
     function checksea()
     return game.PlaceId == 7449423635
