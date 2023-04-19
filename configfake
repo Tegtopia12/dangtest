@@ -104,7 +104,7 @@ _G.SaveSettingSync = {
     elseif game.PlaceId == 4442272183 then -- sea2
         _G.farmer1['Farm_Mode'] =  {"Level","Ectoplas","Rengoku"}
         _G.sea_II = {
-            ['AutoSea3'] = true, -- true
+            ['AutoSea3'] = false, -- true
             ['Bartilo'] = true,
             ['AutoFlower'] = true,
 ['EvoRaceV3'] = true,
