@@ -1,16 +1,53 @@
 
     while wait(120) do
-local RAMAccount = loadstring(game:HttpGet'https://raw.githubusercontent.com/ic3w0lf22/Roblox-Account-Manager/master/RAMAccount.lua')()
-local MyAccount = RAMAccount.new(game:GetService'Players'.LocalPlayer.Name)
-local sea1 = 2753915549
-local sea2 = 4442272183
-local sea3 = 7449423635
-MyAccount:SetField("LV", game:GetService("Players").LocalPlayer.Data.Level.Value)
+    
+    function checksea()
+    return game.PlaceId == 7449423635
+end 
+function checkworld()
+    if checksea() then 
+        return "Sea3"
+    else
+        return "No"
+    end
+end
+
+function checkgod()
 local args = {
 			[1] = "BuyGodhuman"
 		}
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
-MyAccount:SetField("GOD", game:GetService("Players").LocalPlayer.WeaponAssetCache:FindFirstChild("Godhuman"))
-MyAccount:SetField("Sea", game.PlaceId == sea3)
-    MyAccount:SetAlias(""..MyAccount:GetField("LV")..": "..MyAccount:GetField("Sea")..": "..MyAccount:GetField("GOD"))
+    return game:GetService("Players").LocalPlayer.WeaponAssetCache:FindFirstChild("Godhuman")
+end 
+function godhuman()
+    if checkgod() then 
+        return "GOD"
+    else
+        return "No"
+    end
+end
+
+function checklv()
+    return game:GetService("Players").LocalPlayer.Data.Level.Value >=2450
+end 
+function checklever()
+    if checklv() then 
+        return "Max"
+    else
+        return "No"
+    end
+end
+
+local godhuman = godhuman()
+local checkworld = checkworld()
+local checklever = checklever()
+
+local RAMAccount = loadstring(game:HttpGet'https://raw.githubusercontent.com/ic3w0lf22/Roblox-Account-Manager/master/RAMAccount.lua')()
+local MyAccount = RAMAccount.new(game:GetService'Players'.LocalPlayer.Name)
+
+MyAccount:SetField("GOD", godhuman)
+MyAccount:SetField("Sea", checkworld)
+MyAccount:SetField("LV", checklever)
+
+    MyAccount:SetAlias(""..MyAccount:GetField("LV").." "..MyAccount:GetField("Sea").." "..MyAccount:GetField("GOD"))
 end
