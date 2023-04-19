@@ -25,7 +25,7 @@ _G.Fruit1 = {
 }
 
 _G.Race1 = {
-    ['RaceSniper'] = false, -- true / false
+    ['RaceSniper'] = true, -- true / false
     ['Select_Want_Race'] = {"Human"}, 
 }
 
