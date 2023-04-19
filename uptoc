@@ -1,7 +1,1 @@
- wait(5)
-if game.PlaceId == 7449423635 then
-local args = {
-			[1] = "TravelDressrosa" -- NEW WORLD to OLD WORLD
-		}
-		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
-end
+
