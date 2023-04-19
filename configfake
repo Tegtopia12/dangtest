@@ -119,17 +119,17 @@ _G.SaveSettingSync = {
         }
     elseif game.PlaceId == 7449423635 then -- sea3
         _G.sea_III = {
-           ['AutoCDK'] = true,
-            ['SoulGuitar'] = true,
-            ['RainbowHaki'] = true,
-            ['PirateRaid'] = true,
-            ['Scythe'] = true,
-            ['BuddySword'] = true,
-            ['DarkDager'] = true,
-            ['SpikeyTrident'] = true,
-            ['Canvander'] = true,
-            ['Tushita'] = true,
-            ['EliteHunt'] = true,
+           ['AutoCDK'] = false,
+            ['SoulGuitar'] = false,
+            ['RainbowHaki'] = false,
+            ['PirateRaid'] = false,
+            ['Scythe'] = false,
+            ['BuddySword'] = false,
+            ['DarkDager'] = false,
+            ['SpikeyTrident'] = false,
+            ['Canvander'] = false,
+            ['Tushita'] = false,
+            ['EliteHunt'] = false,
             ['Elite_mode'] = "Yama"--"Elite","Yama","Yama Hop on Max","God Chalice"
         }
         _G.Raid1 = {
