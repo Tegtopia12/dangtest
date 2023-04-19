@@ -49,5 +49,5 @@ MyAccount:SetField("GOD", godhuman)
 MyAccount:SetField("Sea", checkworld)
 MyAccount:SetField("LV", checklever)
 
-    MyAccount:SetAlias(""..MyAccount:GetField("LV")..": "..MyAccount:GetField("Sea")..": "..MyAccount:GetField("GOD"))
+    MyAccount:SetAlias(""..MyAccount:GetField("LV").." "..MyAccount:GetField("Sea").." "..MyAccount:GetField("GOD"))
 end
