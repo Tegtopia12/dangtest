@@ -32,7 +32,6 @@ function checkall()
 end
 local full = checkall()
 local gatcan = CheckGatCan()
-local checklever = checklever()
 local RAMAccount = loadstring(game:HttpGet'https://raw.githubusercontent.com/ic3w0lf22/Roblox-Account-Manager/master/RAMAccount.lua')()
 local MyAccount = RAMAccount.new(game:GetService'Players'.LocalPlayer.Name)
 MyAccount:SetField("FULL", full)
