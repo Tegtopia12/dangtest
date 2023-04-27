@@ -31,5 +31,7 @@
     "PingEveryone":false,
     "WebhookUrl":"",
     "HopUntilMoon":false,
+    "RAM_Track":true,
+    "RAM_Track_Delay":30,
     "AutoGhoulQuest": false
   }
