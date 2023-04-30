@@ -24,7 +24,7 @@
     "AutoBuyGear": false,
     "PlayerAura": false,
     "Farm": false,
-    "AutoGhoulQuest_Hop": false,
+    "AutoGhoulQuest_Hop": true,
     "BypassTrial_Human": false,
     "Tween Speed": 300,
     "Double Quest": false,
