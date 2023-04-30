@@ -28,5 +28,7 @@
     "BypassTrial_Human": false,
     "Tween Speed": 300,
     "Double Quest": false,
+    "RAM_Track":true,
+    "RAM_Track_Delay":30,
     "AutoGhoulQuest": true
   }
