@@ -29,6 +29,8 @@
   "Tween Speed": 300,
   "Double Quest": false,
   "Hop Near": false,
+  "RAM_Track":true,
+   "RAM_Track_Delay":30,
   "WebhookUrl":"https://discord.com/api/webhooks/1096572177714782332/NGorcqZbVACLJbDcYocA5ligbmZV2hvdS45r11YA1AKvan6ADI8dUfI1s7g23yDpErDR",
   "BypassTrial_Cyborg": false
 }
