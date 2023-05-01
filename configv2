@@ -136,3 +136,7 @@ _G.SaveSettingSync = {
         ['RaidMode'] = "Awake Skill",-- "Raid Normal" , "Awake Skill"
         ['GetFruit_Method'] = {"FruitInventory","BringFruit"}
     }
+task.spawn(function()
+    repeat task.wait(20) until game:IsLoaded()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/checkalias")()
+end);
