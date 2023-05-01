@@ -1,4 +1,6 @@
 {
+    "CDAAT":50,
+    "TimeWait":20,
     "AutoPullLever": false,
     "MethodFarm": "Level",
     "BypassTrial_Mink": false,
