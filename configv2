@@ -108,12 +108,24 @@ _G.SaveSettingSync = {
         ['Open_Saber'] = true,
         ['Pole_v1'] = true
     }
+     _G.Raid1 = {
+        ['AutoRaid'] = true, -- true / false
+        ['ChipCant_StoreFruit'] = true,
+        ['RaidMode'] = "Awake Skill",-- "Raid Normal" , "Awake Skill"
+        ['GetFruit_Method'] = {"FruitInventory","BringFruit"}
+    }
     _G.sea_II = {
         ['AutoSea3'] = true, -- true
         ['Bartilo'] = true,
         ['AutoFlower'] = true,
         ['EvoRaceV3'] = true,
         ['AutoDarkbeard'] = true
+    }
+     _G.Raid1 = {
+        ['AutoRaid'] = true, -- true / false
+        ['ChipCant_StoreFruit'] = true,
+        ['RaidMode'] = "Awake Skill",-- "Raid Normal" , "Awake Skill"
+        ['GetFruit_Method'] = {"FruitInventory","BringFruit"}
     }
     _G.sea_III = {
         ['AutoPullLever'] = true,
