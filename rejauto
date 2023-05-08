@@ -15,4 +15,6 @@ game_pid = game.PlaceId
                 game:GetService('TeleportService'):Teleport(game_pid)
                 
     until game:IsLoaded()
+    elseif sea2 or sea3 then
+    print "zzzz"
 end
