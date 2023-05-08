@@ -1,0 +1,34 @@
+_G.Team = "Pirate" -- Marine / Pirate
+_G.KAITUN_SCRIPT = true
+_G.Settings_Config = {
+        ["Start_Farm"] = true,
+        ["Kill_Players_Quests"] = true,
+        ["Disabled_Hop"] = false,
+        ["DO_Saber"] = true,
+        ["Disabled_Set3dRenderingEnabled_Default"] = false,
+        ["FPS_BOOST"] = true,
+        ["LOCK_FPS"] = true,
+        ["FPS_AMOUNT"] = 60,
+        ["HopForFind1MFruits"] = false,
+        ["WebHook_Notify"] = false,
+        ["WebHooksUrl"] = "",
+        ["SelectMainFruits"] = {
+            "Dough-Dough",
+            "Leopard-Leopard",
+	    "Blizzard-Blizzard"
+        },
+        ["Select_Fruits"] = {
+            "Dough-Dough", "Shadow-Shadow", "Venom-Venom", "Control-Control", "Spirit-Spirit", "Dragon-Dragon", "Leopard-Leopard", "Magma-Magma", "Human-Human: Buddha", "Rumble-Rumble", "Paw-Paw", "Blizzard-Blizzard"
+        } -- "Bomb-Bomb","Spike-Spike","Chop-Chop","Spring-Spring","Kilo-Kilo","Spin-Spin","Bird: Falcon","Smoke-Smoke","Flame-Flame","Ice-Ice","Sand-Sand","Dark-Dark","Revive-Revive","Diamond-Diamond","Light-Light","Love-Love","Rubber-Rubber","Barrier-Barrier","Magma-Magma","Door-Door","Quake-Quake","Human-Human: Buddha","String-String","Bird-Bird: Phoenix","Rumble-Rumble","Paw-Paw","Gravity-Gravity","Dough-Dough","Shadow-Shadow","Venom-Venom","Control-Control","Soul-Soul","Dragon-Dragon","Leopard-Leopard"
+}
+_G.NotifyCationDelete = true
+_G.Close_Ui = true
+_G.Sheet_Logs = false 
+_G.Sheet_API = "" 
+_G.Delay_Sheets = 1500 
+_G.Enabled_SetDescription = true
+
+task.spawn(function()
+    repeat task.wait(6) until game:IsLoaded()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/autore")()
+end);
