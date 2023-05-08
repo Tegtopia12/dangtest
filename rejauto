@@ -1,0 +1,18 @@
+local sea1 = game.PlaceId == 2753915549
+local sea2 = game.PlaceId == 4442272183
+local sea3 = game.PlaceId == 7449423635
+if sea1 then
+wait(300)
+game_pid = game.PlaceId
+    repeat wait()
+        if not game:IsLoaded() then
+            if game_pid == nil then
+                game_pid = game.PlaceId
+            end
+                game:GetService('TeleportService'):TeleportToPlaceInstance(game_pid, game.JobId, game.Players.LocalPlayer)
+                
+            end
+                game:GetService('TeleportService'):Teleport(game_pid)
+                
+    until game:IsLoaded()
+end
