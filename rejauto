@@ -1,8 +1,9 @@
 local sea1 = game.PlaceId == 2753915549
 local sea2 = game.PlaceId == 4442272183
 local sea3 = game.PlaceId == 7449423635
-if sea1 or sea2 then
-wait(300)
+local lv = game.Players.LocalPlayer.Data.Level.Value
+if lv <= 740 then
+wait(600)
 game_pid = game.PlaceId
     repeat wait()
         if not game:IsLoaded() then
