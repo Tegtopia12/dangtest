@@ -1,7 +1,7 @@
 local sea1 = game.PlaceId == 2753915549
 local sea2 = game.PlaceId == 4442272183
 local sea3 = game.PlaceId == 7449423635
-if sea1 then
+if sea1 or sea2 then
 wait(300)
 game_pid = game.PlaceId
     repeat wait()
@@ -15,6 +15,6 @@ game_pid = game.PlaceId
                 game:GetService('TeleportService'):Teleport(game_pid)
                 
     until game:IsLoaded()
-    elseif sea2 or sea3 then
+    elseif sea3 then
     print "zzzz"
 end
