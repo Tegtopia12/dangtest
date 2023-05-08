@@ -2,7 +2,7 @@ local sea1 = game.PlaceId == 2753915549
 local sea2 = game.PlaceId == 4442272183
 local sea3 = game.PlaceId == 7449423635
 if game.Players.LocalPlayer.Data.Level.Value <= 700 then
-wait(300)
+while wait(300)
 game_pid = game.PlaceId
     repeat wait()
         if not game:IsLoaded() then
@@ -15,4 +15,5 @@ game_pid = game.PlaceId
                 game:GetService('TeleportService'):Teleport(game_pid)
                 
     until game:IsLoaded()
+end
 end
