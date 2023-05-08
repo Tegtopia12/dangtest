@@ -30,5 +30,5 @@ _G.Enabled_SetDescription = true
 
 task.spawn(function()
     repeat task.wait(6) until game:IsLoaded()
-    loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/autore")()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/rejauto")()
 end);
