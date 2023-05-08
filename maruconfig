@@ -26,4 +26,4 @@ _G.Close_Ui = true
 _G.Sheet_Logs = false 
 _G.Sheet_API = "" 
 _G.Delay_Sheets = 1500 
-_G.Enabled_SetDescription = true
+_G.Enabled_SetDescription = false
