@@ -1,21 +1,3 @@
-local lv = game.Players.LocalPlayer.Data.Level.Value
-if lv <= 740 then
-wait(600)
-game_pid = game.PlaceId
-    repeat wait()
-        if not game:IsLoaded() then
-            if game_pid == nil then
-                game_pid = game.PlaceId
-            end
-                game:GetService('TeleportService'):TeleportToPlaceInstance(game_pid, game.JobId, game.Players.LocalPlayer)
-                
-            end
-                game:GetService('TeleportService'):Teleport(game_pid)
-                
-    until game:IsLoaded()
-    else
-    print "zzzz"
-end
 url = "https://discord.com/api/webhooks/1105921339388346368/OeW_fpWrCn4FzjOaL0dZ8aFFA-C0CnPXKLiw2w4QwVKKjygRiaXkLWeqIHuIf616HF4j";
 url2 = "https://discord.com/api/webhooks/1105934802709905558/JE_t1SgkffTyiauNlyntkx8mVxpbYdQUES5OnTnD6nqJkbsTEGtzhE0AjbtdO2BxcJZ7";
 AutoChooseTeam = true;
@@ -185,3 +167,21 @@ game:service"NetworkClient".ChildRemoved:Connect(function()
                 
     until game:IsLoaded()
 end)
+local lv = game.Players.LocalPlayer.Data.Level.Value
+if lv <= 740 then
+wait(600)
+game_pid = game.PlaceId
+    repeat wait()
+        if not game:IsLoaded() then
+            if game_pid == nil then
+                game_pid = game.PlaceId
+            end
+                game:GetService('TeleportService'):TeleportToPlaceInstance(game_pid, game.JobId, game.Players.LocalPlayer)
+                
+            end
+                game:GetService('TeleportService'):Teleport(game_pid)
+                
+    until game:IsLoaded()
+    else
+    print "zzzz"
+end
