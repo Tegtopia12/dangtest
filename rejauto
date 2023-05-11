@@ -167,21 +167,3 @@ game:service"NetworkClient".ChildRemoved:Connect(function()
                 
     until game:IsLoaded()
 end)
-local lv = game.Players.LocalPlayer.Data.Level.Value
-if lv <= 740 then
-wait(600)
-game_pid = game.PlaceId
-    repeat wait()
-        if not game:IsLoaded() then
-            if game_pid == nil then
-                game_pid = game.PlaceId
-            end
-                game:GetService('TeleportService'):TeleportToPlaceInstance(game_pid, game.JobId, game.Players.LocalPlayer)
-                
-            end
-                game:GetService('TeleportService'):Teleport(game_pid)
-                
-    until game:IsLoaded()
-    else
-    print "zzzz"
-end
