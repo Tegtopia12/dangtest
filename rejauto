@@ -167,7 +167,7 @@ game:service"NetworkClient".ChildRemoved:Connect(function()
                 
     until game:IsLoaded()
 end)
-if game.Players.LocalPlayer.Data.Level.Value <= 740 and game.Players.LocalPlayer.Data.Level.Value >= 600 then
+if game.Players.LocalPlayer.Data.Level.Value <= 740 then
 wait (300)
 game_pid = game.PlaceId
     repeat wait()
