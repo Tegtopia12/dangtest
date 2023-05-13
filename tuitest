@@ -1,1 +1,60 @@
 
+import requests
+import json
+import subprocess
+import time
+from time import sleep
+import discord_webhook
+import os
+import pyautogui
+
+CONFIG_DEFAULTS = {
+    'webhook_url': 'https://discord.com/api/webhooks/1106657610805030972/-aazCM2cYyjhYsNk1Gb8sxKehvdqvBrqC_bp_CKK4I7vElmyz5-pTjyxeMhIhU-btnHV',
+    'note': 'Updated Fluxus',
+}
+
+webhook_url = CONFIG_DEFAULTS['webhook_url']
+note = CONFIG_DEFAULTS['note']
+(f"Webhook URL: {webhook_url}")
+(f"Note: {note}")
+
+
+while True:
+    sleep(120)
+    response = requests.get('https://api.whatexploitsare.online/status/Fluxus')
+    data = response.json()
+
+    item = data[0] 
+    for name in item:
+            c = (item[name]['exploit_version'])
+
+    response = requests.get('https://raw.githubusercontent.com/dangbadao/dangtest/main/sieucap')
+    datas = response.json()
+    items = datas[0] 
+    for names in items:
+     d = (items[names]['exploit_versions'])
+    if not d == c:
+        print ("Fluxus New Update Detected")
+        subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+        subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+        subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
+        subprocess.call(["taskkill","/F","/IM","launch.exe"])
+        time.sleep(1)
+        os.system('"C:\\Users\\Dang\\Downloads\\startdate.bat"')
+        print ("Step 1")
+        time.sleep(10)
+        print ("Step 2")
+        pyautogui.hotkey('p')
+        time.sleep(55)
+        subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
+        print ("Step 3")
+        time.sleep(3)
+        os.system('"C:\\Users\\Dang\\Downloads\\startlaunch.bat"')
+        print ("Step OK")
+        webhook = discord_webhook.DiscordWebhook(url=webhook_url)
+        embed = discord_webhook.DiscordEmbed(title="THONG BAO", description=note, color=0x7289da)
+        webhook.add_embed(embed)
+        response = webhook.execute()
+        time.sleep(3)
+        subprocess.call(["taskkill","/F","/IM","updatefluxus.exe"])
+    
