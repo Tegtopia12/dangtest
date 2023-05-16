@@ -1,0 +1,12 @@
+import requests
+import pyautogui
+import time
+from time import sleep
+import os
+import subprocess
+from pathlib import Path
+import requests
+import discord_webhook
+import json
+
+print ("ok")
