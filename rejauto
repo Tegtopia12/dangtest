@@ -95,6 +95,15 @@ function Level()
         return "Chua Max LV"
     end
 end
+function Beli()
+     return game.Players.LocalPlayer.Data.Beli.Value
+end
+function Frag()
+    return game.Players.LocalPlayer.Data.Fragments.Value
+end
+function Fruit()
+    return game.Players.LocalPlayer.Data.DevilFruit.Value
+end
 function GetMsg()
     k3 = {}
     if Settings["PingEveryone"] and Settings["WebhookWhenMirage"] then
@@ -119,6 +128,21 @@ function GetMsg()
                 {
                     ["name"] = "Melee:",
                     ["value"] = "```" .. GODHUMAN() .. "```",
+                    ["inline"] = true
+                },
+                {
+                    ["name"] = "Fruit:",
+                    ["value"] = "```" .. Fruit() .. "```",
+                    ["inline"] = true
+                },
+                {
+                    ["name"] = "Fragments:",
+                    ["value"] = "```" .. Frag() .. "```",
+                    ["inline"] = true
+                },
+                {
+                    ["name"] = "Beli:",
+                    ["value"] = "```" .. Beli() .. "```",
                     ["inline"] = true
                 }
             }
