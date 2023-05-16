@@ -1,0 +1,252 @@
+import pyautogui
+import time
+from time import sleep
+import os
+import subprocess
+from pathlib import Path
+import requests
+
+def ject2trieu():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'jected.png'
+  jected1 = path + file
+  jected2 = Path(jected1)
+  if jected2.is_file():
+      return ("ok")
+
+def downject2trieu():
+    img = wget.download("https://www.mediafire.com/file_premium/bjoggb1m670gbo0/startkllfal.bat/file")
+    print('Image Successfully Downloaded: ', img)
+    time.sleep(3)
+    Path("C:\\Users\\Dang\\Desktop\\jected.png").rename("C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startkllfal.bat")
+    print ("Moved To KillFail")
+    
+def recc():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'reconnect.png'
+  rec = path + file
+  rec1 = Path(rec)
+  if rec1.is_file():
+      return ("ok")
+
+def dis():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'disconnected.png'
+  dis = path + file
+  dis1 = Path(dis)
+  if dis1.is_file():
+      return ("ok")
+
+def okne():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'ok.png'
+  okne = path + file
+  okne1 = Path(okne)
+  if okne.is_file():
+      return ("ok")
+     
+def okkhaha():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'okk.png'
+  okbe = path + file
+  okbe1 = Path(okbe)
+  if okbe1.is_file():
+      return ("ok")
+
+def getku():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'getkey.png'
+  getk = path + file
+  getk1 = Path(getk)
+  if getk1.is_file():
+      return ("ok")
+    
+def magu():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'maru.png'
+  maguz = path + file
+  maguz1 = Path(maguz)
+  if maguz1.is_file():
+      return ("ok")
+
+def roblux():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'roblox.png'
+  rulux = path + file
+  rulux1 = Path(rulux)
+  if rulux1.is_file():
+      return ("ok")
+
+def jet1trieu():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'inject.png'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok")
+
+def startkillfail():
+  path = 'C:\\Users\\Dang\\AppData\\Roaming\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\'
+  file = 'startkllfal.bat'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok")
+
+def dowstartkillfail():
+    img = wget.download("https://www.mediafire.com/file_premium/bjoggb1m670gbo0/startkllfal.bat/file")
+    print('Image Successfully Downloaded: ', img)
+    time.sleep(3)
+    Path("C:\\Users\\admin\\Desktop\\ONGTRUM\\startkllfal.bat").rename("C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startkllfal.bat")
+    print ("Moved TO StartUp")
+    
+def startfluxus():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'startfluxus.bat'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok")
+  
+def startsetsize():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'startsetsize.bat'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok")
+  
+def setsize():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'setroblox.exe'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok")
+  
+def setsizecut():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'setroblox.exe - Shortcut'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok")
+  
+def killfailcut():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'killfail.exe - Shortcut'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok")
+
+def killfailreal():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = ''
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok")
+  
+                                  
+while True:
+  sleep(3)
+  reconnect = pyautogui.locateCenterOnScreen("reconnect.png")
+  disconnected = pyautogui.locateCenterOnScreen("disconnected.png")
+  inject = pyautogui.locateCenterOnScreen("inject.png")
+  ok = pyautogui.locateCenterOnScreen("ok.png")
+  okk = pyautogui.locateCenterOnScreen("okk.png")
+  getkey = pyautogui.locateCenterOnScreen("getkey.png")
+  maru = pyautogui.locateCenterOnScreen("maru.png")
+  jected = pyautogui.locateCenterOnScreen("jected.png")
+  roblox = pyautogui.locateCenterOnScreen("roblox.png")
+  if ok:
+    print ("FOUND OK")
+    # kill Roblox
+    subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+    # kill Fluxus
+    subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+    # kill Launch
+    subprocess.call(["taskkill","/F","/IM","launch.exe"])
+    # kill Macro Recorder
+    subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
+    print("success")
+    time.sleep(6)
+    # open Launch & Macro
+    os.system('"C:\\Users\\Dang\\Downloads\\startlaunch.bat"')
+    # open Fluxus
+    os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
+    print ("Done")
+  if okk:
+    print ("FOUND OKK")
+    # kill Roblox
+    subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+    # kill Fluxus
+    subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+    # kill Launch
+    subprocess.call(["taskkill","/F","/IM","launch.exe"])
+    # kill Macro Recorder
+    subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
+    print("success kill")
+    time.sleep(6)
+    # open Launch & Macro
+    os.system('"C:\\Users\\Dang\\Downloads\\startlaunch.bat"')
+    # open Fluxus
+    os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
+    print ("Done")
+  if reconnect:
+    print ("FOUND RECONNECT")
+    # kill Roblox
+    subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+    # kill Fluxus
+    subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+    # kill Launch
+    subprocess.call(["taskkill","/F","/IM","launch.exe"])
+    # kill Macro Recorder
+    subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
+    time.sleep(6)
+    # open Launch & Macro
+    os.system('"C:\\Users\\Dang\\Downloads\\startlaunch.bat"')
+    # open Fluxus
+    os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
+    print ("Done")
+  if getkey:
+    print("FOUND GET KEY")
+    # kill Roblox
+    subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+    # kill Fluxus
+    subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+    # kill Launch
+    subprocess.call(["taskkill","/F","/IM","launch.exe"])
+    # kill Macro Recorder
+    subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
+    print("success kill")
+    time.sleep(180)
+    # open Launch & Macro
+    os.system('"C:\\Users\\Dang\\Downloads\\startlaunch.bat"')
+    # open Fluxus
+    os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
+    print ("Done")
+  if maru:
+    print ("FOUND MARU")
+    # kill Roblox
+    subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+    print ("Done")
+  if disconnected:
+    print ("FOUND DISCONNECTED")
+    # kill Roblox
+    subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+    print ("Done")
+  if jected:
+    print ("FOUND JECTED")
+    # kill Fluxus
+    subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+    time.sleep(1)
+    # open Fluxus
+    os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
+    print ("Done")
+  if roblox:
+    print ("FOUND ROBLOX")
+    # open set size
+    os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
+    print ("Done")
