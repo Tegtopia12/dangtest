@@ -173,7 +173,7 @@ function GetMsg2()
     return k3
 end
 task.spawn(function()
-wait(40)
+wait(45)
 game:service('VirtualInputManager'):SendKeyEvent(true, "RightControl", false, game)
 end)
 game:service"NetworkClient".ChildRemoved:Connect(function()
