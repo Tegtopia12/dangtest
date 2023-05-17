@@ -20,6 +20,7 @@ tk = acc.split(":")[0].split("/")[0]
 print (tk)
 mk = acc.split(":")[1].split("/")[0]
 print(mk)
+sleep(10)
 pyautogui.hotkey("F2")
 sleep(30)
 pyautogui.write(tk)
