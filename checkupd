@@ -1,12 +1,125 @@
 import requests
+from pathlib import Path
+import os
+import time
 import pyautogui
 import time
 from time import sleep
-import os
 import subprocess
 from pathlib import Path
 import requests
 import discord_webhook
 import json
+import wget
 
-print ("ok")
+
+if (not os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2")):
+    os.mkdir("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2")
+# if (not os.path.exists("C:\\Users\\Dang\\Desktop\\images")):
+#     os.mkdir("C:\\Users\\Dang\\Desktop\\images")
+    
+if (not os.path.exists("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard")):
+    os.mkdir("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard")
+if (not os.path.exists("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts")):
+    os.mkdir("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts")
+
+if (not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft")):
+    os.mkdir("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft")
+if (not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard")):
+    os.mkdir("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard")
+if (not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\MouseClicker")):
+    os.mkdir("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\MouseClicker")
+
+def setupclick1():
+    filename = Path('AutoHotkey.exe')
+    url = 'https://www.mediafire.com/file_premium/ur7tq9uvh13bekh/AutoHotkey.exe/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)   
+def setupclick2():
+    filename = Path('AutoMouseKey.exe')
+    url = 'https://www.mediafire.com/file_premium/1nf1zsfh9qjetks/AutoMouseKey.exe/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)   
+def setupclick3():
+    filename = Path('KeyPresser.exe')
+    url = 'https://www.mediafire.com/file_premium/soboaih1289dec2/KeyPresser.exe/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)   
+def setupclick4():
+    filename = Path('MouseClicker.exe')
+    url = 'https://www.mediafire.com/file_premium/reqfjsfmh9egrr4/MouseClicker.exe/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)   
+def setupclick5():
+    filename = Path('Read Me!!!.txt')
+    url = 'https://www.mediafire.com/file_premium/3j8tbhebu540yz9/Read_Me%2521%2521%2521.txt/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)   
+def setupclick6():
+    filename = Path('ScheduledTasks.exe')
+    url = 'https://www.mediafire.com/file_premium/qeb8xs9h28uy481/ScheduledTasks.exe/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)   
+    
+def script():
+    filename = Path('login.amk')
+    url = 'https://www.mediafire.com/file_premium/3nkh2tg5c6ng46d/login.amk/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)   
+
+def clickconfig1():
+    filename = Path('amk.ini')
+    url = 'https://www.mediafire.com/file_premium/ea3hwzq29us7ulk/amk.ini/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)   
+def clickconfig2():
+    filename = Path('PlayOptions.ini')
+    url = 'https://www.mediafire.com/file_premium/v1h5j2vgbb8qiqm/PlayOptions.ini/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)   
+def clickconfig3():
+    filename = Path('TaskLog.txt')
+    url = 'https://www.mediafire.com/file_premium/0t123im6nfl0czq/TaskLog.txt/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)   
+def start():
+    filename = Path('startlogin.bat')
+    url = 'https://www.mediafire.com/file_premium/rv3v534qjycazwu/startlogin.bat/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)   
+                        
+def allautoclick():
+    set1 = setupclick1()
+    set2 = setupclick2()
+    set3 = setupclick3()
+    set4 = setupclick4()
+    set5 = setupclick5()
+    set6 = setupclick6()
+    scp = script()
+    check1 = clickconfig1()
+    check2 = clickconfig2()
+    check3 = clickconfig3()
+    sta = start()
+    set1
+    set2
+    set3
+    set4
+    set5
+    set6
+    scp
+    check1
+    check2
+    check3
+    sta
+    time.sleep(60)
+    Path("C:\\checkupdate\\startlogin.bat").rename("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\startlogin.bat")
+    Path("C:\\checkupdate\\AutoHotkey.exe").rename("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\AutoHotkey.exe")
+    Path("C:\\checkupdate\\AutoMouseKey.exe").rename("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\AutoMouseKey.exe")
+    Path("C:\\checkupdate\\KeyPresser.exe").rename("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\KeyPresser.exe")
+    Path("C:\\checkupdate\\MouseClicker.exe").rename("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\MouseClicker.exe")
+    Path("C:\\checkupdate\\Read Me!!!.txt").rename("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\Read Me!!!.txt")
+    Path("C:\\checkupdate\\ScheduledTasks.exe").rename("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\ScheduledTasks.exe")
+    Path("C:\\checkupdate\\login.amk").rename("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts\\login.amk")
+    Path("C:\\checkupdate\\amk.ini").rename("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\amk.ini")
+    Path("C:\\checkupdate\\PlayOptions.ini").rename("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\PlayOptions.ini")
+    Path("C:\\checkupdate\\TaskLog.txt").rename("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\TaskLog.txt")   
