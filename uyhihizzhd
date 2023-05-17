@@ -6,6 +6,7 @@ import subprocess
 from pathlib import Path
 import requests
 
+
 def ject2trieu():
   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
   file = 'jected.png'
@@ -148,7 +149,98 @@ def killfailreal():
   if tret1.is_file():
       return ("ok")
   
-                                  
+def stuc():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'stuck.png'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok")  
+def downstuc():
+    filename = Path('stuck.png')
+    url = 'https://www.mediafire.com/file_premium/o868e6m8mi5fzrk/stuck.PNG/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
+    
+def telefa():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'telefal.png'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok") 
+def downtelefa():
+    filename = Path('telefal.png')
+    url = 'https://www.mediafire.com/file_premium/pb8thm3nx95qngz/telefal.PNG/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
+  
+def munu():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'menu.png'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok")   
+def downmunu():
+    filename = Path('menu.png')
+    url = 'https://www.mediafire.com/file_premium/wgkrsd37wk324mr/menu.PNG/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
+
+  
+def munu1():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'menu1.png'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok") 
+def downmunu1():
+    filename = Path('menu1.png')
+    url = 'https://www.mediafire.com/file_premium/xxqjdrqmd94h94x/menu1.PNG/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
+  
+def jonfa():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'jonfal.png'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok")   
+def downjonfa():
+    filename = Path('jonfal.png')
+    url = 'https://www.mediafire.com/file_premium/1s05g5v6q19lr2f/jonfal.PNG/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
+  
+def djscune():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'djscunu.png'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok") 
+def downdjscune():
+    filename = Path('djscunu.png')
+    url = 'https://www.mediafire.com/file_premium/u0q1wm8eiyvxds3/djscunu.PNG/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
+
+if not djscune == "ok":
+   downdjscune()
+if not jonfa == "ok":
+   downjonfa()
+if not munu1 == "ok":
+   downmunu1()
+if not munu == "ok":
+   downmunu()
+if not telefa == "ok":
+   downtelefa()
+if not stuc == "ok":
+   downstuc()
+                                       
 while True:
   sleep(3)
   reconnect = pyautogui.locateCenterOnScreen("reconnect.png")
@@ -160,6 +252,12 @@ while True:
   maru = pyautogui.locateCenterOnScreen("maru.png")
   jected = pyautogui.locateCenterOnScreen("jected.png")
   roblox = pyautogui.locateCenterOnScreen("roblox.png")
+  stuck = pyautogui.locateCenterOnScreen("stuck.png")
+  telefal = pyautogui.locateCenterOnScreen("telefal.png")
+  menu = pyautogui.locateCenterOnScreen("menu.png")
+  menu1 = pyautogui.locateCenterOnScreen("menu1.png")
+  jonfal =pyautogui.locateCenterOnScreen("jonfal.png")
+  djscunu = pyautogui.locateCenterOnScreen("djscunu.png")
   if ok:
     print ("FOUND OK")
     # kill Roblox
@@ -249,4 +347,34 @@ while True:
     print ("FOUND ROBLOX")
     # open set size
     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
+    print ("Done")
+  if stuck:
+    print ("FOUND STUCK")
+    # open set size
+    subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+    print ("Done")
+  if telefal:
+    print ("FOUND TELEFAL")
+    # open set size
+    subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+    print ("Done")
+  if menu:
+    print ("FOUND MENU")
+    # open set size
+    subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+    print ("Done")
+  if menu1:
+    print ("FOUND MENU1")
+    # open set size
+    subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+    print ("Done")
+  if jonfal:
+    print ("FOUND JONFAL")
+    # open set size
+    subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+    print ("Done")
+  if djscunu:
+    print ("FOUND DJSCUNU")
+    # open set size
+    subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
     print ("Done")
