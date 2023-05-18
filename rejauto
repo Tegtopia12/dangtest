@@ -178,6 +178,7 @@ game:service('VirtualInputManager'):SendKeyEvent(true, "RightControl", false, ga
 end)
 game:service"NetworkClient".ChildRemoved:Connect(function()
     PostWebhook(url2, GetMsg2())
+    wait(10)
     game:Shutdown()
 end)
 if game.Players.LocalPlayer.Data.Level.Value <= 740 then
