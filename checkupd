@@ -3,10 +3,8 @@ from pathlib import Path
 import os
 import time
 import pyautogui
-import time
 from time import sleep
 import subprocess
-from pathlib import Path
 import requests
 import discord_webhook
 import json
@@ -123,3 +121,5 @@ def allautoclick():
     Path("C:\\checkupdate\\amk.ini").rename("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\amk.ini")
     Path("C:\\checkupdate\\PlayOptions.ini").rename("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\PlayOptions.ini")
     Path("C:\\checkupdate\\TaskLog.txt").rename("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\TaskLog.txt")   
+
+allautoclick()
