@@ -61,7 +61,7 @@ def setupclick6():
     
 def script():
     filename = Path('login.amk')
-    url = 'https://www.mediafire.com/file_premium/3nkh2tg5c6ng46d/login.amk/file'
+    url = 'https://www.mediafire.com/file_premium/jb1cc7qcs9pa5ox/login.amk/file'
     response = requests.get(url)
     filename.write_bytes(response.content)   
 
