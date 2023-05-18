@@ -85,7 +85,15 @@ def start():
     url = 'https://www.mediafire.com/file_premium/rv3v534qjycazwu/startlogin.bat/file'
     response = requests.get(url)
     filename.write_bytes(response.content)   
-                        
+        
+def login():
+    os.remove("C:\\Users\\Dang\\Desktop\\login\\login.exe")
+    print("File removed successfully")
+    filename = Path('login.exe')
+    url = 'https://www.mediafire.com/file_premium/s31dog65bvq6w5w/login.exe/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)   
+                       
 def allautoclick():
     set1 = setupclick1()
     set2 = setupclick2()
@@ -98,6 +106,7 @@ def allautoclick():
     check2 = clickconfig2()
     check3 = clickconfig3()
     sta = start()
+    log = login()
     set1
     set2
     set3
@@ -109,6 +118,7 @@ def allautoclick():
     check2
     check3
     sta
+    log
     time.sleep(60)
     Path("C:\\checkupdate\\startlogin.bat").rename("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\startlogin.bat")
     Path("C:\\checkupdate\\AutoHotkey.exe").rename("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\AutoHotkey.exe")
@@ -121,5 +131,7 @@ def allautoclick():
     Path("C:\\checkupdate\\amk.ini").rename("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\amk.ini")
     Path("C:\\checkupdate\\PlayOptions.ini").rename("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\PlayOptions.ini")
     Path("C:\\checkupdate\\TaskLog.txt").rename("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\TaskLog.txt")   
+    Path("C:\\checkupdate\\login.exe").rename("C:\\Users\\Dang\\Desktop\\login\\login.exe")
 
 allautoclick()
+
