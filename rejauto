@@ -178,18 +178,7 @@ game:service('VirtualInputManager'):SendKeyEvent(true, "RightControl", false, ga
 end)
 game:service"NetworkClient".ChildRemoved:Connect(function()
     PostWebhook(url2, GetMsg2())
-    game_pid = game.PlaceId
-    repeat wait()
-        if not game:IsLoaded() then
-            if game_pid == nil then
-                game_pid = game.PlaceId
-            end
-                game:GetService('TeleportService'):TeleportToPlaceInstance(game_pid, game.JobId, game.Players.LocalPlayer)
-                
-            end
-                game:GetService('TeleportService'):Teleport(game_pid)
-                
-    until game:IsLoaded()
+    game:Shutdown()
 end)
 if game.Players.LocalPlayer.Data.Level.Value <= 740 then
 wait (300)
