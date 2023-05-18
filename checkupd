@@ -87,7 +87,8 @@ def start():
     filename.write_bytes(response.content)   
 
 def login():
-    os.remove("C:\\Users\\Dang\\Desktop\\login\\login.exe")
+    if os.path.exists("C:\\Users\\Dang\\Desktop\\login\\login.exe"):
+         os.remove("C:\\Users\\Dang\\Desktop\\login\\login.exe")
     print("File removed successfully")
     filename = Path('login.exe')
     url = 'https://www.mediafire.com/file_premium/s31dog65bvq6w5w/login.exe/file'
