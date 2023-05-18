@@ -67,12 +67,12 @@ def script():
 
 def clickconfig1():
     filename = Path('amk.ini')
-    url = 'https://www.mediafire.com/file_premium/ea3hwzq29us7ulk/amk.ini/file'
+    url = 'https://www.mediafire.com/file_premium/k0hl20k88xtro40/amk.ini/file'
     response = requests.get(url)
     filename.write_bytes(response.content)   
 def clickconfig2():
     filename = Path('PlayOptions.ini')
-    url = 'https://www.mediafire.com/file_premium/v1h5j2vgbb8qiqm/PlayOptions.ini/file'
+    url = 'https://www.mediafire.com/file_premium/ppdot2uazd8fwtl/PlayOptions.ini/file'
     response = requests.get(url)
     filename.write_bytes(response.content)   
 def clickconfig3():
