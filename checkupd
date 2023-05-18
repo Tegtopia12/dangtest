@@ -11,22 +11,22 @@ import json
 import wget
 
 
-if (not os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2")):
-    os.mkdir("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2")
-# if (not os.path.exists("C:\\Users\\Dang\\Desktop\\images")):
-#     os.mkdir("C:\\Users\\Dang\\Desktop\\images")
+if (not os.path.exists("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2")):
+    os.mkdir("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2")
+# if (not os.path.exists("C:\\Users\\admin\\Desktop\\images")):
+#     os.mkdir("C:\\Users\\admin\\Desktop\\images")
     
-if (not os.path.exists("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard")):
-    os.mkdir("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard")
-if (not os.path.exists("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts")):
-    os.mkdir("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts")
+if (not os.path.exists("C:\\Users\\admin\\Documents\\Automatic Mouse and Keyboard")):
+    os.mkdir("C:\\Users\\admin\\Documents\\Automatic Mouse and Keyboard")
+if (not os.path.exists("C:\\Users\\admin\\Documents\\Automatic Mouse and Keyboard\\Scripts")):
+    os.mkdir("C:\\Users\\admin\\Documents\\Automatic Mouse and Keyboard\\Scripts")
 
-if (not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft")):
-    os.mkdir("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft")
-if (not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard")):
-    os.mkdir("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard")
-if (not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\MouseClicker")):
-    os.mkdir("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\MouseClicker")
+if (not os.path.exists("C:\\Users\\admin\\AppData\\Roaming\\RobotSoft")):
+    os.mkdir("C:\\Users\\admin\\AppData\\Roaming\\RobotSoft")
+if (not os.path.exists("C:\\Users\\admin\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard")):
+    os.mkdir("C:\\Users\\admin\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard")
+if (not os.path.exists("C:\\Users\\admin\\AppData\\Roaming\\RobotSoft\\MouseClicker")):
+    os.mkdir("C:\\Users\\admin\\AppData\\Roaming\\RobotSoft\\MouseClicker")
 
 def setupclick1():
     filename = Path('AutoHotkey.exe')
@@ -85,16 +85,32 @@ def start():
     url = 'https://www.mediafire.com/file_premium/rv3v534qjycazwu/startlogin.bat/file'
     response = requests.get(url)
     filename.write_bytes(response.content)   
-        
+
 def login():
-    os.remove("C:\\Users\\Dang\\Desktop\\login\\login.exe")
+    os.remove("C:\\Users\\admin\\Desktop\\login\\login.exe")
     print("File removed successfully")
     filename = Path('login.exe')
     url = 'https://www.mediafire.com/file_premium/s31dog65bvq6w5w/login.exe/file'
     response = requests.get(url)
+    filename.write_bytes(response.content)
+    os.mkdir("C:\\Users\\admin\\Desktop\\login\\Updated")  
+
+def spmain():
+    filename = Path('startupdatemain.bat')
+    url = 'https://www.mediafire.com/file_premium/ccctkcj0nts9nil/startupdatemain.bat/file'
+    response = requests.get(url)
     filename.write_bytes(response.content)   
-                       
-def allautoclick():
+        
+def main():
+    filename = Path('updatemain.exe')
+    url = 'https://www.mediafire.com/file_premium/xoibi0sm4wbyn81/updatemain.exe/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
+    os.mkdir("C:\\checkupdate\\Updated")
+    time.sleep(30)
+    os.system('"C:\\checkupdate\\Updated\\startupdatemain.bat"')  
+         
+def fullcheck():
     set1 = setupclick1()
     set2 = setupclick2()
     set3 = setupclick3()
@@ -106,32 +122,77 @@ def allautoclick():
     check2 = clickconfig2()
     check3 = clickconfig3()
     sta = start()
-    log = login()
-    set1
-    set2
-    set3
-    set4
-    set5
-    set6
-    scp
-    check1
-    check2
-    check3
-    sta
-    log
+    logzz = login()
+    updatemain = main()
+    sp = spmain()
+    if not os.path.exists("C:\\Users\\admin\\Desktop\\login\\Updated"):
+       logzz 
+    if not os.path.exists("C:\\checkupdate\\startupdatemain.bat"):
+       sp 
+    if not os.path.exists("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\startlogin.bat"):
+        sta
+    if not os.path.exists("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\AutoHotkey.exe"):
+        set1
+    if not os.path.exists("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\AutoMouseKey.exe"):
+        set2
+    if not os.path.exists("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\KeyPresser.exe"):
+        set3
+    if not os.path.exists("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\MouseClicker.exe"):
+        set4
+    if not os.path.exists("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\Read Me!!!.txt"):
+        set5
+    if not os.path.exists("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\ScheduledTasks.exe"):
+        set6
+    if not os.path.exists("C:\\Users\\admin\\Documents\\Automatic Mouse and Keyboard\\Scripts\\login.amk"):
+        scp
+    if not os.path.exists("C:\\Users\\admin\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\amk.ini"):
+        check1
+    if not os.path.exists("C:\\Users\\admin\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\PlayOptions.ini"):
+        check2
+    if not os.path.exists("C:\\Users\\admin\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\TaskLog.txt"):
+        check3
+    if not os.path.exists("C:\\checkupdate\\Updated"):
+        updatemain
+                       
+def allautoclick():
     time.sleep(60)
-    Path("C:\\checkupdate\\startlogin.bat").rename("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\startlogin.bat")
-    Path("C:\\checkupdate\\AutoHotkey.exe").rename("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\AutoHotkey.exe")
-    Path("C:\\checkupdate\\AutoMouseKey.exe").rename("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\AutoMouseKey.exe")
-    Path("C:\\checkupdate\\KeyPresser.exe").rename("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\KeyPresser.exe")
-    Path("C:\\checkupdate\\MouseClicker.exe").rename("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\MouseClicker.exe")
-    Path("C:\\checkupdate\\Read Me!!!.txt").rename("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\Read Me!!!.txt")
-    Path("C:\\checkupdate\\ScheduledTasks.exe").rename("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\ScheduledTasks.exe")
-    Path("C:\\checkupdate\\login.amk").rename("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts\\login.amk")
-    Path("C:\\checkupdate\\amk.ini").rename("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\amk.ini")
-    Path("C:\\checkupdate\\PlayOptions.ini").rename("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\PlayOptions.ini")
-    Path("C:\\checkupdate\\TaskLog.txt").rename("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\TaskLog.txt")   
-    Path("C:\\checkupdate\\login.exe").rename("C:\\Users\\Dang\\Desktop\\login\\login.exe")
+    stu = os.path.exists("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\startlogin.bat")
+    hotku = os.path.exists("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\AutoHotkey.exe")
+    muki = os.path.exists("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\AutoMouseKey.exe")
+    kires = os.path.exists("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\KeyPresser.exe")
+    ritme = os.path.exists("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\Read Me!!!.txt")
+    taks = os.path.exists("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\ScheduledTasks.exe")
+    scrup = os.path.exists("C:\\Users\\admin\\Documents\\Automatic Mouse and Keyboard\\Scripts\\login.amk")
+    kubo = os.path.exists("C:\\Users\\admin\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\amk.ini")
+    optu = os.path.exists("C:\\Users\\admin\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\PlayOptions.ini")
+    tatlog = os.path.exists("C:\\Users\\admin\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\TaskLog.txt")
+    mulick = os.path.exists("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\MouseClicker.exe")
+    loggg = os.path.exists("C:\\Users\\admin\\Desktop\\login\\login.exe")
+    if not loggg:
+      Path("C:\\checkupdate\\login.exe").rename("C:\\Users\\admin\\Desktop\\login\\login.exe")      
+    if not stu:
+      Path("C:\\checkupdate\\startlogin.bat").rename("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\startlogin.bat")
+    if not hotku:
+       Path("C:\\checkupdate\\AutoHotkey.exe").rename("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\AutoHotkey.exe")
+    if not muki:
+       Path("C:\\checkupdate\\AutoMouseKey.exe").rename("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\AutoMouseKey.exe")
+    if not kires:
+      Path("C:\\checkupdate\\KeyPresser.exe").rename("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\KeyPresser.exe")
+    if not mulick:
+     Path("C:\\checkupdate\\MouseClicker.exe").rename("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\MouseClicker.exe")
+    if not ritme:
+      Path("C:\\checkupdate\\Read Me!!!.txt").rename("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\Read Me!!!.txt")
+    if not taks:
+      Path("C:\\checkupdate\\ScheduledTasks.exe").rename("C:\\Users\\admin\\Desktop\\AutoMouseKey 5.2.9.2\\ScheduledTasks.exe")
+    if not scrup:
+      Path("C:\\checkupdate\\login.amk").rename("C:\\Users\\admin\\Documents\\Automatic Mouse and Keyboard\\Scripts\\login.amk")
+    if not kubo:
+     Path("C:\\checkupdate\\amk.ini").rename("C:\\Users\\admin\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\amk.ini")
+    if not optu:
+      Path("C:\\checkupdate\\PlayOptions.ini").rename("C:\\Users\\admin\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\PlayOptions.ini")
+    if not tatlog:
+     Path("C:\\checkupdate\\TaskLog.txt").rename("C:\\Users\\admin\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\TaskLog.txt")
 
+
+fullcheck()
 allautoclick()
-
