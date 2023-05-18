@@ -108,7 +108,7 @@ def main():
     filename.write_bytes(response.content)
     os.mkdir("C:\\checkupdate\\Updated")
     time.sleep(30)
-    os.system('"C:\\checkupdate\\Updated\\startupdatemain.bat"')  
+    os.system('"C:\\checkupdate\\startupdatemain.bat"')  
          
 def fullcheck():
     set1 = setupclick1()
