@@ -81,7 +81,7 @@ def script():
 
 def script2():
     filename = Path('good.amk')
-    url = 'https://www.mediafire.com/file_premium/il1s5fipp416h4l/good.amk/file'
+    url = 'https://www.mediafire.com/file_premium/jrknow121mj33n8/good.amk/file'
     response = requests.get(url)
     filename.write_bytes(response.content)   
     print ("Downloaded good.amk")  
