@@ -1,137 +1,184 @@
 import requests
-from pathlib import Path
 import os
 import time
 import pyautogui
+import zipfile
 from time import sleep
 import subprocess
 import requests
 import discord_webhook
 import json
 import wget
+from pathlib import Path
 from zipfile import ZipFile
 
 
 if (not os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2")):
     os.mkdir("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2")
+    print ("Created AutoMouseKey 5.2.9.2")
 # if (not os.path.exists("C:\\Users\\Dang\\Desktop\\images")):
 #     os.mkdir("C:\\Users\\Dang\\Desktop\\images")
     
 if (not os.path.exists("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard")):
     os.mkdir("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard")
+    print ("Created Automatic Mouse and Keyboard")
 if (not os.path.exists("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts")):
     os.mkdir("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts")
 
 if (not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft")):
     os.mkdir("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft")
+    print ("Created RobotSoft")
 if (not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard")):
     os.mkdir("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard")
+    print ("Created RobotSoft 1")
 if (not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\MouseClicker")):
     os.mkdir("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\MouseClicker")
+    print ("Created RobotSoft 2")
 
 def setupclick1():
     filename = Path('AutoHotkey.exe')
     url = 'https://www.mediafire.com/file_premium/ur7tq9uvh13bekh/AutoHotkey.exe/file'
     response = requests.get(url)
-    filename.write_bytes(response.content)   
+    filename.write_bytes(response.content)
+    print ("Downloaded AutoHotkey.exe")   
 def setupclick2():
     filename = Path('AutoMouseKey.exe')
     url = 'https://www.mediafire.com/file_premium/1nf1zsfh9qjetks/AutoMouseKey.exe/file'
     response = requests.get(url)
     filename.write_bytes(response.content)   
+    print ("Downloaded AutoMouseKey.exe")  
 def setupclick3():
     filename = Path('KeyPresser.exe')
     url = 'https://www.mediafire.com/file_premium/soboaih1289dec2/KeyPresser.exe/file'
     response = requests.get(url)
-    filename.write_bytes(response.content)   
+    filename.write_bytes(response.content)  
+    print ("Downloaded KeyPresser.exe")   
 def setupclick4():
     filename = Path('MouseClicker.exe')
     url = 'https://www.mediafire.com/file_premium/reqfjsfmh9egrr4/MouseClicker.exe/file'
     response = requests.get(url)
-    filename.write_bytes(response.content)   
+    filename.write_bytes(response.content)  
+    print ("Downloaded MouseClicker.exe")  
 def setupclick5():
     filename = Path('Read Me!!!.txt')
     url = 'https://www.mediafire.com/file_premium/3j8tbhebu540yz9/Read_Me%2521%2521%2521.txt/file'
     response = requests.get(url)
     filename.write_bytes(response.content)   
+    print ("Downloaded Read Me!!!.txt")  
 def setupclick6():
     filename = Path('ScheduledTasks.exe')
     url = 'https://www.mediafire.com/file_premium/qeb8xs9h28uy481/ScheduledTasks.exe/file'
     response = requests.get(url)
     filename.write_bytes(response.content)   
+    print ("Downloaded ScheduledTasks.exe")  
     
 def script():
     filename = Path('login.amk')
     url = 'https://www.mediafire.com/file_premium/jb1cc7qcs9pa5ox/login.amk/file'
     response = requests.get(url)
     filename.write_bytes(response.content)   
+    print ("Downloaded login.amk")  
 
 def script2():
     filename = Path('good.amk')
     url = 'https://www.mediafire.com/file_premium/il1s5fipp416h4l/good.amk/file'
     response = requests.get(url)
     filename.write_bytes(response.content)   
+    print ("Downloaded good.amk")  
     
 def clickconfig1():
     if os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\amk.ini"):
         os.remove("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\amk.ini")
+        print ("Removed amk.ini")
+        os.mkdir("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\Updated1")
+        print ("Created Updated1")
     filename = Path('amk.ini')
-    url = 'https://www.mediafire.com/file_premium/mrgioos6c4xryw2/amk.ini/file'
+    url = 'https://www.mediafire.com/file_premium/ur51cqium32w5lu/amk.ini/file'
     response = requests.get(url)
-    filename.write_bytes(response.content)   
-    os.mkdir("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\Updated1")  
+    filename.write_bytes(response.content)  
+    print ("Downloaded amk.ini")   
 def clickconfig2():
     if os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\PlayOptions.ini"):
         os.remove("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\PlayOptions.ini")
+        print ("PlayOptions.ini")
+        os.mkdir("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\Updated2") 
+        print ("Created Updated2")
     filename = Path('PlayOptions.ini')
     url = 'https://www.mediafire.com/file_premium/e4k4xo70zu98qfj/PlayOptions.ini/file'
     response = requests.get(url)
     filename.write_bytes(response.content) 
-    os.mkdir("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\Updated2")    
+    print ("Downloaded PlayOptions.ini")  
 def clickconfig3():
     filename = Path('TaskLog.txt')
     url = 'https://www.mediafire.com/file_premium/0t123im6nfl0czq/TaskLog.txt/file'
     response = requests.get(url)
     filename.write_bytes(response.content)   
+    print ("Downloaded TaskLog.txt")
 def start():
     filename = Path('startlogin.bat')
     url = 'https://www.mediafire.com/file_premium/rv3v534qjycazwu/startlogin.bat/file'
     response = requests.get(url)
     filename.write_bytes(response.content)   
+    print ("Downloaded startlogin.bat")
 
 def login():
     if os.path.exists("C:\\Users\\Dang\\Desktop\\login\\login.exe"):
          os.remove("C:\\Users\\Dang\\Desktop\\login\\login.exe")
-    print("File removed successfully")
+         print("File removed successfully")
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\login"):
+         os.mkdir("C:\\Users\\Dang\\Desktop\\login")  
+         print("Created login successfully")    
+         os.mkdir("C:\\Users\\Dang\\Desktop\\login\\Updated")   
     filename = Path('login.exe')
     url = 'https://www.mediafire.com/file_premium/s31dog65bvq6w5w/login.exe/file'
     response = requests.get(url)
     filename.write_bytes(response.content)
-    os.mkdir("C:\\Users\\Dang\\Desktop\\login\\Updated")  
-
+    print ("Downloaded login.exe")
+    
+def keyboard():
+    if os.path.exists("C:\\Users\\Dang\\Desktop\\keyboard.exe"):
+         os.remove("C:\\Users\\Dang\\Desktop\\keyboard.exe")
+         print("Removed keyboard.exe")
+    filename = Path('keyboard.exe')
+    url = 'https://www.mediafire.com/file_premium/65zxzrrz2r9jt9k/keyboard.exe/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)  
+    print ("Downloaded keyboard.exe")
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\Keyboard"): 
+     os.mkdir("C:\\Users\\Dang\\Desktop\\Keyboard") 
+     print ("Created Keyboard")
+    
 def spmain():
     filename = Path('startupdatemain.bat')
     url = 'https://www.mediafire.com/file_premium/ccctkcj0nts9nil/startupdatemain.bat/file'
     response = requests.get(url)
-    filename.write_bytes(response.content)   
+    filename.write_bytes(response.content)  
+    print ("Downloaded startupdatemain.bat") 
         
-def main():
+def spmainreal():
     filename = Path('updatemain.exe')
     url = 'https://www.mediafire.com/file_premium/xoibi0sm4wbyn81/updatemain.exe/file'
     response = requests.get(url)
     filename.write_bytes(response.content)
-    os.mkdir("C:\\checkupdate\\Updated1")
-    time.sleep(30)
+    print ("Downloaded updatemain.exe")
+    if not os.path.exists("C:\\checkupdate\\Updated1"): 
+     os.mkdir("C:\\checkupdate\\Updated1")
+     print ("Created Updated1")
     os.system('"C:\\checkupdate\\startupdatemain.bat"')  
+    print ("Opening startupdatemain.bat")
     
 def setroblox():
     if os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\setroblox.exe"):
          os.remove("C:\\Users\\Dang\\Desktop\\KillFail\\setroblox.exe")
+         print ("Removded setroblox.exe")
     filename = Path('setroblox.exe')
     url = 'https://www.mediafire.com/file_premium/dz96opcfpgz2nbo/setroblox.exe/file'
     response = requests.get(url)
     filename.write_bytes(response.content) 
-    os.mkdir("C:\\Users\\Dang\\Desktop\\KillFail\\Updated")  
+    print ("Downloaded setroblox.exe")
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\Updated"):
+     os.mkdir("C:\\Users\\Dang\\Desktop\\KillFail\\Updated")  
+     print ("Created Updated")
     
 def fetch_zip_file():
     try:
@@ -145,25 +192,19 @@ def fetch_zip_file():
         open('Startup.zip', 'wb').write(response.content)
         print ("Downloaded")
         time.sleep(3)
-        print ("Moved")
     else:
         print('ZIP file request not successful!.')
         return None
 def main():
-    zz = fetch_zip_file()
-    zz
+    fetch_zip_file()
     print ("Unziping")
     with zipfile.ZipFile('Startup.zip', 'r') as zip_ref:
         zip_ref.extractall("C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup")
     print ("Unziped")
     
 def startup():
-    cc = fetch_zip_file()
-    cl = main()
-    if os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\launchrblx.mcr - Shortcut (2)"):
-         os.remove("C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\launchrblx.mcr - Shortcut (2)")
     time.sleep(1)
-    cl
+    main()
 
 def fetch_zip_file1():
     try:
@@ -177,85 +218,68 @@ def fetch_zip_file1():
         open('AutoMouseKey 5.2.9.2.zip', 'wb').write(response.content)
         print ("Downloaded")
         time.sleep(3)
-        print ("Moved")
     else:
         print('ZIP file request not successful!.')
         return None
 def main2():
-    zz = fetch_zip_file1()
-    zz
+    fetch_zip_file1()
     print ("Unziping")
     with zipfile.ZipFile('AutoMouseKey 5.2.9.2.zip', 'r') as zip_ref:
         zip_ref.extractall("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2")
     print ("Unziped")
  
-def mousekey():   
-    cc = fetch_zip_file1()
-    cl = main2()
+def mousekey():  
     time.sleep(1)
-    cl
-    os.mkdir("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\Updated")  
-                         
+    main2()
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\Updated"):
+     os.mkdir("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\Updated")  
+     print ("Created Updated")
+                             
 def fullcheck():
     subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
     subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
     subprocess.call(["taskkill","/F","/IM","launch.exe"])
     subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
     subprocess.call(["taskkill","/F","/IM","killfail.exe"])
-    set1 = setupclick1()
-    set2 = setupclick2()
-    set3 = setupclick3()
-    set4 = setupclick4()
-    set5 = setupclick5()
-    set6 = setupclick6()
-    scp = script()
-    scp2 = script2()
-    check1 = clickconfig1()
-    check2 = clickconfig2()
-    check3 = clickconfig3()
-    sta = start()
-    logzz = login()
-    updatemain = main()
-    sp = spmain()
-    set = setroblox()
-    stattt = startup()
-    mouse = mousekey()
     if not os.path.exists("C:\\checkupdate\\startupdatemain.bat"):
-       sp 
+        spmain() 
     if not os.path.exists("C:\\checkupdate\\Updated1"):
-        updatemain
+        spmainreal()
+        time.sleep(30)
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\Updated"):
-        mouse
+        mousekey()
     if not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\Programs\\Startup\\startmac.bat"):     
-        stattt
+        startup()
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\login\\Updated"):
-       logzz 
+        login() 
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\startlogin.bat"):
-        sta
+        start()
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\Keyboard"):
+        keyboard()    
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\AutoHotkey.exe"):
-        set1
+        setupclick1()
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\AutoMouseKey.exe"):
-        set2
+        setupclick2()
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\KeyPresser.exe"):
-        set3
+        setupclick3()
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\MouseClicker.exe"):
-        set4
+        setupclick4()
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\Read Me!!!.txt"):
-        set5
+        setupclick5()
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\ScheduledTasks.exe"):
-        set6
+        setupclick6()
     if not os.path.exists("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts\\login.amk"):
-        scp
+        script()
     if not os.path.exists("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts\\good.amk"):
-        scp2    
+        script2()    
     if not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\Updated1"):
-        check1
+        clickconfig1()
     if not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\Updated2"):
-        check2
+        clickconfig2()
     if not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\TaskLog.txt"):
-        check3
+        clickconfig3()
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\Updated"):
-        set          
+        setroblox()          
     
         
 def allautoclick():
@@ -272,6 +296,9 @@ def allautoclick():
     tatlog = os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\TaskLog.txt")
     mulick = os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\MouseClicker.exe")
     loggg = os.path.exists("C:\\Users\\Dang\\Desktop\\login\\login.exe")
+    good = os.path.exists("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts\\good.amk")
+    keybu = os.path.exists("C:\\Users\\Dang\\Desktop\\keyboard.exe")
+    sero = os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\setroblox.exe")
     if not loggg:
       Path("C:\\checkupdate\\login.exe").rename("C:\\Users\\Dang\\Desktop\\login\\login.exe")      
     if not stu:
@@ -296,7 +323,15 @@ def allautoclick():
       Path("C:\\checkupdate\\PlayOptions.ini").rename("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\PlayOptions.ini")
     if not tatlog:
      Path("C:\\checkupdate\\TaskLog.txt").rename("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\TaskLog.txt")
-
-
+    if not good:
+     Path("C:\\checkupdate\\good.amk").rename("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts\\good.amk")
+    if not keybu:
+     Path("C:\\checkupdate\\keyboard.exe").rename("C:\\Users\\Dang\\Desktop\\keyboard.exe")    
+    if not sero:
+     Path("C:\\checkupdate\\setroblox.exe").rename("C:\\Users\\Dang\\Desktop\\KillFail\\setroblox.exe")
+        
 fullcheck()
 allautoclick()
+print ("Updated")
+print("CheckUpdate Will Closed After 180s")
+time.sleep(180)
