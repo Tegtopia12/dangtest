@@ -253,7 +253,21 @@ def downmu3():
     url = 'https://www.mediafire.com/view/7ycpmw3uz0n3i4b/memu3.PNG/file'
     response = requests.get(url)
     filename.write_bytes(response.content)
-        
+
+def stu2():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'stuck2.png'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok") 
+def downstu2():
+    filename = Path('stuck2.png')
+    url = 'https://www.mediafire.com/file_premium/zbed624a4e38ti8/stuck2.png/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
+    
+            
 if not djscune == "ok":
    downdjscune()
 if not jonfa == "ok":
@@ -270,6 +284,8 @@ if not rbl1 == "ok":
    downrblx1()   
 if not mu3 == "ok":
    downmu3()
+if stu2() == "ok":
+   downstu2()
                                        
 while True:
   sleep(3)
@@ -290,6 +306,7 @@ while True:
   djscunu = pyautogui.locateCenterOnScreen("djscunu.png")
   rb1 = pyautogui.locateCenterOnScreen("rblx1.png")
   memu3 = pyautogui.locateCenterOnScreen("memu3.png")
+  stiu2 = pyautogui.locateCenterOnScreen("stuck2.png")
   if ok:
     print ("FOUND OK")
     # kill Roblox
@@ -415,5 +432,9 @@ while True:
     print ("Done")
   if memu3:
     print ("FOUND MEMU3")
+    os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
+    subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+  if stiu2:
+    print ("STIU 2")
     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
