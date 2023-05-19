@@ -80,6 +80,9 @@ def script():
     print ("Downloaded login.amk")  
 
 def script2():
+    if os.path.exists("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts\\good.amk"):
+        os.remove("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts\\good.amk")
+        print ("Removed good.amk")
     filename = Path('good.amk')
     url = 'https://www.mediafire.com/file_premium/jrknow121mj33n8/good.amk/file'
     response = requests.get(url)
@@ -161,9 +164,9 @@ def spmainreal():
     response = requests.get(url)
     filename.write_bytes(response.content)
     print ("Downloaded updatemain.exe")
-    if not os.path.exists("C:\\checkupdate\\Updated1"): 
-     os.mkdir("C:\\checkupdate\\Updated1")
-     print ("Created Updated1")
+    if not os.path.exists("C:\\checkupdate\\Updated13"): 
+     os.mkdir("C:\\checkupdate\\Updated13")
+     print ("Created Updated13")
     os.system('"C:\\checkupdate\\startupdatemain.bat"')  
     print ("Opening startupdatemain.bat")
     
@@ -243,7 +246,7 @@ def fullcheck():
     subprocess.call(["taskkill","/F","/IM","killfail.exe"])
     if not os.path.exists("C:\\checkupdate\\startupdatemain.bat"):
         spmain() 
-    if not os.path.exists("C:\\checkupdate\\Updated1"):
+    if not os.path.exists("C:\\checkupdate\\Updated13"):
         spmainreal()
         time.sleep(30)
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\Updated"):
@@ -270,7 +273,7 @@ def fullcheck():
         setupclick6()
     if not os.path.exists("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts\\login.amk"):
         script()
-    if not os.path.exists("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts\\good.amk"):
+    if not os.path.exists("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts\\Updategood"):
         script2()    
     if not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\Updated1"):
         clickconfig1()
@@ -330,11 +333,11 @@ def allautoclick():
     if not sero:
      Path("C:\\checkupdate\\setroblox.exe").rename("C:\\Users\\Dang\\Desktop\\KillFail\\setroblox.exe")
 
-if not os.path.exists("C:\\Users\\Dang\\Desktop\\UpdatedVer12"):      
+if not os.path.exists("C:\\Users\\Dang\\Desktop\\UpdatedVer13"):      
     fullcheck()
     allautoclick()
     print ("Updated")
-    os.mkdir("C:\\Users\\Dang\\Desktop\\UpdatedVer12")
+    os.mkdir("C:\\Users\\Dang\\Desktop\\UpdatedVer13")
     print("Created Update File")
     os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startmac.bat"')
     os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startkllfal.bat"')
