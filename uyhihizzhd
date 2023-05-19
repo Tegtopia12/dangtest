@@ -288,7 +288,7 @@ if stu2() == "ok":
    downstu2()
                                        
 while True:
-  sleep(3)
+  sleep(1)
   reconnect = pyautogui.locateCenterOnScreen("reconnect.png")
   disconnected = pyautogui.locateCenterOnScreen("disconnected.png")
   inject = pyautogui.locateCenterOnScreen("inject.png")
