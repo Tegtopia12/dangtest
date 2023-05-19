@@ -288,7 +288,8 @@ if stu2() == "ok":
    downstu2()
                                        
 while True:
-  sleep(1)
+  sleep(3)
+  os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
   reconnect = pyautogui.locateCenterOnScreen("reconnect.png")
   disconnected = pyautogui.locateCenterOnScreen("disconnected.png")
   inject = pyautogui.locateCenterOnScreen("inject.png")
