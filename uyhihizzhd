@@ -250,7 +250,7 @@ def mu3():
       return ("ok") 
 def downmu3():
     filename = Path('memu3.png')
-    url = 'https://www.mediafire.com/view/7ycpmw3uz0n3i4b/memu3.PNG/file'
+    url = 'https://www.mediafire.com/file_premium/7ycpmw3uz0n3i4b/memu3.PNG/file'
     response = requests.get(url)
     filename.write_bytes(response.content)
 
