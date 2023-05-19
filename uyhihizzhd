@@ -228,6 +228,19 @@ def downdjscune():
     response = requests.get(url)
     filename.write_bytes(response.content)
 
+def rbl1():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'rblx1.png'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok") 
+def downrblx1():
+    filename = Path('rblx1.png')
+    url = 'https://www.mediafire.com/file_premium/vcst6t8dl19ier4/rblx1.PNG/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
+    
 if not djscune == "ok":
    downdjscune()
 if not jonfa == "ok":
@@ -240,6 +253,8 @@ if not telefa == "ok":
    downtelefa()
 if not stuc == "ok":
    downstuc()
+if not rbl1 == "ok":
+   downrblx1()   
                                        
 while True:
   sleep(3)
@@ -258,6 +273,7 @@ while True:
   menu1 = pyautogui.locateCenterOnScreen("menu1.png")
   jonfal =pyautogui.locateCenterOnScreen("jonfal.png")
   djscunu = pyautogui.locateCenterOnScreen("djscunu.png")
+  rb1 = pyautogui.locateCenterOnScreen("rblx1.png")
   if ok:
     print ("FOUND OK")
     # kill Roblox
@@ -343,7 +359,7 @@ while True:
     # open Fluxus
     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
     print ("Done")
-  if roblox:
+  if roblox or rb1:
     print ("FOUND ROBLOX")
     # open set size
     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
