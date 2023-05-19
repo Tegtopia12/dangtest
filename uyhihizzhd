@@ -371,6 +371,7 @@ while True:
     print ("FOUND JECTED")
     # kill Fluxus
     subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+    os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
     time.sleep(1)
     # open Fluxus
     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
@@ -393,11 +394,13 @@ while True:
   if menu:
     print ("FOUND MENU")
     # open set size
+    os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
     print ("Done")
   if menu1:
     print ("FOUND MENU1")
     # open set size
+    os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
     print ("Done")
   if jonfal:
@@ -412,4 +415,5 @@ while True:
     print ("Done")
   if memu3:
     print ("FOUND MEMU3")
+    os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
