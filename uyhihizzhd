@@ -393,8 +393,13 @@ while True:
     # open Fluxus
     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
     print ("Done")
-  if roblox or rb1:
+  if roblox:
     print ("FOUND ROBLOX")
+    # open set size
+    os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
+    print ("Done")
+  if rb1:
+    print ("FOUND rb1")
     # open set size
     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
     print ("Done")
