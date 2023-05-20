@@ -1,0 +1,17 @@
+import requests
+import os
+import time
+import pyautogui
+import zipfile
+from time import sleep
+import subprocess
+import requests
+import discord_webhook
+import json
+from pathlib import Path
+from zipfile import ZipFile
+
+
+while True:
+    sleep(7000)
+    subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
