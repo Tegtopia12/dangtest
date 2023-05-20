@@ -284,7 +284,7 @@ if not rbl1 == "ok":
    downrblx1()   
 if not mu3 == "ok":
    downmu3()
-if stu2() == "ok":
+if not stu2() == "ok":
    downstu2()
                                        
 while True:
