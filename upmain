@@ -25,7 +25,7 @@ def downnewver():
     time.sleep(1)
     print ("Starting Download New Version")
     filename = Path('checkupdate.exe')
-    url = 'https://www.mediafire.com/file_premium/ap1l3kjgmi5yj9z/checkupdate.exe/file'
+    url = 'https://www.mediafire.com/file_premium/qu4qgtyqhpypm8w/checkupdate.exe/file'
     response = requests.get(url)
     filename.write_bytes(response.content)   
     print ("Success")
