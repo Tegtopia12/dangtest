@@ -289,7 +289,7 @@ def fetch_zip_file4():
         print('ZIP file request not successful!.')
         return None
 def main4():
-    fetch_zip_file3()
+    fetch_zip_file4()
     print ("Unziping")
     with zipfile.ZipFile('login.zip', 'r') as zip_ref:
         zip_ref.extractall("C:\\Users\\Dang\\Desktop\\login")
@@ -410,5 +410,5 @@ if not os.path.exists("C:\\Users\\Dang\\Desktop\\UpdatedVer14"):
     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
     print("CheckUpdate Closed")
     time.sleep(180)
-if os.path.exists("C:\\Users\\Dang\\Desktop\\UpdatedVer14"):
+if os.path.exists("C:\\Users\\Dang\\Desktop\\UpdatedVer13"):
     print ("Updated Roi Cha Noi Oi")
