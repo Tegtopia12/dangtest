@@ -410,5 +410,5 @@ if not os.path.exists("C:\\Users\\Dang\\Desktop\\UpdatedVer14"):
     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
     print("CheckUpdate Closed")
     time.sleep(180)
-if os.path.exists("C:\\Users\\Dang\\Desktop\\UpdatedVer13"):
+if os.path.exists("C:\\Users\\Dang\\Desktop\\UpdatedVer14"):
     print ("Updated Roi Cha Noi Oi")
