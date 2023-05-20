@@ -7,7 +7,6 @@ import os
 from pathlib import Path
 import discord_webhook
 import json
-import wget
 
 subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
 subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
