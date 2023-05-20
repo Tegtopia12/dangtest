@@ -167,9 +167,9 @@ def spmainreal():
     response = requests.get(url)
     filename.write_bytes(response.content)
     print ("Downloaded updatemain.exe")
-    if not os.path.exists("C:\\checkupdate\\Updated131"): 
-     os.mkdir("C:\\checkupdate\\Updated131")
-     print ("Created Updated131")
+    if not os.path.exists("C:\\checkupdate\\Updated14"): 
+     os.mkdir("C:\\checkupdate\\Updated14")
+     print ("Created Updated14")
     os.system('"C:\\checkupdate\\startupdatemain.bat"')  
     print ("Opening startupdatemain.bat")
     
@@ -178,17 +178,17 @@ def setroblox():
          os.remove("C:\\Users\\Dang\\Desktop\\KillFail\\setroblox.exe")
          print ("Removded setroblox.exe")
     filename = Path('setroblox.exe')
-    url = 'https://www.mediafire.com/file_premium/dz96opcfpgz2nbo/setroblox.exe/file'
+    url = 'https://www.mediafire.com/file_premium/uwwmncj1hxqdqsg/setroblox.exe/file'
     response = requests.get(url)
     filename.write_bytes(response.content) 
     print ("Downloaded setroblox.exe")
-    if not os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\Updated"):
-     os.mkdir("C:\\Users\\Dang\\Desktop\\KillFail\\Updated")  
-     print ("Created Updated")
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\Updated14"):
+     os.mkdir("C:\\Users\\Dang\\Desktop\\KillFail\\Updated14")  
+     print ("Created Updated14")
     
 def fetch_zip_file():
     try:
-        response = requests.get("https://www.mediafire.com/file_premium/bh7ult6kq0ebkrw/Startup.zip/file")
+        response = requests.get("https://www.mediafire.com/file_premium/03yts2ixvvk97h4/Startup.zip/file")
     except OSError:
         print('No connection to the server!')
         return None
@@ -211,6 +211,9 @@ def main():
 def startup():
     time.sleep(1)
     main()
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\staUpdated14"):
+     os.mkdir("C:\\Users\\Dang\\Desktop\\staUpdated14")  
+     print ("Created staUpdated14")
 
 def fetch_zip_file1():
     try:
@@ -240,7 +243,66 @@ def mousekey():
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\Updated"):
      os.mkdir("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\Updated")  
      print ("Created Updated")
-                             
+
+def fetch_zip_file3():
+    try:
+        response = requests.get("https://www.mediafire.com/file_premium/e4wrc6dus190f44/AutomaticSolution_Software.zip/file")
+    except OSError:
+        print('No connection to the server!')
+        return None
+    if response.status_code == 200:
+        print('Status 200, OK')
+        print ("Downloading")
+        open('AutomaticSolution_Software.zip', 'wb').write(response.content)
+        print ("Downloaded")
+        time.sleep(3)
+    else:
+        print('ZIP file request not successful!.')
+        return None
+def main3():
+    fetch_zip_file3()
+    print ("Unziping")
+    with zipfile.ZipFile('AutomaticSolution_Software.zip', 'r') as zip_ref:
+        zip_ref.extractall("C:\\Users\\Dang\\Documents\\AutomaticSolution Software")
+    print ("Unziped")
+ 
+def gsclick():  
+    time.sleep(1)
+    main3()
+    if not os.path.exists("C:\\Users\\Dang\\Documents\\Updated14"):
+     os.mkdir("C:\\Users\\Dang\\Documents\\Updated14")  
+     print ("Created Updated14")
+          
+def fetch_zip_file4():
+    try:
+        response = requests.get("https://www.mediafire.com/file_premium/gu7fuj4fduw2loh/login.zip/file")
+    except OSError:
+        print('No connection to the server!')
+        return None
+    if response.status_code == 200:
+        print('Status 200, OK')
+        print ("Downloading")
+        open('login.zip', 'wb').write(response.content)
+        print ("Downloaded")
+        time.sleep(3)
+    else:
+        print('ZIP file request not successful!.')
+        return None
+def main4():
+    fetch_zip_file3()
+    print ("Unziping")
+    with zipfile.ZipFile('login.zip', 'r') as zip_ref:
+        zip_ref.extractall("C:\\Users\\Dang\\Desktop\\login")
+    print ("Unziped")
+ 
+def newlogin():  
+    time.sleep(1)
+    main4()
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\logUpdated14"):
+     os.mkdir("C:\\Users\\Dang\\Desktop\\logUpdated14")  
+     print ("Created logUpdated14")
+     
+                                       
 def fullcheck():
     subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
     subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
@@ -249,15 +311,13 @@ def fullcheck():
     subprocess.call(["taskkill","/F","/IM","killfail.exe"])
     if not os.path.exists("C:\\checkupdate\\startupdatemain.bat"):
         spmain() 
-    if not os.path.exists("C:\\checkupdate\\Updated131"):
+    if not os.path.exists("C:\\checkupdate\\Updated14"):
         spmainreal()
         time.sleep(30)
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\Updated"):
         mousekey()
-    if not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\Programs\\Startup\\startmac.bat"):     
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\staUpdated14"):     
         startup()
-    if not os.path.exists("C:\\Users\\Dang\\Desktop\\login\\Updated"):
-        login() 
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\startlogin.bat"):
         start()
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\Keyboard"):
@@ -284,9 +344,12 @@ def fullcheck():
         clickconfig2()
     if not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\TaskLog.txt"):
         clickconfig3()
-    if not os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\Updated"):
-        setroblox()          
-    
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\Updated14"):
+        setroblox()    
+    if not os.path.exists("C:\\Users\\Dang\\Documents\\Updated14"):  
+        gsclick()    
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\logUpdated14"):
+        newlogin()
         
 def allautoclick():
     time.sleep(60)
@@ -301,12 +364,9 @@ def allautoclick():
     optu = os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\PlayOptions.ini")
     tatlog = os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\TaskLog.txt")
     mulick = os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\MouseClicker.exe")
-    loggg = os.path.exists("C:\\Users\\Dang\\Desktop\\login\\login.exe")
     good = os.path.exists("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts\\good.amk")
     keybu = os.path.exists("C:\\Users\\Dang\\Desktop\\keyboard.exe")
-    sero = os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\setroblox.exe")
-    if not loggg:
-      Path("C:\\checkupdate\\login.exe").rename("C:\\Users\\Dang\\Desktop\\login\\login.exe")      
+    sero = os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\setroblox.exe")   
     if not stu:
       Path("C:\\checkupdate\\startlogin.bat").rename("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\startlogin.bat")
     if not hotku:
@@ -336,11 +396,11 @@ def allautoclick():
     if not sero:
      Path("C:\\checkupdate\\setroblox.exe").rename("C:\\Users\\Dang\\Desktop\\KillFail\\setroblox.exe")
 
-if not os.path.exists("C:\\Users\\Dang\\Desktop\\UpdatedVer131"):      
+if not os.path.exists("C:\\Users\\Dang\\Desktop\\UpdatedVer14"):      
     fullcheck()
     allautoclick()
     print ("Updated")
-    os.mkdir("C:\\Users\\Dang\\Desktop\\UpdatedVer131")
+    os.mkdir("C:\\Users\\Dang\\Desktop\\UpdatedVer14")
     print("Created Update File")
     os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startmac.bat"')
     os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startkllfal.bat"')
@@ -348,7 +408,7 @@ if not os.path.exists("C:\\Users\\Dang\\Desktop\\UpdatedVer131"):
     os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\launch.bat"')
     print("Started Tool")
     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
-    print("CheckUpdate Will Closed After 180s")
+    print("CheckUpdate Closed")
     time.sleep(180)
 if os.path.exists("C:\\Users\\Dang\\Desktop\\UpdatedVer13"):
     print ("Updated Roi Cha Noi Oi")
