@@ -96,8 +96,8 @@ def clickconfig1():
     if os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\amk.ini"):
         os.remove("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\amk.ini")
         print ("Removed amk.ini")
-        os.mkdir("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\Updated1")
-        print ("Created Updated1")
+        os.mkdir("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\Updated3")
+        print ("Created Updated3")
     filename = Path('amk.ini')
     url = 'https://www.mediafire.com/file_premium/ur51cqium32w5lu/amk.ini/file'
     response = requests.get(url)
@@ -107,8 +107,8 @@ def clickconfig2():
     if os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\PlayOptions.ini"):
         os.remove("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\PlayOptions.ini")
         print ("PlayOptions.ini")
-        os.mkdir("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\Updated2") 
-        print ("Created Updated2")
+        os.mkdir("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\Updated4") 
+        print ("Created Updated4")
     filename = Path('PlayOptions.ini')
     url = 'https://www.mediafire.com/file_premium/e4k4xo70zu98qfj/PlayOptions.ini/file'
     response = requests.get(url)
@@ -294,7 +294,7 @@ def main4():
     with zipfile.ZipFile('login.zip', 'r') as zip_ref:
         zip_ref.extractall("C:\\Users\\Dang\\Desktop\\login")
     print ("Unziped")
- 
+
 def newlogin():  
     time.sleep(1)
     main4()
@@ -338,9 +338,9 @@ def fullcheck():
         script()
     if not os.path.exists("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts\\Updated"):
         script2()    
-    if not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\Updated1"):
+    if not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\Updated3"):
         clickconfig1()
-    if not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\Updated2"):
+    if not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\Updated4"):
         clickconfig2()
     if not os.path.exists("C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\TaskLog.txt"):
         clickconfig3()
