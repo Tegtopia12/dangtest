@@ -490,8 +490,8 @@ while True:
     print ("FOUND JE2")
     # kill Fluxus
     subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
-    os.system('"C:\Users\Dang\Desktop\KillFail\startsetsize.bat"')
+    os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
     time.sleep(1)
     # open Fluxus
-    os.system('"C:\Users\Dang\Desktop\KillFail\startfluxus.bat"')
+    os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
     print ("Done")
