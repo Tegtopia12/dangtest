@@ -267,7 +267,33 @@ def downstu2():
     response = requests.get(url)
     filename.write_bytes(response.content)
     
-            
+def jea1():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'jeact1.png'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok") 
+def downjea1():
+    filename = Path('jeact1.png')
+    url = 'https://www.mediafire.com/file_premium/gtovmofpthd9yvk/jeact1.PNG/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
+    
+def jea2():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'jeact2.png'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok") 
+def downjea2():
+    filename = Path('jeact2.png')
+    url = 'https://www.mediafire.com/file_premium/xmvlvgs3uf970i7/jeact2.PNG/file'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
+    
+                
 if not djscune == "ok":
    downdjscune()
 if not jonfa == "ok":
@@ -286,6 +312,11 @@ if not mu3 == "ok":
    downmu3()
 if not stu2() == "ok":
    downstu2()
+if not jea1() == "ok":
+   downjea1()
+if not jea2() == "ok":
+   downjea2() 
+ 
                                        
 while True:
   sleep(3)
@@ -308,6 +339,8 @@ while True:
   rb1 = pyautogui.locateCenterOnScreen("rblx1.png")
   memu3 = pyautogui.locateCenterOnScreen("memu3.png")
   stiu2 = pyautogui.locateCenterOnScreen("stuck2.png")
+  je1 = pyautogui.locateCenterOnScreen("jeact1.png")
+  je2 = pyautogui.locateCenterOnScreen("jeact2.png")
   if ok:
     print ("FOUND OK")
     # kill Roblox
@@ -444,3 +477,21 @@ while True:
     print ("STIU 2")
     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+  if je1:
+    print ("FOUND JE1")
+    # kill Fluxus
+    subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+    os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
+    time.sleep(1)
+    # open Fluxus
+    os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
+    print ("Done")
+  if je2:
+    print ("FOUND JE2")
+    # kill Fluxus
+    subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+    os.system('"C:\Users\Dang\Desktop\KillFail\startsetsize.bat"')
+    time.sleep(1)
+    # open Fluxus
+    os.system('"C:\Users\Dang\Desktop\KillFail\startfluxus.bat"')
+    print ("Done")
