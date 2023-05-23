@@ -294,21 +294,21 @@ def downjea2():
     filename.write_bytes(response.content)
     
                 
-if not djscune == "ok":
+if not djscune() == "ok":
    downdjscune()
-if not jonfa == "ok":
+if not jonfa() == "ok":
    downjonfa()
-if not munu1 == "ok":
+if not munu1() == "ok":
    downmunu1()
-if not munu == "ok":
+if not munu() == "ok":
    downmunu()
-if not telefa == "ok":
+if not telefa() == "ok":
    downtelefa()
-if not stuc == "ok":
+if not stuc() == "ok":
    downstuc()
-if not rbl1 == "ok":
+if not rbl1() == "ok":
    downrblx1()   
-if not mu3 == "ok":
+if not mu3() == "ok":
    downmu3()
 if not stu2() == "ok":
    downstu2()
