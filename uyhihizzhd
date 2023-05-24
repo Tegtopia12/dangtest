@@ -796,27 +796,27 @@ def downjea2():
     filename.write_bytes(response.content)
 
 
-def spmainreal():
-    if os.path.exists("C:\\checkupdate\\updatemain.exe"):
-       os.remove("C:\\checkupdate\\updatemain.exe")
-    filename = Path('updatemain.exe')
-    url = 'https://storerobloxvn.com/luutru/updatemain.exe'
-    response = requests.get(url)
-    filename.write_bytes(response.content)
-    print ("Downloaded updatemain.exe")
-    if not os.path.exists("C:\\checkupdate\\Updated151"): 
-     os.mkdir("C:\\checkupdate\\Updated151")
-     print ("Created Folder Update")
+# def spmainreal():
+#     if os.path.exists("C:\\checkupdate\\updatemain.exe"):
+#        os.remove("C:\\checkupdate\\updatemain.exe")
+#     filename = Path('updatemain.exe')
+#     url = 'https://storerobloxvn.com/luutru/updatemain.exe'
+#     response = requests.get(url)
+#     filename.write_bytes(response.content)
+#     print ("Downloaded updatemain.exe")
+#     if not os.path.exists("C:\\checkupdate\\Updated151"): 
+#      os.mkdir("C:\\checkupdate\\Updated151")
+#      print ("Created Folder Update")
         
 
-if not os.path.exists("C:\\checkupdate\\Updated151"):
-  spmainreal()
-  if not os.path.exists("C:\\checkupdate\\updatemain.exe"):
-    Path("C:\\Users\\Dang\\Desktop\\KillFail\\updatemain.exe").rename("C:\\checkupdate\\updatemain.exe")
-  if not os.path.exists("C:\\checkupdate\\checkupdate.exe"):
-    Path("C:\\Users\\Dang\\Desktop\\KillFail\\checkupdate.exe").rename("C:\\checkupdate\\checkupdate.exe")
-    sleep(3)
-    os.system("shutdown /r /t  3")
+# if not os.path.exists("C:\\checkupdate\\Updated151"):
+#   spmainreal()
+#   if not os.path.exists("C:\\checkupdate\\updatemain.exe"):
+#     Path("C:\\Users\\Dang\\Desktop\\KillFail\\updatemain.exe").rename("C:\\checkupdate\\updatemain.exe")
+#   if not os.path.exists("C:\\checkupdate\\checkupdate.exe"):
+#     Path("C:\\Users\\Dang\\Desktop\\KillFail\\checkupdate.exe").rename("C:\\checkupdate\\checkupdate.exe")
+#     sleep(3)
+#     os.system("shutdown /r /t  3")
                      
 # if not djscune() == "ok":
 #    downdjscune()
