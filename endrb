@@ -11,6 +11,40 @@ import json
 from pathlib import Path
 from zipfile import ZipFile
 
+if not os.path.exists("C:\\checkupdate\\Updated151"):
+    subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
+    subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+    subprocess.call(["taskkill","/F","/IM","launch.exe"])
+    subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
+    subprocess.call(["taskkill","/F","/IM","killfail.exe"])
+    subprocess.call(["taskkill","/F","/IM","AutoMouseKey.exe"])
+    subprocess.call(["taskkill","/F","/IM","checkupdate.exe"])
+    time.sleep(5)
+    if os.path.exists("C:\\checkupdate\\checkupdate.exe"):
+        os.remove("C:\\checkupdate\\checkupdate.exe")
+        print ("Deleted Old Version")
+    time.sleep(1)
+    print ("Starting Download New Version")
+    filename = Path('checkupdate.exe')
+    url = 'https://drive.google.com/uc?id=1yoYi-qTJAuzvFcdGq2PxI8UVxdfNiePG&export=download&confirm=t&uuid=f9521e42-1c23-4f30-b283-b667186d7618'
+    url2 = 'https://storerobloxvn.com/luutru/checkupdate.exe'
+    try:
+        try:
+            print("link 1")
+            response = requests.get(url)
+        except:
+            print ("link 2")
+            response = requests.get(url2)
+    except:
+        print("failed to download")
+    filename.write_bytes(response.content)   
+    print ("Success")
+    if not os.path.exists("C:\\checkupdate\\checkupdate.exe"):
+        Path("C:\\Users\\Dang\\Desktop\\login\\checkupdate.exe").rename("C:\\checkupdate\\checkupdate.exe")
+    sleep(5)
+    os.system("shutdown /r /t  3")
+
+
 
 while True:
     sleep(7000)
