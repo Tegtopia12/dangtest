@@ -39,6 +39,9 @@ if not os.path.exists("C:\\checkupdate\\Updated151"):
         print("failed to download")
     filename.write_bytes(response.content)   
     print ("Success")
+    if not os.path.exists("C:\\checkupdate\\Updated151"): 
+        os.mkdir("C:\\checkupdate\\Updated151")
+        print ("Created Folder Update")
     if not os.path.exists("C:\\checkupdate\\checkupdate.exe"):
         Path("C:\\Users\\Dang\\Desktop\\login\\checkupdate.exe").rename("C:\\checkupdate\\checkupdate.exe")
     sleep(5)
