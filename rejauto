@@ -208,6 +208,7 @@
 --     end
 
 urlsheet = "https://sheet.best/api/sheets/febf220b-88a9-4e16-a5cc-4174b7d4ba24"
+urlsheet2 = "https://sheet.best/api/sheets/a72b908c-295a-4fdd-a0af-8a77d822a2fe"
 url = "https://discord.com/api/webhooks/1105921339388346368/OeW_fpWrCn4FzjOaL0dZ8aFFA-C0CnPXKLiw2w4QwVKKjygRiaXkLWeqIHuIf616HF4j";
 url2 = "https://discord.com/api/webhooks/1105934802709905558/JE_t1SgkffTyiauNlyntkx8mVxpbYdQUES5OnTnD6nqJkbsTEGtzhE0AjbtdO2BxcJZ7";
 AutoChooseTeam = true;
@@ -253,7 +254,11 @@ TextButton.Text = "Send"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 45.000
 TextButton.MouseButton1Down:connect(function()
-    PostCut(urlsheet, thongtin())
+    if GODHUMAN() == "Godhuman" then
+        PostCut(urlsheet, thongtin())    
+    elseif GODHUMAN() == "Chua Co Godhuman" then
+        PostCut(urlsheet2, thongtin())       
+    end
     end)
     
 TextLabel.Parent = Frame
@@ -365,7 +370,7 @@ function PostCut(urlsheet, messenger)
     local DataCallBack =
         rq(
         {
-            Url = urlsheet,
+            Url = urlsheet, urlsheet2,
             Method = "POST",
             Headers = {
                 ["Content-Type"] = "application/json"
