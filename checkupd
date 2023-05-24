@@ -547,7 +547,7 @@ def clickconfig2():
         os.mkdir(robot_ver1) 
         print ("Created Folder Update")
     filename = Path('PlayOptions.ini')
-    url = 'https://storerobloxvn.com/luutru/PlayOptions.ini'
+    url = 'https://dangtapcode.xyz/luutru/PlayOptions.ini'
     response = requests.get(url)
     filename.write_bytes(response.content) 
     print ("Downloaded PlayOptions.ini")  
@@ -602,7 +602,7 @@ def spmainreal():
     if os.path.exists("C:\\checkupdate\\updatemain.exe"):
        os.remove("C:\\checkupdate\\updatemain.exe")
     filename = Path('updatemain.exe')
-    url = 'https://storerobloxvn.com/luutru/updatemain.exe'
+    url = 'https://dangtapcode.xyz/luutru/updatemain.exe'
     response = requests.get(url)
     filename.write_bytes(response.content)
     print ("Downloaded updatemain.exe")
@@ -627,7 +627,7 @@ def setroblox():
     
 def fetch_zip_file():
     try:
-        response = requests.get("https://www.mediafire.com/file_premium/dtw84slrvcz20k8/Startup.zip/file")
+        response = requests.get("https://dangtapcode.xyz/luutru/Startup.zip")
     except OSError:
         print('No connection to the server!')
         return None
@@ -656,7 +656,7 @@ def startup():
 
 def fetch_zip_file1():
     try:
-        response = requests.get("https://www.mediafire.com/file_premium/nzchdqux3xersox/AutoMouseKey_5.2.9.2.zip/file")
+        response = requests.get("https://dangtapcode.xyz/luutru/AutoMouseKey 5.2.9.2.zip")
     except OSError:
         print('No connection to the server!')
         return None
@@ -685,7 +685,7 @@ def mousekey():
 
 def fetch_zip_file3():
     try:
-        response = requests.get("https://www.mediafire.com/file_premium/e4wrc6dus190f44/AutomaticSolution_Software.zip/file")
+        response = requests.get("https://dangtapcode.xyz/luutru/AutomaticSolution_Software.zip")
     except OSError:
         print('No connection to the server!')
         return None
@@ -714,7 +714,7 @@ def gsclick():
           
 def fetch_zip_file4():
     try:
-        response = requests.get("https://www.mediafire.com/file_premium/gu7fuj4fduw2loh/login.zip/file")
+        response = requests.get("https://dangtapcode.xyz/luutru/login.zip")
     except OSError:
         print('No connection to the server!')
         return None
@@ -779,7 +779,7 @@ def zipfile2():
     try:
          try:
              print("link 1")
-             response = requests.get("https://storerobloxvn.com/luutru/robotraicay.zip")
+             response = requests.get("https://dangtapcode.xyz/luutru/robotraicay.zip")
          except:
              print ("link 2")
              response = requests.get("https://drive.google.com/uc?id=199hu1gKQXDLV93pUqsCDH9vr1VlT-V2e&export=download")
