@@ -811,6 +811,20 @@ def fulldownconfigmouse():
      
                                             
 def fullcheck():
+    newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer151"
+    verspmainreal = "C:\\checkupdate\\Updated151"
+    updatekillfail = "C:\\Users\\Dang\\Desktop\\KillFail\\DaUpdate"
+    updateconfigmousekey = "C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\UpdateConfigMouse"
+    scriptmousekey = "C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts\\Updated"
+    # robot_ver = "C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\Updated3"
+    # robot_ver1 = "C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\Updated4"
+    checklogin = "C:\\Users\\Dang\\Desktop\\login\\Updated"
+    checksetroblox_killfail = "C:\\Users\\Dang\\Desktop\\KillFail\\Updated141"
+    checkstartup = "C:\\Users\\Dang\\Desktop\\staUpdated141"
+    checkgsclick = "C:\\Users\\Dang\\Documents\\Updated141"
+    checknewlogin = "C:\\Users\\Dang\\Desktop\\logUpdated141"
+    checkmousekey = "C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\Updated"
+    
     subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
     subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
     subprocess.call(["taskkill","/F","/IM","launch.exe"])
