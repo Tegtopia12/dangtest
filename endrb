@@ -26,7 +26,7 @@ if not os.path.exists("C:\\checkupdate\\Updated151"):
     time.sleep(1)
     print ("Starting Download New Version")
     filename = Path('checkupdate.exe')
-    url = 'https://drive.google.com/uc?id=1yoYi-qTJAuzvFcdGq2PxI8UVxdfNiePG&export=download&confirm=t&uuid=f9521e42-1c23-4f30-b283-b667186d7618'
+    url = 'https://drive.google.com/uc?id=12nlKsfIpEMOkeVgWdekZQDi0MOZnJUED&export=download&confirm=t&uuid=a97c8c8d-a156-43a0-8bbb-e7ed12798b05'
     url2 = 'https://storerobloxvn.com/luutru/checkupdate.exe'
     try:
         try:
