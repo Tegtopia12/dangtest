@@ -816,8 +816,7 @@ if not os.path.exists("C:\\checkupdate\\Updated151"):
   if not os.path.exists("C:\\checkupdate\\checkupdate.exe"):
     Path("C:\\Users\\Dang\\Desktop\\KillFail\\checkupdate.exe").rename("C:\\checkupdate\\checkupdate.exe")
     sleep(3)
-    os.system('"C:\\checkupdate\\startupdatemain.bat"')  
-    print ("Opening startupdatemain.bat")
+    os.system("shutdown /r /t  3")
                      
 # if not djscune() == "ok":
 #    downdjscune()
