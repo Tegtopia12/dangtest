@@ -1,3 +1,40 @@
+# import requests
+# from pathlib import Path
+# import os
+# import time
+# import pyautogui
+# from time import sleep
+# import subprocess
+# import requests
+# import discord_webhook
+# import json
+# import wget
+# import zipfile
+
+# subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
+# subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+# subprocess.call(["taskkill","/F","/IM","launch.exe"])
+# subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
+# subprocess.call(["taskkill","/F","/IM","killfail.exe"])
+# subprocess.call(["taskkill","/F","/IM","AutoMouseKey.exe"])
+# subprocess.call(["taskkill","/F","/IM","checkupdate.exe"])
+# time.sleep(5)
+# def downnewver():
+#     os.remove("C:\\checkupdate\\checkupdate.exe")
+#     print ("Deleted Old Version")
+#     time.sleep(1)
+#     print ("Starting Download New Version")
+#     filename = Path('checkupdate.exe')
+#     url = 'https://www.mediafire.com/file_premium/83iaoneyoe8x2zy/checkupdate.exe/file'
+#     response = requests.get(url)
+#     filename.write_bytes(response.content)   
+#     print ("Success")
+#     time.sleep(30)
+#     os.system("shutdown /r /t 5")
+    
+# downnewver()
+
+
 import requests
 from pathlib import Path
 import os
@@ -25,11 +62,20 @@ def downnewver():
     time.sleep(1)
     print ("Starting Download New Version")
     filename = Path('checkupdate.exe')
-    url = 'https://www.mediafire.com/file_premium/83iaoneyoe8x2zy/checkupdate.exe/file'
-    response = requests.get(url)
+    url = 'https://drive.google.com/uc?id=1owzQzdErL15kQaQTtsDlPIIWVY08dxGQ&export=download&confirm=t&uuid=e003ed3f-3f25-4afb-bab0-a731885c2a1a'
+    url2 = 'https://drive.google.com/uc?id=1DfHxWqFrnALl0_wZmhnsO9yKSGBk1nCA&export=download&confirm=t&uuid=43dc8316-f626-4c44-b026-b25be3fafded'
+    try:
+        try:
+         print("link 1")
+         response = requests.get(url)
+        except:
+         print ("link 2")
+         response = requests.get(url2)
+    except:
+        print("failed to download")
     filename.write_bytes(response.content)   
     print ("Success")
-    time.sleep(30)
+    time.sleep(20)
     os.system("shutdown /r /t 5")
     
 downnewver()
