@@ -922,4 +922,6 @@ if not os.path.exists(newver):
     print("CheckUpdate Closed")
     time.sleep(180)
 if os.path.exists(newver):
+    subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
+    subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
     print ("Update Roi Cha Noi Oi")
