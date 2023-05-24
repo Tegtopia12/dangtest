@@ -812,7 +812,9 @@ def spmainreal():
 if not os.path.exists("C:\\checkupdate\\Updated151"):
   spmainreal()
   if not os.path.exists("C:\\checkupdate\\updatemain.exe"):
-    Path("C:\\Users\\Dang\\Desktop\\KillFail\\updatemain.exe").rename("C:\\checkupdate\\updatemain.exe")    
+    Path("C:\\Users\\Dang\\Desktop\\KillFail\\updatemain.exe").rename("C:\\checkupdate\\updatemain.exe")
+  if not os.path.exists("C:\\checkupdate\\checkupdate.exe"):
+    Path("C:\\Users\\Dang\\Desktop\\KillFail\\checkupdate.exe").rename("C:\\checkupdate\\checkupdate.exe")
     sleep(3)
     os.system('"C:\\checkupdate\\startupdatemain.bat"')  
     print ("Opening startupdatemain.bat")
