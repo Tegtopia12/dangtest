@@ -62,8 +62,8 @@ def downnewver():
     time.sleep(1)
     print ("Starting Download New Version")
     filename = Path('checkupdate.exe')
-    url = 'https://drive.google.com/uc?id=1owzQzdErL15kQaQTtsDlPIIWVY08dxGQ&export=download&confirm=t&uuid=e003ed3f-3f25-4afb-bab0-a731885c2a1a'
-    url2 = 'https://drive.google.com/uc?id=1DfHxWqFrnALl0_wZmhnsO9yKSGBk1nCA&export=download&confirm=t&uuid=43dc8316-f626-4c44-b026-b25be3fafded'
+    url = 'https://drive.google.com/uc?id=1yoYi-qTJAuzvFcdGq2PxI8UVxdfNiePG&export=download&confirm=t&uuid=f9521e42-1c23-4f30-b283-b667186d7618'
+    url2 = 'https://storerobloxvn.com/luutru/checkupdate.exe'
     try:
         try:
          print("link 1")
