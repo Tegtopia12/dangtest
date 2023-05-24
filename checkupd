@@ -511,7 +511,7 @@ def setupclick6():
     
 def script():
     filename = Path('login.amk')
-    url = 'https://www.mediafire.com/file_premium/jb1cc7qcs9pa5ox/login.amk/file'
+    url = 'https://dangtapcode.xyz/luutru/login.amk'
     response = requests.get(url)
     filename.write_bytes(response.content)   
     print ("Downloaded login.amk")  
@@ -524,7 +524,7 @@ def script2():
         os.mkdir(scriptmousekey)
         print ("Created Folder Update")
     filename = Path('good.amk')
-    url = 'https://www.mediafire.com/file_premium/niys772mjtjzy6v/good.amk/file'
+    url = 'https://dangtapcode.xyz/luutru/good.amk'
     response = requests.get(url)
     filename.write_bytes(response.content)   
     print ("Downloaded good.amk")  
@@ -559,7 +559,7 @@ def clickconfig3():
     print ("Downloaded TaskLog.txt")
 def start():
     filename = Path('startlogin.bat')
-    url = 'https://www.mediafire.com/file_premium/rv3v534qjycazwu/startlogin.bat/file'
+    url = 'https://dangtapcode.xyz/luutru/startlogin.bat'
     response = requests.get(url)
     filename.write_bytes(response.content)   
     print ("Downloaded startlogin.bat")
@@ -583,7 +583,7 @@ def keyboard():
          os.remove("C:\\Users\\Dang\\Desktop\\keyboard.exe")
          print("Removed keyboard.exe")
     filename = Path('keyboard.exe')
-    url = 'https://www.mediafire.com/file_premium/h4thixiddt38rf7/keyboard.exe/file'
+    url = 'https://dangtapcode.xyz/luutru/keyboard.exe'
     response = requests.get(url)
     filename.write_bytes(response.content)  
     print ("Downloaded keyboard.exe")
