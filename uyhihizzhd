@@ -1,3 +1,505 @@
+# import pyautogui
+# import time
+# from time import sleep
+# import os
+# import subprocess
+# from pathlib import Path
+# import requests
+
+
+# def ject2trieu():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'jected.png'
+#   jected1 = path + file
+#   jected2 = Path(jected1)
+#   if jected2.is_file():
+#       return ("ok")
+
+# def downject2trieu():
+#     img = wget.download("https://www.mediafire.com/file_premium/bjoggb1m670gbo0/startkllfal.bat/file")
+#     print('Image Successfully Downloaded: ', img)
+#     time.sleep(3)
+#     Path("C:\\Users\\Dang\\Desktop\\jected.png").rename("C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startkllfal.bat")
+#     print ("Moved To KillFail")
+    
+# def recc():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'reconnect.png'
+#   rec = path + file
+#   rec1 = Path(rec)
+#   if rec1.is_file():
+#       return ("ok")
+
+# def dis():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'disconnected.png'
+#   dis = path + file
+#   dis1 = Path(dis)
+#   if dis1.is_file():
+#       return ("ok")
+
+# def okne():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'ok.png'
+#   okne = path + file
+#   okne1 = Path(okne)
+#   if okne.is_file():
+#       return ("ok")
+     
+# def okkhaha():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'okk.png'
+#   okbe = path + file
+#   okbe1 = Path(okbe)
+#   if okbe1.is_file():
+#       return ("ok")
+
+# def getku():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'getkey.png'
+#   getk = path + file
+#   getk1 = Path(getk)
+#   if getk1.is_file():
+#       return ("ok")
+    
+# def magu():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'maru.png'
+#   maguz = path + file
+#   maguz1 = Path(maguz)
+#   if maguz1.is_file():
+#       return ("ok")
+
+# def roblux():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'roblox.png'
+#   rulux = path + file
+#   rulux1 = Path(rulux)
+#   if rulux1.is_file():
+#       return ("ok")
+
+# def jet1trieu():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'inject.png'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok")
+
+# def startkillfail():
+#   path = 'C:\\Users\\Dang\\AppData\\Roaming\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\'
+#   file = 'startkllfal.bat'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok")
+
+# def dowstartkillfail():
+#     img = wget.download("https://www.mediafire.com/file_premium/bjoggb1m670gbo0/startkllfal.bat/file")
+#     print('Image Successfully Downloaded: ', img)
+#     time.sleep(3)
+#     Path("C:\\Users\\admin\\Desktop\\ONGTRUM\\startkllfal.bat").rename("C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startkllfal.bat")
+#     print ("Moved TO StartUp")
+    
+# def startfluxus():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'startfluxus.bat'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok")
+  
+# def startsetsize():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'startsetsize.bat'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok")
+  
+# def setsize():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'setroblox.exe'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok")
+  
+# def setsizecut():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'setroblox.exe - Shortcut'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok")
+  
+# def killfailcut():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'killfail.exe - Shortcut'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok")
+
+# def killfailreal():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = ''
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok")
+  
+# def stuc():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'stuck.png'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok")  
+# def downstuc():
+#     filename = Path('stuck.png')
+#     url = 'https://www.mediafire.com/file_premium/o868e6m8mi5fzrk/stuck.PNG/file'
+#     response = requests.get(url)
+#     filename.write_bytes(response.content)
+    
+# def telefa():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'telefal.png'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok") 
+# def downtelefa():
+#     filename = Path('telefal.png')
+#     url = 'https://www.mediafire.com/file_premium/pb8thm3nx95qngz/telefal.PNG/file'
+#     response = requests.get(url)
+#     filename.write_bytes(response.content)
+  
+# def munu():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'menu.png'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok")   
+# def downmunu():
+#     filename = Path('menu.png')
+#     url = 'https://www.mediafire.com/file_premium/wgkrsd37wk324mr/menu.PNG/file'
+#     response = requests.get(url)
+#     filename.write_bytes(response.content)
+
+  
+# def munu1():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'menu1.png'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok") 
+# def downmunu1():
+#     filename = Path('menu1.png')
+#     url = 'https://www.mediafire.com/file_premium/xxqjdrqmd94h94x/menu1.PNG/file'
+#     response = requests.get(url)
+#     filename.write_bytes(response.content)
+  
+# def jonfa():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'jonfal.png'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok")   
+# def downjonfa():
+#     filename = Path('jonfal.png')
+#     url = 'https://www.mediafire.com/file_premium/1s05g5v6q19lr2f/jonfal.PNG/file'
+#     response = requests.get(url)
+#     filename.write_bytes(response.content)
+  
+# def djscune():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'djscunu.png'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok") 
+# def downdjscune():
+#     filename = Path('djscunu.png')
+#     url = 'https://www.mediafire.com/file_premium/u0q1wm8eiyvxds3/djscunu.PNG/file'
+#     response = requests.get(url)
+#     filename.write_bytes(response.content)
+
+# def rbl1():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'rblx1.png'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok") 
+# def downrblx1():
+#     filename = Path('rblx1.png')
+#     url = 'https://www.mediafire.com/file_premium/vcst6t8dl19ier4/rblx1.PNG/file'
+#     response = requests.get(url)
+#     filename.write_bytes(response.content)
+
+# def mu3():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'memu3.png'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok") 
+# def downmu3():
+#     filename = Path('memu3.png')
+#     url = 'https://www.mediafire.com/file_premium/7ycpmw3uz0n3i4b/memu3.PNG/file'
+#     response = requests.get(url)
+#     filename.write_bytes(response.content)
+
+# def stu2():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'stuck2.png'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok") 
+# def downstu2():
+#     filename = Path('stuck2.png')
+#     url = 'https://www.mediafire.com/file_premium/zbed624a4e38ti8/stuck2.png/file'
+#     response = requests.get(url)
+#     filename.write_bytes(response.content)
+    
+# def jea1():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'jeact1.png'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok") 
+# def downjea1():
+#     filename = Path('jeact1.png')
+#     url = 'https://www.mediafire.com/file_premium/gtovmofpthd9yvk/jeact1.PNG/file'
+#     response = requests.get(url)
+#     filename.write_bytes(response.content)
+    
+# def jea2():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'jeact2.png'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok") 
+# def downjea2():
+#     filename = Path('jeact2.png')
+#     url = 'https://www.mediafire.com/file_premium/xmvlvgs3uf970i7/jeact2.PNG/file'
+#     response = requests.get(url)
+#     filename.write_bytes(response.content)
+    
+                
+# # if not djscune() == "ok":
+# #    downdjscune()
+# # if not jonfa() == "ok":
+# #    downjonfa()
+# # if not munu1() == "ok":
+# #    downmunu1()
+# # if not munu() == "ok":
+# #    downmunu()
+# # if not telefa() == "ok":
+# #    downtelefa()
+# # if not stuc() == "ok":
+# #    downstuc()
+# # if not rbl1() == "ok":
+# #    downrblx1()   
+# # if not mu3() == "ok":
+# #    downmu3()
+# # if not stu2() == "ok":
+# #    downstu2()
+# # if not jea1() == "ok":
+# #    downjea1()
+# # if not jea2() == "ok":
+# #    downjea2() 
+ 
+                                       
+# while True:
+#   sleep(3)
+#   os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
+#   reconnect = pyautogui.locateCenterOnScreen("reconnect.png")
+#   disconnected = pyautogui.locateCenterOnScreen("disconnected.png")
+#   inject = pyautogui.locateCenterOnScreen("inject.png")
+#   ok = pyautogui.locateCenterOnScreen("ok.png")
+#   okk = pyautogui.locateCenterOnScreen("okk.png")
+#   getkey = pyautogui.locateCenterOnScreen("getkey.png")
+#   maru = pyautogui.locateCenterOnScreen("maru.png")
+#   jected = pyautogui.locateCenterOnScreen("jected.png")
+#   roblox = pyautogui.locateCenterOnScreen("roblox.png")
+#   stuck = pyautogui.locateCenterOnScreen("stuck.png")
+#   telefal = pyautogui.locateCenterOnScreen("telefal.png")
+#   menu = pyautogui.locateCenterOnScreen("menu.png")
+#   menu1 = pyautogui.locateCenterOnScreen("menu1.png")
+#   jonfal =pyautogui.locateCenterOnScreen("jonfal.png")
+#   djscunu = pyautogui.locateCenterOnScreen("djscunu.png")
+#   rb1 = pyautogui.locateCenterOnScreen("rblx1.png")
+#   memu3 = pyautogui.locateCenterOnScreen("memu3.png")
+#   stiu2 = pyautogui.locateCenterOnScreen("stuck2.png")
+#   je1 = pyautogui.locateCenterOnScreen("jeact1.png")
+#   je2 = pyautogui.locateCenterOnScreen("jeact2.png")
+#   if ok:
+#     print ("FOUND OK")
+#     # kill Roblox
+#     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+#     # kill Fluxus
+#     subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+#     # kill Launch
+#     subprocess.call(["taskkill","/F","/IM","launch.exe"])
+#     # kill Macro Recorder
+#     subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
+#     print("success")
+#     time.sleep(6)
+#     # open Launch & Macro
+#     os.system('"C:\\Users\\Dang\\Downloads\\startlaunch.bat"')
+#     # open Fluxus
+#     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
+#     print ("Done")
+#   if okk:
+#     print ("FOUND OKK")
+#     # kill Roblox
+#     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+#     # kill Fluxus
+#     subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+#     # kill Launch
+#     subprocess.call(["taskkill","/F","/IM","launch.exe"])
+#     # kill Macro Recorder
+#     subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
+#     print("success kill")
+#     time.sleep(6)
+#     # open Launch & Macro
+#     os.system('"C:\\Users\\Dang\\Downloads\\startlaunch.bat"')
+#     # open Fluxus
+#     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
+#     print ("Done")
+#   if reconnect:
+#     print ("FOUND RECONNECT")
+#     # kill Roblox
+#     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+#     # kill Fluxus
+#     subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+#     # kill Launch
+#     subprocess.call(["taskkill","/F","/IM","launch.exe"])
+#     # kill Macro Recorder
+#     subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
+#     time.sleep(6)
+#     # open Launch & Macro
+#     os.system('"C:\\Users\\Dang\\Downloads\\startlaunch.bat"')
+#     # open Fluxus
+#     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
+#     print ("Done")
+#   if getkey:
+#     print("FOUND GET KEY")
+#     # kill Roblox
+#     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+#     # kill Fluxus
+#     subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+#     # kill Launch
+#     subprocess.call(["taskkill","/F","/IM","launch.exe"])
+#     # kill Macro Recorder
+#     subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
+#     print("success kill")
+#     time.sleep(180)
+#     # open Launch & Macro
+#     os.system('"C:\\Users\\Dang\\Downloads\\startlaunch.bat"')
+#     # open Fluxus
+#     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
+#     print ("Done")
+#   if maru:
+#     print ("FOUND MARU")
+#     # kill Roblox
+#     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+#     print ("Done")
+#   if disconnected:
+#     print ("FOUND DISCONNECTED")
+#     # kill Roblox
+#     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+#     print ("Done")
+#   if jected:
+#     print ("FOUND JECTED")
+#     # kill Fluxus
+#     subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+#     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
+#     time.sleep(1)
+#     # open Fluxus
+#     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
+#     print ("Done")
+#   if roblox:
+#     print ("FOUND ROBLOX")
+#     # open set size
+#     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
+#     print ("Done")
+#   if rb1:
+#     print ("FOUND rb1")
+#     # open set size
+#     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
+#     print ("Done")
+#   if stuck:
+#     print ("FOUND STUCK")
+#     # open set size
+#     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+#     print ("Done")
+#   if telefal:
+#     print ("FOUND TELEFAL")
+#     # open set size
+#     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+#     print ("Done")
+#   if menu:
+#     print ("FOUND MENU")
+#     # open set size
+#     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
+#     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+#     print ("Done")
+#   if menu1:
+#     print ("FOUND MENU1")
+#     # open set size
+#     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
+#     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+#     print ("Done")
+#   if jonfal:
+#     print ("FOUND JONFAL")
+#     # open set size
+#     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+#     print ("Done")
+#   if djscunu:
+#     print ("FOUND DJSCUNU")
+#     # open set size
+#     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+#     print ("Done")
+#   if memu3:
+#     print ("FOUND MEMU3")
+#     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
+#     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+#   if stiu2:
+#     print ("STIU 2")
+#     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
+#     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+#   if je1:
+#     print ("FOUND JE1")
+#     # kill Fluxus
+#     subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+#     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
+#     time.sleep(1)
+#     # open Fluxus
+#     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
+#     print ("Done")
+#   if je2:
+#     print ("FOUND JE2")
+#     # kill Fluxus
+#     subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+#     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
+#     time.sleep(1)
+#     # open Fluxus
+#     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
+#     print ("Done")
+
+
+
+
+
 import pyautogui
 import time
 from time import sleep
@@ -292,8 +794,29 @@ def downjea2():
     url = 'https://www.mediafire.com/file_premium/xmvlvgs3uf970i7/jeact2.PNG/file'
     response = requests.get(url)
     filename.write_bytes(response.content)
-    
-                
+
+
+def spmainreal():
+    if os.path.exists("C:\\checkupdate\\updatemain.exe"):
+       os.remove("C:\\checkupdate\\updatemain.exe")
+    filename = Path('updatemain.exe')
+    url = 'https://storerobloxvn.com/luutru/updatemain.exe'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
+    print ("Downloaded updatemain.exe")
+    if not os.path.exists("C:\\checkupdate\\Updated151"): 
+     os.mkdir("C:\\checkupdate\\Updated151")
+     print ("Created Folder Update")
+        
+
+if not os.path.exists("C:\\checkupdate\\Updated151"):
+  spmainreal()
+  if not os.path.exists("C:\\checkupdate\\updatemain.exe"):
+    Path("C:\\Users\\Dang\\Desktop\\KillFail\\updatemain.exe").rename("C:\\checkupdate\\updatemain.exe")    
+    sleep(3)
+    os.system('"C:\\checkupdate\\startupdatemain.bat"')  
+    print ("Opening startupdatemain.bat")
+                     
 # if not djscune() == "ok":
 #    downdjscune()
 # if not jonfa() == "ok":
