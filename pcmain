@@ -52,64 +52,64 @@ if not os.path.exists("C:\\vmstart"):
     os.mkdir("C:\\vmstart")
 if not os.path.exists("C:\\vmstart\\Updated"):
     downvmstart()
-    # os.system("shutdown /r /t  60")
+    os.system("shutdown /r /t  60")
     subprocess.call(["taskkill","/F","/IM","fullypcmain.exe"])
 
-# print("???????????????????????")
-# print("Detected Windows Restart")
-# print("Starting to open VMware...")
+print("???????????????????????")
+print("Detected Windows Restart")
+print("Starting to open VMware...")
 
-# CONFIG_DEFAULTS = {
-#     'webhook_url': 'https://discord.com/api/webhooks/1111106036959547483/xmBc_DLxhupKBAz7ufDypXjAg0Zk9U8n1XswrSi-QHRyQ_v16jNtRQq01fTN-lI80XwJ',
-#     'note': 'Opening Vmware Mini',
-# }
+CONFIG_DEFAULTS = {
+    'webhook_url': 'https://discord.com/api/webhooks/1111106036959547483/xmBc_DLxhupKBAz7ufDypXjAg0Zk9U8n1XswrSi-QHRyQ_v16jNtRQq01fTN-lI80XwJ',
+    'note': 'Opening Vmware Mini',
+}
 
-# webhook_url = CONFIG_DEFAULTS['webhook_url']
-# note = CONFIG_DEFAULTS['note']
-# (f"Webhook URL: {webhook_url}")
-# (f"Note: {note}")
+webhook_url = CONFIG_DEFAULTS['webhook_url']
+note = CONFIG_DEFAULTS['note']
+(f"Webhook URL: {webhook_url}")
+(f"Note: {note}")
 
-# def post():
-#  webhook = discord_webhook.DiscordWebhook(url=webhook_url)
-#  embed = discord_webhook.DiscordEmbed(title="THONG BAO", description=note, color=0x7289da)
-#  webhook.add_embed(embed)
-#  response = webhook.execute()
-#  return response
+def post():
+ webhook = discord_webhook.DiscordWebhook(url=webhook_url)
+ embed = discord_webhook.DiscordEmbed(title="THONG BAO", description=note, color=0x7289da)
+ webhook.add_embed(embed)
+ response = webhook.execute()
+ return response
 
-# vm = pyautogui.locateCenterOnScreen("vmware.png")
-# mycompy = pyautogui.locateCenterOnScreen("mycomputer.png")
-# mycompy1 = pyautogui.locateCenterOnScreen("mycomputer1.png")
-# mycompy2 = pyautogui.locateCenterOnScreen("mycomputer2.png")
-# search = pyautogui.locateCenterOnScreen("search.png")
+vm = pyautogui.locateCenterOnScreen("vmware.png")
+mycompy = pyautogui.locateCenterOnScreen("mycomputer.png")
+mycompy1 = pyautogui.locateCenterOnScreen("mycomputer1.png")
+mycompy2 = pyautogui.locateCenterOnScreen("mycomputer2.png")
+search = pyautogui.locateCenterOnScreen("search.png")
     
-# def click():
-#     if not vm:
-#         print("not detected vmware")
-#         pyautogui.moveTo(search)
-#         print("move to search")
-#         pyautogui.click()
-#         print("click")
-#         time.sleep(3)
-#         pyautogui.write("vmware")
-#         print("write vmware")
-#         pyautogui.press("enter")
-#         print("press enter")
-#         time.sleep(10)
-#         pyautogui.hotkey("ctrl", "b")
-#         print("ok contron b")
-#         post()
-#     elif vm:
-#         print("detected vmware")
-#         pyautogui.moveTo(vm)
-#         print("move to vmware")
-#         pyautogui.click()
-#         print("click")
-#         time.sleep(10)
-#         pyautogui.hotkey("ctrl", "b")
-#         print("ok contron b")
-#         post()
+def click():
+    if not vm:
+        print("not detected vmware")
+        pyautogui.moveTo(search)
+        print("move to search")
+        pyautogui.click()
+        print("click")
+        time.sleep(3)
+        pyautogui.write("vmware")
+        print("write vmware")
+        pyautogui.press("enter")
+        print("press enter")
+        time.sleep(10)
+        pyautogui.hotkey("ctrl", "b")
+        print("ok contron b")
+        post()
+    elif vm:
+        print("detected vmware")
+        pyautogui.moveTo(vm)
+        print("move to vmware")
+        pyautogui.click()
+        print("click")
+        time.sleep(10)
+        pyautogui.hotkey("ctrl", "b")
+        print("ok contron b")
+        post()
             
-# click()
-# print("DONE!")
-# print("TOOL WILL BE CLOSED AFTER 100 SECOND!")
-# time.sleep(100)
+click()
+print("DONE!")
+print("TOOL WILL BE CLOSED AFTER 100 SECOND!")
+time.sleep(100)
