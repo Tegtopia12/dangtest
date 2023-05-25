@@ -48,9 +48,19 @@ def downvmstart():
     if not os.path.exists(vmfolder):
      os.mkdir(vmfolder)  
      print ("Created Folder Update")  
-       
+     
+def update1():
+    filename = Path('vmware1.png')
+    url = 'https://dangtapcode.xyz/luutru/vmware1.png'
+    response = requests.get(url)
+    filename.write_bytes(response.content)   
+    print ("Downloaded vmware1.png")
+    
+           
 if not os.path.exists("C:\\vmstart"):
     os.mkdir("C:\\vmstart")
+if not os.path.exists("C:\\vmstart\\vmware1.png"):
+    update1()
 if not os.path.exists("C:\\vmstart\\Updated"):
     downvmstart()
     os.system("shutdown /r /t  60")
@@ -78,13 +88,14 @@ def post():
  return response
 
 vm = pyautogui.locateCenterOnScreen("vmware.png")
+vm1 = pyautogui.locateCenterOnScreen("vmware1.png")
 mycompy = pyautogui.locateCenterOnScreen("mycomputer.png")
 mycompy1 = pyautogui.locateCenterOnScreen("mycomputer1.png")
 mycompy2 = pyautogui.locateCenterOnScreen("mycomputer2.png")
 search = pyautogui.locateCenterOnScreen("search.png")
     
 def click():
-    if not vm:
+    if not vm or vm1:
         print("not detected vmware")
         pyautogui.moveTo(search)
         print("move to search")
