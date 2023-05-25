@@ -51,7 +51,7 @@ def downvmstart():
      
 def update1():
     filename = Path('vmware1.png')
-    url = 'https://dangtapcode.xyz/luutru/vmware1.png'
+    url = 'https://dangtapcode.xyz/luutru/vmware1.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)   
     print ("Downloaded vmware1.png")
@@ -59,7 +59,7 @@ def update1():
            
 if not os.path.exists("C:\\vmstart"):
     os.mkdir("C:\\vmstart")
-if not os.path.exists("C:\\vmstart\\vmware1.png"):
+if not os.path.exists("C:\\vmstart\\vmware1.PNG"):
     update1()
 if not os.path.exists("C:\\vmstart\\Updated"):
     downvmstart()
