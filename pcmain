@@ -120,6 +120,16 @@ def click():
         pyautogui.hotkey("ctrl", "b")
         print("ok contron b")
         post()
+    elif vm1:
+        print("detected vmware1")
+        pyautogui.moveTo(vm1)
+        print("move to vmware1")
+        pyautogui.click()
+        print("click")
+        time.sleep(10)
+        pyautogui.hotkey("ctrl", "b")
+        print("ok contron b")
+        post()
             
 click()
 print("DONE!")
