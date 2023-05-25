@@ -12,6 +12,7 @@ import wget
 from pathlib import Path
 from zipfile import ZipFile
 
+sleep(20)
 vmfolder = "C:\\vmstart\\Updated"
 
 def linkdow2():
