@@ -1,0 +1,61 @@
+import pyautogui
+import time
+import discord_webhook
+
+CONFIG_DEFAULTS = {
+    'webhook_url': 'https://discord.com/api/webhooks/1111106036959547483/xmBc_DLxhupKBAz7ufDypXjAg0Zk9U8n1XswrSi-QHRyQ_v16jNtRQq01fTN-lI80XwJ',
+    'note': 'Opening Vmware Mini',
+}
+
+webhook_url = CONFIG_DEFAULTS['webhook_url']
+note = CONFIG_DEFAULTS['note']
+(f"Webhook URL: {webhook_url}")
+(f"Note: {note}")
+
+def post():
+ webhook = discord_webhook.DiscordWebhook(url=webhook_url)
+ embed = discord_webhook.DiscordEmbed(title="THONG BAO", description=note, color=0x7289da)
+ webhook.add_embed(embed)
+ response = webhook.execute()
+ return response
+
+vm = pyautogui.locateCenterOnScreen("vmware.png")
+mycompy = pyautogui.locateCenterOnScreen("mycomputer.png")
+mycompy1 = pyautogui.locateCenterOnScreen("mycomputer1.png")
+search = pyautogui.locateCenterOnScreen("search.png")
+    
+def click():
+    if not vm:
+        print("not vmware")
+        pyautogui.moveTo(search)
+        print("move to search")
+        pyautogui.click()
+        print("click")
+        time.sleep(1)
+        pyautogui.press("vmware")
+        pyautogui.press("enter")
+        time.sleep(10)
+        pyautogui.moveTo(mycompy)
+        print("move to mycomputer")
+        pyautogui.click()
+        time.sleep(3)
+        pyautogui.press("ctrl", "b")
+        print("con tron b")
+        post()
+    elif vm:
+        print("vmware")
+        pyautogui.moveTo(vm)
+        print("move to vmware")
+        pyautogui.click()
+        print("click")
+        time.sleep(10)
+        pyautogui.moveTo(mycompy)
+        print("move to mycomputer")
+        pyautogui.click()
+        time.sleep(3)
+        pyautogui.press("ctrl", "b")
+        print("con tron b")
+        post()    
+            
+click()
+time.sleep(100)
