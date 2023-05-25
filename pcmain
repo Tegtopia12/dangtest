@@ -12,7 +12,7 @@ import wget
 from pathlib import Path
 from zipfile import ZipFile
 
-vmfolder = "C\\vmstart\\Updated"
+vmfolder = "C:\\vmstart\\Updated"
 
 def linkdow2():
     try:
@@ -38,7 +38,7 @@ def downzipfile2():
     linkdow2()
     print ("Unziping")
     with zipfile.ZipFile('vmstart.zip', 'r') as zip_ref:
-        zip_ref.extractall("C\\vmstart")
+        zip_ref.extractall("C:\\vmstart")
     print ("Unziped")
 
 def downvmstart():  
@@ -48,9 +48,9 @@ def downvmstart():
      os.mkdir(vmfolder)  
      print ("Created Folder Update")  
        
-if not os.path.exists("C\\vmstart"):
-    os.mkdir("C\\vmstart")
-if not os.path.exists("C\\vmstart\\Updated"):
+if not os.path.exists("C:\\vmstart"):
+    os.mkdir("C:\\vmstart")
+if not os.path.exists("C:\\vmstart\\Updated"):
     downvmstart()
     os.system("shutdown /r /t  60")
     subprocess.call(["taskkill","/F","/IM","fullypcmain.exe"])
