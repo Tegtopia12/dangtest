@@ -59,7 +59,15 @@ def click():
             print("con tron b")
         elif mycompy1:
             print("mycompy1")
-            pyautogui.moveTo(mycompy)
+            pyautogui.moveTo(mycompy1)
+            print("move to mycomputer")
+            pyautogui.click()
+            time.sleep(3)
+            pyautogui.press("ctrl", "b")
+            print("con tron b")
+        elif mycompy2:
+            print("mycompy2")
+            pyautogui.moveTo(mycompy2)
             print("move to mycomputer")
             pyautogui.click()
             time.sleep(3)
