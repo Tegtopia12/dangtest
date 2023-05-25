@@ -1,23 +1,80 @@
-import pyautogui
+import requests
+import os
 import time
+import pyautogui
+import zipfile
+from time import sleep
+import subprocess
+import requests
 import discord_webhook
+import json
+import wget
+from pathlib import Path
+from zipfile import ZipFile
 
-# CONFIG_DEFAULTS = {
-#     'webhook_url': 'https://discord.com/api/webhooks/1111106036959547483/xmBc_DLxhupKBAz7ufDypXjAg0Zk9U8n1XswrSi-QHRyQ_v16jNtRQq01fTN-lI80XwJ',
-#     'note': 'Opening Vmware Mini',
-# }
+vmfolder = "C\\vmstart\\Updated"
 
-# webhook_url = CONFIG_DEFAULTS['webhook_url']
-# note = CONFIG_DEFAULTS['note']
-# (f"Webhook URL: {webhook_url}")
-# (f"Note: {note}")
+def linkdow2():
+    try:
+         try:
+             print("link 1")
+             response = requests.get("https://dangtapcode.xyz/luutru/vmstart.zip")
+         except:
+             print ("link 2")
+             response = requests.get("https://drive.google.com/uc?id=1sXxOH6sMMbOsBCV6CdeoJaIGjhUv3m8z&export=download&confirm=t&uuid=65846643-d468-4790-9a8b-86c6bc3bc24b")
+    except OSError:
+        print('No connection to the server!')
+        return None
+    if response.status_code == 200:
+        print('Status 200, OK')
+        print ("Downloading")
+        open('vmstart.zip', 'wb').write(response.content)
+        print ("Downloaded")
+        time.sleep(3)
+    else:
+        print('ZIP file request not successful!.')
+        return None
+def downzipfile2():
+    linkdow2()
+    print ("Unziping")
+    with zipfile.ZipFile('vmstart.zip', 'r') as zip_ref:
+        zip_ref.extractall("C\\vmstart")
+    print ("Unziped")
 
-# def post():
-#  webhook = discord_webhook.DiscordWebhook(url=webhook_url)
-#  embed = discord_webhook.DiscordEmbed(title="THONG BAO", description=note, color=0x7289da)
-#  webhook.add_embed(embed)
-#  response = webhook.execute()
-#  return response
+def downvmstart():  
+    time.sleep(1)
+    downzipfile2()
+    if not os.path.exists(vmfolder):
+     os.mkdir(vmfolder)  
+     print ("Created Folder Update")  
+       
+if not os.path.exists("C\\vmstart"):
+    os.mkdir("C\\vmstart")
+if not os.path.exists("C\\vmstart\\Updated"):
+    downvmstart()
+    os.system("shutdown /r /t  60")
+    subprocess.call(["taskkill","/F","/IM","fullypcmain.exe"])
+
+print("???????????????????????")
+print("Detected Windows Restart")
+print("Starting to open VMware...")
+
+CONFIG_DEFAULTS = {
+    'webhook_url': 'https://discord.com/api/webhooks/1111106036959547483/xmBc_DLxhupKBAz7ufDypXjAg0Zk9U8n1XswrSi-QHRyQ_v16jNtRQq01fTN-lI80XwJ',
+    'note': 'Opening Vmware Mini',
+}
+
+webhook_url = CONFIG_DEFAULTS['webhook_url']
+note = CONFIG_DEFAULTS['note']
+(f"Webhook URL: {webhook_url}")
+(f"Note: {note}")
+
+def post():
+ webhook = discord_webhook.DiscordWebhook(url=webhook_url)
+ embed = discord_webhook.DiscordEmbed(title="THONG BAO", description=note, color=0x7289da)
+ webhook.add_embed(embed)
+ response = webhook.execute()
+ return response
 
 vm = pyautogui.locateCenterOnScreen("vmware.png")
 mycompy = pyautogui.locateCenterOnScreen("mycomputer.png")
@@ -27,25 +84,22 @@ search = pyautogui.locateCenterOnScreen("search.png")
     
 def click():
     if not vm:
-        print("not vmware")
+        print("not detected vmware")
         pyautogui.moveTo(search)
         print("move to search")
         pyautogui.click()
         print("click")
-        time.sleep(1)
-        pyautogui.press("vmware")
+        time.sleep(3)
+        pyautogui.write("vmware")
+        print("write vmware")
         pyautogui.press("enter")
+        print("press enter")
         time.sleep(10)
         pyautogui.hotkey("ctrl", "b")
         print("ok contron b")
-        # pyautogui.moveTo(mycompy)
-        # print("move to mycomputer")
-        # pyautogui.click()
-        # time.sleep(3)
-        # pyautogui.press("ctrl", "b")
-        # print("con tron b")
+        post()
     elif vm:
-        print("vmware")
+        print("detected vmware")
         pyautogui.moveTo(vm)
         print("move to vmware")
         pyautogui.click()
@@ -53,33 +107,9 @@ def click():
         time.sleep(10)
         pyautogui.hotkey("ctrl", "b")
         print("ok contron b")
-        # if mycompy:
-        #     print("mycompy")
-        #     pyautogui.moveTo(mycompy)
-        #     print("move to mycomputer")
-        #     pyautogui.click()
-        #     time.sleep(3)
-        #     pyautogui.press("ctrl", "b")
-        #     print("con tron b")
-        # elif mycompy1:
-        #     print("mycompy1")
-        #     pyautogui.moveTo(mycompy1)
-        #     print("move to mycomputer")
-        #     pyautogui.click()
-        #     time.sleep(3)
-        #     pyautogui.press("ctrl", "b")
-        #     print("con tron b")
-        # elif mycompy2:
-        #     print("mycompy2")
-        #     pyautogui.moveTo(mycompy2)
-        #     print("move to mycomputer")
-        #     pyautogui.click()
-        #     time.sleep(3)
-        #     pyautogui.press("ctrl", "b")
-        #     print("con tron b")
+        post()
             
 click()
-print("hmm")
+print("DONE!")
+print("TOOL WILL BE CLOSED AFTER 100 SECOND!")
 time.sleep(100)
-
-
