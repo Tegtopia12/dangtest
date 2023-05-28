@@ -207,8 +207,10 @@
 --     until game:IsLoaded()
 --     end
 
-urlsheet = "https://sheet.best/api/sheets/febf220b-88a9-4e16-a5cc-4174b7d4ba24"
-urlsheet2 = "https://sheet.best/api/sheets/a72b908c-295a-4fdd-a0af-8a77d822a2fe"
+-- urlsheet = "https://sheet.best/api/sheets/febf220b-88a9-4e16-a5cc-4174b7d4ba24"
+-- urlsheet2 = "https://sheet.best/api/sheets/a72b908c-295a-4fdd-a0af-8a77d822a2fe"
+urlsheet = "https://sheet.best/api/sheets/8fefe820-4bf5-4907-a6a1-a2d427333752"
+urlsheet2 = "https://sheet.best/api/sheets/ed734e60-4c05-4250-a47d-3e860cc89cea"
 url = "https://discord.com/api/webhooks/1105921339388346368/OeW_fpWrCn4FzjOaL0dZ8aFFA-C0CnPXKLiw2w4QwVKKjygRiaXkLWeqIHuIf616HF4j";
 url2 = "https://discord.com/api/webhooks/1105934802709905558/JE_t1SgkffTyiauNlyntkx8mVxpbYdQUES5OnTnD6nqJkbsTEGtzhE0AjbtdO2BxcJZ7";
 AutoChooseTeam = true;
