@@ -1,0 +1,53 @@
+import win32con
+import win32gui
+import os
+import pystray
+from PIL import Image
+import subprocess
+import requests
+import os
+import time
+import pyautogui
+import zipfile
+from time import sleep
+import discord_webhook
+import json
+import wget
+from pathlib import Path
+from zipfile import ZipFile
+
+image = Image.open("iconne.ico")
+
+def after_click(icon, query):
+	if str(query) == "Show":
+		os.system('"C:\\Users\\ADMIN\\Downloads\\AI-CheckShop\\aicheckshop.exe"')
+	elif str(query) == "Kill":
+		subprocess.call(["taskkill","/F","/IM","aicheckshop.exe"])
+	elif str(query) == "Exit":
+		subprocess.call(["taskkill","/F","/IM","stray.exe"])
+
+def stray():
+    icon = pystray.Icon("IDK", image, "AI Check Shop",
+                        menu=pystray.Menu(
+        pystray.MenuItem("Show",
+                        after_click),
+        pystray.MenuItem("Kill",
+                        after_click),
+        pystray.MenuItem("Exit",
+                        after_click)))
+    return icon
+
+def mainhide():
+        c_out = "hide"
+        if c_out.lower() == 'hide':
+            window('hide')
+
+def window(mode: str):
+    the_program_to_hide = win32gui.GetForegroundWindow()
+    if mode == 'show':
+        win32gui.ShowWindow(the_program_to_hide, win32con.SW_SHOW)
+    elif mode == 'hide':
+        win32gui.ShowWindow(the_program_to_hide, win32con.SW_HIDE)
+        
+mainhide()        
+stray().run()
