@@ -38,7 +38,7 @@ while True:
     # for names in items:
     #  d = (items[names]['exploit_versions'])
     # if not d == c:
-    if not os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate"):
+    if not os.path.exists("C:\\Users\\Dang\\Downloads\\fluxusrealupdate"):
         print ("Fluxus New Update Detected")
         subprocess.call(["taskkill","/F","/IM","killfail.exe"])
         subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
