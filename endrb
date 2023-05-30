@@ -11,6 +11,8 @@ import json
 from pathlib import Path
 from zipfile import ZipFile
 
+subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
+
 if not os.path.exists("C:\\checkupdate\\Updated151"):
     subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
     subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
