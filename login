@@ -109,7 +109,10 @@ def down_startclick():
     
 if not os.path.exists("C:\\Users\\Dang\\Downloads\\startclick.bat"):
     down_startclick()
-    
+sleep(1)
+if not os.path.exists("C:\\Users\\Dang\\Downloads\\startclick.bat"):
+     Path("C:\\Users\\Dang\\Desktop\\login").rename("C:\\Users\\Dang\\Downloads\\startclick.bat") 
+     
 sleep(3)
     
 subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
