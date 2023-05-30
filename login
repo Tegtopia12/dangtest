@@ -78,7 +78,7 @@ import discord_webhook
 import json
 
 
-# need test gs click and setroblox size to completed
+# need test gs click and setroblox size to completed and start click fully
 
 CONFIG_DEFAULTS = {
     'webhook_url': 'url webhook here',
