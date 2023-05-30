@@ -12,7 +12,7 @@ import wget
 from pathlib import Path
 from zipfile import ZipFile
 
-newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer16"
+newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer161"
 verspmainreal = "C:\\checkupdate\\Updated151"
 updatekillfail = "C:\\Users\\Dang\\Desktop\\KillFail\\DaUpdate"
 updateconfigmousekey = "C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\UpdateConfigMouse"
