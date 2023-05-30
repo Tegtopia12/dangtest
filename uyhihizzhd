@@ -331,6 +331,47 @@ def downdum3():
     url = 'https://dangtapcode.xyz/luutru/fudum3.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)
+    
+def dum4():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'fudum4.PNG'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok") 
+def downdum4():
+    filename = Path('fudum4.PNG')
+    url = 'https://dangtapcode.xyz/luutru/fudum4.PNG'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
+
+def dum5():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'fudum5.PNG'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok") 
+def downdum5():
+    filename = Path('fudum5.PNG')
+    url = 'https://dangtapcode.xyz/luutru/fudum5.PNG'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
+    
+def dum6():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'fudum6.PNG'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok") 
+def downdum6():
+    filename = Path('fudum6.PNG')
+    url = 'https://dangtapcode.xyz/luutru/fudum6.PNG'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
+    
+    
 # def spmainreal():
 #     if os.path.exists("C:\\checkupdate\\updatemain.exe"):
 #        os.remove("C:\\checkupdate\\updatemain.exe")
@@ -381,7 +422,12 @@ if not dum1() == "ok":
   downdum1()
 if not dum3() == "ok":
   downdum3()
-
+if not dum4() == "ok":
+  downdum4()
+if not dum5() == "ok":
+  downdum5()
+if not dum6() == "ok":
+  downdum6()
  
                                        
 while True:
@@ -410,6 +456,9 @@ while True:
   fludump1 = pyautogui.locateCenterOnScreen("fudum.PNG")
   fludump2 = pyautogui.locateCenterOnScreen("fudum1.PNG")
   fludump3 = pyautogui.locateCenterOnScreen("fudum3.PNG")
+  fludump4 = pyautogui.locateCenterOnScreen("fudum4.PNG")
+  fludump5 = pyautogui.locateCenterOnScreen("fudum5.PNG")
+  fludump6 = pyautogui.locateCenterOnScreen("fudum6.PNG")
   if ok:
     print ("FOUND OK")
     # kill Roblox
@@ -564,7 +613,7 @@ while True:
     # open Fluxus
     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
     print ("Done")
-  if fludump1 or fludump2 or fludump3 and not roblox:
+  if fludump1 or fludump2 or fludump3 or fludump4 or fludump5 or fludump6 and not roblox:
     print ("FOUND FLUDUMP")
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate"):
       os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
