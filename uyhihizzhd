@@ -373,11 +373,11 @@ def downdum6():
     
 def checkdum():
   if os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\fudum6.PNG"):
-    os.remove("C:\Users\Dang\Desktop\KillFail\fudum6.PNG")
+    os.remove("C:\\Users\\Dang\\Desktop\\KillFail\\fudum6.PNG")
   if os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\fudum5.PNG"):
-    os.remove("C:\Users\Dang\Desktop\KillFail\fudum5.PNG")
+    os.remove("C:\\Users\\Dang\\Desktop\\KillFail\\fudum5.PNG")
   if os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\fudum4.PNG"):
-    os.remove("C:\Users\Dang\Desktop\KillFail\fudum4.PNG")
+    os.remove("C:\\Users\\Dang\\Desktop\\KillFail\\fudum4.PNG")
   os.mkdir("C:\\Users\\Dang\\Desktop\\KillFail\\update16fudum")
         
 # def spmainreal():
