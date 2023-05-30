@@ -24,7 +24,7 @@ note = CONFIG_DEFAULTS['note']
 
 
 while True:
-    sleep(60)
+    sleep(10)
     # response = requests.get('https://api.whatexploitsare.online/status/Fluxus')
     # data = response.json()
 
