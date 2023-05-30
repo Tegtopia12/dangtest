@@ -371,7 +371,15 @@ def downdum6():
     response = requests.get(url)
     filename.write_bytes(response.content)
     
-    
+def checkdum():
+  if os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\fudum6.PNG"):
+    os.remove("C:\Users\Dang\Desktop\KillFail\fudum6.PNG")
+  if os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\fudum5.PNG"):
+    os.remove("C:\Users\Dang\Desktop\KillFail\fudum5.PNG")
+  if os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\fudum4.PNG"):
+    os.remove("C:\Users\Dang\Desktop\KillFail\fudum4.PNG")
+  os.mkdir("C:\\Users\\Dang\\Desktop\\KillFail\\update16fudum")
+        
 # def spmainreal():
 #     if os.path.exists("C:\\checkupdate\\updatemain.exe"):
 #        os.remove("C:\\checkupdate\\updatemain.exe")
@@ -416,6 +424,10 @@ def downdum6():
 #    downjea1()
 # if not jea2() == "ok":
 #    downjea2() 
+
+if not os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\update16fudum"):
+  checkdum()
+sleep(1)
 if not dum() == "ok":
   downdum()
 if not dum1() == "ok":
@@ -428,7 +440,8 @@ if not dum5() == "ok":
   downdum5()
 if not dum6() == "ok":
   downdum6()
- 
+
+   
                                        
 while True:
   sleep(3)
