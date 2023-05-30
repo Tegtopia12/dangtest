@@ -22,22 +22,24 @@ note = CONFIG_DEFAULTS['note']
 (f"Webhook URL: {webhook_url}")
 (f"Note: {note}")
 
+fluxusrealupdate = "C:\\Users\\Dang\\Desktop\\fluxusrealupdate"
 
 while True:
     sleep(60)
-    response = requests.get('https://api.whatexploitsare.online/status/Fluxus')
-    data = response.json()
+    # response = requests.get('https://api.whatexploitsare.online/status/Fluxus')
+    # data = response.json()
 
-    item = data[0] 
-    for name in item:
-            c = (item[name]['exploit_version'])
+    # item = data[0] 
+    # for name in item:
+    #         c = (item[name]['exploit_version'])
 
-    response = requests.get('https://raw.githubusercontent.com/dangbadao/dangtest/main/sieucap')
-    datas = response.json()
-    items = datas[0] 
-    for names in items:
-     d = (items[names]['exploit_versions'])
-    if not d == c:
+    # response = requests.get('https://raw.githubusercontent.com/dangbadao/dangtest/main/sieucap')
+    # datas = response.json()
+    # items = datas[0] 
+    # for names in items:
+    #  d = (items[names]['exploit_versions'])
+    # if not d == c:
+    if not os.path.exists(fluxusrealupdate):
         print ("Fluxus New Update Detected")
         subprocess.call(["taskkill","/F","/IM","killfail.exe"])
         subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
@@ -68,5 +70,8 @@ while True:
         os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startkllfal.bat"')
         os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\openfluxus.bat"')
         os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\launch.bat"')
+        if not os.path.exists(fluxusrealupdate):
+            os.mkdir(fluxusrealupdate)
+            print ("successfully created folder fluxus update")
         subprocess.call(["taskkill","/F","/IM","updatefluxus.exe"])
     
