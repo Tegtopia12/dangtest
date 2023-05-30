@@ -26,7 +26,7 @@ def zipfile3():
              response = requests.get("https://dangtapcode.xyz/luutru/checktab.zip")
          except:
              print ("link 2")
-            #  response = requests.get("")
+             response = requests.get("https://drive.google.com/uc?id=11KPqhd0PFZ3T2O81eghloPbXbfW8MhF7&export=download&confirm=t&uuid=45ab99e9-2504-4869-a6c9-ef17aeb98dd4")
     except OSError:
         print('No connection to the server!')
         return None
