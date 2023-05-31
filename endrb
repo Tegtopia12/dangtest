@@ -110,7 +110,7 @@ if not os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
     except: 
         pass       
     
-# clear temp
+# clear temp method 1
 if os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
             os.system('"C:\\Users\\Dang\\Downloads\\cleartemp.bat"')
             print ("successfully clear temp")
@@ -119,6 +119,16 @@ if os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
             os.system('"C:\\Users\\Dang\\Desktop\\launch.exe - Shortcut"')
             print("opened launch")
 
+# clear temp method 2
+# if os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
+#             os.system('"C:\\Users\\Dang\\Downloads\\cleartemp.bat"')
+#             print ("successfully clear temp")
+#             os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\checkupdate.bat"')
+#             print("opened checkupdate")
+#             os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\launch.bat"')
+#             subprocess.call(["taskkill","/F","/IM","killrb.exe"])
+#             print("opened launch")
+            
 # down new check tab
 if not os.path.exists("C:\\checkupdate\\donechecktab"):
     print ("Not Dectected checktab")
