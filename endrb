@@ -93,9 +93,9 @@ if not os.path.exists("C:\\checkupdate\\Updated151"):
     os.system("shutdown /r /t  3")
 
 # clear temp
-if os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
-            os.system('"C:\\Users\\Dang\\Downloads\\cleartemp.bat"')
-            print ("successfully clear temp")
+# if os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
+#             os.system('"C:\\Users\\Dang\\Downloads\\cleartemp.bat"')
+#             print ("successfully clear temp")
 
 # down new check tab
 # if not os.path.exists("C:\\checkupdate\\donechecktab"):
