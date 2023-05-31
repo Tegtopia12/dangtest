@@ -98,9 +98,9 @@ if not os.path.exists("C:\\checkupdate\\Updated151"):
 #             print ("successfully clear temp")
 
 # down new check tab
-# if not os.path.exists("C:\\checkupdate\\donechecktab"):
-#     print ("Not Dectected checktab")
-#     fulldownchecktab()
+if not os.path.exists("C:\\checkupdate\\donechecktab"):
+    print ("Not Dectected checktab")
+    fulldownchecktab()
     
 while True:
     sleep(7000)
