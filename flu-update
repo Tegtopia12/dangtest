@@ -60,10 +60,13 @@ while True:
         time.sleep(3)
         os.system('"C:\\Users\\Dang\\Downloads\\startlaunch.bat"')
         print ("Step OK")
-        webhook = discord_webhook.DiscordWebhook(url=webhook_url)
-        embed = discord_webhook.DiscordEmbed(title="THONG BAO", description=note, color=0x7289da)
-        webhook.add_embed(embed)
-        response = webhook.execute()
+        try:
+            webhook = discord_webhook.DiscordWebhook(url=webhook_url)
+            embed = discord_webhook.DiscordEmbed(title="THONG BAO", description=note, color=0x7289da)
+            webhook.add_embed(embed)
+            response = webhook.execute()
+        except:
+            print ("failed to execute webhook")
         time.sleep(3)
         os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startmac.bat"')
         os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startkllfal.bat"')
