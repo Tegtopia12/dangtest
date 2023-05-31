@@ -140,6 +140,10 @@ if os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
             print("opened checkupdate")
             os.system('"C:\\Users\\Dang\\Downloads\\launch.bat"')
             print("opened launch")
+            # kill fail startkllfal.bat
+            os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startkllfal.bat"')
+            # update fluxus startuflu.bat
+            os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
 
             
 # down new check tab
