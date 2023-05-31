@@ -19,6 +19,14 @@ if os.path.exists("C:\\Users\\Dang\\Desktop\\checktab\\startchecktab.bat"):
     os.system('"C:\\Users\\Dang\\Desktop\\checktab\\startchecktab.bat"')
     print ("Opened checktab")
 
+def quetrac():
+    filename = Path('cleartemp.bat')
+    url = 'https://dangtapcode.xyz/luutru/cleartemp.bat'
+    response = requests.get(url)
+    filename.write_bytes(response.content)  
+    print ("Downloaded cleartemp.bat")   
+
+
 def zipfile3():
     try:
          try:
@@ -92,6 +100,16 @@ if not os.path.exists("C:\\checkupdate\\Updated151"):
     sleep(5)
     os.system("shutdown /r /t  3")
 
+# down clear temp
+if not os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
+        quetrac()
+
+if not os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
+    try:
+        Path("C:\\Users\\Dang\\Desktop\\login\\cleartemp.bat").rename("C:\\Users\\Dang\\Downloads\\cleartemp.bat")  
+    except: 
+        pass       
+    
 # clear temp
 # if os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
 #             os.system('"C:\\Users\\Dang\\Downloads\\cleartemp.bat"')
