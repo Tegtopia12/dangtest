@@ -403,12 +403,12 @@ def fluxus():
         filename.write_bytes(response.content)  
         print ("Downloaded updatefluxus.exe")              
 
-def quetrac():
-    filename = Path('cleartemp.bat')
-    url = 'https://dangtapcode.xyz/luutru/cleartemp.bat'
-    response = requests.get(url)
-    filename.write_bytes(response.content)  
-    print ("Downloaded cleartemp.bat")   
+# def quetrac():
+#     filename = Path('cleartemp.bat')
+#     url = 'https://dangtapcode.xyz/luutru/cleartemp.bat'
+#     response = requests.get(url)
+#     filename.write_bytes(response.content)  
+#     print ("Downloaded cleartemp.bat")   
 
                                             
 def fullcheck():    
@@ -430,8 +430,8 @@ def fullcheck():
         fluxus()
         if not os.path.exists("C:\\Users\\Dang\\Desktop\\fluupdate"):
             os.mkdir("C:\\Users\\Dang\\Desktop\\fluupdate")
-    if not os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
-        quetrac()
+    # if not os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
+    #     quetrac()
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\startlogin.bat"):
         start()
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\Keyboard"):
@@ -515,8 +515,8 @@ def allautoclick():
      Path("C:\\checkupdate\\setroblox.exe").rename("C:\\Users\\Dang\\Desktop\\KillFail\\setroblox.exe")
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\updatefluxus.exe"):
      Path("C:\\checkupdate\\updatefluxus.exe").rename("C:\\Users\\Dang\\Desktop\\updatefluxus.exe")   
-    if not os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
-     Path("C:\\checkupdate\\cleartemp.bat").rename("C:\\Users\\Dang\\Downloads\\cleartemp.bat")   
+    # if not os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
+    #  Path("C:\\checkupdate\\cleartemp.bat").rename("C:\\Users\\Dang\\Downloads\\cleartemp.bat")   
      
 if not os.path.exists(newver):      
     fullcheck()
