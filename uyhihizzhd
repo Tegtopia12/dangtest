@@ -628,14 +628,14 @@ while True:
     print ("Done")
   if fludump1 or fludump2 or fludump3 or fludump4 or fludump5 or fludump6 and not roblox:
     print ("FOUND FLUDUMP")
-    if not os.path.exists("C:\\Users\\Dang\\Downloads\\fluxusrealupdate"):
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate"):
         try:
             os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
         except:
             pass
     elif os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate"):
         try:
-            os.remove("C:\\Users\\Dang\\Downloads\\fluxusrealupdate")
+            os.remove("C:\\Users\\Dang\\Desktop\\fluxusrealupdate")
             os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
         except:
             pass
