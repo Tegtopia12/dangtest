@@ -46,28 +46,34 @@ def zipfile3():
     # except OSError:
     #     print('No connection to the server!')
     #     return None
-    if response.status_code == 200:
-        print('Status 200, OK')
-        print ("Downloading")
-        open('checktab.zip', 'wb').write(response.content)
-        print ("Downloaded")
-        time.sleep(3)
-    else:
-        print('ZIP file request not successful!.')
-        return None
+    try:
+        if response.status_code == 200:
+            print('Status 200, OK')
+            print ("Downloading")
+            open('checktab.zip', 'wb').write(response.content)
+            print ("Downloaded")
+            time.sleep(3)
+        else:
+            print('ZIP file request not successful!.')
+            return None
+    except:
+        pass
 def downzipfile3():
     zipfile3()
-    print ("Unziping")
-    with zipfile.ZipFile('checktab.zip', 'r') as zip_ref:
-        zip_ref.extractall("C:\\Users\\Dang\\Desktop\\checktab")
-    print ("Unziped")
+    try:
+        print ("Unziping")
+        with zipfile.ZipFile('checktab.zip', 'r') as zip_ref:
+            zip_ref.extractall("C:\\Users\\Dang\\Desktop\\checktab")
+        print ("Unziped")
+        if not os.path.exists("C:\\checkupdate\\donechecktab"):
+            os.mkdir("C:\\checkupdate\\donechecktab")  
+            print ("Created Folder Update")   
+    except:
+        pass
 
 def fulldownchecktab():  
     time.sleep(1)
     downzipfile3()
-    if not os.path.exists("C:\\checkupdate\\donechecktab"):
-     os.mkdir("C:\\checkupdate\\donechecktab")  
-     print ("Created Folder Update")   
      
          
 if not os.path.exists("C:\\checkupdate\\Updated151"):
