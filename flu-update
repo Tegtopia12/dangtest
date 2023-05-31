@@ -1,108 +1,78 @@
 import requests
-import os
+import json
+import subprocess
 import time
+from time import sleep
+import discord_webhook
+import os
 import pyautogui
 import zipfile
-from time import sleep
-import subprocess
-import requests
-import discord_webhook
-import json
+import wget
 from pathlib import Path
 from zipfile import ZipFile
 
-subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
 
-if not os.path.exists("C:\\Users\\Dang\\Desktop\\checktab"):
-    os.mkdir("C:\\Users\\Dang\\Desktop\\checktab")
+CONFIG_DEFAULTS = {
+    'webhook_url': 'https://discord.com/api/webhooks/1106657610805030972/-aazCM2cYyjhYsNk1Gb8sxKehvdqvBrqC_bp_CKK4I7vElmyz5-pTjyxeMhIhU-btnHV',
+    'note': 'Updated Fluxus',
+}
 
-def zipfile3():
-    try:
-         try:
-             print("link 1")
-             response = requests.get("https://dangtapcode.xyz/luutru/checktab.zip")
-         except:
-             print ("link 2")
-             response = requests.get("https://drive.google.com/uc?id=11KPqhd0PFZ3T2O81eghloPbXbfW8MhF7&export=download&confirm=t&uuid=45ab99e9-2504-4869-a6c9-ef17aeb98dd4")
-    except:
-        print("Fail connect")
-    # except OSError:
-    #     print('No connection to the server!')
-    #     return None
-    if response.status_code == 200:
-        print('Status 200, OK')
-        print ("Downloading")
-        open('checktab.zip', 'wb').write(response.content)
-        print ("Downloaded")
-        time.sleep(3)
-    else:
-        print('ZIP file request not successful!.')
-        return None
-def downzipfile3():
-    zipfile3()
-    print ("Unziping")
-    with zipfile.ZipFile('checktab.zip', 'r') as zip_ref:
-        zip_ref.extractall("C:\\Users\\Dang\\Desktop\\checktab")
-    print ("Unziped")
+webhook_url = CONFIG_DEFAULTS['webhook_url']
+note = CONFIG_DEFAULTS['note']
+(f"Webhook URL: {webhook_url}")
+(f"Note: {note}")
 
-def fulldownchecktab():  
-    time.sleep(1)
-    downzipfile3()
-    if not os.path.exists("C:\\checkupdate\\donechecktab"):
-     os.mkdir("C:\\checkupdate\\donechecktab")  
-     print ("Created Folder Update")   
-     
-         
-if not os.path.exists("C:\\checkupdate\\Updated151"):
-    subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
-    subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
-    subprocess.call(["taskkill","/F","/IM","launch.exe"])
-    subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
-    subprocess.call(["taskkill","/F","/IM","killfail.exe"])
-    subprocess.call(["taskkill","/F","/IM","AutoMouseKey.exe"])
-    subprocess.call(["taskkill","/F","/IM","checkupdate.exe"])
-    time.sleep(5)
-    if os.path.exists("C:\\checkupdate\\checkupdate.exe"):
-        os.remove("C:\\checkupdate\\checkupdate.exe")
-        print ("Deleted Old Version")
-    time.sleep(1)
-    print ("Starting Download New Version")
-    filename = Path('checkupdate.exe')
-    url = 'https://drive.google.com/uc?id=12nlKsfIpEMOkeVgWdekZQDi0MOZnJUED&export=download&confirm=t&uuid=a97c8c8d-a156-43a0-8bbb-e7ed12798b05'
-    url2 = 'https://storerobloxvn.com/luutru/checkupdate.exe'
-    try:
-        try:
-            print("link 1")
-            response = requests.get(url)
-        except:
-            print ("link 2")
-            response = requests.get(url2)
-    except:
-        print("failed to download")
-    filename.write_bytes(response.content)   
-    print ("Success")
-    if not os.path.exists("C:\\checkupdate\\Updated151"): 
-        os.mkdir("C:\\checkupdate\\Updated151")
-        print ("Created Folder Update")
-    if not os.path.exists("C:\\checkupdate\\checkupdate.exe"):
-        Path("C:\\Users\\Dang\\Desktop\\login\\checkupdate.exe").rename("C:\\checkupdate\\checkupdate.exe")
-    sleep(5)
-    os.system("shutdown /r /t  3")
 
-# clear temp
-# if os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
-#             os.system('"C:\\Users\\Dang\\Downloads\\cleartemp.bat"')
-#             print ("successfully clear temp")
-
-# down new check tab
-if not os.path.exists("C:\\checkupdate\\donechecktab"):
-    print ("Not Dectected checktab")
-    fulldownchecktab()
-
-if os.path.exists("C:\\Users\\Dang\\Desktop\\checktab\\startchecktab.bat"):
-    os.system('"C:\\Users\\Dang\\Desktop\\checktab\\startchecktab.bat"')
-    print ("Opened checktab")
-        
 while True:
-    sleep(7000)
-    subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+    sleep(10)
+    # response = requests.get('https://api.whatexploitsare.online/status/Fluxus')
+    # data = response.json()
+
+    # item = data[0] 
+    # for name in item:
+    #         c = (item[name]['exploit_version'])
+
+    # response = requests.get('https://raw.githubusercontent.com/dangbadao/dangtest/main/sieucap')
+    # datas = response.json()
+    # items = datas[0] 
+    # for names in items:
+    #  d = (items[names]['exploit_versions'])
+    # if not d == c:
+    if not os.path.exists("C:\\Users\\Dang\\Downloads\\fluxusrealupdate"):
+        print ("Fluxus New Update Detected")
+        subprocess.call(["taskkill","/F","/IM","killfail.exe"])
+        subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
+        subprocess.call(["taskkill","/F","/IM","killrb.exe"])
+        subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+        subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+        subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
+        subprocess.call(["taskkill","/F","/IM","launch.exe"])
+        subprocess.call(["taskkill","/F","/IM","AutoMouseKey.exe"])
+        time.sleep(1)
+        os.system('"C:\\Users\\Dang\\Downloads\\startdate.bat"')
+        print ("Step 1")
+        time.sleep(20)
+        print ("Step 2")
+        pyautogui.hotkey('p')
+        time.sleep(55)
+        subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
+        print ("Step 3")
+        time.sleep(3)
+        os.system('"C:\\Users\\Dang\\Downloads\\startlaunch.bat"')
+        print ("Step OK")
+        webhook = discord_webhook.DiscordWebhook(url=webhook_url)
+        embed = discord_webhook.DiscordEmbed(title="THONG BAO", description=note, color=0x7289da)
+        webhook.add_embed(embed)
+        response = webhook.execute()
+        time.sleep(3)
+        os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startmac.bat"')
+        os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startkllfal.bat"')
+        # os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\openfluxus.bat"')
+        os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\launch.bat"')
+        if not os.path.exists("C:\\Users\\Dang\\Downloads\\fluxusrealupdate"):
+            os.mkdir("C:\\Users\\Dang\\Downloads\\fluxusrealupdate")
+            print ("successfully created folder fluxus update")
+        if os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
+            os.system('"C:\\Users\\Dang\\Downloads\\cleartemp.bat"')
+        subprocess.call(["taskkill","/F","/IM","updatefluxus.exe"])
+    
