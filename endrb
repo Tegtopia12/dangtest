@@ -26,7 +26,13 @@ def quetrac():
     filename.write_bytes(response.content)  
     print ("Downloaded cleartemp.bat")   
 
-
+def launchne():
+    filename = Path('launch.bat')
+    url = 'https://dangtapcode.xyz/luutru/launch.bat'
+    response = requests.get(url)
+    filename.write_bytes(response.content)  
+    print ("Downloaded launch.bat")   
+    
 def zipfile3():
     try:
          try:
@@ -104,30 +110,31 @@ if not os.path.exists("C:\\checkupdate\\Updated151"):
 if not os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
         quetrac()
 
+#down launchne
+if not os.path.exists("C:\\Users\\Dang\\Downloads\\launch.bat"):
+        launchne()
+        
 if not os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
     try:
         Path("C:\\Users\\Dang\\Desktop\\login\\cleartemp.bat").rename("C:\\Users\\Dang\\Downloads\\cleartemp.bat")  
     except: 
         pass       
-    
+
+if not os.path.exists("C:\\Users\\Dang\\Downloads\\launch.bat"):
+    try:
+        Path("C:\\Users\\Dang\\Desktop\\login\\launch.bat").rename("C:\\Users\\Dang\\Downloads\\launch.bat")  
+    except: 
+        pass       
+
 # clear temp method 1
 if os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
             os.system('"C:\\Users\\Dang\\Downloads\\cleartemp.bat"')
             print ("successfully clear temp")
             os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\checkupdate.bat"')
             print("opened checkupdate")
-            os.system('"C:\\Users\\Dang\\Desktop\\launch.exe - Shortcut"')
+            os.system('"C:\\Users\\Dang\\Downloads\\launch.bat"')
             print("opened launch")
 
-# clear temp method 2
-# if os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
-#             os.system('"C:\\Users\\Dang\\Downloads\\cleartemp.bat"')
-#             print ("successfully clear temp")
-#             os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\checkupdate.bat"')
-#             print("opened checkupdate")
-#             os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\launch.bat"')
-#             subprocess.call(["taskkill","/F","/IM","killrb.exe"])
-#             print("opened launch")
             
 # down new check tab
 if not os.path.exists("C:\\checkupdate\\donechecktab"):
