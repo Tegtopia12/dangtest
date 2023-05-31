@@ -74,5 +74,4 @@ while True:
             print ("successfully created folder fluxus update")
         # if os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
         #     os.system('"C:\\Users\\Dang\\Downloads\\cleartemp.bat"')
-        subprocess.call(["taskkill","/F","/IM","updatefluxus.exe"])
-    
+        # subprocess.call(["taskkill","/F","/IM","updatefluxus.exe"])
