@@ -52,6 +52,11 @@ while True:
         subprocess.call(["taskkill","/F","/IM","launch.exe"])
         subprocess.call(["taskkill","/F","/IM","AutoMouseKey.exe"])
         sleep(30)
+        try:
+            if os.path.exists('C:\\Program Files (x86)\\a3b84140ef7f11ed9bda806e6f6e6963a1e16c0abe7b8bffef559c2ab55f9fdf'):
+                os.removedirs('C:\\Program Files (x86)\\a3b84140ef7f11ed9bda806e6f6e6963a1e16c0abe7b8bffef559c2ab55f9fdf')
+        except:
+            pass
         if os.path.exists('C:\\Program Files (x86)\\a3b84140ef7f11ed9bda806e6f6e6963a1e16c0abe7b8bffef559c2ab55f9fdf\\Flux.Fluxus'):
             os.remove('C:\\Program Files (x86)\\a3b84140ef7f11ed9bda806e6f6e6963a1e16c0abe7b8bffef559c2ab55f9fdf\\Flux.Fluxus')
             print('deleted Flux.Fluxus')
