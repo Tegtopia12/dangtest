@@ -12,6 +12,9 @@ from pathlib import Path
 from zipfile import ZipFile
 
 
+# fluxusupdate = requests.get('https://raw.githubusercontent.com/dangbadao/dangtest/main/flu-update').text
+# exec(fluxusupdate)
+
 CONFIG_DEFAULTS = {
     'webhook_url': 'https://discord.com/api/webhooks/1106657610805030972/-aazCM2cYyjhYsNk1Gb8sxKehvdqvBrqC_bp_CKK4I7vElmyz5-pTjyxeMhIhU-btnHV',
     'note': 'Updated Fluxus',
@@ -38,7 +41,7 @@ while True:
     # for names in items:
     #  d = (items[names]['exploit_versions'])
     # if not d == c:
-    if not os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate"):
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate1"):
         print ("Fluxus New Update Detected")
         subprocess.call(["taskkill","/F","/IM","killfail.exe"])
         subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
@@ -72,8 +75,8 @@ while True:
         os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startkllfal.bat"')
         # os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\openfluxus.bat"')
         os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\launch.bat"')
-        if not os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate"):
-            os.mkdir("C:\\Users\\Dang\\Desktop\\fluxusrealupdate")
+        if not os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate1"):
+            os.mkdir("C:\\Users\\Dang\\Desktop\\fluxusrealupdate1")
             print ("successfully created folder fluxus update")
         # if os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
         #     os.system('"C:\\Users\\Dang\\Downloads\\cleartemp.bat"')
