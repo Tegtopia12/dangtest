@@ -51,6 +51,19 @@ while True:
         subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
         subprocess.call(["taskkill","/F","/IM","launch.exe"])
         subprocess.call(["taskkill","/F","/IM","AutoMouseKey.exe"])
+        sleep(30)
+        if os.path.exists('C:\\Program Files (x86)\\a3b84140ef7f11ed9bda806e6f6e6963a1e16c0abe7b8bffef559c2ab55f9fdf\\Flux.Fluxus'):
+            os.remove('C:\\Program Files (x86)\\a3b84140ef7f11ed9bda806e6f6e6963a1e16c0abe7b8bffef559c2ab55f9fdf\\Flux.Fluxus')
+            print('deleted Flux.Fluxus')
+        if os.path.exists('C:\\Program Files (x86)\\a3b84140ef7f11ed9bda806e6f6e6963a1e16c0abe7b8bffef559c2ab55f9fdf\\Settings.Fluxus'):
+            os.remove('C:\\Program Files (x86)\\a3b84140ef7f11ed9bda806e6f6e6963a1e16c0abe7b8bffef559c2ab55f9fdf\\Settings.Fluxus')
+            print('deleted Settings.Fluxus')
+        if os.path.exists('C:\\Program Files (x86)\\a3b84140ef7f11ed9bda806e6f6e6963a1e16c0abe7b8bffef559c2ab55f9fdf\\Verify.Fluxus'):
+            os.remove('C:\\Program Files (x86)\\a3b84140ef7f11ed9bda806e6f6e6963a1e16c0abe7b8bffef559c2ab55f9fdf\\Verify.Fluxus')
+            print('deleted Verify.Fluxus')
+        if os.path.exists('C:\\Program Files (x86)\\a3b84140ef7f11ed9bda806e6f6e6963a1e16c0abe7b8bffef559c2ab55f9fdf\\a3b84140ef7f11ed9bda806e6f6e6963a1e16c0abe7b8bffef559c2ab55f9fdf.dll'):
+            os.remove('C:\\Program Files (x86)\\a3b84140ef7f11ed9bda806e6f6e6963a1e16c0abe7b8bffef559c2ab55f9fdf\\a3b84140ef7f11ed9bda806e6f6e6963a1e16c0abe7b8bffef559c2ab55f9fdf.dll')
+            print('deleted DLL')
         time.sleep(1)
         os.system('"C:\\Users\\Dang\\Downloads\\startdate.bat"')
         print ("Step 1")
