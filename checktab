@@ -18,11 +18,11 @@ def launch():
 # def checkupdate():
 #     return pygetwindow.getWindowsWithTitle('checkupdate')
 
-if not launch():
-    try:
-        os.system('"C:\\Users\\Dang\\Downloads\\launch.bat"')
-    except:
-        pass
+# if not launch():
+#     try:
+#         os.system('"C:\\Users\\Dang\\Downloads\\launch.bat"')
+#     except:
+#         pass
     
 # if not checkupdate():
 #     try:
