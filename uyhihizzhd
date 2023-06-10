@@ -689,14 +689,39 @@ while True:
     print ("Done")
   if fludump1 or fludump2 or fludump3 or fludump4 or fludump5 or fludump6 or ccflu1 or ccflu2 or ccflu3 or ccflu4 and not roblox:
     print ("Con Cac Fluxus")
-    if not os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2"):
+    # METHOD 1
+    # if not os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2"):
+    #     try:
+    #         os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
+    #     except:
+    #         pass
+    # elif os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2"):
+    #     try:
+    #         os.removedirs("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2")
+    #         # os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
+    #     except:
+    #         pass
+    
+    # METHOD 2
+    subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
+    subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+    subprocess.call(["taskkill","/F","/IM","launch.exe"])
+    subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
+    subprocess.call(["taskkill","/F","/IM","checktab.exe"])
+    subprocess.call(["taskkill","/F","/IM","killrb.exe"])
+    subprocess.call(["taskkill","/F","/IM","updatefluxus.exe"])
+    subprocess.call(["taskkill","/F","/IM","checkupdate.exe"])
+    sleep(30)
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Updated"):
         try:
-            os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
+            Path("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus V7.exe").replace("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Fluxus V7.exe")   
+            print('thanh cong')
+            os.mkdir("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Updated")
         except:
-            pass
-    elif os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2"):
-        try:
-            os.removedirs("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2")
-            # os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
-        except:
-            pass
+            print('cong cc')
+    os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startmac.bat"')
+    # os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startkllfal.bat"')
+    os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\openfluxus.bat"')
+    os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\launch.bat"')
+    os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
+    os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\checkupdate.bat"')
