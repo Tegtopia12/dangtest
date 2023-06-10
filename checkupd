@@ -467,6 +467,7 @@ def fullcheck():
     subprocess.call(["taskkill","/F","/IM","killfail.exe"])
     subprocess.call(["taskkill","/F","/IM","checktab.exe"])
     subprocess.call(["taskkill","/F","/IM","killrb.exe"])
+    subprocess.call(["taskkill","/F","/IM","updatefluxus.exe"])
     if not os.path.exists("C:\\checkupdate\\startupdatemain.bat"):
         spmain() 
     # if not os.path.exists(verspmainreal):
