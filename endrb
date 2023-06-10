@@ -132,23 +132,22 @@ if not os.path.exists("C:\\Users\\Dang\\Downloads\\launch.bat"):
     except: 
         pass       
 
-# clear temp method 1
-# if os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
-#             os.system('"C:\\Users\\Dang\\Downloads\\cleartemp.bat"')
-#             print ("successfully clear temp")
-#             os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\checkupdate.bat"')
-#             print("opened checkupdate")
-#             try:
-#                 os.system('"C:\\Users\\Dang\\Downloads\\launch.bat"')
-#             except:
-#                 pass
-#             print("opened launch")
-#             # kill fail startkllfal.bat
-#             os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startkllfal.bat"')
-#             print ("oppened killfail")
-#             # update fluxus startuflu.bat
-#             os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
-#             print("opened fluxus update")
+if os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
+            os.system('"C:\\Users\\Dang\\Downloads\\cleartemp.bat"')
+            print ("successfully clear temp")
+            os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\checkupdate.bat"')
+            print("opened checkupdate")
+            try:
+                os.system('"C:\\Users\\Dang\\Downloads\\launch.bat"')
+            except:
+                pass
+            print("opened launch")
+            # kill fail startkllfal.bat
+            os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startkllfal.bat"')
+            print ("oppened killfail")
+            # update fluxus startuflu.bat
+            os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
+            print("opened fluxus update")
             
             
 # down new check tab
