@@ -1,0 +1,53 @@
+import pyautogui
+import time
+from time import sleep
+import discord_webhook
+import pygetwindow
+import os
+import requests
+import zipfile
+import subprocess
+import json
+import wget
+from pathlib import Path
+from zipfile import ZipFile
+
+# autorelaunch = requests.get('https://raw.githubusercontent.com/dangbadao/dangtest/main/relaunch').text
+# exec(autorelaunch)
+
+
+CONFIG_DEFAULTS = {
+    'webhook_url': 'https://discord.com/api/webhooks/1106331020300656671/0BZvtllImLU2iGEvw4UHuF50EOZM5s4t0u-mAoezSueKGl8Ieo94cAvYJmukFo-wkc-R',
+    'note': 'Vua ReLaunch',
+}
+
+webhook_url = CONFIG_DEFAULTS['webhook_url']
+note = CONFIG_DEFAULTS['note']
+(f"Webhook URL: {webhook_url}")
+(f"Note: {note}")
+
+def post():
+ webhook = discord_webhook.DiscordWebhook(url=webhook_url)
+ embed = discord_webhook.DiscordEmbed(title="THONG BAO", description=note, color=0x7289da)
+ webhook.add_embed(embed)
+ response = webhook.execute()
+ return response
+
+def findroblox():
+  return pygetwindow.getWindowsWithTitle('Roblox')
+def relaunch():
+            time.sleep(1)
+            os.system('"C:\\Users\\Dang\\Desktop\\startkeyboard.bat"')
+            print ("Done Open Roblox")
+            
+while True:
+        sleep(120)
+        if findroblox():
+            print ("Roblox is running")
+        else:
+            print ("Roblox is not running")
+            relaunch()
+            try:
+                post()
+            except:
+                pass
