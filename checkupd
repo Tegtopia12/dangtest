@@ -12,10 +12,11 @@ import wget
 from pathlib import Path
 from zipfile import ZipFile
 
-newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer17"
+newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer171"
 verspmainreal = "C:\\checkupdate\\Updated151"
 updatekillfail = "C:\\Users\\Dang\\Desktop\\KillFail\\DaUpdate"
 updateconfigmousekey = "C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\UpdateConfigMouse"
+# updatefluxus = "C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Updated"
 scriptmousekey = "C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts\\Updated"
 # robot_ver = "C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\Updated3"
 # robot_ver1 = "C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\Updated4"
@@ -403,6 +404,53 @@ def fluxus():
         filename.write_bytes(response.content)  
         print ("Downloaded updatefluxus.exe")              
 
+# def zipfile3():
+#     try:
+#          try:
+#              print("link 1")
+#              response = requests.get("https://dangtapcode.xyz/luutru/Fluxus.zip")
+#          except:
+#              print ("link 2")
+#              response = requests.get("")
+#     except OSError:
+#         print('No connection to the server!')
+#         return None
+#     if response.status_code == 200:
+#         print('Status 200, OK')
+#         print ("Downloading")
+#         open('Fluxus.zip', 'wb').write(response.content)
+#         print ("Downloaded")
+#         time.sleep(3)
+#     else:
+#         print('ZIP file request not successful!.')
+#         return None
+# def downzipfile3():
+#     zipfile3()
+#     print ("Unziping")
+#     with zipfile.ZipFile('Fluxus.zip', 'r') as zip_ref:
+#         zip_ref.extractall("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus")
+#     print ("Unziped")
+
+# def fulldownFluxus():  
+#     time.sleep(1)
+#     downzipfile3()
+#     if not os.path.exists(updatefluxus):
+#      os.mkdir(updatefluxus)  
+#      print ("Created Folder Update")
+     
+def launch():
+    if os.path.exists("C:\\setuphihi\\launch.exe"):
+         os.remove("C:\\setuphihi\\launch.exe")
+         print("Removed launch.exe")
+    filename = Path('launch.exe')
+    url = 'https://dangtapcode.xyz/luutru/launch.exe'
+    response = requests.get(url)
+    filename.write_bytes(response.content)  
+    print ("Downloaded launch.exe")
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\launchupdated"): 
+     os.mkdir("C:\\Users\\Dang\\Desktop\\launchupdated") 
+     print ("Created launchupdated")
+     
 # def quetrac():
 #     filename = Path('cleartemp.bat')
 #     url = 'https://dangtapcode.xyz/luutru/cleartemp.bat'
@@ -417,6 +465,8 @@ def fullcheck():
     subprocess.call(["taskkill","/F","/IM","launch.exe"])
     subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
     subprocess.call(["taskkill","/F","/IM","killfail.exe"])
+    subprocess.call(["taskkill","/F","/IM","checktab.exe"])
+    subprocess.call(["taskkill","/F","/IM","killrb.exe"])
     if not os.path.exists("C:\\checkupdate\\startupdatemain.bat"):
         spmain() 
     # if not os.path.exists(verspmainreal):
@@ -432,10 +482,14 @@ def fullcheck():
             os.mkdir("C:\\Users\\Dang\\Desktop\\fluupdate")
     # if not os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
     #     quetrac()
+    # if not os.path.exists(updatefluxus):
+    #     fulldownFluxus()
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\startlogin.bat"):
         start()
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\Keyboard"):
         keyboard()    
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\launchupdated"):
+        launch()
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\AutoHotkey.exe"):
         setupclick1()
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\AutoMouseKey.exe"):
@@ -515,6 +569,8 @@ def allautoclick():
      Path("C:\\checkupdate\\setroblox.exe").rename("C:\\Users\\Dang\\Desktop\\KillFail\\setroblox.exe")
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\updatefluxus.exe"):
      Path("C:\\checkupdate\\updatefluxus.exe").rename("C:\\Users\\Dang\\Desktop\\updatefluxus.exe")   
+    if not os.path.exists("C:\\setuphihi\\launch.exe"):
+     Path("C:\\checkupdate\\launch.exe").rename("C:\\setuphihi\\launch.exe")   
     # if not os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
     #  Path("C:\\checkupdate\\cleartemp.bat").rename("C:\\Users\\Dang\\Downloads\\cleartemp.bat")   
      
