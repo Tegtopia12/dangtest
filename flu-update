@@ -56,18 +56,28 @@ while True:
             if os.path.exists('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\bin'):
                 os.removedirs('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\bin')
                 print('deleted bin')
+            else:
+                print('failed to delete')
             if os.path.exists('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\scripts'):
                 os.removedirs('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\scripts')
                 print('deleted scripts')
+            else:
+                print('failed to delete')
             if os.path.exists('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\autoexec'):
                 os.removedirs('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\autoexec')
                 print('deleted autoexec')
+            else:
+                print('failed to delete')
             if os.path.exists('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\workspace'):
                 os.removedirs('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\workspace')
                 print('deleted workspace')
+            else:
+                print('failed to delete')
             if os.path.exists('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Fluxus V7.exe'):
                 os.remove('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Fluxus V7.exe')
                 print('deleted Fluxus V7.exe')
+            else:
+                print('failed to delete')
         except:
             pass
         try:
