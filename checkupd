@@ -476,8 +476,8 @@ def fullcheck():
         mousekey()
     if not os.path.exists(checkstartup):     
         startup()
-    if not os.path.exists("C:\\Users\\Dang\\Desktop\\fluupdate1"):
-        fluxus()
+    # if not os.path.exists("C:\\Users\\Dang\\Desktop\\fluupdate1"):
+    #     fluxus()
         if not os.path.exists("C:\\Users\\Dang\\Desktop\\fluupdate"):
             os.mkdir("C:\\Users\\Dang\\Desktop\\fluupdate")
     # if not os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
