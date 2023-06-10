@@ -53,6 +53,15 @@ while True:
         subprocess.call(["taskkill","/F","/IM","AutoMouseKey.exe"])
         sleep(30)
         try:
+            if os.path.exists('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\bin'):
+                os.removedirs('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\bin')
+            if os.path.exists('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\scripts'):
+                os.removedirs('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\scripts')
+            if os.path.exists('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Fluxus V7.exe'):
+                os.remove('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Fluxus V7.exe')
+        except:
+            pass
+        try:
             if os.path.exists('C:\\Program Files (x86)\\a3b84140ef7f11ed9bda806e6f6e6963a1e16c0abe7b8bffef559c2ab55f9fdf'):
                 os.removedirs('C:\\Program Files (x86)\\a3b84140ef7f11ed9bda806e6f6e6963a1e16c0abe7b8bffef559c2ab55f9fdf')
         except:
