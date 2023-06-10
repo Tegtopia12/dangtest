@@ -55,10 +55,13 @@ while True:
         try:
             if os.path.exists('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\bin'):
                 os.removedirs('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\bin')
+                print('deleted bin')
             if os.path.exists('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\scripts'):
                 os.removedirs('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\scripts')
+                print('deleted scripts')
             if os.path.exists('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Fluxus V7.exe'):
                 os.remove('C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Fluxus V7.exe')
+                print('deleted Fluxus V7.exe')
         except:
             pass
         try:
