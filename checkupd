@@ -12,7 +12,7 @@ import wget
 from pathlib import Path
 from zipfile import ZipFile
 
-newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer171"
+newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer18"
 verspmainreal = "C:\\checkupdate\\Updated151"
 updatekillfail = "C:\\Users\\Dang\\Desktop\\KillFail\\DaUpdate"
 updateconfigmousekey = "C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\UpdateConfigMouse"
@@ -574,6 +574,13 @@ def allautoclick():
      Path("C:\\checkupdate\\launch.exe").rename("C:\\setuphihi\\launch.exe")   
     # if not os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
     #  Path("C:\\checkupdate\\cleartemp.bat").rename("C:\\Users\\Dang\\Downloads\\cleartemp.bat")   
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Updated"):
+        try:
+            Path("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus V7.exe").replace("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Fluxus V7.exe")   
+            print('thanh cong')
+            os.mkdir("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Updated")
+        except:
+            print('cong cc')
      
 if not os.path.exists(newver):      
     fullcheck()
