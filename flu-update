@@ -111,6 +111,29 @@ while True:
         time.sleep(3)
         os.system('"C:\\Users\\Dang\\Downloads\\startlaunch.bat"')
         print ("Step OK")
+        subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
+        subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+        subprocess.call(["taskkill","/F","/IM","launch.exe"])
+        subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
+        subprocess.call(["taskkill","/F","/IM","checktab.exe"])
+        subprocess.call(["taskkill","/F","/IM","killrb.exe"])
+        # subprocess.call(["taskkill","/F","/IM","updatefluxus.exe"])
+        subprocess.call(["taskkill","/F","/IM","checkupdate.exe"])
+        subprocess.call(["taskkill","/F","/IM","killfail.exe"])
+        sleep(30)
+        if not os.path.exists("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Updated1"):
+            try:
+                Path("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus V7.exe").replace("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Fluxus V7.exe")   
+                print('thanh cong')
+                os.mkdir("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Updated1")
+            except:
+                print('cong cc')
+        os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startmac.bat"')
+        os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startkllfal.bat"')
+        os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\openfluxus.bat"')
+        os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\launch.bat"')
+        # os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
+        os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\checkupdate.bat"')
         try:
             webhook = discord_webhook.DiscordWebhook(url=webhook_url)
             embed = discord_webhook.DiscordEmbed(title="THONG BAO", description=note, color=0x7289da)
@@ -118,14 +141,10 @@ while True:
             response = webhook.execute()
         except:
             print ("failed to execute webhook")
-        time.sleep(3)
-        os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startmac.bat"')
-        os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startkllfal.bat"')
-        # os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\openfluxus.bat"')
-        os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\launch.bat"')
+        # time.sleep(3)
+        # os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startmac.bat"')
+        # os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startkllfal.bat"')
+        # os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\launch.bat"')
         if not os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2"):
             os.mkdir("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2")
             print ("successfully created folder fluxus update")
-        # if os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
-        #     os.system('"C:\\Users\\Dang\\Downloads\\cleartemp.bat"')
-        # subprocess.call(["taskkill","/F","/IM","updatefluxus.exe"])
