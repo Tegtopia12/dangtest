@@ -47,6 +47,8 @@ while True:
         subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
         subprocess.call(["taskkill","/F","/IM","killrb.exe"])
         subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+        subprocess.call(["taskkill","/F","/IM","checktab.exe"])
+        subprocess.call(["taskkill","/F","/IM","checkupdate.exe"])
         subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
         subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
         subprocess.call(["taskkill","/F","/IM","launch.exe"])
