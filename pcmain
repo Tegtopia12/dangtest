@@ -51,7 +51,7 @@ def downvmstart():
      
 def update1():
     filename = Path('vmware1.png')
-    url = 'https://dangtapcode.xyz/luutru/vmware1.PNG'
+    url = 'https://dangtapcode.xyz/luutru/vmware1.png'
     response = requests.get(url)
     filename.write_bytes(response.content)   
     print ("Downloaded vmware1.png")
@@ -59,7 +59,7 @@ def update1():
            
 if not os.path.exists("C:\\vmstart"):
     os.mkdir("C:\\vmstart")
-if not os.path.exists("C:\\vmstart\\vmware1.PNG"):
+if not os.path.exists("C:\\vmstart\\vmware1.png"):
     update1()
 if not os.path.exists("C:\\vmstart\\Updated"):
     downvmstart()
@@ -95,41 +95,54 @@ mycompy2 = pyautogui.locateCenterOnScreen("mycomputer2.png")
 search = pyautogui.locateCenterOnScreen("search.png")
     
 def click():
-    if not vm or vm1:
-        print("not detected vmware")
-        pyautogui.moveTo(search)
-        print("move to search")
-        pyautogui.click()
-        print("click")
-        time.sleep(3)
-        pyautogui.write("vmware")
-        print("write vmware")
-        pyautogui.press("enter")
-        print("press enter")
-        time.sleep(10)
-        pyautogui.hotkey("ctrl", "b")
-        print("ok contron b")
+    # new method
+    print("not detected vmware")
+    pyautogui.hotkey('win', 's')
+    pyautogui.write('VMware Workstation Pro')
+    pyautogui.press('enter')
+    time.sleep(10)
+    pyautogui.hotkey("ctrl", "b")
+    print("ok contron b")
+    try:
         post()
-    elif vm:
-        print("detected vmware")
-        pyautogui.moveTo(vm)
-        print("move to vmware")
-        pyautogui.click()
-        print("click")
-        time.sleep(10)
-        pyautogui.hotkey("ctrl", "b")
-        print("ok contron b")
-        post()
-    elif vm1:
-        print("detected vmware1")
-        pyautogui.moveTo(vm1)
-        print("move to vmware1")
-        pyautogui.click()
-        print("click")
-        time.sleep(10)
-        pyautogui.hotkey("ctrl", "b")
-        print("ok contron b")
-        post()
+    except:
+        pass
+    
+    # if not vm or vm1:
+    #     print("not detected vmware")
+    #     pyautogui.moveTo(search)
+    #     print("move to search")
+    #     pyautogui.click()
+    #     print("click")
+    #     time.sleep(3)
+    #     pyautogui.write("vmware")
+    #     print("write vmware")
+    #     pyautogui.press("enter")
+    #     print("press enter")
+    #     time.sleep(10)
+    #     pyautogui.hotkey("ctrl", "b")
+    #     print("ok contron b")
+    #     post()
+    # elif vm:
+    #     print("detected vmware")
+    #     pyautogui.moveTo(vm)
+    #     print("move to vmware")
+    #     pyautogui.click()
+    #     print("click")
+    #     time.sleep(10)
+    #     pyautogui.hotkey("ctrl", "b")
+    #     print("ok contron b")
+    #     post()
+    # elif vm1:
+    #     print("detected vmware1")
+    #     pyautogui.moveTo(vm1)
+    #     print("move to vmware1")
+    #     pyautogui.click()
+    #     print("click")
+    #     time.sleep(10)
+    #     pyautogui.hotkey("ctrl", "b")
+    #     print("ok contron b")
+    #     post()
             
 click()
 print("DONE!")
