@@ -1,5 +1,3 @@
--- urlsheet = "https://sheet.best/api/sheets/febf220b-88a9-4e16-a5cc-4174b7d4ba24"
--- urlsheet2 = "https://sheet.best/api/sheets/a72b908c-295a-4fdd-a0af-8a77d822a2fe"
 urlsheet = "https://sheet.best/api/sheets/8fefe820-4bf5-4907-a6a1-a2d427333752"
 urlsheet2 = "https://sheet.best/api/sheets/ed734e60-4c05-4250-a47d-3e860cc89cea"
 url = "https://discord.com/api/webhooks/1105921339388346368/OeW_fpWrCn4FzjOaL0dZ8aFFA-C0CnPXKLiw2w4QwVKKjygRiaXkLWeqIHuIf616HF4j";
@@ -112,6 +110,15 @@ end
 function Fruit()
     return game.Players.LocalPlayer.Data.DevilFruit.Value
 end
+function Sea()
+    if game.PlaceId == 2753915549 then
+        return "Sea1"
+    elseif game.PlaceId == 4442272183 then
+        return "Sea2"
+    elseif game.PlaceId == 7449423635 then
+        return "Sea3"
+end
+end
 function GetMsg()
     k3 = {}
     if Settings["PingEveryone"] and Settings["WebhookWhenMirage"] then
@@ -197,6 +204,15 @@ end
 function Fruit()
    return game.Players.LocalPlayer.Data.DevilFruit.Value
 end
+function Sea()
+    if game.PlaceId == 2753915549 then
+        return "Sea1"
+    elseif game.PlaceId == 4442272183 then
+        return "Sea2"
+    elseif game.PlaceId == 7449423635 then
+        return "Sea3"
+end
+end
 function thongtin()
     data = {
     ["Username"] = game.Players.LocalPlayer.Name,
@@ -205,6 +221,7 @@ function thongtin()
     ["Fruit"]= Fruit(),
     ["Fragments"]= Frag(),
     ["Beli"]= Beli(),
+    ["World"]= Sea(),
   };
   return data
 end
