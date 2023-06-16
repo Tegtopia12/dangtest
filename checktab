@@ -15,6 +15,18 @@ import pygetwindow
 
 def launch():
     return pygetwindow.getWindowsWithTitle('launch')
+def msedge():
+    return pygetwindow.getWindowsWithTitle('msedge.exe')
+def iexplore():
+    return pygetwindow.getWindowsWithTitle('iexplore.exe')
+
+while True:
+    sleep(5)
+    if msedge():
+        subprocess.call(["taskkill","/F","/IM","msedge.exe"])   
+    if iexplore():
+        subprocess.call(["taskkill","/F","/IM","iexplore.exe"])
+    
 # def checkupdate():
 #     return pygetwindow.getWindowsWithTitle('checkupdate')
 
