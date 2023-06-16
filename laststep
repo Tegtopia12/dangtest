@@ -1,0 +1,163 @@
+from time import sleep
+import subprocess
+import pyautogui
+import requests
+import os
+from pathlib import Path
+import shutil
+from shutil import rmtree
+import pygetwindow
+import time
+import zipfile
+import discord_webhook
+import json
+import wget
+from zipfile import ZipFile
+
+
+# laststep = requests.get('https://raw.githubusercontent.com/dangbadao/dangtest/main/laststep').text
+# exec(laststep)
+
+
+ac1 = 'C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\Microsoft'
+ac2 = 'C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\NVIDIA'
+ac3 = 'C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\Roblox'
+ac4 = 'C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\Temp'
+appdata = 'C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AppData'
+localcache = 'C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\LocalCache'
+roamingstate = 'C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\RoamingState'
+settings = 'C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\Settings'
+systemappdata = 'C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\SystemAppData'
+tempstate = 'C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\TempState'
+TemporaryCageMeshProvider = 'C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\LocalState\\TemporaryCageMeshProvider'
+LocalStorage = 'C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\LocalState\\LocalStorage'
+LocalState = 'C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\LocalState'
+ac = 'C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC'
+
+
+def findroblox():
+  return pygetwindow.getWindowsWithTitle('Roblox')
+
+def setroblox():
+    try:
+        win = pygetwindow.getWindowsWithTitle('roblox')[0]
+        win.bottomright = (1720, 920)
+        win.size = (550,550)
+    except:
+        setroblox()
+
+def logOut():
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\CutTay\\autoexec"):
+        try:
+            Path("C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\autoexec").rename("C:\\Users\\Dang\\Desktop\\CutTay\\autoexec")
+        except:
+            pass   
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\CutTay\\ipc"):
+        try:
+            Path("C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\ipc").rename("C:\\Users\\Dang\\Desktop\\CutTay\\ipc")
+        except:
+            pass
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\CutTay\\workspace"):
+        try:
+            Path("C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\workspace").rename("C:\\Users\\Dang\\Desktop\\CutTay\\workspace")
+        except:
+            pass
+    try:
+        if os.path.exists(ac1):
+            shutil.rmtree(ac1)
+        if os.path.exists(ac2):
+            shutil.rmtree(ac2)
+        if os.path.exists(ac3):
+            shutil.rmtree(ac3)
+        if os.path.exists(ac4):
+            shutil.rmtree(ac4)
+        if os.path.exists(appdata):
+            rmtree(appdata)
+        if os.path.exists(localcache):
+            rmtree(localcache)
+        if os.path.exists(roamingstate):
+            rmtree(roamingstate)
+        if os.path.exists(settings):
+            rmtree(settings)
+        if os.path.exists(systemappdata):
+            rmtree(systemappdata)
+        if os.path.exists(tempstate):
+            rmtree(tempstate)
+        if os.path.exists(TemporaryCageMeshProvider):
+            rmtree(TemporaryCageMeshProvider)
+        if os.path.exists(LocalStorage):
+            rmtree(LocalStorage)
+        # if os.path.exists(LocalState):
+        #     rmtree(LocalState)
+        #     sleep(3)
+            # os.mkdir(LocalState)
+        if os.path.exists(ac):
+            rmtree(ac)
+    except:
+        logOut()
+    
+def checkmaxlv():
+    print('Running.....')
+    while True:
+        sleep(10)
+        maxlv1 = pyautogui.locateCenterOnScreen('max1.png')
+        maxlv2 = pyautogui.locateCenterOnScreen('max2.png')
+        maxlv3 = pyautogui.locateCenterOnScreen('max3.png')
+        if maxlv1 or maxlv2 or maxlv3:
+            print('Detected Account Maxlevel')
+            # kill all tool
+            subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+            subprocess.call(["taskkill","/F","/IM","launch.exe"])
+            subprocess.call(["taskkill","/F","/IM","killfail.exe"])
+            subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
+            subprocess.call(["taskkill","/F","/IM","killrb.exe"])
+            subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+            subprocess.call(["taskkill","/F","/IM","checktab.exe"])
+            subprocess.call(["taskkill","/F","/IM","checkupdate.exe"])
+            subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
+            subprocess.call(["taskkill","/F","/IM","AutoMouseKey.exe"])
+            subprocess.call(["taskkill","/F","/IM","updatefluxus.exe"])
+            sleep(15)
+            # delete roblox data 
+            logOut()
+            sleep(15)
+            # open roblox hehe
+            os.system('"C:\\Users\\Dang\\Desktop\\CutTay\\startroblox.bat"')
+            sleep(10)
+            subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+            sleep(3)
+            # open roblox
+            os.system('"C:\\Users\\Dang\\Desktop\\CutTay\\startroblox.bat"')
+            sleep(7)
+            if os.path.exists("C:\\Users\\Dang\\Desktop\\CutTay\\autoexec"):
+                try:
+                    Path("C:\\Users\\Dang\\Desktop\\CutTay\\autoexec").rename("C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\autoexec")
+                except:
+                    pass   
+            if os.path.exists("C:\\Users\\Dang\\Desktop\\CutTay\\ipc"):
+                try:
+                    Path("C:\\Users\\Dang\\Desktop\\CutTay\\ipc").rename("C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\ipc")
+                except:
+                    pass
+            if os.path.exists("C:\\Users\\Dang\\Desktop\\CutTay\\workspace"):
+                try:
+                    Path("C:\\Users\\Dang\\Desktop\\CutTay\\workspace").rename("C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\workspace")
+                except:
+                    pass
+            # setroblox()
+            # setroblox()
+            # setroblox()
+            sleep(10)
+            if findroblox():
+                print('ok')
+            elif not findroblox():
+                print('reopen roblox')
+                os.system('"C:\\Users\\Dang\\Desktop\\CutTay\\startroblox.bat"')
+                sleep(10)
+            # start login tool
+            os.system('"C:\\Users\\Dang\\Desktop\\CutTay\\startlogin.bat"')
+            sleep(60)
+            # restart vmware mini hehehehe
+            os.system("shutdown /r /t 1")
+    
+checkmaxlv()
