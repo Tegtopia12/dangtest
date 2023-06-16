@@ -159,9 +159,9 @@ if os.path.exists("C:\\Users\\Dang\\Desktop\\checktab\\startchecktab.bat"):
     os.system('"C:\\Users\\Dang\\Desktop\\checktab\\startchecktab.bat"')
     print ("Opened checktab")
 # start cuttay
-if os.path.exists("C:\\Users\\Dang\\Desktop\\CutTay\\startcuttay.bat"):
-    os.system('"C:\\Users\\Dang\\Desktop\\CutTay\\startcuttay.bat"')
-    print('started cuttay')
+# if os.path.exists("C:\\Users\\Dang\\Desktop\\CutTay\\startcuttay.bat"):
+#     os.system('"C:\\Users\\Dang\\Desktop\\CutTay\\startcuttay.bat"')
+#     print('started cuttay')
     
 while True:
     sleep(7000)
