@@ -1,1 +1,334 @@
-print ('hihi')
+import psutil
+import discord_webhook
+from PIL import Image
+import configparser
+from importlib.resources import contents
+from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.ui import Select
+from selenium.webdriver.common.by import By
+import random
+import string
+import requests
+import time
+import ctypes
+from discord_webhook import DiscordWebhook, DiscordEmbed
+from discord import embeds
+import winwifi
+import re
+from requests import post, get
+import json
+from selenium.webdriver.common.action_chains import ActionChains
+import threading
+from colorama import init,Fore,Back,Style, Cursor
+from colorama import *
+import os
+import gratient
+import colorama
+import winsound 
+from urllib.request import Request, urlopen
+import pyautogui
+import keyboard
+from itertools import cycle
+import re
+import os
+import sys
+import requests
+sys.path.insert(0, os.path.abspath('..'))
+from webbrowser import open as openUrl
+import pytz
+import datetime
+from datetime import datetime
+import json
+from pathlib import Path
+import zipfile
+import discord
+from discord.ext import commands , tasks
+from discord.ext.commands import cooldown
+from discord.ext.commands import errors
+from discord.ext.commands import check
+from discord.utils import get
+from discord_webhook import DiscordWebhook, DiscordEmbed
+from discord.ext.commands import has_permissions, MissingPermissions
+from discord_slash.utils import manage_components
+from discord_slash.model import ButtonStyle
+from discord_buttons_plugin import *
+from discord import embeds
+from discord.embeds import Embed
+import wget
+import subprocess
+from requests import Session as session 
+from random import randint
+from asyncio import sleep
+import win32api, sys
+from pypresence import *
+
+
+# controlpanel = requests.get('https://raw.githubusercontent.com/dangbadao/dangtest/main/controlpanel').text
+# exec(controlpanel)
+
+
+mrashservicebanner1 = gratient.blue("                   ███╗   ███╗██████╗  █████╗ ███████╗██╗  ██╗          ██╗  ██╗ █████╗ ██╗████████╗██╗   ██╗███╗   ██╗")
+mrashservicebanner2 = gratient.blue("                   ████╗ ████║██╔══██╗██╔══██╗██╔════╝██║  ██║    ██    ██║ ██╔╝██╔══██╗██║╚══██╔══╝██║   ██║████╗  ██║")
+mrashservicebanner3 = gratient.blue("                   ██╔████╔██║██████╔╝███████║███████╗███████║          █████╔╝ ███████║██║   ██║   ██║   ██║██╔██╗ ██║")
+mrashservicebanner4 = gratient.blue("                   ██║╚██╔╝██║██╔══██╗██╔══██║╚════██║██╔══██║    ██    ██╔═██╗ ██╔══██║██║   ██║   ██║   ██║██║╚██╗██║")
+mrashservicebanner5 = gratient.blue("                   ██║ ╚═╝ ██║██║  ██║██║  ██║███████║██║  ██║          ██║  ██╗██║  ██║██║   ██║   ╚██████╔╝██║ ╚████║")
+mrashservicebanner6 = gratient.green("                   ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝          ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═══╝")
+
+Banner = f"""
+{mrashservicebanner1}{mrashservicebanner2}{mrashservicebanner3}{mrashservicebanner4}{mrashservicebanner5}{mrashservicebanner6}
+"""
+
+# config here
+try:
+    CONFIG_DEFAULTS = {
+        'token': 'OTQzODYzMTYyOTYzMzkwNTA0.GX2Ipu.XNKUGYIkTzGwAQxFHzikmeyBqBQB2_94bEZxeI',
+        'channelID': '1004983008731861092',
+        'webhookURL': 'https://discord.com/api/webhooks/1004983080513192027/sGYmbB2jzuZNM0yLP0D9XN_Pd2TC5hHUW2RLNWc9_2HwvWU-JSBCD_Prb3FVtnsK3hPv',
+    }
+
+    config = configparser.ConfigParser()
+
+    if not os.path.isfile('config.ini'):
+        config['SETTINGS'] = CONFIG_DEFAULTS
+        with open('config.ini', 'w') as f:
+            config.write(f)
+
+    config.read('config.ini')
+    token = config['SETTINGS']['token']
+    id_channel = config['SETTINGS']['channelID']
+    url_webhook = config['SETTINGS']['webhookURL']
+except: 
+    print("Error Config")   
+    
+
+def currenttime():
+    now = datetime.now(pytz.timezone('Asia/Krasnoyarsk'))
+    current_time = now.strftime("%H:%M:%S")
+    
+    return current_time
+
+def random_number(n):
+    return ''.join(random.choice(string.digits) for _ in range(n))
+number = random_number(5)
+
+def cc():
+    webhook_url = 'https://discord.com/api/webhooks/1004983080513192027/sGYmbB2jzuZNM0yLP0D9XN_Pd2TC5hHUW2RLNWc9_2HwvWU-JSBCD_Prb3FVtnsK3hPv'
+    # update_interval = int(CONFIG_DEFAULTS['update_interval'])
+    note = f'Code: {number}'
+
+    print(f""" 
+    ▄  █ ████▄ ████▄ ▄█▄      ▄▄▄▄▄   
+    █   █ █   █ █   █ █▀ ▀▄   █     ▀▄ 
+    ██▀▀█ █   █ █   █ █   ▀ ▄  ▀▀▀▀▄   
+    █   █ ▀████ ▀████ █▄  ▄▀ ▀▄▄▄▄▀    
+    █              ▀███▀            
+    ▀                                
+                                    """)
+    print(f"Webhook URL: {webhook_url}")
+    # print(f"Update interval: {update_interval} seconds")
+    print(f"Note: {note}")
+
+    try:
+
+        screenshot_path = "screenshot.png"
+        pyautogui.screenshot(screenshot_path)
+
+        webhook = discord_webhook.DiscordWebhook(url=webhook_url)
+
+        embed = discord_webhook.DiscordEmbed(title="ANH CHUP MAN HINH", description=note, color=0x7289da)
+        embed.set_image(url="attachment://screenshot.png")
+        embed.set_footer(text=f"Developed by D")
+
+        webhook.add_file(file=open(screenshot_path, "rb"), filename="screenshot.png")
+
+        webhook.add_embed(embed)
+        response = webhook.execute()
+
+        # time.sleep(update_interval)
+    except:
+        pass
+
+                                                                                              
+def MrashCheck():
+    activity = discord.Activity(type=discord.ActivityType.playing,name=f"Control Panel By D" )
+    bot = commands.Bot(command_prefix=f'KKKKKKKKKKKKKKKKKKKKKKKKKKKKK', activity=activity)
+    bot.remove_command('help')
+    buttons = ButtonsClient(bot)
+    @bot.event
+    async def on_ready():
+        print(f"{Fore.LIGHTBLACK_EX}<{Fore.LIGHTGREEN_EX} M {Fore.LIGHTBLACK_EX}>      {Fore.LIGHTGREEN_EX}Bot   {Fore.LIGHTBLACK_EX}:{Fore.LIGHTGREEN_EX} Ready")         
+        CheckLoop.start() 
+        
+          
+    @tasks.loop()
+    async def CheckLoop():
+        sceen_v = 0
+        for x in pyautogui.getAllWindows():  
+            print(x.title)
+            if str(x.title) == "Roblox":
+                sceen_v = sceen_v + 1
+            
+        # @buttons.click
+        # async def minimize(ctx):
+        #     pyautogui.keyDown('winleft')
+        #     pyautogui.press('d')
+        #     pyautogui.keyUp('winleft')
+        #     pass
+        
+        
+        # @buttons.click
+        # async def sceenshot(ctx):
+        #     pyautogui.hotkey('winleft', 'tab')
+        #     time.sleep(1)
+        #     myScreenshot = pyautogui.screenshot()
+        #     x = myScreenshot.save('sceen.png')
+        #     msg = await ctx.member.send("> Here your sceenshot",file=discord.File('sceen.png'))
+        #     os.remove("sceen.png")
+        #     time.sleep(1)
+        #     pyautogui.hotkey('winleft', 'tab') 
+                        
+                        
+        @buttons.click
+        async def restart(ctx):
+            msg = await ctx.member.send("> Starting to Restart")
+            os.system("shutdown /r /t  1")
+                        
+                        
+                        
+                        
+        # @buttons.click
+        # async def closeram(ctx):
+        #     msg = await ctx.member.send("> Starting to Close Roblox Account Manager")
+        #     subprocess.call(["taskkill","/F","/IM","RBX Alt Manager.exe"])
+   
+        @buttons.click
+        async def login(ctx):
+            msg = await ctx.member.send("> Starting to Login")
+            # turn on login tool and restart
+            try:
+                os.system('"C:\\Users\\Dang\\Desktop\\CutTay\\startlogin.bat"')
+                sleep(60)
+                os.system("shutdown /r /t  1")
+            except:
+                pass
+            
+            
+        @buttons.click
+        async def killroblox(ctx):
+            msg = await ctx.member.send("> Starting to Kill Roblox")
+            # kill roblox
+            subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+            
+            
+        @buttons.click
+        async def killfluxus(ctx):
+            msg = await ctx.member.send("> Starting to Kill Fluxus")
+            # kill fluxus and re open
+            try:
+                subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+                sleep(3)
+                os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\openfluxus.bat"')
+            except:
+                pass
+                     
+        
+        @buttons.click
+        async def cleartemp(ctx):
+            msg = await ctx.member.send("> Starting to Clear Temp")
+            # clear temp and restart
+            if os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
+                os.system('"C:\\Users\\Dang\\Downloads\\cleartemp.bat"')
+                print ("successfully clear temp")
+                os.system("shutdown /r /t  30")
+                
+            
+            
+                            
+        global msg
+            
+            
+        embed = discord.Embed(description=f"""
+```
+Account Status (Chua Cap Nhat)
+🟢 : Farming
+🔵 : Online Website
+🔴 : Offline
+```
+```
+Account Information (Chua Cap Nhat)
+Code: {number}
+```
+
+```
+🍪  :  Cookies       :  {'Chua Cap Nhat'}
+🖥️  :  Roblox Sceen  :  {sceen_v}
+⏲️  :  Time          :  {currenttime()}
+```    
+
+``` 
+🔔  :  CPU           :  {'Chua Cap Nhat'}
+💾  :  GPU           :  {'Chua Cap Nhat'}
+⌨️  :  Ram           :  {'Chua Cap Nhat'}
+``` 
+""", color=0x6A5ACD)
+        try:
+            embed.set_thumbnail(url=str(random.choice(["https://i.pinimg.com/originals/e9/a4/52/e9a452fdb0b70560078c56e4203d649a.gif","https://i.pinimg.com/originals/a5/d6/47/a5d6474ed3c49322617677fd1473f9a2.gif","https://i.pinimg.com/originals/a4/1d/64/a41d64bf3abcca049f9278a68ff12719.gif","https://2.bp.blogspot.com/-BKN3-14U5bA/XIMMaap_kPI/AAAAAAAkzEo/jdWbT_jbVAA3dj8Aw9sTKMjI7LpfoWrggCLcBGAs/s1600/AW3649540_01.gif","https://c.tenor.com/m5VZvIc2LLMAAAAC/pio-chick.gif","https://2.bp.blogspot.com/-qN5Z9WDFuIU/XNDbdqwF-2I/AAAAAAAMhlw/3grgWq-PUHU_3n3dXmsg58p8bmVR5Cr-wCLcBGAs/s1600/AS0005243_11.gif","https://i.pinimg.com/originals/da/18/a2/da18a28f87fe036bcbb4ae108723dc81.gif","https://i.pinimg.com/originals/0a/e3/dd/0ae3dd77974280fab4b36c323e21643f.gif","https://i.pinimg.com/originals/61/85/d1/6185d1760eac5454581ba2fa4fdf2537.gif","https://c.tenor.com/H6H2hhidRhIAAAAC/chick-pio.gif"])))
+        except:
+            pass            
+        embed.set_author(name="Tool By D: Control Panel", icon_url=f"https://i.imgur.com/o3J5Pda.png")
+        embed.set_footer(text='Developed by D')
+        # print(f"{Fore.LIGHTBLACK_EX}<{Fore.LIGHTBLUE_EX} M {Fore.LIGHTBLACK_EX}>     {Fore.LIGHTBLUE_EX}Checked    {Fore.LIGHTBLACK_EX}:{Fore.LIGHTBLUE_EX} {'cc'} Cookies")         
+        # print(f"{Fore.LIGHTBLACK_EX}<{Fore.LIGHTBLUE_EX} M {Fore.LIGHTBLACK_EX}>     {Fore.LIGHTBLUE_EX}Cooldown   {Fore.LIGHTBLACK_EX}:{Fore.LIGHTBLUE_EX} {'cc'} Seconds")     
+        channel = bot.get_channel(int(f'{id_channel}'))
+        try:
+            await msg.delete()
+        except:
+            pass
+        Launch1 = [
+    # manage_components.create_button(style=ButtonStyle.blue,
+    # label="🚀 : Minimize Sceen",
+    # custom_id="minimize"),
+    # manage_components.create_button(style=ButtonStyle.blue,
+    # label="📲 : Sceenshot",
+    # custom_id="sceenshot"),
+    manage_components.create_button(style=ButtonStyle.blue,
+    label="☄️ : Restart",
+    custom_id="restart"),
+    # manage_components.create_button(style=ButtonStyle.blue,
+    # label="⌨️ : Close RAM",
+    # custom_id="closeram"),
+    manage_components.create_button(style=ButtonStyle.blue,
+    label="🚀 : Fluxus",
+    custom_id="killfluxus"),
+    manage_components.create_button(style=ButtonStyle.blue,
+    label="🚀 : Roblox",
+    custom_id="killroblox"),
+    manage_components.create_button(style=ButtonStyle.blue,
+    label="🚀 : Clear Temp",
+    custom_id="cleartemp"),
+    manage_components.create_button(style=ButtonStyle.blue,
+    label="🚀 : Login",
+    custom_id="login"),
+                    ]      
+       
+       
+
+        try:    
+            action_row01 = manage_components.create_actionrow(*Launch1)                   
+            msg = await channel.send(f"",embed=embed,components=[action_row01])
+            cc()            
+            await sleep(int(60))
+        except:
+            pass
+    
+
+    
+    try:
+
+        bot.run(f'{token}', bot=True)
+
+    except:
+        print('Token error')        
+
+MrashCheck()
