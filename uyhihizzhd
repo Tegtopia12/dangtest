@@ -749,20 +749,20 @@ while True:
     # open Fluxus
     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
     print ("Done")
-  if fludump1 or fludump2 or fludump3 or fludump4 or fludump5 or fludump6 or ccflu1 or ccflu2 or ccflu3 or ccflu4 and not roblox:
-    print ("Con Cac Fluxus")
-    # METHOD 1
-    if not os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2"):
-        try:
-            os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
-        except:
-            pass
-    elif os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2"):
-        try:
-            os.removedirs("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2")
-            # os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
-        except:
-            pass
+  # if fludump1 or fludump2 or fludump3 or fludump4 or fludump5 or fludump6 or ccflu1 or ccflu2 or ccflu3 or ccflu4 and not roblox:
+  #   print ("Con Cac Fluxus")
+  #   # METHOD 1
+  #   if not os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2"):
+  #       try:
+  #           os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
+  #       except:
+  #           pass
+  #   elif os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2"):
+  #       try:
+  #           os.removedirs("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2")
+  #           # os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
+  #       except:
+  #           pass
     # if maxx1 or maxx2 or maxx3:
     #     # start cuttay
     #     if os.path.exists("C:\\Users\\Dang\\Desktop\\CutTay\\startcuttay.bat"):
