@@ -469,7 +469,19 @@ def downmax3():
     url = 'https://dangtapcode.xyz/luutru/max3.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)
-                    
+
+def checkmax():
+  if os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\max1.PNG"):
+    os.remove("C:\\Users\\Dang\\Desktop\\KillFail\\max1.PNG")
+  if os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\max2.PNG"):
+    os.remove("C:\\Users\\Dang\\Desktop\\KillFail\\max2.PNG")
+  if os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\max3.PNG"):
+    os.remove("C:\\Users\\Dang\\Desktop\\KillFail\\max3.PNG")
+  try:
+    os.mkdir("C:\\Users\\Dang\\Desktop\\KillFail\\update16max")
+  except:
+    pass
+                      
 # def spmainreal():
 #     if os.path.exists("C:\\checkupdate\\updatemain.exe"):
 #        os.remove("C:\\checkupdate\\updatemain.exe")
@@ -517,6 +529,8 @@ def downmax3():
 
 if not os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\update16fudum"):
   checkdum()
+if not os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\update16max"):
+  checkmax()
 sleep(1)
 if not dum() == "ok":
   downdum()
