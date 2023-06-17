@@ -763,7 +763,7 @@ while True:
             # os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
         except:
             pass
-    if maxx1 or maxx2 or maxx3:
+    if maxx2:
         # start cuttay
         if os.path.exists("C:\\Users\\Dang\\Desktop\\CutTay\\startcuttay.bat"):
             os.system('"C:\\Users\\Dang\\Desktop\\CutTay\\startcuttay.bat"')
