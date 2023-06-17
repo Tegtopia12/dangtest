@@ -82,9 +82,9 @@ Banner = f"""
 # config here
 try:
     CONFIG_DEFAULTS = {
-        'token': 'OTQzODYzMTYyOTYzMzkwNTA0.GX2Ipu.XNKUGYIkTzGwAQxFHzikmeyBqBQB2_94bEZxeI',
-        'channelID': '1004983008731861092',
-        'webhookURL': 'https://discord.com/api/webhooks/1004983080513192027/sGYmbB2jzuZNM0yLP0D9XN_Pd2TC5hHUW2RLNWc9_2HwvWU-JSBCD_Prb3FVtnsK3hPv',
+        'token': 'tokenHERE',
+        'channelID': 'ChannelID',
+        'webhookURL': 'Weebhookurlhere',
     }
 
     config = configparser.ConfigParser()
