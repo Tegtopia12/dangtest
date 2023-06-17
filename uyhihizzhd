@@ -431,56 +431,56 @@ def checkdum():
     os.remove("C:\\Users\\Dang\\Desktop\\KillFail\\fudum4.PNG")
   os.mkdir("C:\\Users\\Dang\\Desktop\\KillFail\\update16fudum")
 
-def max1():
-  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
-  file = 'max1.PNG'
-  tret = path + file
-  tret1 = Path(tret)
-  if tret1.is_file():
-      return ("ok") 
-def downmax1():
-    filename = Path('max1.PNG')
-    url = 'https://dangtapcode.xyz/luutru/max1.PNG'
-    response = requests.get(url)
-    filename.write_bytes(response.content)
+# def max1():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'max1.PNG'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok") 
+# def downmax1():
+#     filename = Path('max1.PNG')
+#     url = 'https://dangtapcode.xyz/luutru/max1.PNG'
+#     response = requests.get(url)
+#     filename.write_bytes(response.content)
 
-def max2():
-  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
-  file = 'max2.PNG'
-  tret = path + file
-  tret1 = Path(tret)
-  if tret1.is_file():
-      return ("ok") 
-def downmax2():
-    filename = Path('max2.PNG')
-    url = 'https://dangtapcode.xyz/luutru/max2.PNG'
-    response = requests.get(url)
-    filename.write_bytes(response.content)
+# def max2():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'max2.PNG'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok") 
+# def downmax2():
+#     filename = Path('max2.PNG')
+#     url = 'https://dangtapcode.xyz/luutru/max2.PNG'
+#     response = requests.get(url)
+#     filename.write_bytes(response.content)
 
-def max3():
-  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
-  file = 'max3.PNG'
-  tret = path + file
-  tret1 = Path(tret)
-  if tret1.is_file():
-      return ("ok") 
-def downmax3():
-    filename = Path('max3.PNG')
-    url = 'https://dangtapcode.xyz/luutru/max3.PNG'
-    response = requests.get(url)
-    filename.write_bytes(response.content)
+# def max3():
+#   path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+#   file = 'max3.PNG'
+#   tret = path + file
+#   tret1 = Path(tret)
+#   if tret1.is_file():
+#       return ("ok") 
+# def downmax3():
+#     filename = Path('max3.PNG')
+#     url = 'https://dangtapcode.xyz/luutru/max3.PNG'
+#     response = requests.get(url)
+#     filename.write_bytes(response.content)
 
-def checkmax():
-  if os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\max1.PNG"):
-    os.remove("C:\\Users\\Dang\\Desktop\\KillFail\\max1.PNG")
-  if os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\max2.PNG"):
-    os.remove("C:\\Users\\Dang\\Desktop\\KillFail\\max2.PNG")
-  if os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\max3.PNG"):
-    os.remove("C:\\Users\\Dang\\Desktop\\KillFail\\max3.PNG")
-  try:
-    os.mkdir("C:\\Users\\Dang\\Desktop\\KillFail\\update16max")
-  except:
-    pass
+# def checkmax():
+#   if os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\max1.PNG"):
+#     os.remove("C:\\Users\\Dang\\Desktop\\KillFail\\max1.PNG")
+#   if os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\max2.PNG"):
+#     os.remove("C:\\Users\\Dang\\Desktop\\KillFail\\max2.PNG")
+#   if os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\max3.PNG"):
+#     os.remove("C:\\Users\\Dang\\Desktop\\KillFail\\max3.PNG")
+#   try:
+#     os.mkdir("C:\\Users\\Dang\\Desktop\\KillFail\\update16max")
+#   except:
+#     pass
                       
 # def spmainreal():
 #     if os.path.exists("C:\\checkupdate\\updatemain.exe"):
@@ -529,8 +529,8 @@ def checkmax():
 
 if not os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\update16fudum"):
   checkdum()
-if not os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\update16max"):
-  checkmax()
+# if not os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\update16max"):
+#   checkmax()
 sleep(1)
 if not dum() == "ok":
   downdum()
@@ -552,12 +552,12 @@ if not dump3() == "ok":
   downdump3()
 if not dump4() == "ok":
   downdump4()   
-if not max1() == "ok":
-    downmax1()
-if not max2() == "ok":
-    downmax2()
-if not max3() == "ok":
-    downmax3()
+# if not max1() == "ok":
+#     downmax1()
+# if not max2() == "ok":
+#     downmax2()
+# if not max3() == "ok":
+#     downmax3()
                                        
 while True:
   sleep(3)
@@ -592,9 +592,9 @@ while True:
   ccflu2 = pyautogui.locateCenterOnScreen("fluproblem2.PNG")
   ccflu3 = pyautogui.locateCenterOnScreen("fluproblem3.PNG")
   ccflu4 = pyautogui.locateCenterOnScreen("fluproblem4.PNG")
-  maxx1 = pyautogui.locateCenterOnScreen("max1.PNG")
-  maxx2 = pyautogui.locateCenterOnScreen("max2.PNG")
-  maxx3 = pyautogui.locateCenterOnScreen("max3.PNG")
+  # maxx1 = pyautogui.locateCenterOnScreen("max1.PNG")
+  # maxx2 = pyautogui.locateCenterOnScreen("max2.PNG")
+  # maxx3 = pyautogui.locateCenterOnScreen("max3.PNG")
   if ok:
     print ("FOUND OK")
     # kill Roblox
@@ -763,11 +763,11 @@ while True:
             # os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
         except:
             pass
-    if maxx2:
-        # start cuttay
-        if os.path.exists("C:\\Users\\Dang\\Desktop\\CutTay\\startcuttay.bat"):
-            os.system('"C:\\Users\\Dang\\Desktop\\CutTay\\startcuttay.bat"')
-            print('started cuttay')
+    # if maxx1 or maxx2 or maxx3:
+    #     # start cuttay
+    #     if os.path.exists("C:\\Users\\Dang\\Desktop\\CutTay\\startcuttay.bat"):
+    #         os.system('"C:\\Users\\Dang\\Desktop\\CutTay\\startcuttay.bat"')
+    #         print('started cuttay')
     # METHOD 2
     # subprocess.call(["taskkill","/F","/IM","gs-auto-clicker-3.1.4-installer.exe"])
     # subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
