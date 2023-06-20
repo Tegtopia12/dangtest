@@ -518,6 +518,18 @@ def downloginne():
     response = requests.get(url)
     filename.write_bytes(response.content)
 
+def loginne1():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'loginne1.PNG'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok") 
+def downloginne1():
+    filename = Path('loginne1.PNG')
+    url = 'https://dangtapcode.xyz/luutru/loginne1.PNG'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
                      
 # if not djscune() == "ok":
 #    downdjscune()
@@ -575,6 +587,8 @@ if not dump4() == "ok":
 #     downmax3()
 if not loginne() == "ok":
   downloginne()
+if not loginne1() == "ok":
+  downloginne1()
 
                                        
 while True:
@@ -614,6 +628,7 @@ while True:
   # maxx2 = pyautogui.locateCenterOnScreen("max2.PNG")
   # maxx3 = pyautogui.locateCenterOnScreen("max3.PNG")
   login_memu = pyautogui.locateCenterOnScreen("loginne.png")
+  login_memu1 = pyautogui.locateCenterOnScreen("loginne1.png")
   if ok:
     print ("FOUND OK")
     # kill Roblox
@@ -768,7 +783,7 @@ while True:
     # open Fluxus
     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
     print ("Done")
-  if login_memu:
+  if login_memu or login_memu1:
     # kill roblox
     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
     sleep(10)
