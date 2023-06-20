@@ -503,6 +503,21 @@ def checkdum():
 #     Path("C:\\Users\\Dang\\Desktop\\KillFail\\checkupdate.exe").rename("C:\\checkupdate\\checkupdate.exe")
 #     sleep(3)
 #     os.system("shutdown /r /t  3")
+
+
+def loginne():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'loginne.PNG'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok") 
+def downloginne():
+    filename = Path('loginne.PNG')
+    url = 'https://dangtapcode.xyz/luutru/loginne.PNG'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
+
                      
 # if not djscune() == "ok":
 #    downdjscune()
@@ -558,6 +573,9 @@ if not dump4() == "ok":
 #     downmax2()
 # if not max3() == "ok":
 #     downmax3()
+if not loginne() == "ok":
+  downloginne()
+
                                        
 while True:
   sleep(3)
@@ -595,6 +613,7 @@ while True:
   # maxx1 = pyautogui.locateCenterOnScreen("max1.PNG")
   # maxx2 = pyautogui.locateCenterOnScreen("max2.PNG")
   # maxx3 = pyautogui.locateCenterOnScreen("max3.PNG")
+  login_memu = pyautogui.locateCenterOnScreen("loginne.png")
   if ok:
     print ("FOUND OK")
     # kill Roblox
@@ -749,6 +768,30 @@ while True:
     # open Fluxus
     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
     print ("Done")
+  if login_memu:
+    # kill roblox
+    subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+    sleep(10)
+    # start roblox
+    os.system('"C:\\Users\\Dang\\Desktop\\CutTay\\startroblox.bat"')
+    # os.system('startroblox.bat')
+    sleep(30)
+    for i in range(30):
+        sleep(1)
+        try:
+            login_memu = pyautogui.locateCenterOnScreen("loginne.png")
+            if login_memu:
+                # start tool login and restart pc
+                print('detected login')
+                os.system('"C:\\Users\\Dang\\Desktop\\CutTay\\startlogin.bat"')
+                sleep(60)
+                # restart hihihihi
+                os.system("shutdown /r /t 1")
+                break
+            elif not login_memu:
+                print('hmm idk what i should to do right now')
+        except:
+            pass
   # if fludump1 or fludump2 or fludump3 or fludump4 or fludump5 or fludump6 or ccflu1 or ccflu2 or ccflu3 or ccflu4 and not roblox:
   #   print ("Con Cac Fluxus")
   #   # METHOD 1
