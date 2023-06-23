@@ -530,7 +530,32 @@ def downloginne1():
     url = 'https://dangtapcode.xyz/luutru/loginne1.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)
-                     
+
+def wrongg():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'wrong.PNG'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok") 
+def downwrongg():
+    filename = Path('wrong.PNG')
+    url = 'https://dangtapcode.xyz/luutru/wrong.PNG'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
+
+def fluuppp():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'update.PNG'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok") 
+def downfluuppp():
+    filename = Path('update.PNG')
+    url = 'https://dangtapcode.xyz/luutru/update.PNG'
+    response = requests.get(url)
+    filename.write_bytes(response.content)                     
 # if not djscune() == "ok":
 #    downdjscune()
 # if not jonfa() == "ok":
@@ -589,7 +614,11 @@ if not loginne() == "ok":
   downloginne()
 if not loginne1() == "ok":
   downloginne1()
-
+if not wrongg() == "ok":
+  downwrongg()
+if not fluuppp() == "ok":
+  downfluuppp()
+  
                                        
 while True:
   sleep(3)
@@ -624,6 +653,8 @@ while True:
   ccflu2 = pyautogui.locateCenterOnScreen("fluproblem2.PNG")
   ccflu3 = pyautogui.locateCenterOnScreen("fluproblem3.PNG")
   ccflu4 = pyautogui.locateCenterOnScreen("fluproblem4.PNG")
+  update = pyautogui.locateCenterOnScreen("update.PNG")
+  wrong = pyautogui.locateCenterOnScreen("wrong.PNG")
   # maxx1 = pyautogui.locateCenterOnScreen("max1.PNG")
   # maxx2 = pyautogui.locateCenterOnScreen("max2.PNG")
   # maxx3 = pyautogui.locateCenterOnScreen("max3.PNG")
@@ -783,8 +814,23 @@ while True:
     # open Fluxus
     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
     print ("Done")
-    
-    
+  if wrong:
+    subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+  if update:
+    print ("Con Cac Fluxus")
+    # METHOD 1
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2"):
+        try:
+            os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
+        except:
+            pass
+    elif os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2"):
+        try:
+            os.removedirs("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2")
+            # os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
+        except:
+            pass
+            
 #   if login_memu or login_memu1:
 #     # kill roblox
 #     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
