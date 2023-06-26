@@ -555,6 +555,19 @@ def downfluuppp():
     filename = Path('update.PNG')
     url = 'https://dangtapcode.xyz/luutru/update.PNG'
     response = requests.get(url)
+    filename.write_bytes(response.content) 
+    
+def flukey():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'keybug.PNG'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok") 
+def downflukey():
+    filename = Path('keybug.PNG')
+    url = 'https://dangtapcode.xyz/luutru/keybug.PNG'
+    response = requests.get(url)
     filename.write_bytes(response.content)                     
 # if not djscune() == "ok":
 #    downdjscune()
@@ -618,6 +631,8 @@ if not wrongg() == "ok":
   downwrongg()
 if not fluuppp() == "ok":
   downfluuppp()
+if not flukey() == "ok":
+    downflukey()
   
                                        
 while True:
@@ -655,6 +670,7 @@ while True:
   ccflu4 = pyautogui.locateCenterOnScreen("fluproblem4.PNG")
   update = pyautogui.locateCenterOnScreen("update.PNG")
   wrong = pyautogui.locateCenterOnScreen("wrong.PNG")
+  errorkey = pyautogui.locateCenterOnScreen("keybug.PNG")
   # maxx1 = pyautogui.locateCenterOnScreen("max1.PNG")
   # maxx2 = pyautogui.locateCenterOnScreen("max2.PNG")
   # maxx3 = pyautogui.locateCenterOnScreen("max3.PNG")
@@ -830,6 +846,15 @@ while True:
             # os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startuflu.bat"')
         except:
             pass
+  if errorkey:
+    print("Detected Fluxus Bug Key")
+    # kill fluxus
+    subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+    os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
+    time.sleep(1)
+    # open Fluxus
+    os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
+    print ("Done")
             
 #   if login_memu or login_memu1:
 #     # kill roblox
