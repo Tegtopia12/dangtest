@@ -568,7 +568,13 @@ def downflukey():
     filename = Path('keybug.PNG')
     url = 'https://dangtapcode.xyz/luutru/keybug.PNG'
     response = requests.get(url)
-    filename.write_bytes(response.content)                     
+    filename.write_bytes(response.content)
+
+def checknewdump():
+  if os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\keybug.PNG"):
+    os.remove("C:\\Users\\Dang\\Desktop\\KillFail\\keybug.PNG")
+  os.mkdir("C:\\Users\\Dang\\Desktop\\KillFail\\update16dump")
+                       
 # if not djscune() == "ok":
 #    downdjscune()
 # if not jonfa() == "ok":
@@ -592,6 +598,8 @@ def downflukey():
 # if not jea2() == "ok":
 #    downjea2() 
 
+if not os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\update16dump"):
+    checknewdump()
 if not os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\update16fudum"):
   checkdum()
 # if not os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\update16max"):
