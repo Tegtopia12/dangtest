@@ -25,6 +25,9 @@ import pygetwindow
 # verreal = testfully.py
 # this version only support for auto v4
 
+# ldtool = requests.get('').text
+# exec(ldtool)
+
 
 try:
     config = json.load(open("config.json", encoding="utf-8"))
@@ -334,27 +337,27 @@ class starts(threading.Thread):
                         print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Noresponding | Time:", time.ctime(time.time()))
                         # break
                     # bug check freeze roblox
-                    # try:
-                    #     poin16  = d.find('img\\freezee.png')
-                    #     if not poin16 > [(0, 0)] :
-                    #         print('No Detected Roblox Freeze')
-                    #     elif poin16 > [(0, 0)] : 
-                    #         sleep(30)
-                    #         if d.find('img\\freezee.png'):
-                    #             poin16  = d.find('img\\freezee.png')
-                    #             if poin16 > [(0, 0)] :
-                    #                 # kill roblox
-                    #                 try:
-                    #                     d.off('com.roblox.client')
-                    #                 except:
-                    #                     pass
-                    #                 KEYCODE_HOME = 3
-                    #                 subprocess.check_call(f"adb -s {self.nameLD} shell input keyevent {str(KEYCODE_HOME)}")
-                    #                 print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Roblox Freeze | Time:", time.ctime(time.time()))
-                    #         elif not d.find('img\\freezee.png'):
-                    #             print("No Detected Roblox Freeze")
-                    # except:
-                    #     pass
+                    try:
+                        poin16  = d.find('img\\freeze.png')
+                        if not poin16 > [(0, 0)] :
+                            print('No Detected Roblox Freeze')
+                        elif poin16 > [(0, 0)] : 
+                            sleep(30)
+                            if d.find('img\\freeze.png'):
+                                poin16  = d.find('img\\freeze.png')
+                                if poin16 > [(0, 0)] :
+                                    # kill roblox
+                                    try:
+                                        d.off('com.roblox.client')
+                                    except:
+                                        pass
+                                    KEYCODE_HOME = 3
+                                    subprocess.check_call(f"adb -s {self.nameLD} shell input keyevent {str(KEYCODE_HOME)}")
+                                    print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Roblox Freeze | Time:", time.ctime(time.time()))
+                            elif not d.find('img\\freeze.png'):
+                                print("No Detected Roblox Freeze")
+                    except:
+                        pass
                 except:
                     print('bug')
                     for m in range(count):
