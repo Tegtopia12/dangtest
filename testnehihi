@@ -1,0 +1,262 @@
+from time import sleep
+import os,time
+try:
+ import threading,subprocess,base64,cv2,random
+ import numpy as np
+except:
+  os.system("pip install --force-reinstall --no-cache opencv-python==4.5.5.64")
+  os.system("pip install numpy")
+import threading,subprocess,base64,cv2,random
+import numpy as np
+from datetime import datetime
+import json
+import requests
+
+# verreal = testfully.py
+# this version only support for auto v4
+
+
+try:
+    config = json.load(open("config.json", encoding="utf-8"))
+    emuPath = config["emuPath"]
+    print("loaded config")
+except:
+    print("Config Error")
+
+class Auto:
+    def __init__(self,handle):
+        self.handle = handle
+    def screen_capture(self):
+        #os.system(f'adb -s {self.handle} exec-out screencap -p > {name}.png')
+        pipe = subprocess.Popen(f'adb -s {self.handle} exec-out screencap -p',
+                        stdin=subprocess.PIPE,
+                        stdout=subprocess.PIPE, shell=True)
+        #image_bytes = pipe.stdout.read().replace(b'\r\n', b'\n')
+        image_bytes = pipe.stdout.read()
+        image = cv2.imdecode(np.fromstring(image_bytes, np.uint8), cv2.IMREAD_COLOR)
+        return image
+    def click(self,x,y):
+        os.system(f'adb -s {self.handle} shell input tap {x} {y}')
+    def swipe(self, x1, y1, x2, y2):
+        os.system(f"adb -s {self.handle} shell input touchscreen swipe {x1} {y1} {x2} {y2} 1000")
+    def Back(self):
+        os.system(f"adb -s {self.handle} shell input keyevent 3")
+    def DeleteCache(self, package):
+        subprocess.check_output(f"adb -s {self.handle} shell pm clear {package}")
+    def off(self, package):
+        os.system(f"adb -s {self.handle} shell am force-stop {package}")
+    def InpuText(self, text=None, VN=None):
+        if text == None:
+            text =  str(base64.b64encode(VN.encode('utf-8')))[1:]
+            os.system(f"adb -s {self.handle} shell ime set com.android.adbkeyboard/.AdbIME")
+            os.system(f"adb -s {self.handle} shell am broadcast -a ADB_INPUT_B64 --es msg {text}")
+            return
+        os.system(f"adb -s {self.handle} shell input text '{text}'")
+    def find(self,img='',threshold=0.99):
+        img = cv2.imread(img) #sys.path[0]+"/"+img)
+        img2 = self.screen_capture()    
+        result = cv2.matchTemplate(img,img2,cv2.TM_CCOEFF_NORMED)
+        loc = np.where(result >= threshold)
+        retVal = list(zip(*loc[::-1]))
+        #image = cv2.rectangle(img2, retVal[0],(retVal[0][0]+img.shape[0],retVal[0][1]+img.shape[1]), (0,250,0), 2)
+        #cv2.imshow("test",image)
+        #cv2.waitKey(0)
+        #cv2.destroyWindow("test")
+        return retVal
+    def tapimg(self,img='',tap='',threshold=0.99):
+        img = cv2.imread(img) #sys.path[0]+"/"+img)
+        tap = cv2.imread(tap)
+        img2 = self.screen_capture()    
+        result = cv2.matchTemplate(img,img2,cv2.TM_CCOEFF_NORMED)
+        loc = np.where(result >= threshold)
+        retVal = list(zip(*loc[::-1]))
+        result2 = cv2.matchTemplate(img,tap,cv2.TM_CCOEFF_NORMED)
+        loc2 = np.where(result2 >= threshold)
+        retVal2 = list(zip(*loc2[::-1]))
+        if retVal > [(0, 0)]:
+            self.click(retVal2[0][0],retVal2[0][1])
+        else:
+            return 0
+
+def GetEmu():
+        devices = subprocess.check_output(emuPath+"\\ldconsole.exe list")
+        p = str(devices).replace("b'LDPlayer","").replace("\\r","")
+        if len(p) > 0:
+            listDevices = p.split("\\n")
+            listDevices.pop()
+            return listDevices
+        else:
+            return 0
+        
+def GetDevices():
+        devices = subprocess.check_output("adb devices")
+        p = str(devices).replace("b'List of devices attached","").replace('\\r\\n',"").replace(" ","").replace("'","").replace('b*daemonnotrunning.startingitnowonport5037**daemonstartedsuccessfully*Listofdevicesattached',"")
+        if len(p) > 0:
+            listDevices = p.split("\\tdevice")
+            listDevices.pop()
+            return listDevices
+        else:
+            return 0
+
+GetEmu()
+count = len(GetEmu())      
+print(count)  
+
+
+class start(threading.Thread):
+    def __init__(self, nameLD, i):
+        super().__init__()
+        self.nameLD = nameLD
+        self.device = i
+    def run(self):
+        device = self.device
+        d = Auto(device)
+        subprocess.call(emuPath+f"\\ldconsole.exe launch --name {self.nameLD}")
+             
+def main1(m):
+        device = GetEmu()[m]
+        for i in range(m, count):
+                run = start(device,device,)
+                run.run()
+                
+                
+for m in range(count):
+    threading.Thread(target=main1, args=(m,)).start()
+
+sleep(5)    
+subprocess.call(emuPath+f"\\ldconsole.exe sortWnd")
+sleep(20)
+
+try:
+    GetDevices()
+    thread_count = len(GetDevices())
+    print(thread_count)
+except:
+    subprocess.call("run.bat")
+    sleep(5)    
+    subprocess.call(emuPath+f"\\ldconsole.exe sortWnd")
+    sleep(20)
+    GetDevices()
+    thread_count = len(GetDevices())
+    print(thread_count)
+    
+
+class starts(threading.Thread):
+    def __init__(self, nameLD, i):
+        super().__init__()
+        self.nameLD = nameLD
+        self.device = i
+    
+    def run(self):
+        with open('svv.txt',encoding='utf-8') as f:
+            listsvv = f.readlines()
+            f.close()
+        getsvv=random.choice(listsvv)
+        svv = getsvv.split("\n")[0]
+        device = self.device
+        d = Auto(device)
+        open_browser = 'shell monkey -p com.android.browser -c android.intent.category.LAUNCHER 1'
+        def step1():
+            # if d.find('img\\home.png'):
+            #     print('1')
+            #     poin = d.find('img\\home.png')
+            #     if poin > [(0, 0)] :
+            #         print('ok')
+            #         subprocess.call("adb.exe -s "+self.nameLD+' '+open_browser, shell=True)
+            #         sleep(5)
+            #         if d.find('img\\search.png'):
+            #             print('1')
+            #             poin = d.find('img\\search.png')
+            #             if poin > [(0, 0)] :
+            #                 print('ok')
+            #                 d.click(poin[0][0],poin[0][1])
+            #                 sleep(1)
+            #                 d.InpuText(svv)
+            #                 KEYCODE_ENTER = 66
+            #                 subprocess.check_call(f"adb -s {self.nameLD} shell input keyevent {str(KEYCODE_ENTER)}")
+            # else:
+            #     print('zz')
+            while True:
+                sleep(1)
+                try:
+                    poin  = d.find('img\\home.png')
+                    if poin > [(0, 0)] :
+                        print('ok')
+                        subprocess.call("adb.exe -s "+self.nameLD+' '+open_browser, shell=True)
+                        sleep(5)
+                        if d.find('img\\search.png'):
+                            print('1')
+                            poin = d.find('img\\search.png')
+                            if poin > [(0, 0)] :
+                                print('ok')
+                                d.click(poin[0][0],poin[0][1])
+                                sleep(1)
+                                d.InpuText(svv)
+                                KEYCODE_ENTER = 66
+                                subprocess.check_call(f"adb -s {self.nameLD} shell input keyevent {str(KEYCODE_ENTER)}")
+                    # if poin > [(0, 0)] :
+                    #     d.click(poin[0][0],poin[0][1])
+                    #     print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Mở Roblox | Time:", time.ctime(time.time()))
+                    #     # break
+                    poin2  = d.find('img\\bloxfruit.png')
+                    if poin2 > [(0, 0)] :
+                        d.click(poin2[0][0],poin2[0][1])
+                        print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Mở BloxFruit | Time:", time.ctime(time.time()))
+                        # break
+                    poin3  = d.find('img\\play.png')
+                    if poin3 > [(0, 0)] :
+                        d.click(poin3[0][0],poin3[0][1])
+                        print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Mở BloxFruit2 | Time:", time.ctime(time.time()))
+                        # break
+                    poin4  = d.find('img\\leave.png')
+                    if poin4 > [(0, 0)] :
+                        d.click(poin4[0][0],poin4[0][1])
+                        print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Disconected | Time:", time.ctime(time.time()))
+                        # break
+                    poin5  = d.find('img\\dis.png')
+                    if poin5 > [(0, 0)] :
+                        d.click(poin5[0][0],poin5[0][1])
+                        print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Disconected2 | Time:", time.ctime(time.time()))
+                        # break
+                    poin6  = d.find('img\\flu.png')
+                    if poin6 > [(0, 0)] :
+                        d.click(poin6[0][0],poin6[0][1])
+                        print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Fluxus | Time:", time.ctime(time.time()))
+                        # break
+                    poin7  = d.find('img\\flu2.png')
+                    if poin7 > [(0, 0)] :
+                        d.click(poin7[0][0],poin7[0][1])
+                        print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Fluxus | Time:", time.ctime(time.time()))
+                        # break
+                    poin8  = d.find('img\\stuck1.png')
+                    if not poin8 > [(0, 0)] :
+                        print('No Detected Roblox Stuck')
+                    elif poin8 > [(0, 0)] : 
+                        sleep(15)
+                        if d.find('img\\stuck1.png'):
+                            # kill roblox
+                            d.off('com.roblox.client')
+                            print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Roblox Stuck | Time:", time.ctime(time.time()))
+                        elif not d.find('img\\stuck1.png'):
+                            print("No Detected Roblox Stuck")
+                    poin9  = d.find('img\\login1.png')
+                    if poin9 > [(0, 0)] :
+                        d.click(332,1100)
+                        print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Login | Time:", time.ctime(time.time()))
+                        # break
+                except:
+                    print('bug')
+                    for m in range(count):
+                        threading.Thread(target=main1, args=(m,)).start()
+                    sleep(30)
+                    subprocess.call(emuPath+f"\\ldconsole.exe sortWnd")
+        step1()
+        
+def main(m):
+        device = GetDevices()[m]
+        for i in range(m, thread_count):
+                run = starts(device,device,)
+                run.run()
+
+for m in range(thread_count):
+    threading.Thread(target=main, args=(m,)).start()
