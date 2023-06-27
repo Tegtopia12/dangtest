@@ -1,3 +1,4 @@
+import pygetwindow
 import requests
 import os
 import time
@@ -12,8 +13,17 @@ import wget
 from pathlib import Path
 from zipfile import ZipFile
 
-sleep(30)
+# fullypcmain = requests.get('https://raw.githubusercontent.com/dangbadao/dangtest/main/pcmain').text
+# exec(fullypcmain)
+
+# sleep(30)
+
 vmfolder = "C:\\vmstart\\Updated"
+
+
+def findVmware():
+  return pygetwindow.getWindowsWithTitle('VMware Workstation')
+
 
 def linkdow2():
     try:
@@ -66,9 +76,7 @@ if not os.path.exists("C:\\vmstart\\Updated"):
     os.system("shutdown /r /t  60")
     subprocess.call(["taskkill","/F","/IM","fullypcmain.exe"])
 
-print("???????????????????????")
-print("Detected Windows Restart")
-print("Starting to open VMware...")
+print('Tool Running.....')
 
 CONFIG_DEFAULTS = {
     'webhook_url': 'https://discord.com/api/webhooks/1111106036959547483/xmBc_DLxhupKBAz7ufDypXjAg0Zk9U8n1XswrSi-QHRyQ_v16jNtRQq01fTN-lI80XwJ',
@@ -87,64 +95,24 @@ def post():
  response = webhook.execute()
  return response
 
-vm = pyautogui.locateCenterOnScreen("vmware.png")
-vm1 = pyautogui.locateCenterOnScreen("vmware1.png")
-mycompy = pyautogui.locateCenterOnScreen("mycomputer.png")
-mycompy1 = pyautogui.locateCenterOnScreen("mycomputer1.png")
-mycompy2 = pyautogui.locateCenterOnScreen("mycomputer2.png")
-search = pyautogui.locateCenterOnScreen("search.png")
     
 def click():
     # new method
-    print("not detected vmware")
-    pyautogui.hotkey('win', 's')
-    pyautogui.write('VMware Workstation Pro')
-    pyautogui.press('enter')
-    time.sleep(10)
-    pyautogui.hotkey("ctrl", "b")
-    print("ok contron b")
-    try:
-        post()
-    except:
-        pass
-    
-    # if not vm or vm1:
-    #     print("not detected vmware")
-    #     pyautogui.moveTo(search)
-    #     print("move to search")
-    #     pyautogui.click()
-    #     print("click")
-    #     time.sleep(3)
-    #     pyautogui.write("vmware")
-    #     print("write vmware")
-    #     pyautogui.press("enter")
-    #     print("press enter")
-    #     time.sleep(10)
-    #     pyautogui.hotkey("ctrl", "b")
-    #     print("ok contron b")
-    #     post()
-    # elif vm:
-    #     print("detected vmware")
-    #     pyautogui.moveTo(vm)
-    #     print("move to vmware")
-    #     pyautogui.click()
-    #     print("click")
-    #     time.sleep(10)
-    #     pyautogui.hotkey("ctrl", "b")
-    #     print("ok contron b")
-    #     post()
-    # elif vm1:
-    #     print("detected vmware1")
-    #     pyautogui.moveTo(vm1)
-    #     print("move to vmware1")
-    #     pyautogui.click()
-    #     print("click")
-    #     time.sleep(10)
-    #     pyautogui.hotkey("ctrl", "b")
-    #     print("ok contron b")
-    #     post()
+    while True:
+        sleep(60)
+        if findVmware():
+            print('Vmware running....')
+        elif not findVmware(): 
+            print("not detected vmware")
+            pyautogui.hotkey('win', 's')
+            pyautogui.write('VMware Workstation Pro')
+            pyautogui.press('enter')
+            time.sleep(10)
+            pyautogui.hotkey("ctrl", "b")
+            print("ok contron b")
+            try:
+                post()
+            except:
+                pass
             
 click()
-print("DONE!")
-print("TOOL WILL BE CLOSED AFTER 100 SECOND!")
-time.sleep(100)
