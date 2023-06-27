@@ -71,10 +71,10 @@ if not os.path.exists("C:\\vmstart"):
     os.mkdir("C:\\vmstart")
 if not os.path.exists("C:\\vmstart\\vmware1.png"):
     update1()
-if not os.path.exists("C:\\vmstart\\Updated"):
-    downvmstart()
-    os.system("shutdown /r /t  60")
-    subprocess.call(["taskkill","/F","/IM","fullypcmain.exe"])
+# if not os.path.exists("C:\\vmstart\\Updated"):
+#     downvmstart()
+#     os.system("shutdown /r /t  60")
+#     subprocess.call(["taskkill","/F","/IM","fullypcmain.exe"])
 
 print('Tool Running.....')
 
