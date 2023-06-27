@@ -328,6 +328,11 @@ class starts(threading.Thread):
                         d.off('com.roblox.client')
                         print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Disconected | Time:", time.ctime(time.time()))
                         # break
+                    poin17  = d.find('img\\phanhoi.png')
+                    if poin17 > [(0, 0)] :
+                        d.off('com.roblox.client')
+                        print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Noresponding | Time:", time.ctime(time.time()))
+                        # break
                     # bug check freeze roblox
                     # try:
                     #     poin16  = d.find('img\\freezee.png')
@@ -352,10 +357,10 @@ class starts(threading.Thread):
                     #     pass
                 except:
                     print('bug')
-                    # for m in range(count):
-                    #     threading.Thread(target=main1, args=(m,)).start()
-                    # sleep(30)
-                    # subprocess.call(emuPath+f"\\ldconsole.exe sortWnd")
+                    for m in range(count):
+                        threading.Thread(target=main1, args=(m,)).start()
+                    sleep(30)
+                    subprocess.call(emuPath+f"\\ldconsole.exe sortWnd")
         step1()
         
 def main(m):
