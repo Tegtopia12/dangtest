@@ -336,6 +336,11 @@ class starts(threading.Thread):
                         d.off('com.roblox.client')
                         print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Noresponding | Time:", time.ctime(time.time()))
                         # break
+                    poin18  = d.find('img\\dis4.png')
+                    if poin18 > [(0, 0)] :
+                        d.off('com.roblox.client')
+                        print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Disconected | Time:", time.ctime(time.time()))
+                        # break
                     # bug check freeze roblox
                     try:
                         poin16  = d.find('img\\freeze.png')
