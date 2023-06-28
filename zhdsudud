@@ -363,6 +363,28 @@ class starts(threading.Thread):
                                 print("No Detected Roblox Freeze")
                     except:
                         pass
+                    # check roblox not injected fluxus
+                    try:
+                        poin19  = d.find('img\\sea1.png') or d.find('img\\sea2.png')
+                        if not poin19 > [(0, 0)] :
+                            print('No Detected Fluxus Not Injected')
+                        elif poin19 > [(0, 0)] : 
+                            sleep(30)
+                            if d.find('img\\sea1.png') or d.find('img\\sea2.png'):
+                                poin19  = d.find('img\\sea1.png') or d.find('img\\sea2.png')
+                                if poin19 > [(0, 0)] :
+                                    # kill roblox
+                                    try:
+                                        d.off('com.roblox.client')
+                                    except:
+                                        pass
+                                    KEYCODE_HOME = 3
+                                    subprocess.check_call(f"adb -s {self.nameLD} shell input keyevent {str(KEYCODE_HOME)}")
+                                    print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Fluxus Not Injected | Time:", time.ctime(time.time()))
+                            elif not d.find('img\\sea1.png') or d.find('img\\sea2.png'):
+                                print("No Detected Fluxus Not Injected")
+                    except:
+                        pass
                 except:
                     print('bug')
                     for m in range(count):
