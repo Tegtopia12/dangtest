@@ -2798,7 +2798,7 @@ class starts(threading.Thread):
                         d.off('com.roblox.client')
                         print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Noresponding | Time:", time.ctime(time.time()))
                         # break
-                    poin18  = d.find('img\\dis4.png')
+                    poin18  = d.find('img\\dis4.png') or d.find('img\\dis5.png')
                     if poin18 > [(0, 0)] :
                         d.off('com.roblox.client')
                         print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Disconected | Time:", time.ctime(time.time()))
@@ -2827,13 +2827,13 @@ class starts(threading.Thread):
                         pass
                     # check roblox not injected fluxus
                     try:
-                        poin19  = d.find('img\\sea1.png') or d.find('img\\sea2.png') or d.find('img\\fluxusinject.png')
+                        poin19  = d.find('img\\sea1.png') or d.find('img\\sea2.png') or d.find('img\\fluxusinject.png') or d.find('img\\fluxusinject2.png')
                         if not poin19 > [(0, 0)] :
                             print('No Detected Fluxus Not Injected')
                         elif poin19 > [(0, 0)] : 
                             sleep(30)
-                            if d.find('img\\sea1.png') or d.find('img\\sea2.png') or d.find('img\\fluxusinject.png'):
-                                poin19  = d.find('img\\sea1.png') or d.find('img\\sea2.png') or d.find('img\\fluxusinject.png')
+                            if d.find('img\\sea1.png') or d.find('img\\sea2.png') or d.find('img\\fluxusinject.png') or d.find('img\\fluxusinject2.png'):
+                                poin19  = d.find('img\\sea1.png') or d.find('img\\sea2.png') or d.find('img\\fluxusinject.png') or d.find('img\\fluxusinject2.png')
                                 if poin19 > [(0, 0)] :
                                     # kill roblox
                                     try:
@@ -2843,7 +2843,7 @@ class starts(threading.Thread):
                                     KEYCODE_HOME = 3
                                     subprocess.check_call(f"adb -s {self.nameLD} shell input keyevent {str(KEYCODE_HOME)}")
                                     print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Fluxus Not Injected | Time:", time.ctime(time.time()))
-                            elif not d.find('img\\sea1.png') or d.find('img\\sea2.png') or d.find('img\\fluxusinject.png'):
+                            elif not d.find('img\\sea1.png') or d.find('img\\sea2.png') or d.find('img\\fluxusinject.png') or d.find('img\\fluxusinject2.png'):
                                 print("No Detected Fluxus Not Injected")
                     except:
                         pass
