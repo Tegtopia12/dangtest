@@ -178,15 +178,2469 @@ class starts(threading.Thread):
         random_nam = random.choice(['7100','7000','6300','6100','6200','6500','6600','6800','6900'])
         random_first = random.choice(['a','b','v','x','z','d','s','q','w','r','e','h','l',])
         open_browser = 'shell monkey -p com.android.browser -c android.intent.category.LAUNCHER 1'
+        
+        def killroblox():
+            sleep(1800)
+            d.off('com.roblox.client')
+        
+        def captcha():
+            def dog():
+                for i in range(5):
+                        sleep(1)
+                        # captcha solve 
+                        if d.find('lib\\dog9ok.png') or d.find('lib\\dog9l1.png') or d.find('lib\\dog9l2.png') or d.find('lib\\dog9l3.png') or d.find('lib\\dog9l4.png') or d.find('lib\\dog9l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\dog9l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog9l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog9l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog9l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog9l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog9ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                                    
+                        if d.find('lib\\dog8ok.png') or d.find('lib\\dog8l1.png') or d.find('lib\\dog8l2.png') or d.find('lib\\dog8l3.png') or d.find('lib\\dog8l4.png') or d.find('lib\\dog8l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\dog8l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog8l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog8l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog8l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog8l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog8ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                                    
+                        if d.find('lib\\dog7ok.png') or d.find('lib\\dog7l1.png') or d.find('lib\\dog7l2.png') or d.find('lib\\dog7l3.png') or d.find('lib\\dog7l4.png') or d.find('lib\\dog7l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\dog7l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog7l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog7l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog7l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog7l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog7ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                                    
+                        if d.find('lib\\dog6ok.png') or d.find('lib\\dog6l1.png') or d.find('lib\\dog6l2.png') or d.find('lib\\dog6l3.png') or d.find('lib\\dog6l4.png') or d.find('lib\\dog6l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\dog6l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog6l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog6l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog6l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog6l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog6ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                                    
+                        if d.find('lib\\dog5ok.png') or d.find('lib\\dog5l1.png') or d.find('lib\\dog5l2.png') or d.find('lib\\dog5l3.png') or d.find('lib\\dog5l4.png') or d.find('lib\\dog5l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\dog5l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog5l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog5l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog5l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog5l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog5ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                                    
+                        if d.find('lib\\dog4ok.png') or d.find('lib\\dog4l1.png') or d.find('lib\\dog4l2.png') or d.find('lib\\dog4l3.png') or d.find('lib\\dog4l4.png') or d.find('lib\\dog4l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\dog4l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog4l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog4l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog4l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog4l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog4ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                                    
+                        if d.find('lib\\dog3ok.png') or d.find('lib\\dog3l1.png') or d.find('lib\\dog3l2.png') or d.find('lib\\dog3l3.png') or d.find('lib\\dog3l4.png') or d.find('lib\\dog3l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\dog3l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog3l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog3l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog3l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog3l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog3ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                                    
+                        if d.find('lib\\dogok.png') or d.find('lib\\dogl1.png') or d.find('lib\\dogl2.png') or d.find('lib\\dogl3.png') or d.find('lib\\dogl4.png') or d.find('lib\\dogl5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\dogl1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dogl2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dogl3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dogl4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dogl5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dogok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                                    
+                        if d.find('lib\\dog2l1.png') or d.find('lib\\dog2l2.png') or d.find('lib\\dog2l3.png') or d.find('lib\\dog2l4.png') or d.find('lib\\dog2l5.png') or d.find('lib\\dog2ok.png'):
+                            print('captcha detected')
+                            if d.find('lib\\dog2l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog2l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog2l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog2l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog2l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog2ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                                    
+                        # pink hours
+                        if d.find('lib\\pinkhl1.png') or d.find('lib\\pinkhl2.png') or d.find('lib\\pinkhl3.png') or d.find('lib\\pinkhl4.png') or d.find('lib\\pinkhl5.png') or d.find('lib\\pinkhok.png'):
+                            print('captcha detected')
+                            if d.find('lib\\pinkhl1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\pinkhl2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\pinkhl3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\pinkhl4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\pinkhl5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\pinkhok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                                    
+                        if d.find('lib\\dog10ok.png') or d.find('lib\\dog10l1.png') or d.find('lib\\dog10l2.png') or d.find('lib\\dog10l3.png') or d.find('lib\\dog10l4.png') or d.find('lib\\dog10l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\dog10l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog10l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog10l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog10l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog10l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog10ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                                
+                        if d.find('lib\\dog11ok.png') or d.find('lib\\dog11l1.png') or d.find('lib\\dog11l2.png') or d.find('lib\\dog11l3.png') or d.find('lib\\dog11l4.png') or d.find('lib\\dog11l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\dog11l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog11l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog11l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog11l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog11l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog11ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\dog12ok.png') or d.find('lib\\dog12l1.png') or d.find('lib\\dog12l2.png') or d.find('lib\\dog12l3.png') or d.find('lib\\dog12l4.png') or d.find('lib\\dog12l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\dog12l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog12l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog12l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog12l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog12l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog12ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\dog13ok.png') or d.find('lib\\dog13l1.png') or d.find('lib\\dog13l2.png') or d.find('lib\\dog13l3.png') or d.find('lib\\dog13l4.png') or d.find('lib\\dog13l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\dog13l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog13l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog13l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog13l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog13l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog13ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\dog14ok.png') or d.find('lib\\dog14l1.png') or d.find('lib\\dog14l2.png') or d.find('lib\\dog14l3.png') or d.find('lib\\dog14l4.png') or d.find('lib\\dog14l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\dog14l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog14l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog14l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog14l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog14l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog14ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\dog15ok.png') or d.find('lib\\dog15l1.png') or d.find('lib\\dog15l2.png') or d.find('lib\\dog15l3.png') or d.find('lib\\dog15l4.png') or d.find('lib\\dog15l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\dog15l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog15l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog15l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog15l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog15l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog15ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\dog16ok.png') or d.find('lib\\dog16l1.png') or d.find('lib\\dog16l2.png') or d.find('lib\\dog16l3.png') or d.find('lib\\dog16l4.png') or d.find('lib\\dog16l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\dog16l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog16l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog16l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog16l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog16l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog16ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\dog17ok.png') or d.find('lib\\dog17l1.png') or d.find('lib\\dog17l2.png') or d.find('lib\\dog17l3.png') or d.find('lib\\dog17l4.png') or d.find('lib\\dog17l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\dog17l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog17l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog17l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog17l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog17l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog17ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\dog18ok.png') or d.find('lib\\dog18l1.png') or d.find('lib\\dog18l2.png') or d.find('lib\\dog18l3.png') or d.find('lib\\dog18l4.png') or d.find('lib\\dog18l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\dog18l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog18l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog18l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog18l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog18l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog18ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\dog19ok.png') or d.find('lib\\dog19l1.png') or d.find('lib\\dog19l2.png') or d.find('lib\\dog19l3.png') or d.find('lib\\dog19l4.png') or d.find('lib\\dog19l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\dog19l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog19l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog19l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog19l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog19l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog19ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\dog20ok.png') or d.find('lib\\dog20l1.png') or d.find('lib\\dog20l2.png') or d.find('lib\\dog20l3.png') or d.find('lib\\dog20l4.png') or d.find('lib\\dog20l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\dog20l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog20l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog20l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog20l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog20l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\dog20ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        else:
+                            print('no detected dog')
+            
+            def ech():
+                for i in range(5):
+                        sleep(1)
+                        if d.find('lib\\ech2ok.png') or d.find('lib\\ech2l1.png') or d.find('lib\\ech2l2.png') or d.find('lib\\ech2l3.png') or d.find('lib\\ech2l4.png') or d.find('lib\\ech2l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ech2l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech2l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech2l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech2l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech2l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech2ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                                
+                        if d.find('lib\\ech3ok.png') or d.find('lib\\ech3l1.png') or d.find('lib\\ech3l2.png') or d.find('lib\\ech3l3.png') or d.find('lib\\ech3l4.png') or d.find('lib\\ech3l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ech3l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech3l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech3l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech3l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech3l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech3ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\ech4ok.png') or d.find('lib\\ech4l1.png') or d.find('lib\\ech4l2.png') or d.find('lib\\ech4l3.png') or d.find('lib\\ech4l4.png') or d.find('lib\\ech4l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ech4l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech4l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech4l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech4l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech4l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech4ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\ech5ok.png') or d.find('lib\\ech5l1.png') or d.find('lib\\ech5l2.png') or d.find('lib\\ech5l3.png') or d.find('lib\\ech5l4.png') or d.find('lib\\ech5l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ech5l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech5l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech5l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech5l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech5l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech5ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\ech6ok.png') or d.find('lib\\ech6l1.png') or d.find('lib\\ech6l2.png') or d.find('lib\\ech6l3.png') or d.find('lib\\ech6l4.png') or d.find('lib\\ech6l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ech6l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech6l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech6l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech6l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech6l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech6ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\ech7ok.png') or d.find('lib\\ech7l1.png') or d.find('lib\\ech7l2.png') or d.find('lib\\ech7l3.png') or d.find('lib\\ech7l4.png') or d.find('lib\\ech7l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ech7l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech7l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech7l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech7l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech7l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech7ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                                
+                        if d.find('lib\\echccok.png') or d.find('lib\\echcc1.png') or d.find('lib\\echcc2.png') or d.find('lib\\echcc3.png') or d.find('lib\\echcc4.png') or d.find('lib\\echcc5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\echcc1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\echcc2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\echcc3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\echcc4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\echcc5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\echccok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+            
+            def huu():
+                for i in range(5):
+                        sleep(1)
+                        if d.find('lib\\huu1ok.png') or d.find('lib\\huu1l1.png') or d.find('lib\\huu1l2.png') or d.find('lib\\huu1l3.png') or d.find('lib\\huu1l4.png') or d.find('lib\\huu1l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\huu1l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu1l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu1l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu1l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu1l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu1ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\huu2ok.png') or d.find('lib\\huu2l1.png') or d.find('lib\\huu2l2.png') or d.find('lib\\huu2l3.png') or d.find('lib\\huu2l4.png') or d.find('lib\\huu2l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\huu2l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu2l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu2l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu2l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu2l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu2ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\huu3ok.png') or d.find('lib\\huu3l1.png') or d.find('lib\\huu3l2.png') or d.find('lib\\huu3l3.png') or d.find('lib\\huu3l4.png') or d.find('lib\\huu3l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\huu3l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu3l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu3l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu3l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu3l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu3ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+            
+            def mink():
+                for i in range(5):
+                        sleep(1)
+                        if d.find('lib\\mink1ok.png') or d.find('lib\\mink1l1.png') or d.find('lib\\mink1l2.png') or d.find('lib\\mink1l3.png') or d.find('lib\\mink1l4.png') or d.find('lib\\mink1l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\mink1l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink1l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink1l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink1l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink1l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink1ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\mink2ok.png') or d.find('lib\\mink2l1.png') or d.find('lib\\mink2l2.png') or d.find('lib\\mink2l3.png') or d.find('lib\\mink2l4.png') or d.find('lib\\mink2l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\mink2l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink2l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink2l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink2l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink2l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink2ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\mink3ok.png') or d.find('lib\\mink3l1.png') or d.find('lib\\mink3l2.png') or d.find('lib\\mink3l3.png') or d.find('lib\\mink3l4.png') or d.find('lib\\mink3l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\mink3l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink3l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink3l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink3l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink3l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink3ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\mink4ok.png') or d.find('lib\\mink4l1.png') or d.find('lib\\mink4l2.png') or d.find('lib\\mink4l3.png') or d.find('lib\\mink4l4.png') or d.find('lib\\mink4l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\mink4l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink4l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink4l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink4l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink4l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink4ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\mink5ok.png') or d.find('lib\\mink5l1.png') or d.find('lib\\mink5l2.png') or d.find('lib\\mink5l3.png') or d.find('lib\\mink5l4.png') or d.find('lib\\mink5l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\mink5l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink5l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink5l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink5l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink5l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink5ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\mink6ok.png') or d.find('lib\\mink6l1.png') or d.find('lib\\mink6l2.png') or d.find('lib\\mink6l3.png') or d.find('lib\\mink6l4.png') or d.find('lib\\mink6l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\mink6l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink6l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink6l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink6l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink6l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink6ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\mink7ok.png') or d.find('lib\\mink7l1.png') or d.find('lib\\mink7l2.png') or d.find('lib\\mink7l3.png') or d.find('lib\\mink7l4.png') or d.find('lib\\mink7l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\mink7l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink7l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink7l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink7l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink7l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink7ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\mink8ok.png') or d.find('lib\\mink8l1.png') or d.find('lib\\mink8l2.png') or d.find('lib\\mink8l3.png') or d.find('lib\\mink8l4.png') or d.find('lib\\mink8l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\mink8l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink8l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink8l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink8l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink8l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\mink8ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        else:
+                            print('no detected mink')
+            
+            def ngua():
+                for i in range(5):
+                        sleep(1)
+                        if d.find('lib\\nguaok.png') or d.find('lib\\ngual1.png') or d.find('lib\\ngual2.png') or d.find('lib\\ngual3.png') or d.find('lib\\ngual4.png') or d.find('lib\\ngual5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ngual1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngual2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngual3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngual4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngual5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\nguaok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\ngua1ok.png') or d.find('lib\\ngua1l1.png') or d.find('lib\\ngua1l2.png') or d.find('lib\\ngua1l3.png') or d.find('lib\\ngua1l4.png') or d.find('lib\\ngua1l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ngua1l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua1l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua1l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua1l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua1l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua1ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\ngua2ok.png') or d.find('lib\\ngua2l1.png') or d.find('lib\\ngua2l2.png') or d.find('lib\\ngua2l3.png') or d.find('lib\\ngua2l4.png') or d.find('lib\\ngua2l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ngua2l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua2l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua2l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua2l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua2l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua2ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\ngua3ok.png') or d.find('lib\\ngua3l1.png') or d.find('lib\\ngua3l2.png') or d.find('lib\\ngua3l3.png') or d.find('lib\\ngua3l4.png') or d.find('lib\\ngua3l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ngua3l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua3l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua3l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua3l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua3l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua3ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\ngua4ok.png') or d.find('lib\\ngua4l1.png') or d.find('lib\\ngua4l2.png') or d.find('lib\\ngua4l3.png') or d.find('lib\\ngua4l4.png') or d.find('lib\\ngua4l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ngua4l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua4l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua4l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua4l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua4l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua4ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\ngua5ok.png') or d.find('lib\\ngua5l1.png') or d.find('lib\\ngua5l2.png') or d.find('lib\\ngua5l3.png') or d.find('lib\\ngua5l4.png') or d.find('lib\\ngua5l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ngua5l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua5l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua5l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua5l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua5l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua5ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\ngua6ok.png') or d.find('lib\\ngua6l1.png') or d.find('lib\\ngua6l2.png') or d.find('lib\\ngua6l3.png') or d.find('lib\\ngua6l4.png') or d.find('lib\\ngua6l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ngua6l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua6l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua6l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua6l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua6l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua6ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\ngua7ok.png') or d.find('lib\\ngua7l1.png') or d.find('lib\\ngua7l2.png') or d.find('lib\\ngua7l3.png') or d.find('lib\\ngua7l4.png') or d.find('lib\\ngua7l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ngua7l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua7l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua7l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua7l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua7l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua7ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\ngua8ok.png') or d.find('lib\\ngua8l1.png') or d.find('lib\\ngua8l2.png') or d.find('lib\\ngua8l3.png') or d.find('lib\\ngua8l4.png') or d.find('lib\\ngua8l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ngua8l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua8l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua8l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua8l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua8l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua8ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\ngua9ok.png') or d.find('lib\\ngua9l1.png') or d.find('lib\\ngua9l2.png') or d.find('lib\\ngua9l3.png') or d.find('lib\\ngua9l4.png') or d.find('lib\\ngua9l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ngua9l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua9l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua9l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua9l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua9l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua9ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\pinkechok.png') or d.find('lib\\pinkechl1.png') or d.find('lib\\pinkechl2.png') or d.find('lib\\pinkechl3.png') or d.find('lib\\pinkechl4.png') or d.find('lib\\pinkechl5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\pinkechl1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\pinkechl2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\pinkechl3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\pinkechl4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\pinkechl5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\pinkechok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\pinkhok.png') or d.find('lib\\pinkhl1.png') or d.find('lib\\pinkhl2.png') or d.find('lib\\pinkhl3.png') or d.find('lib\\pinkhl4.png') or d.find('lib\\pinkhl5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\pinkhl1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\pinkhl2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\pinkhl3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\pinkhl4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\pinkhl5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\pinkhok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\whitenguaok.png') or d.find('lib\\whitengual1.png') or d.find('lib\\whitengual2.png') or d.find('lib\\whitengual3.png') or d.find('lib\\whitengual4.png') or d.find('lib\\whitengual5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\whitengual1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\whitengual2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\whitengual3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\whitengual4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\whitengual5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\whitenguaok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\ngua10ok.png') or d.find('lib\\ngua10l1.png') or d.find('lib\\ngua10l2.png') or d.find('lib\\ngua10l3.png') or d.find('lib\\ngua10l4.png') or d.find('lib\\ngua10l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ngua10l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua10l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua10l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua10l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua10l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ngua10ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        else:
+                            print('no detected ngua')
+            
+            def echvahuu():
+                for i in range(5):
+                        sleep(1)
+                        if d.find('lib\\huu1ok.png') or d.find('lib\\huu1l1.png') or d.find('lib\\huu1l2.png') or d.find('lib\\huu1l3.png') or d.find('lib\\huu1l4.png') or d.find('lib\\huu1l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\huu1l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu1l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu1l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu1l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu1l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu1ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\huu2ok.png') or d.find('lib\\huu2l1.png') or d.find('lib\\huu2l2.png') or d.find('lib\\huu2l3.png') or d.find('lib\\huu2l4.png') or d.find('lib\\huu2l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\huu2l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu2l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu2l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu2l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu2l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu2ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\huu3ok.png') or d.find('lib\\huu3l1.png') or d.find('lib\\huu3l2.png') or d.find('lib\\huu3l3.png') or d.find('lib\\huu3l4.png') or d.find('lib\\huu3l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\huu3l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu3l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu3l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu3l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu3l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\huu3ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                            
+                        if d.find('lib\\ech2ok.png') or d.find('lib\\ech2l1.png') or d.find('lib\\ech2l2.png') or d.find('lib\\ech2l3.png') or d.find('lib\\ech2l4.png') or d.find('lib\\ech2l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ech2l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech2l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech2l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech2l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech2l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech2ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                                
+                        if d.find('lib\\ech3ok.png') or d.find('lib\\ech3l1.png') or d.find('lib\\ech3l2.png') or d.find('lib\\ech3l3.png') or d.find('lib\\ech3l4.png') or d.find('lib\\ech3l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ech3l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech3l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech3l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech3l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech3l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech3ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\ech4ok.png') or d.find('lib\\ech4l1.png') or d.find('lib\\ech4l2.png') or d.find('lib\\ech4l3.png') or d.find('lib\\ech4l4.png') or d.find('lib\\ech4l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ech4l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech4l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech4l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech4l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech4l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech4ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\ech5ok.png') or d.find('lib\\ech5l1.png') or d.find('lib\\ech5l2.png') or d.find('lib\\ech5l3.png') or d.find('lib\\ech5l4.png') or d.find('lib\\ech5l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ech5l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech5l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech5l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech5l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech5l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech5ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\ech6ok.png') or d.find('lib\\ech6l1.png') or d.find('lib\\ech6l2.png') or d.find('lib\\ech6l3.png') or d.find('lib\\ech6l4.png') or d.find('lib\\ech6l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ech6l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech6l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech6l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech6l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech6l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech6ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        
+                        if d.find('lib\\ech7ok.png') or d.find('lib\\ech7l1.png') or d.find('lib\\ech7l2.png') or d.find('lib\\ech7l3.png') or d.find('lib\\ech7l4.png') or d.find('lib\\ech7l5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\ech7l1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech7l2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech7l3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech7l4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech7l5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\ech7ok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                                
+                        if d.find('lib\\echccok.png') or d.find('lib\\echcc1.png') or d.find('lib\\echcc2.png') or d.find('lib\\echcc3.png') or d.find('lib\\echcc4.png') or d.find('lib\\echcc5.png'):
+                            print('captcha detected')
+                            if d.find('lib\\echcc1.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\echcc2.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\echcc3.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\echcc4.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\echcc5.png'):
+                                poin = d.find('lib\\left.png')
+                                if poin > [(0, 0)] :
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                                    d.click(poin[0][0],poin[0][1])
+                            if d.find('lib\\echccok.png'):
+                                poin = d.find('lib\\acp.png')
+                                if poin > [(0, 0)] :
+                                    print('work')
+                                    d.click(poin[0][0],poin[0][1])
+                        else:
+                            print('no detected huuvaech')
+                                                                                                                                            
+            def tonghop():
+                for i in range(3):
+                    while True:
+                        sleep(1)
+                        pass
+                    
+            def thread():        
+                print('captcha checking')
+                # thread1 = Thread(target=tonghop)
+                # thread1.start()
+                thread2 = threading.Thread(target=dog)
+                thread2.start()
+                # thread3 = Thread(target=ech)
+                # thread3.start()
+                # thread4 = Thread(target=huu)
+                # thread4.start()
+                thread5 = threading.Thread(target=mink)
+                thread5.start()
+                thread6 = threading.Thread(target=ngua)
+                thread6.start()
+                thread7 = threading.Thread(target=echvahuu)
+                thread7.start()
+            
+            thread()
+            killroblox()
+        
         def step1():
-            if d.find('img\\freezee.png'):
-                print('1')
-                poin = d.find('img\\freezee.png')
-                if poin > [(0, 0)] :
-                    print('ok')
-            else:
-                print('zz')
-                print('zz')
+            # if d.find('img\\freezee.png'):
+            #     print('1')
+            #     poin = d.find('img\\freezee.png')
+            #     if poin > [(0, 0)] :
+            #         print('ok')
+            # else:
+            #     print('zz')
+            #     print('zz')
             while True:
                 sleep(1)
                 try:
@@ -240,16 +2694,16 @@ class starts(threading.Thread):
                         print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Fluxus | Time:", time.ctime(time.time()))
                         # break
                     try:
-                        poin8  = d.find('img\\stuck1.png')
+                        poin8  = d.find('img\\stuck1.png') or d.find('img\\stuck2.png')
                         if not poin8 > [(0, 0)] :
                             print('No Detected Roblox Stuck')
                         elif poin8 > [(0, 0)] : 
                             sleep(15)
-                            if d.find('img\\stuck1.png'):
+                            if d.find('img\\stuck1.png') or d.find('img\\stuck2.png'):
                                 # kill roblox
                                 d.off('com.roblox.client')
                                 print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Roblox Stuck | Time:", time.ctime(time.time()))
-                            elif not d.find('img\\stuck1.png'):
+                            elif not d.find('img\\stuck1.png') or d.find('img\\stuck2.png'):
                                 print("No Detected Roblox Stuck")
                     except:
                         pass
@@ -324,6 +2778,14 @@ class starts(threading.Thread):
                                     print('success')
                                     open('newaccount.txt', 'a').writelines(username+'|'+password+'\n')
                                     print('data saved')
+                                    for i in range(10):
+                                        sleep(3)
+                                        poin = d.find('lib\\start.png')
+                                        if poin > [(0, 0)] :
+                                            d.click(poin[0][0],poin[0][1])
+                                            print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Roblox Captcha | Time:", time.ctime(time.time()))
+                                            thread1 = threading.Thread(target=captcha)
+                                            thread1.start()
                                     break
                             print('done')
                     poin15  = d.find('img\\dis2.png') or d.find('img\\dis3.png')
@@ -385,6 +2847,11 @@ class starts(threading.Thread):
                                 print("No Detected Fluxus Not Injected")
                     except:
                         pass
+                    poin20 = d.find('lib\\again.png') or d.find('lib\\reload.png')
+                    if poin20 > [(0, 0)] :
+                        d.click(poin20[0][0],poin20[0][1])
+                        print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Captcha Problem | Time:", time.ctime(time.time()))
+                        # break
                 except:
                     print('bug')
                     for m in range(count):
