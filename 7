@@ -1,35 +1,42 @@
-_G.KaitunMode = true
+-- _G.KaitunMode = true
 
--- [[ Setting Config Farm ]] --
- _G.Teams = "Pirates" 
- _G.Auto_Kill_Player_Quest = true
- _G.Auto_Farm_Kaitun = true
- _G.Neon_Part = false
+-- -- [[ Setting Config Farm ]] --
+--  _G.Teams = "Pirates" 
+--  _G.Auto_Kill_Player_Quest = true
+--  _G.Auto_Farm_Kaitun = true
+--  _G.Neon_Part = false
 
--- [[ Setting Config Start ]] --
- _G.Setting_Close_Ui = true
- _G.WhiteScreen = true
- _G.Boost_Fps = true
- _G.RTXMode = false
- _G.FpsS = 15
- _G.LockFps = true
+-- -- [[ Setting Config Start ]] --
+--  _G.Setting_Close_Ui = true
+--  _G.WhiteScreen = true
+--  _G.Boost_Fps = true
+--  _G.RTXMode = false
+--  _G.FpsS = 15
+--  _G.LockFps = true
 
--- [[ Setting Config Fruits ]] --
- _G.Select_Eat_Fruit = {
-   "Human-Human: Buddha",
-   "Magma-Magma",
-   "Rumble-Rumble",
-   "Light-Light",
-   "Leopard-Leopard",
-   "Dragon-Dragon",
-   "Quake-Quake",
-   "Spirit-Spirit",
-   "Dough-Dough",
-   "Blizzard-Blizzard",
-   "Paw-Paw",
+-- -- [[ Setting Config Fruits ]] --
+--  _G.Select_Eat_Fruit = {
+--    "Human-Human: Buddha",
+--    "Magma-Magma",
+--    "Rumble-Rumble",
+--    "Light-Light",
+--    "Leopard-Leopard",
+--    "Dragon-Dragon",
+--    "Quake-Quake",
+--    "Spirit-Spirit",
+--    "Dough-Dough",
+--    "Blizzard-Blizzard",
+--    "Paw-Paw",
 
-}
+-- }
 
-(getgenv()).Key = "NORMALHUB_zA49Dw";
-(getgenv()).DiscordID = "935926422776737823";
-loadstring(game:HttpGet("https://raw.githubusercontent.com/WxHxCxKxExR/Normal_Mb/main/Script.lua"))()
+-- (getgenv()).Key = "NORMALHUB_zA49Dw";
+-- (getgenv()).DiscordID = "935926422776737823";
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/WxHxCxKxExR/Normal_Mb/main/Script.lua"))()
+
+
+repeat task.wait(3) until game:IsLoaded()
+if not game:IsLoaded() then game.Loaded:Wait() end
+loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/configv2")()
+script_key = "iKHevuViKIfTHziCMSRRUWiZTpSINRKR"
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/220bfd207ccd66b16cad3b537de84aab.lua"))()
