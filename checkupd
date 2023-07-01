@@ -12,7 +12,7 @@ import wget
 from pathlib import Path
 from zipfile import ZipFile
 
-newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer204"
+newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer205"
 verspmainreal = "C:\\checkupdate\\Updated151"
 autoexec1 = "C:\\checkupdate\\UpdateAutoexec5"
 autoexec2 = "C:\\checkupdate\\UpdateAutoexec4"
@@ -479,6 +479,8 @@ def fulldownchecktab():
           
 def downautoexec1():
     try:
+        if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec'):
+            os.removedirs(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec')
         if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\maru.txt'):
             os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\maru.txt')
         if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\maru.lua'):
@@ -494,6 +496,8 @@ def downautoexec1():
         if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\scriptne4.lua'):
             os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\scriptne4.lua')
         print ("Removed Old Script")
+        if not os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec'):
+            os.mkdir(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec')
     except:
         pass
     if not os.path.exists(autoexec1):
