@@ -45,7 +45,7 @@ _G.RamSetting1 = {
     }
 }
 
-_G.Setting1 = {['WhiteScreen'] = true}
+_G.Setting1 = {['WhiteScreen'] = false}
 
 if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
     _G.Setting1['Team'] = "Pirates"  -- Marines / Pirates
