@@ -12,9 +12,9 @@ import wget
 from pathlib import Path
 from zipfile import ZipFile
 
-newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer203"
+newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer204"
 verspmainreal = "C:\\checkupdate\\Updated151"
-autoexec1 = "C:\\checkupdate\\UpdateAutoexec3"
+autoexec1 = "C:\\checkupdate\\UpdateAutoexec5"
 autoexec2 = "C:\\checkupdate\\UpdateAutoexec4"
 updatekillfail = "C:\\Users\\Dang\\Desktop\\KillFail\\DaUpdate"
 updateconfigmousekey = "C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\UpdateConfigMouse"
@@ -489,41 +489,45 @@ def downautoexec1():
             os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\scriptne1.lua')
         if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\scriptne2.lua'):
             os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\scriptne2.lua')
+        if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\scriptne3.lua'):
+            os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\scriptne3.lua')
+        if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\scriptne4.lua'):
+            os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\scriptne4.lua')
         print ("Removed Old Script")
     except:
         pass
     if not os.path.exists(autoexec1):
         os.mkdir(autoexec1)
         print ("Created Folder Update")
-    filename = Path('scriptne3.lua')
-    url = 'https://dangtapcode.xyz/luutru/scriptne3.lua'
+    filename = Path('maru.lua')
+    url = 'https://dangtapcode.xyz/luutru/maru.lua'
     response = requests.get(url)
     filename.write_bytes(response.content)   
-    print ("Downloaded scriptne3.lua")
+    print ("Downloaded maru.lua")
 
-def downautoexec2():
-    try:
-        if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\maru.txt'):
-            os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\maru.txt')
-        if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\maru.lua'):
-            os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\maru.lua')
-        if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\New Text Document.txt'):
-            os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\New Text Document.txt')
-        if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\scriptne1.lua'):
-            os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\scriptne1.lua')
-        if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\scriptne2.lua'):
-            os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\scriptne2.lua')
-        print ("Removed Old Script")
-    except:
-        pass
-    if not os.path.exists(autoexec2):
-        os.mkdir(autoexec2)
-        print ("Created Folder Update")
-    filename = Path('scriptne4.lua')
-    url = 'https://dangtapcode.xyz/luutru/scriptne4.lua'
-    response = requests.get(url)
-    filename.write_bytes(response.content)   
-    print ("Downloaded scriptne4.lua")    
+# def downautoexec2():
+#     try:
+#         if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\maru.txt'):
+#             os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\maru.txt')
+#         if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\maru.lua'):
+#             os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\maru.lua')
+#         if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\New Text Document.txt'):
+#             os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\New Text Document.txt')
+#         if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\scriptne1.lua'):
+#             os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\scriptne1.lua')
+#         if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\scriptne2.lua'):
+#             os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\scriptne2.lua')
+#         print ("Removed Old Script")
+#     except:
+#         pass
+#     if not os.path.exists(autoexec2):
+#         os.mkdir(autoexec2)
+#         print ("Created Folder Update")
+#     filename = Path('scriptne4.lua')
+#     url = 'https://dangtapcode.xyz/luutru/scriptne4.lua'
+#     response = requests.get(url)
+#     filename.write_bytes(response.content)   
+#     print ("Downloaded scriptne4.lua")    
          
 # def zipfile3():
 #     try:
@@ -630,8 +634,8 @@ def fullcheck():
         script2() 
     if not os.path.exists(autoexec1):
         downautoexec1() 
-    if not os.path.exists(autoexec2):
-        downautoexec2() 
+    # if not os.path.exists(autoexec2):
+    #     downautoexec2() 
     # if not os.path.exists(robot_ver):
     #     clickconfig1()
     # if not os.path.exists(robot_ver1):
@@ -714,23 +718,23 @@ def allautoclick():
             print('cong cc')
     if not exec1:
         try:
-            Path("C:\\checkupdate\\scriptne3.lua").rename("C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\autoexec\\scriptne3.lua")
+            Path("C:\\checkupdate\\maru.lua").rename("C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\autoexec\\maru.lua")
         except:
             pass
-    if not exec2:
-        try:
-            Path("C:\\checkupdate\\scriptne4.lua").rename("C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\autoexec\\scriptne4.lua")
-        except:
-            pass
+    # if not exec2:
+    #     try:
+    #         Path("C:\\checkupdate\\scriptne4.lua").rename("C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\autoexec\\scriptne4.lua")
+    #     except:
+    #         pass
      
 if not os.path.exists(newver):      
     fullcheck()
     allautoclick()
     print ("Updated")
     os.mkdir(newver)
-    # if os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2"):
-    #     os.removedirs("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2")
-    #     print('removed Fluxus Update')
+    if os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2"):
+        os.removedirs("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2")
+        print('removed Fluxus Update')
     print("Created Update File")
     sleep(3)
     #restart pc
