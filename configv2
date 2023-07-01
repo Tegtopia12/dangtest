@@ -49,7 +49,7 @@ _G.Setting1 = {['WhiteScreen'] = true}
 
 if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
     _G.Setting1['Team'] = "Pirates"  -- Marines / Pirates
-    _G.Setting1['FPS_Boost'] = true -- true / false -- จอขาว
+    _G.Setting1['FPS_Boost'] = false -- true / false -- จอขาว
     _G.Setting1['AutoRedeem'] = true -- true / false
     _G.Setting1['RedeemOnLv'] = 10
     _G.Setting1['HideUI'] = true
