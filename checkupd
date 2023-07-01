@@ -14,7 +14,7 @@ from zipfile import ZipFile
 
 newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer205"
 verspmainreal = "C:\\checkupdate\\Updated151"
-autoexec1 = "C:\\checkupdate\\UpdateAutoexec5"
+autoexec1 = "C:\\checkupdate\\UpdateAutoexec7"
 autoexec2 = "C:\\checkupdate\\UpdateAutoexec4"
 updatekillfail = "C:\\Users\\Dang\\Desktop\\KillFail\\DaUpdate"
 updateconfigmousekey = "C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\UpdateConfigMouse"
@@ -503,11 +503,11 @@ def downautoexec1():
     if not os.path.exists(autoexec1):
         os.mkdir(autoexec1)
         print ("Created Folder Update")
-    filename = Path('maru.lua')
-    url = 'https://dangtapcode.xyz/luutru/maru.lua'
+    filename = Path('scriptne3.lua')
+    url = 'https://dangtapcode.xyz/luutru/scriptne3.lua'
     response = requests.get(url)
     filename.write_bytes(response.content)   
-    print ("Downloaded maru.lua")
+    print ("Downloaded scriptne3.lua")
 
 # def downautoexec2():
 #     try:
@@ -722,7 +722,11 @@ def allautoclick():
             print('cong cc')
     if not exec1:
         try:
-            Path("C:\\checkupdate\\maru.lua").rename("C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\autoexec\\maru.lua")
+            # Path("C:\\checkupdate\\maru.lua").rename("C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\autoexec\\maru.lua")
+            maru = open(r"C:\checkupdate\scriptne3.lua", 'r').read()
+            with open(r"C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\scriptne.txt", 'a') as f:
+                f.write(maru)
+                
         except:
             pass
     # if not exec2:
@@ -736,9 +740,9 @@ if not os.path.exists(newver):
     allautoclick()
     print ("Updated")
     os.mkdir(newver)
-    if os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2"):
-        os.removedirs("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2")
-        print('removed Fluxus Update')
+    # if os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2"):
+    #     os.removedirs("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2")
+    #     print('removed Fluxus Update')
     print("Created Update File")
     sleep(3)
     #restart pc
