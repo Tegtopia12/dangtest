@@ -12,8 +12,10 @@ import wget
 from pathlib import Path
 from zipfile import ZipFile
 
-newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer20"
+newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer202"
 verspmainreal = "C:\\checkupdate\\Updated151"
+autoexec1 = "C:\\checkupdate\\UpdateAutoexec1"
+autoexec2 = "C:\\checkupdate\\UpdateAutoexec2"
 updatekillfail = "C:\\Users\\Dang\\Desktop\\KillFail\\DaUpdate"
 updateconfigmousekey = "C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\UpdateConfigMouse"
 cuttay_check = "C:\\Users\\Dang\\Desktop\\updatedcuttay"
@@ -475,7 +477,46 @@ def fulldownchecktab():
      os.mkdir(checktab_ktra)  
      print ("Created Folder Update")
           
-     
+def downautoexec1():
+    try:
+        if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\maru.txt'):
+            os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\maru.txt')
+        if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\maru.lua'):
+            os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\maru.lua')
+        if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\New Text Document.txt'):
+            os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\New Text Document.txt')
+        print ("Removed Old Script")
+    except:
+        pass
+    if not os.path.exists(autoexec1):
+        os.mkdir(autoexec1)
+        print ("Created Folder Update")
+    filename = Path('scriptne1.lua')
+    url = 'https://dangtapcode.xyz/luutru/scriptne1.lua'
+    response = requests.get(url)
+    filename.write_bytes(response.content)   
+    print ("Downloaded scriptne1.lua")
+
+def downautoexec2():
+    try:
+        if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\maru.txt'):
+            os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\maru.txt')
+        if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\maru.lua'):
+            os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\maru.lua')
+        if os.path.exists(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\New Text Document.txt'):
+            os.remove(r'C:\Users\Dang\AppData\Local\Packages\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\AC\autoexec\New Text Document.txt')
+        print ("Removed Old Script")
+    except:
+        pass
+    if not os.path.exists(autoexec2):
+        os.mkdir(autoexec2)
+        print ("Created Folder Update")
+    filename = Path('scriptne2.lua')
+    url = 'https://dangtapcode.xyz/luutru/scriptne2.lua'
+    response = requests.get(url)
+    filename.write_bytes(response.content)   
+    print ("Downloaded scriptne2.lua")    
+         
 # def zipfile3():
 #     try:
 #          try:
@@ -578,7 +619,11 @@ def fullcheck():
     if not os.path.exists("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts\\login.amk"):
         script()
     if not os.path.exists(scriptmousekey):
-        script2()    
+        script2() 
+    if not os.path.exists(autoexec1):
+        downautoexec1() 
+    if not os.path.exists(autoexec2):
+        downautoexec2() 
     # if not os.path.exists(robot_ver):
     #     clickconfig1()
     # if not os.path.exists(robot_ver1):
@@ -615,7 +660,9 @@ def allautoclick():
     mulick = os.path.exists("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\MouseClicker.exe")
     good = os.path.exists("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts\\good.amk")
     keybu = os.path.exists("C:\\Users\\Dang\\Desktop\\keyboard.exe")
-    sero = os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\setroblox.exe")   
+    sero = os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\setroblox.exe")  
+    exec1 = os.path.exists("C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\autoexec\\scriptne1.lua")
+    exec2 = os.path.exists("C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\autoexec\\scriptne2.lua")
     if not stu:
       Path("C:\\checkupdate\\startlogin.bat").rename("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\startlogin.bat")
     if not hotku:
@@ -657,6 +704,16 @@ def allautoclick():
             os.mkdir("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Updated")
         except:
             print('cong cc')
+    if not exec1:
+        try:
+            Path("C:\\checkupdate\\scriptne1.lua").rename("C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\autoexec\\scriptne1.lua")
+        except:
+            pass
+    if not exec2:
+        try:
+            Path("C:\\checkupdate\\scriptne2.lua").rename("C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\autoexec\\scriptne2.lua")
+        except:
+            pass
      
 if not os.path.exists(newver):      
     fullcheck()
