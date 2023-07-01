@@ -125,6 +125,7 @@ class Auto:
                     return True
                 elif not cv2.countNonZero(b) == 0 and cv2.countNonZero(g) == 0 and cv2.countNonZero(r) == 0:
                     return False
+            os.remove(('bin/images/screen'+timestamp+'.png'))
         except:
             pass
 
@@ -162,6 +163,11 @@ class start(threading.Thread):
         device = self.device
         d = Auto(device)
         subprocess.call(emuPath+f"\\ldconsole.exe launch --name {self.nameLD}")
+        try:
+            subprocess.call(emuPath+f"\\dnconsole.exe launch --index 0", shell=True)
+        except:
+            pass
+        os.system('cls')
              
 def main1(m):
         device = GetEmu()[m]
