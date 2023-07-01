@@ -90,6 +90,43 @@ class Auto:
             self.click(retVal2[0][0],retVal2[0][1])
         else:
             return 0
+    def checksreen(self):
+        try:
+            print('oldimg')
+            
+            timestamp = str(datetime.timestamp(datetime.now())).replace('.','')
+            subprocess.call(f'adb.exe -s {self.handle} shell screencap -p /sdcard/screen'+timestamp+'.png', shell=True) 
+            subprocess.call(f'adb.exe -s {self.handle} pull /sdcard/screen'+timestamp+'.png bin/images/screen'+timestamp+'.png', shell=True) 
+            subprocess.call(f'adb.exe -s {self.handle} shell rm /sdcard/screen'+timestamp+'.png', shell=True) 
+
+            
+            oldne = cv2.imread('bin/images/screen'+timestamp+'.png')
+        
+        
+            old_img = oldne.shape
+            sleep(180)
+            
+            print('newimg')
+            timestamp = str(datetime.timestamp(datetime.now())).replace('.','')
+            subprocess.call(f'adb.exe -s {self.handle} shell screencap -p /sdcard/screen'+timestamp+'.png', shell=True) 
+            subprocess.call(f'adb.exe -s {self.handle} pull /sdcard/screen'+timestamp+'.png bin/images/screen'+timestamp+'.png', shell=True) 
+            subprocess.call(f'adb.exe -s {self.handle} shell rm /sdcard/screen'+timestamp+'.png', shell=True) 
+
+            
+            newne = cv2.imread('bin/images/screen'+timestamp+'.png')
+            
+
+            new_img = newne.shape
+            if new_img == old_img:
+                deffierence = cv2.subtract(oldne, newne)
+                b, g, r = cv2.split(deffierence)
+                
+                if cv2.countNonZero(b) == 0 and cv2.countNonZero(g) == 0 and cv2.countNonZero(r) == 0:
+                    return True
+                elif not cv2.countNonZero(b) == 0 and cv2.countNonZero(g) == 0 and cv2.countNonZero(r) == 0:
+                    return False
+        except:
+            pass
 
 def GetEmu():
         devices = subprocess.check_output(emuPath+"\\ldconsole.exe list")
@@ -159,6 +196,13 @@ def randomstring(n):
 def random_number(n):
     return ''.join(random.choice(string.digits) for _ in range(n))
 
+def delete():
+    folder_path = (r'.\bin\images')
+    read = os.listdir(folder_path)
+    for images in read:
+        if images.endswith(".png"):
+            os.remove(os.path.join(folder_path, images))
+            
 class starts(threading.Thread):
     def __init__(self, nameLD, i):
         super().__init__()
@@ -182,6 +226,12 @@ class starts(threading.Thread):
         def killroblox():
             sleep(1800)
             d.off('com.roblox.client')
+        def startcheckscreen():
+            while True:
+                sleep(1)
+                if d.checksreen():
+                    d.off('com.roblox.client')
+                delete()
         
         def captcha():
             def dog():
@@ -2667,7 +2717,12 @@ class starts(threading.Thread):
                     if poin2 > [(0, 0)] :
                         d.click(poin2[0][0],poin2[0][1])
                         print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Mở BloxFruit | Time:", time.ctime(time.time()))
-                        # break
+                        sleep(3)
+                        poin3  = d.find('img\\play.png')
+                        if poin3 > [(0, 0)] :
+                            d.click(poin3[0][0],poin3[0][1])
+                            print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Mở BloxFruit2 | Time:", time.ctime(time.time()))
+                            # break
                     poin3  = d.find('img\\play.png')
                     if poin3 > [(0, 0)] :
                         d.click(poin3[0][0],poin3[0][1])
@@ -2695,16 +2750,16 @@ class starts(threading.Thread):
                         # break
                     try:
                         poin8  = d.find('img\\stuck1.png') or d.find('img\\stuck2.png')
-                        if not poin8 > [(0, 0)] :
-                            print('No Detected Roblox Stuck')
-                        elif poin8 > [(0, 0)] : 
+                        # if not poin8 > [(0, 0)] :
+                        #     print('No Detected Roblox Stuck')
+                        if poin8 > [(0, 0)] : 
                             sleep(15)
                             if d.find('img\\stuck1.png') or d.find('img\\stuck2.png'):
                                 # kill roblox
                                 d.off('com.roblox.client')
                                 print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Roblox Stuck | Time:", time.ctime(time.time()))
-                            elif not d.find('img\\stuck1.png') or d.find('img\\stuck2.png'):
-                                print("No Detected Roblox Stuck")
+                            # elif not d.find('img\\stuck1.png') or d.find('img\\stuck2.png'):
+                            #     print("No Detected Roblox Stuck")
                     except:
                         pass
                     poin9  = d.find('img\\done.png')
@@ -2809,9 +2864,9 @@ class starts(threading.Thread):
                     # bug check freeze roblox
                     try:
                         poin16  = d.find('img\\freeze.png')
-                        if not poin16 > [(0, 0)] :
-                            print('No Detected Roblox Freeze')
-                        elif poin16 > [(0, 0)] : 
+                        # if not poin16 > [(0, 0)] :
+                        #     print('No Detected Roblox Freeze')
+                        if poin16 > [(0, 0)] : 
                             sleep(30)
                             if d.find('img\\freeze.png'):
                                 poin16  = d.find('img\\freeze.png')
@@ -2824,16 +2879,16 @@ class starts(threading.Thread):
                                     KEYCODE_HOME = 3
                                     subprocess.check_call(f"adb -s {self.nameLD} shell input keyevent {str(KEYCODE_HOME)}")
                                     print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Roblox Freeze | Time:", time.ctime(time.time()))
-                            elif not d.find('img\\freeze.png'):
-                                print("No Detected Roblox Freeze")
+                            # elif not d.find('img\\freeze.png'):
+                            #     print("No Detected Roblox Freeze")
                     except:
                         pass
                     # check roblox not injected fluxus
                     try:
                         poin19  = d.find('img\\sea1.png') or d.find('img\\sea2.png') or d.find('img\\fluxusinject.png') or d.find('img\\fluxusinject2.png')
-                        if not poin19 > [(0, 0)] :
-                            print('No Detected Fluxus Not Injected')
-                        elif poin19 > [(0, 0)] : 
+                        # if not poin19 > [(0, 0)] :
+                        #     print('No Detected Fluxus Not Injected')
+                        if poin19 > [(0, 0)] : 
                             sleep(30)
                             if d.find('img\\sea1.png') or d.find('img\\sea2.png') or d.find('img\\fluxusinject.png') or d.find('img\\fluxusinject2.png'):
                                 poin19  = d.find('img\\sea1.png') or d.find('img\\sea2.png') or d.find('img\\fluxusinject.png') or d.find('img\\fluxusinject2.png')
@@ -2846,8 +2901,8 @@ class starts(threading.Thread):
                                     KEYCODE_HOME = 3
                                     subprocess.check_call(f"adb -s {self.nameLD} shell input keyevent {str(KEYCODE_HOME)}")
                                     print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Fluxus Not Injected | Time:", time.ctime(time.time()))
-                            elif not d.find('img\\sea1.png') or d.find('img\\sea2.png') or d.find('img\\fluxusinject.png') or d.find('img\\fluxusinject2.png'):
-                                print("No Detected Fluxus Not Injected")
+                            # elif not d.find('img\\sea1.png') or d.find('img\\sea2.png') or d.find('img\\fluxusinject.png') or d.find('img\\fluxusinject2.png'):
+                            #     print("No Detected Fluxus Not Injected")
                     except:
                         pass
                     poin20 = d.find('lib\\again.png') or d.find('lib\\reload.png')
@@ -2861,6 +2916,8 @@ class starts(threading.Thread):
                         threading.Thread(target=main1, args=(m,)).start()
                     sleep(30)
                     subprocess.call(emuPath+f"\\ldconsole.exe sortWnd")
+        thread2 = threading.Thread(target=startcheckscreen)
+        thread2.start()
         step1()
         
 def main(m):
