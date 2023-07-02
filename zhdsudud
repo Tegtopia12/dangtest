@@ -237,7 +237,6 @@ class starts(threading.Thread):
                 sleep(1)
                 if d.checksreen():
                     d.off('com.roblox.client')
-                delete()
         
         def captcha():
             def dog():
