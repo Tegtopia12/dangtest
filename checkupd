@@ -12,7 +12,7 @@ import wget
 from pathlib import Path
 from zipfile import ZipFile
 
-newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer206"
+newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer207"
 verspmainreal = "C:\\checkupdate\\Updated151"
 autoexec1 = "C:\\checkupdate\\UpdateAutoexec7"
 autoexec2 = "C:\\checkupdate\\UpdateAutoexec4"
