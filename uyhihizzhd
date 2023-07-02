@@ -574,7 +574,46 @@ def checknewdump():
   if os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\keybug.PNG"):
     os.remove("C:\\Users\\Dang\\Desktop\\KillFail\\keybug.PNG")
   os.mkdir("C:\\Users\\Dang\\Desktop\\KillFail\\update16dump")
-                       
+
+def cctable():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'cctable.PNG'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok") 
+def downcctable():
+    filename = Path('cctable.PNG')
+    url = 'https://dangtapcode.xyz/luutru/cctable.PNG'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
+
+def fluxuskey1():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'getkey1.PNG'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok") 
+def downfluxuskey1():
+    filename = Path('getkey1.PNG')
+    url = 'https://dangtapcode.xyz/luutru/getkey1.PNG'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
+    
+def disnehuhu():
+  path = 'C:\\Users\\Dang\\Desktop\\KillFail\\'
+  file = 'leave.PNG'
+  tret = path + file
+  tret1 = Path(tret)
+  if tret1.is_file():
+      return ("ok") 
+def downdisnehuhu():
+    filename = Path('leave.PNG')
+    url = 'https://dangtapcode.xyz/luutru/leave.PNG'
+    response = requests.get(url)
+    filename.write_bytes(response.content)
+                           
 # if not djscune() == "ok":
 #    downdjscune()
 # if not jonfa() == "ok":
@@ -641,6 +680,13 @@ if not fluuppp() == "ok":
   downfluuppp()
 if not flukey() == "ok":
     downflukey()
+if not disnehuhu() == "ok":
+  downdisnehuhu()
+if not fluxuskey1() == "ok":
+  downfluxuskey1()
+if not cctable() == "ok":
+  downcctable()
+
   
                                        
 while True:
@@ -652,6 +698,7 @@ while True:
   ok = pyautogui.locateCenterOnScreen("ok.png")
   okk = pyautogui.locateCenterOnScreen("okk.png")
   getkey = pyautogui.locateCenterOnScreen("getkey.png")
+  getkey1 = pyautogui.locateCenterOnScreen("getkey1.png")
   maru = pyautogui.locateCenterOnScreen("maru.png")
   jected = pyautogui.locateCenterOnScreen("jected.png")
   roblox = pyautogui.locateCenterOnScreen("roblox.png")
@@ -679,6 +726,8 @@ while True:
   update = pyautogui.locateCenterOnScreen("update.PNG")
   wrong = pyautogui.locateCenterOnScreen("wrong.PNG")
   errorkey = pyautogui.locateCenterOnScreen("keybug.PNG")
+  dis2 = pyautogui.locateCenterOnScreen("leave.png")
+  tablewhitelist = pyautogui.locateCenterOnScreen("cctable.png")
   # maxx1 = pyautogui.locateCenterOnScreen("max1.PNG")
   # maxx2 = pyautogui.locateCenterOnScreen("max2.PNG")
   # maxx3 = pyautogui.locateCenterOnScreen("max3.PNG")
@@ -735,6 +784,23 @@ while True:
     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
     print ("Done")
   if getkey:
+    print("FOUND GET KEY")
+    # kill Roblox
+    subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+    # kill Fluxus
+    subprocess.call(["taskkill","/F","/IM","Fluxus V7.exe"])
+    # kill Launch
+    subprocess.call(["taskkill","/F","/IM","launch.exe"])
+    # kill Macro Recorder
+    subprocess.call(["taskkill","/F","/IM","MacroRecorder.exe"])
+    print("success kill")
+    time.sleep(180)
+    # open Launch & Macro
+    os.system('"C:\\Users\\Dang\\Downloads\\startlaunch.bat"')
+    # open Fluxus
+    os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
+    print ("Done")
+  if getkey1:
     print("FOUND GET KEY")
     # kill Roblox
     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
@@ -812,6 +878,11 @@ while True:
     # open set size
     subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
     print ("Done")
+  if dis2:
+    print ("FOUND DIS2")
+    # open set size
+    subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
+    print ("Done")
   if memu3:
     print ("FOUND MEMU3")
     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startsetsize.bat"')
@@ -862,6 +933,11 @@ while True:
     time.sleep(1)
     # open Fluxus
     os.system('"C:\\Users\\Dang\\Desktop\\KillFail\\startfluxus.bat"')
+    print ("Done")
+  if tablewhitelist:
+    print ("FOUND CC TABLE")
+    # open set size
+    subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
     print ("Done")
             
 #   if login_memu or login_memu1:
