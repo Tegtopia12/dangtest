@@ -153,7 +153,11 @@ GetEmu()
 count = len(GetEmu())      
 print(count)  
 
-
+try:
+    subprocess.call(emuPath+f"\\ldconsole.exe launch --index 0", shell=True)
+except:
+    pass
+        
 class start(threading.Thread):
     def __init__(self, nameLD, i):
         super().__init__()
@@ -163,10 +167,6 @@ class start(threading.Thread):
         device = self.device
         d = Auto(device)
         subprocess.call(emuPath+f"\\ldconsole.exe launch --name {self.nameLD}")
-        try:
-            subprocess.call(emuPath+f"\\ldconsole.exe launch --index 0", shell=True)
-        except:
-            pass
         os.system('cls')
              
 def main1(m):
