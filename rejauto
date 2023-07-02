@@ -330,10 +330,10 @@ function GetMsg2()
     }
     return k3
 end
-task.spawn(function()
-wait(50)
-game:service('VirtualInputManager'):SendKeyEvent(true, "RightControl", false, game)
-end)
+-- task.spawn(function()
+-- wait(50)
+-- game:service('VirtualInputManager'):SendKeyEvent(true, "RightControl", false, game)
+-- end)
 game:service"NetworkClient".ChildRemoved:Connect(function()
     PostWebhook(url2, GetMsg2())
     game_pid = game.PlaceId
