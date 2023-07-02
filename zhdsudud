@@ -164,7 +164,7 @@ class start(threading.Thread):
         d = Auto(device)
         subprocess.call(emuPath+f"\\ldconsole.exe launch --name {self.nameLD}")
         try:
-            subprocess.call(emuPath+f"\\dnconsole.exe launch --index 0", shell=True)
+            subprocess.call(emuPath+f"\\ldconsole.exe launch --index 0", shell=True)
         except:
             pass
         os.system('cls')
