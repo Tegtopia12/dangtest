@@ -2699,7 +2699,7 @@ class starts(threading.Thread):
             while True:
                 sleep(1)
                 try:
-                    poin  = d.find('img\\home.png')
+                    poin  = d.find('img\\home.png') or d.find('img\\home1.png') or d.find('img\\home2.png')
                     # if poin > [(0, 0)] :
                     #     print('ok')
                     #     subprocess.call("adb.exe -s "+self.nameLD+' '+open_browser, shell=True)
@@ -2718,17 +2718,17 @@ class starts(threading.Thread):
                         d.click(poin[0][0],poin[0][1])
                         print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Mở Roblox | Time:", time.ctime(time.time()))
                     #     # break
-                    poin2  = d.find('img\\bloxfruit.png') or d.find('img\\bloxfruit1.png')
+                    poin2  = d.find('img\\bloxfruit.png') or d.find('img\\bloxfruit1.png') or d.find('img\\bloxfruit2.png') or d.find('img\\bloxfruit3.png') 
                     if poin2 > [(0, 0)] :
                         d.click(poin2[0][0],poin2[0][1])
                         print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Mở BloxFruit | Time:", time.ctime(time.time()))
                         sleep(3)
-                        poin3  = d.find('img\\play.png')
+                        poin3  = d.find('img\\play.png') or d.find('img\\play1.png')
                         if poin3 > [(0, 0)] :
                             d.click(poin3[0][0],poin3[0][1])
                             print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Mở BloxFruit2 | Time:", time.ctime(time.time()))
                             # break
-                    poin3  = d.find('img\\play.png')
+                    poin3  = d.find('img\\play.png') or d.find('img\\play1.png')
                     if poin3 > [(0, 0)] :
                         d.click(poin3[0][0],poin3[0][1])
                         print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Mở BloxFruit2 | Time:", time.ctime(time.time()))
@@ -2821,7 +2821,7 @@ class starts(threading.Thread):
                             sleep(3)
                             while True:
                                 sleep(1)
-                                poin13  = d.find('img\\gender.png')
+                                poin13  = d.find('img\\gender.png') or d.find('img\\gender1.png')
                                 if poin13 > [(0, 0)] :
                                     d.click(poin13[0][0],poin13[0][1])
                                     print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Clicked Gender | Time:", time.ctime(time.time()))
@@ -2914,6 +2914,21 @@ class starts(threading.Thread):
                     if poin20 > [(0, 0)] :
                         d.click(poin20[0][0],poin20[0][1])
                         print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Captcha Problem | Time:", time.ctime(time.time()))
+                        # break
+                    poin21  = d.find('img\\agree.png')
+                    if poin21 > [(0, 0)] :
+                        d.click(poin21[0][0],poin21[0][1])
+                        print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Roblox Notif | Time:", time.ctime(time.time()))
+                        # break
+                    poin22  = d.find('img\\connect1.png')
+                    if poin22 > [(0, 0)] :
+                        d.click(poin22[0][0],poin22[0][1])
+                        print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Network Problem | Time:", time.ctime(time.time()))
+                        # break
+                    poin23  = d.find('img\\closeapp.png')
+                    if poin23 > [(0, 0)] :
+                        d.click(poin23[0][0],poin23[0][1])
+                        print(" \033[1;31m |\033[1;37m[",self.nameLD,"]\033[1;31m Detected Network Problem | Time:", time.ctime(time.time()))
                         # break
                 except:
                     print('bug')
