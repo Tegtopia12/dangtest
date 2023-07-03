@@ -123,11 +123,11 @@ while True:
         subprocess.call(["taskkill","/F","/IM","checkupdate.exe"])
         subprocess.call(["taskkill","/F","/IM","killfail.exe"])
         sleep(30)
-        if not os.path.exists("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Updated1"):
+        if not os.path.exists("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Updated2"):
             try:
                 Path("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus V7.exe").replace("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Fluxus V7.exe")   
                 print('thanh cong')
-                os.mkdir("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Updated1")
+                os.mkdir("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Updated2")
             except:
                 print('cong cc')
         os.system('"C:\\Users\\Dang\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\startmac.bat"')
