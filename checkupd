@@ -12,7 +12,7 @@ import wget
 from pathlib import Path
 from zipfile import ZipFile
 
-newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer207"
+newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer208"
 verspmainreal = "C:\\checkupdate\\Updated151"
 autoexec1 = "C:\\checkupdate\\UpdateAutoexec7"
 autoexec2 = "C:\\checkupdate\\UpdateAutoexec4"
@@ -677,7 +677,7 @@ def allautoclick():
     good = os.path.exists("C:\\Users\\Dang\\Documents\\Automatic Mouse and Keyboard\\Scripts\\good.amk")
     keybu = os.path.exists("C:\\Users\\Dang\\Desktop\\keyboard.exe")
     sero = os.path.exists("C:\\Users\\Dang\\Desktop\\KillFail\\setroblox.exe")  
-    exec1 = os.path.exists("C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\autoexec\\scriptne3.lua")
+    exec1 = os.path.exists("C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\autoexec\\scriptne.txt")
     exec2 = os.path.exists("C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\autoexec\\scriptne4.lua")
     if not stu:
       Path("C:\\checkupdate\\startlogin.bat").rename("C:\\Users\\Dang\\Desktop\\AutoMouseKey 5.2.9.2\\startlogin.bat")
@@ -740,9 +740,9 @@ if not os.path.exists(newver):
     allautoclick()
     print ("Updated")
     os.mkdir(newver)
-    # if os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2"):
-    #     os.removedirs("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2")
-    #     print('removed Fluxus Update')
+    if os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2"):
+        os.removedirs("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2")
+        print('removed Fluxus Update')
     print("Created Update File")
     sleep(3)
     #restart pc
