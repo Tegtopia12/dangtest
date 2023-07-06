@@ -1,321 +1,3 @@
--- urlsheet = "https://sheet.best/api/sheets/8fefe820-4bf5-4907-a6a1-a2d427333752"
--- urlsheet2 = "https://sheet.best/api/sheets/ed734e60-4c05-4250-a47d-3e860cc89cea"
--- url = "https://discord.com/api/webhooks/1105921339388346368/OeW_fpWrCn4FzjOaL0dZ8aFFA-C0CnPXKLiw2w4QwVKKjygRiaXkLWeqIHuIf616HF4j";
--- url2 = "https://discord.com/api/webhooks/1105934802709905558/JE_t1SgkffTyiauNlyntkx8mVxpbYdQUES5OnTnD6nqJkbsTEGtzhE0AjbtdO2BxcJZ7";
--- AutoChooseTeam = true;
--- repeat
---     task.wait()
--- until game:IsLoaded()
--- repeat
---     task.wait()
--- until game.Players
--- repeat
---     task.wait()
--- until game.Players.LocalPlayer
---     if AutoChooseTeam then
---         if game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main"):FindFirstChild("ChooseTeam") then
---             for i, v in pairs(
---                 getconnections(
---                     game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container.Pirates.Frame.ViewportFrame.TextButton.Activated
---                 )
---             ) do
---                 v.Function()
---             end
---         end
---     end
--- local ScreenGui = Instance.new("ScreenGui")
--- local Frame = Instance.new("Frame")
--- local TextButton = Instance.new("TextButton")
--- local TextLabel = Instance.new("TextLabel")
-
--- ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
--- Frame.Parent = ScreenGui
--- Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
--- Frame.Position = UDim2.new(0.0319903493, 0, 0.054320991, 0)
--- Frame.Size = UDim2.new(0, 100, 0, 100)
-
--- TextButton.Parent = Frame
--- TextButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
--- TextButton.BorderColor3 = Color3.fromRGB(0, 255, 127)
--- TextButton.Position = UDim2.new(0.00680351257, 0, 0.22679016, 0)
--- TextButton.Size = UDim2.new(0, 98, 0, 76)
--- TextButton.Font = Enum.Font.SourceSans
--- TextButton.Text = "Send"
--- TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
--- TextButton.TextSize = 45.000
--- TextButton.MouseButton1Down:connect(function()
---     if GODHUMAN() == "Godhuman" then
---         PostCut(urlsheet, thongtin())    
---     elseif GODHUMAN() == "Chua Co Godhuman" then
---         PostCut(urlsheet2, thongtin())       
---     end
---     end)
-    
--- TextLabel.Parent = Frame
--- TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
--- TextLabel.Position = UDim2.new(0.00999999978, 0, 0, 0)
--- TextLabel.Size = UDim2.new(0, 99, 0, 23)
--- TextLabel.Font = Enum.Font.SourceSans
--- TextLabel.Text = "Aibiet"
--- TextLabel.TextColor3 = Color3.fromRGB(0, 255, 0)
--- TextLabel.TextSize = 25.000
--- w = task.wait
--- t = task
--- Settings = {}
--- local placeId = game.PlaceId
--- if placeId == 2753915549 then
---     Sea1 = true
--- elseif placeId == 4442272183 then
---     Sea2 = true
--- elseif placeId == 7449423635 then
---     Sea3 = true
--- end
--- function PostWebhook(url, msg)
---     local rq = http_request or request or HttpPost or syn.request
---     local DataCallBack =
---         rq(
---         {
---             Url = url,
---             Method = "POST",
---             Headers = {
---                 ["Content-Type"] = "application/json"
---             },
---             Body = game:GetService("HttpService"):JSONEncode(msg)
---         }
---     )
---     return ""
--- end
--- function GODHUMAN()
---     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGodhuman")
---      if not game.Players.LocalPlayer.WeaponAssetCache:FindFirstChild("Godhuman") then
---         return "Chua Co Godhuman"
---      else 
---         return "Godhuman"
---      end
--- end
--- function Level()
---     if game.Players.LocalPlayer.Data.Level.Value == 2450 then
---         return "Max LV"
---     else
---         return "Chua Max LV"
---     end
--- end
--- function Beli()
---      return game.Players.LocalPlayer.Data.Beli.Value
--- end
--- function Frag()
---     return game.Players.LocalPlayer.Data.Fragments.Value
--- end
--- function Fruit()
---     return game.Players.LocalPlayer.Data.DevilFruit.Value
--- end
--- function Sea()
---     if game.PlaceId == 2753915549 then
---         return "Sea1"
---     elseif game.PlaceId == 4442272183 then
---         return "Sea2"
---     elseif game.PlaceId == 7449423635 then
---         return "Sea3"
--- end
--- end
--- function GetMsg()
---     k3 = {}
---     if Settings["PingEveryone"] and Settings["WebhookWhenMirage"] then
---         k3["content"] = "@everyone"
---     else
---         k3["content"] = ""
---     end
---     k3["embeds"] = {
---         {
---             ["title"] = "Check Acc",
---             ["fields"] = {
---                 {
---                     ["name"] = "Account:",
---                     ["value"] = "```" .. game.Players.LocalPlayer.Name .. "```",
---                     ["inline"] = true
---                 },
---                 {
---                     ["name"] = "Level:",
---                     ["value"] = "```" .. Level() .. "```",
---                     ["inline"] = true
---                 },
---                 {
---                     ["name"] = "Melee:",
---                     ["value"] = "```" .. GODHUMAN() .. "```",
---                     ["inline"] = true
---                 },
---                 {
---                     ["name"] = "Fruit:",
---                     ["value"] = "```" .. Fruit() .. "```",
---                     ["inline"] = true
---                 },
---                 {
---                     ["name"] = "Fragments:",
---                     ["value"] = "```" .. Frag() .. "```",
---                     ["inline"] = true
---                 },
---                 {
---                     ["name"] = "Beli:",
---                     ["value"] = "```" .. Beli() .. "```",
---                     ["inline"] = true
---                 }
---             }
---         }
---     }
---     return k3
--- end
--- function PostCut(urlsheet, messenger)
---     local rq = http_request or request or HttpPost or syn.request
---     local DataCallBack =
---         rq(
---         {
---             Url = urlsheet, urlsheet2,
---             Method = "POST",
---             Headers = {
---                 ["Content-Type"] = "application/json"
---             },
---             Body = game:GetService("HttpService"):JSONEncode(messenger)
---         }
---     )
---     return ""
--- end
--- function Level()
---     if game.Players.LocalPlayer.Data.Level.Value == 2450 then
---         return "Max LV"
---     else
---         return "Chua Max LV"
---     end
--- end
--- function GODHUMAN()
---     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGodhuman")
---      if not game.Players.LocalPlayer.WeaponAssetCache:FindFirstChild("Godhuman") then
---         return "Chua Co Godhuman"
---      else 
---         return "Godhuman"
---      end
--- end
--- function Beli()
---     return game.Players.LocalPlayer.Data.Beli.Value
--- end
--- function Frag()
---    return game.Players.LocalPlayer.Data.Fragments.Value
--- end
--- function Fruit()
---    return game.Players.LocalPlayer.Data.DevilFruit.Value
--- end
--- function Sea()
---     if game.PlaceId == 2753915549 then
---         return "Sea1"
---     elseif game.PlaceId == 4442272183 then
---         return "Sea2"
---     elseif game.PlaceId == 7449423635 then
---         return "Sea3"
--- end
--- end
--- function thongtin()
---     data = {
---     ["Username"] = game.Players.LocalPlayer.Name,
---     ["Level"]= Level(),
---     ["Melee"]= GODHUMAN(),
---     ["Fruit"]= Fruit(),
---     ["Fragments"]= Frag(),
---     ["Beli"]= Beli(),
---     ["World"]= Sea(),
---   };
---   return data
--- end
--- function GetMsg2()
---     Noidung = "Account Disconnected"
---     k3 = {}
---     if Settings["PingEveryone"] and Settings["WebhookWhenMirage"] then
---         k3["content"] = "@everyone"
---     else
---         k3["content"] = ""
---     end
---     k3["embeds"] = {
---         {
---             ["title"] = "Disconnected",
---             ["fields"] = {
---                 {
---                     ["name"] = "Thong Bao:",
---                     ["value"] = "```" .. Noidung .. "```",
---                     ["inline"] = true
---                 }
---             }
---         }
---     }
---     return k3
--- end
--- task.spawn(function()
--- wait(50)
--- game:service('VirtualInputManager'):SendKeyEvent(true, "RightControl", false, game)
--- end)
--- game:service"NetworkClient".ChildRemoved:Connect(function()
---     PostWebhook(url2, GetMsg2())
---     game_pid = game.PlaceId
---     repeat wait()
---         if not game:IsLoaded() then
---             if game_pid == nil then
---                 game_pid = game.PlaceId
---             end
---                 game:GetService('TeleportService'):TeleportToPlaceInstance(game_pid, game.JobId, game.Players.LocalPlayer)
-                
---             end
---                 game:GetService('TeleportService'):Teleport(game_pid)
-                
---     until game:IsLoaded()
--- end)
--- if game.Players.LocalPlayer.Data.Level.Value <= 740 then
--- wait (300)
--- game_pid = game.PlaceId
---     repeat wait()
---         if not game:IsLoaded() then
---             if game_pid == nil then
---                 game_pid = game.PlaceId
---             end
---                 game:GetService('TeleportService'):TeleportToPlaceInstance(game_pid, game.JobId, game.Players.LocalPlayer)
-                
---             end
---                 game:GetService('TeleportService'):Teleport(game_pid)
-                
---     until game:IsLoaded()
---     end
--- while wait(30) do
---     if game.Players.LocalPlayer.Data.Level.Value == 2450 then
---         if GODHUMAN() == "Godhuman" then
---             PostCut(urlsheet, thongtin())    
---         elseif GODHUMAN() == "Chua Co Godhuman" then
---             PostCut(urlsheet2, thongtin())       
---         end
---         local ScreenGui = Instance.new("ScreenGui")
---         local Frame = Instance.new("Frame")
---         local TextButton = Instance.new("TextButton")
-
---         ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
---         Frame.Parent = ScreenGui
---         Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
---         Frame.Position = UDim2.new(0.244592339, 0, 0.05185185, 0)
---         Frame.Size = UDim2.new(0, 100, 0, 100)
-
---         TextButton.Parent = ScreenGui
---         TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
---         TextButton.Position = UDim2.new(0.245424271, 0, 0.0518518537, 0)
---         TextButton.Size = UDim2.new(0, 99, 0, 100)
---         TextButton.Modal = true
---         TextButton.Font = Enum.Font.SourceSans
---         TextButton.Text = "DONE"
---         TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
---         TextButton.TextSize = 37.000
---         break
---     else
---         print"chua max lv"
---     end
--- end
-
-
-
 urlsheet = "https://sheet.best/api/sheets/8fefe820-4bf5-4907-a6a1-a2d427333752"
 urlsheet2 = "https://sheet.best/api/sheets/ed734e60-4c05-4250-a47d-3e860cc89cea"
 url = "https://discord.com/api/webhooks/1105921339388346368/OeW_fpWrCn4FzjOaL0dZ8aFFA-C0CnPXKLiw2w4QwVKKjygRiaXkLWeqIHuIf616HF4j";
@@ -412,6 +94,14 @@ function GODHUMAN()
         return "Godhuman"
      end
 end
+function SUPERHUMAN()
+    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySuperhuman")
+     if not game.Players.LocalPlayer.WeaponAssetCache:FindFirstChild("Superhuman") then
+        return "Chua Co Superhuman"
+     else 
+        return "Superhuman"
+     end
+end
 function Level()
     if game.Players.LocalPlayer.Data.Level.Value == 2450 then
         return "Max LV"
@@ -436,6 +126,86 @@ function Sea()
     elseif game.PlaceId == 7449423635 then
         return "Sea3"
 end
+end
+local InvenTory = game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer("getInventory")
+function checkCDK()
+zz = "e"
+    for i,v in pairs(InvenTory) do
+            if v["Name"] == "Cursed Dual Katana" then
+                zz = "zz"
+        end
+    end
+    if zz == "zz" then
+        return true
+end
+end
+function CDK()
+    if checkCDK() then
+        return "CDK"
+    else
+        return ""
+    end
+end
+function checkSG()
+zz = "e"
+    for i,v in pairs(InvenTory) do
+            if v["Name"] == "Soul Guitar" then
+                zz = "zz"
+        end
+    end
+    if zz == "zz" then
+        return true
+end
+end
+function SG()
+    if checkSG() then
+        return "SG"
+    else
+        return ""
+    end
+end
+function checkValkyrie()
+    zz = "e"
+        for i,v in pairs(InvenTory) do
+                if v["Name"] == "Valkyrie Helm" then
+                    zz = "zz"
+            end
+        end
+        if zz == "zz" then
+            return true
+    end
+    end
+function Valkyrie()
+    if checkValkyrie() then
+        return "ok"
+    else
+        return "no ok"
+    end
+end
+function checkMirror()
+    zz = "e"
+        for i,v in pairs(InvenTory) do
+                if v["Name"] == "Mirror Fractal" then
+                    zz = "zz"
+            end
+        end
+        if zz == "zz" then
+            return true
+    end
+    end
+function Mirror()
+    if checkMirror() then
+        return "ok"
+    else
+        return "no ok"
+    end
+end
+function Gear()
+    if Mirror() == "ok" and Valkyrie() == "ok" then
+        return "OK"
+    else
+        return ""
+    end
 end
 function GetMsg()
     k3 = {}
@@ -540,6 +310,9 @@ function thongtin()
     ["Fragments"]= Frag(),
     ["Beli"]= Beli(),
     ["World"]= Sea(),
+    ["CDK"]= CDK(),
+    ["SG"]= SG(),
+    ["Gear"]= Gear(),
   };
   return data
 end
@@ -570,35 +343,35 @@ wait(50)
 game:service('VirtualInputManager'):SendKeyEvent(true, "RightControl", false, game)
 end)
 -- here 
--- repeat wait()
--- until game:IsLoaded() and game:GetService("Players").LocalPlayer and 
--- game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("LoadingScreen") == nil
--- for i,v in next, workspace:GetDescendants() do
---     pcall(function()
---         v.Transparency = 1
---     end)
--- end
--- for i,v in next, getnilinstances() do
---     pcall(function()
---         v.Transparency = 1
---         for i1,v1 in next, v:GetDescendants() do
---             v1.Transparency = 1
---         end
---     end)
--- end
--- a = workspace
--- a.DescendantAdded:Connect(function(v)
---     pcall(function()
---         v.Transparency = 1
---     end)
--- end)
--- workspace.ClientAnimatorThrottling = Enum.ClientAnimatorThrottlingMode.Enabled
--- workspace.InterpolationThrottling = Enum.InterpolationThrottlingMode.Enabled
--- settings():GetService("RenderSettings").EagerBulkExecution = false
--- workspace.LevelOfDetail = Enum.ModelLevelOfDetail.Disabled
--- game:GetService("Lighting").GlobalShadows = false
+repeat wait()
+until game:IsLoaded() and game:GetService("Players").LocalPlayer and 
+game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("LoadingScreen") == nil
+for i,v in next, workspace:GetDescendants() do
+    pcall(function()
+        v.Transparency = 1
+    end)
+end
+for i,v in next, getnilinstances() do
+    pcall(function()
+        v.Transparency = 1
+        for i1,v1 in next, v:GetDescendants() do
+            v1.Transparency = 1
+        end
+    end)
+end
+a = workspace
+a.DescendantAdded:Connect(function(v)
+    pcall(function()
+        v.Transparency = 1
+    end)
+end)
+workspace.ClientAnimatorThrottling = Enum.ClientAnimatorThrottlingMode.Enabled
+workspace.InterpolationThrottling = Enum.InterpolationThrottlingMode.Enabled
+settings():GetService("RenderSettings").EagerBulkExecution = false
+workspace.LevelOfDetail = Enum.ModelLevelOfDetail.Disabled
+game:GetService("Lighting").GlobalShadows = false
 
--- settings().Rendering.QualityLevel = "Level01"
+settings().Rendering.QualityLevel = "Level01"
 -- here 
 game:service"NetworkClient".ChildRemoved:Connect(function()
     PostWebhook(url2, GetMsg2())
@@ -633,22 +406,22 @@ game_pid = game.PlaceId
 if game.PlaceId == 7449423635 then
     while wait(30) do
         print"working"
-        if game.Players.LocalPlayer.Data.Level.Value == 2450 and GODHUMAN() == "Godhuman" then
-            PostCut(urlsheet, thongtin())
+        if game.Players.LocalPlayer.Data.Level.Value == 2450 and SUPERHUMAN() == "Superhuman" then
+            PostCut(urlsheet2, thongtin())
             local ScreenGui = Instance.new("ScreenGui")
             local Frame = Instance.new("Frame")
             local TextButton = Instance.new("TextButton")
-
+            
             ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
+            
             Frame.Parent = ScreenGui
             Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            Frame.Position = UDim2.new(0.244592339, 0, 0.05185185, 0)
+            Frame.Position = UDim2.new(0.294592339, 0, 0.15185185, 0)
             Frame.Size = UDim2.new(0, 100, 0, 100)
-
+            
             TextButton.Parent = ScreenGui
             TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
-            TextButton.Position = UDim2.new(0.245424271, 0, 0.0518518537, 0)
+            TextButton.Position = UDim2.new(0.295424271, 0, 0.1518518537, 0)
             TextButton.Size = UDim2.new(0, 99, 0, 100)
             TextButton.Modal = true
             TextButton.Font = Enum.Font.SourceSans
