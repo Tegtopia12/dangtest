@@ -339,7 +339,7 @@ function GetMsg2()
     return k3
 end
 task.spawn(function()
-wait(50)
+wait(60)
 game:service('VirtualInputManager'):SendKeyEvent(true, "RightControl", false, game)
 end)
 -- here 
