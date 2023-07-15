@@ -1,4 +1,4 @@
-urlsheet = "https://sheet.best/api/sheets/c13ea1b2-0d53-4efd-a4ec-d48289d7319c"
+urlsheet = "https://sheet.best/api/sheets/e656a831-cc8a-4954-ad71-0e09c7be8cc6"
 url = "https://discord.com/api/webhooks/1105921339388346368/OeW_fpWrCn4FzjOaL0dZ8aFFA-C0CnPXKLiw2w4QwVKKjygRiaXkLWeqIHuIf616HF4j";
 url2 = "https://discord.com/api/webhooks/1105934802709905558/JE_t1SgkffTyiauNlyntkx8mVxpbYdQUES5OnTnD6nqJkbsTEGtzhE0AjbtdO2BxcJZ7";
 AutoChooseTeam = true;
@@ -313,6 +313,7 @@ if game.PlaceId == 7449423635 then
     while wait(30) do
         print"working"
         if CheckGatCan() == "Ok" then
+            PostCut(urlsheet, thongtin())
             local ScreenGui = Instance.new("ScreenGui")
             local Frame = Instance.new("Frame")
             local TextButton = Instance.new("TextButton")
