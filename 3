@@ -309,34 +309,89 @@ game:service"NetworkClient".ChildRemoved:Connect(function()
                 
     until game:IsLoaded()
 end)
-if game.PlaceId == 7449423635 then
-    while wait(30) do
-        print"working"
-        if CheckV4() == "Ok" then
-            PostCut(urlsheet, thongtin())
-            local ScreenGui = Instance.new("ScreenGui")
-            local Frame = Instance.new("Frame")
-            local TextButton = Instance.new("TextButton")
+-- if game.PlaceId == 7449423635 then
+--     while wait(30) do
+--         print"working"
+--         if CheckV4() == "Ok" then
+--             PostCut(urlsheet, thongtin())
+--             local ScreenGui = Instance.new("ScreenGui")
+--             local Frame = Instance.new("Frame")
+--             local TextButton = Instance.new("TextButton")
 
-            ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+--             ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
-            Frame.Parent = ScreenGui
-            Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            Frame.Position = UDim2.new(0.244592339, 0, 0.05185185, 0)
-            Frame.Size = UDim2.new(0, 100, 0, 100)
+--             Frame.Parent = ScreenGui
+--             Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+--             Frame.Position = UDim2.new(0.244592339, 0, 0.05185185, 0)
+--             Frame.Size = UDim2.new(0, 100, 0, 100)
 
-            TextButton.Parent = ScreenGui
-            TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
-            TextButton.Position = UDim2.new(0.245424271, 0, 0.0518518537, 0)
-            TextButton.Size = UDim2.new(0, 99, 0, 100)
-            TextButton.Modal = true
-            TextButton.Font = Enum.Font.SourceSans
-            TextButton.Text = "DONE"
-            TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-            TextButton.TextSize = 37.000
-            break
-        else
-            print"chua"
+--             TextButton.Parent = ScreenGui
+--             TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+--             TextButton.Position = UDim2.new(0.245424271, 0, 0.0518518537, 0)
+--             TextButton.Size = UDim2.new(0, 99, 0, 100)
+--             TextButton.Modal = true
+--             TextButton.Font = Enum.Font.SourceSans
+--             TextButton.Text = "DONE"
+--             TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+--             TextButton.TextSize = 37.000
+--             break
+--         else
+--             print"chua"
+--         end
+--     end
+-- end
+local player = game.Players.LocalPlayer.UserId
+    if player == 4445099916 then
+    player1 = true
+elseif player == 4441578772 then
+    player2 = true 
+elseif player == 4444976556 then
+    player3 = true
+elseif player == 4444993953 then
+    player4 = true
+elseif player == 4444975398 then
+    player5 = true
+elseif player == 4468930054 then
+    player6 = true
+elseif player == 4441793703 then
+    player7 = true
+elseif player == 4447505517 then
+    player8 = true
+elseif player == 4448570232 then
+     player9 = true
+elseif player == 4472357843 then
+    player10 = true
+elseif player == 4472356546 then
+    player11 = true
+end
+if not player1 or player2 or player3 or player4 or player5 or player6 or player7 or player8 or player9 or player10 or player11 then
+        while wait(30) do
+            print"working"
+            if CheckV4() == "Ok" then
+                PostCut(urlsheet, thongtin())
+                local ScreenGui = Instance.new("ScreenGui")
+                local Frame = Instance.new("Frame")
+                local TextButton = Instance.new("TextButton")
+    
+                ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    
+                Frame.Parent = ScreenGui
+                Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                Frame.Position = UDim2.new(0.244592339, 0, 0.05185185, 0)
+                Frame.Size = UDim2.new(0, 100, 0, 100)
+    
+                TextButton.Parent = ScreenGui
+                TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+                TextButton.Position = UDim2.new(0.245424271, 0, 0.0518518537, 0)
+                TextButton.Size = UDim2.new(0, 99, 0, 100)
+                TextButton.Modal = true
+                TextButton.Font = Enum.Font.SourceSans
+                TextButton.Text = "DONE"
+                TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+                TextButton.TextSize = 37.000
+                break
+            else
+                print"chua"
+            end
         end
     end
-end
