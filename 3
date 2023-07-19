@@ -364,7 +364,9 @@ elseif player == 4472357843 then
 elseif player == 4472356546 then
     player11 = true
 end
-if not player1 or player2 or player3 or player4 or player5 or player6 or player7 or player8 or player9 or player10 or player11 then
+if player1 or player2 or player3 or player4 or player5 or player6 or player7 or player8 or player9 or player10 or player11 then
+    print"whitelisted"
+else
         while wait(30) do
             print"working"
             if CheckV4() == "Ok" then
