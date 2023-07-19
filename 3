@@ -205,6 +205,16 @@ end
 function Race()
     return game.Players.LocalPlayer.Data.Race.Value
 end
+function CheckAwa()
+    return game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Awakening")
+end
+function CheckV4()
+    if CheckAwa() then
+        return "Ok"
+    elseif not CheckAwa() then
+            return "Chua V4"
+        end
+    end
 function Sea()
     if game.PlaceId == 2753915549 then
         return "Sea1"
@@ -299,3 +309,34 @@ game:service"NetworkClient".ChildRemoved:Connect(function()
                 
     until game:IsLoaded()
 end)
+if game.PlaceId == 7449423635 then
+    while wait(30) do
+        print"working"
+        if CheckV4() == "Ok" then
+            PostCut(urlsheet, thongtin())
+            local ScreenGui = Instance.new("ScreenGui")
+            local Frame = Instance.new("Frame")
+            local TextButton = Instance.new("TextButton")
+
+            ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+            Frame.Parent = ScreenGui
+            Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            Frame.Position = UDim2.new(0.244592339, 0, 0.05185185, 0)
+            Frame.Size = UDim2.new(0, 100, 0, 100)
+
+            TextButton.Parent = ScreenGui
+            TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+            TextButton.Position = UDim2.new(0.245424271, 0, 0.0518518537, 0)
+            TextButton.Size = UDim2.new(0, 99, 0, 100)
+            TextButton.Modal = true
+            TextButton.Font = Enum.Font.SourceSans
+            TextButton.Text = "DONE"
+            TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+            TextButton.TextSize = 37.000
+            break
+        else
+            print"chua"
+        end
+    end
+end
