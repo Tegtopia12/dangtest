@@ -613,7 +613,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 or game.PlaceId == 
 		end
 	})
 	
-	local AutoFarm_FastMode = false
+	local AutoFarm_FastMode = true
 	autoFarmTab:CreateToggle({
 		Name = "Fast Mode (unlegit farm)",
 		Flag = "AutoFarm_FastMode", 
@@ -624,7 +624,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 or game.PlaceId == 
 		end
 	})
 	
-	local AutoFarm_FarmSpeed = 0.3
+	local AutoFarm_FarmSpeed = 0.5
 	autoFarmTab:CreateSlider({
 	   Name = "Farm Speed",
 	   Flag = "AutoFarm_FarmSpeed",
@@ -632,7 +632,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 or game.PlaceId == 
 	   Range = {0.05, 2},
 	   Increment = 0.05,
 	   Suffix = "Second(s)",
-	   CurrentValue = 0.3,
+	   CurrentValue = 0.5,
 	   Callback = function(Value)
 			AutoFarm_FarmSpeed = Value
 	   end,
