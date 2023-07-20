@@ -600,7 +600,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 or game.PlaceId == 
 	
 	local autoFarmTab = Window:CreateTab("Farm", "13075651575", true)
 	local stats = autoFarmTab:CreateParagraph({Title = "Hello, <b><font color=\"#2B699F\">" .. LocalPlayer.DisplayName .. "</font></b>!", Content = "Thanks for using my script! - Rafa\nMake sure to join us at <b><font color=\"#2B699F\">discord.gg/MilkUp</font></b>"})
-	local autoFarmSection = autoFarmTab:CreateSection("Auto Farm", false, false, "7785988164")
+	local autoFarmSection = autoFarmTab:CreateSection("Auto Farm", false, true, "7785988164")
 	local enableAutoFarm = false
 	autoFarmTab:CreateToggle({
 		Name = "Enable Auto-Farm",
@@ -782,7 +782,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 or game.PlaceId == 
 
 	
 	local farmUtilities = autoFarmTab:CreateSection("Farm Utilities", false, true)
-	local FarmUtilities_CollectDrops = false
+	local FarmUtilities_CollectDrops = true
 	local FarmUtilities_CurrentOrbs = {} 
 	autoFarmTab:CreateToggle({
 		Name = "Collect Drops",
@@ -870,7 +870,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 10321372166 or game.PlaceId == 
 		end
 	})
 	
-	local instantFall = false
+	local instantFall = true
 	autoFarmTab:CreateToggle({
 		Name = "Instant Fall Coins",
 		SectionParent = farmUtilities,
