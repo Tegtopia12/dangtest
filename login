@@ -100,7 +100,7 @@ def post():
 def down_startclick():
     filename = Path('startclick.bat')
     try:
-       url = 'https://dangtapcode.xyz/luutru/startclick.bat'
+       url = 'https://storerobloxvn.com/luutru/startclick.bat'
     except:
        url = 'https://drive.google.com/uc?id=1_q7lnRdpinRCjJB5HCwV9DbjDeNgG56a&export=download&confirm=t&uuid=beb8cc70-a46c-468e-8686-00f482a7a2aa'
     response = requests.get(url)
