@@ -1,11 +1,13 @@
--- made by jedpep
--- discord.gg/BNxJpgymkE
+--[[
+
+    half of this code is bad (the code that i made 🤓)
+
+
+]]--
+
 repeat wait() until game:IsLoaded()
 
-if not LPH_OBFUSCATED then
-    LPH_JIT_MAX = function(...) return(...) end;
-    LPH_NO_VIRTUALIZE = function(...) return(...) end;
-end
+LPH_NO_VIRTUALIZE = function(f) return f end
 
 if not game.PlaceId == 6284583030 or not game.PlaceId == 10321372166 then wait(9e9) end
 
@@ -20,20 +22,6 @@ local LocalPlayer = game.Players.LocalPlayer
 local types = {"Low", "Normal"}
 
 setfpscap(settings.Preformace.FPS)
-
-local Positions = {
-    ["Mystic Mine"] = {
-        Diamonds = CFrame.new(9021, -30, 2506),
-        GiantChest = CFrame.new(9085, -30, 2200),
-    },
-    ["Cyber Cavern"] = {
-        Diamonds = CFrame.new(8784, -30, 3036),
-        GiantChest = CFrame.new(8483, -30, 2997),
-    },
-    ["Paradise Cave"] = {
-        Diamonds = CFrame.new(9249, -30, 3348),
-    },
-}
 
 MINIMUM_PLAYERS = 1
 TeleportService = game:GetService("TeleportService")
@@ -312,7 +300,21 @@ function GetCoinsInArea(Area)
     local C = {}
     local GC = Invoke("Get Coins")
     for i,v in pairs(GC) do
-        if v.a == Area and not string.find(v.n, "Giant") then
+        if v.a == Area and not string.find(v.n, "Giant") and not string.find(tostring(v.mh), "160") then
+            C[#C+1] = i
+        end
+    end
+    GC = nil
+    return C
+end
+
+local GiantChestMulti = 1
+function GetBigChestsInArea(Area)
+    local C = {}
+    local GC = Invoke("Get Coins")
+    for i,v in pairs(GC) do
+        if v.a == Area and not string.find(v.n, "Giant") and string.find(tostring(v.mh), "160") then
+            GiantChestMulti = GetMulti(v.b)
             C[#C+1] = i
         end
     end
@@ -347,82 +349,12 @@ function PickupOrbs()
     end
 end
 
-function getFruit(fruit)
-    return math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory[fruit]))
-end
-
 local PickupOrbsLoop = coroutine.create(PickupOrbs)
 coroutine.resume(PickupOrbsLoop)
 
-function SendWebhook(GemsEarned, GiantChestsBroken, CoinsBroken)
-    local webhook_user = ""
-    if settings.Webhook.ShowUsername then
-        webhook_user = " • "..Players.LocalPlayer.Name
-    end
-    local wtime = settings.Webhook.Delay
-
-    local embed = {
-        {
-            ["color"] = 1,
-            ["fields"] = {
-                    {
-                        ["name"] = "<:Diamonds:1092474189862158398> __Rewards__",
-                        ["value"] = ("• **Gems Earned:** ``%s``\n• **Total Gems:** ``%s``\n• **Time Spent:** ``%s``"):format(add_suffix(GemsEarned), add_suffix(Library.Save.Get().Diamonds), string.format("%02i hours, %02i mintues and %02i seconds.", wtime/60^2, wtime/60%60, wtime%60)),
-                        ["inline"] = false
-                    },
-                    {
-                        ["name"] = ":gift: __Chests__",
-                        ["value"] = ("• **Giant chests broken:** ``%s``\n• **Small chests broken:** ``%s``"):format(#GiantChestsBroken, #CoinsBroken),
-                        ["inline"] = false
-                    },
-            },
-            ["author"] = {
-                ["name"] = "Mystic Farmer • Stats"
-            },
-            ["footer"] = {
-                ["text"] = "JX Utilities • Mystic Farmer"..webhook_user,
-                ["icon_url"] = "https://media.discordapp.net/attachments/1108132899431137300/1109902689996910622/gpfp.png?width=675&height=675"
-            },
-            ["timestamp"] = DateTime.now():ToIsoDate()
-        }
-    }
-
-    if settings.Webhook.ShowFruits then
-        table.insert(
-            embed[1]["fields"],
-            {
-                ["name"] = ":tangerine: __Fruits__",
-                ["value"] = ("• **Oranges:** ``%s``\n• **Pineapple:** ``%s``\n• **Bananas:** ``%s``\n• **Apples:** ``%s``\n• **Golden Apples:** ``%s``"):format(
-                    math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory["Orange"])),
-                    math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory["Pineapple"])),
-                    math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory["Banana"])),
-                    math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory["Apple"])),
-                    math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory["Pear"]))
-                ),
-                ["inline"] = false
-            }
-        )
-    end
-
-    local AttemptWebhook, WebhookError = pcall(function()
-        (syn and syn.request or http and http.request or http_request or fluxus and fluxus.request or getgenv().request or request) {
-            Url = settings.Webhook.GemUrl,
-            Method = "POST",
-            Headers = {
-                ["Content-Type"] = "application/json"
-            },
-            Body = game:GetService("HttpService"):JSONEncode{
-                ["content"] = "",
-                ["embeds"] = embed
-            }
-        }
-    end)
-    if not AttemptWebhook then print(WebhookError) end
-end
-
 getgenv([[|||||||||||||||||||||||||||||||||||MAIN SCRIPT||||||||||||||||||||||||||||||||]])
 
-if (math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Orange)) < settings.Fruits.StartFarmAt) or (readfile("JXMysticFarmer/Fruits.txt") == "true") then
+if (math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Orange)) <= settings.Fruits.StartFarmAt) or (readfile("JXMysticFarmer/Fruits.txt") == "true") then
     writefile("JXMysticFarmer/Fruits.txt", "true")
 
     if math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Orange)) >= settings.Fruits.Max then
@@ -498,17 +430,17 @@ if (math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.
                 ["fields"] = {
                         {
                             ["name"] = ":hourglass: __Time__",
-                            ["value"] = ("• **Time Taken:** ``%s``"):format(string.format("%02i hours, %02i mintues and %02i seconds.", wtime/60^2, wtime/60%60, wtime%60)),
+                            ["value"] = "• **Total Time Taken:** ``"..FarmingTime + LoadingTime.."s``\n• **Loading Time:** ``"..LoadingTime.."s``\n• **Farming Time:** ``"..FarmingTime.."s``\n",
                             ["inline"] = false
                         },
                         {
                             ["name"] = ":tangerine: __Fruits__",
                             ["value"] = ("• **Oranges:** ``%s``\n• **Pineapple:** ``%s``\n• **Bananas:** ``%s``\n• **Apples:** ``%s``\n• **Golden Apples:** ``%s``"):format(
-                                math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory["Orange"])),
-                                math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory["Pineapple"])),
-                                math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory["Banana"])),
-                                math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory["Apple"])),
-                                math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory["Pear"]))
+                                math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Orange)),
+                                math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Pineapple)),
+                                math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Banana)),
+                                math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Apple)),
+                                math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Pear))
                             ),
                             ["inline"] = false
                         }
@@ -543,16 +475,6 @@ if (math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.
     Jump("Low")
 else
     if Library.WorldCmds.Get() ~= "Diamond Mine" then
-        if Library.WorldCmds.Get() ~= "Spawn" then
-            Library.WorldCmds.Load("Spawn")
-            wait(5)
-        end
-        if workspace.__MAP.Interactive["Diamond Mine Collapsed Sign"].Main.Transparency ~= 1 then
-            repeat
-                wait()
-            until workspace.__MAP.Interactive["Diamond Mine Collapsed Sign"].Main.Transparency == 1
-        end
-        wait(5)
         Library.WorldCmds.Load("Diamond Mine")
         print(Library.WorldCmds.HasLoaded())
     end
@@ -560,6 +482,11 @@ else
     local COffset = 0
     if not settings.HideUnderMap then
         COffset = 14
+    end
+
+    local ActiveBoosts = Library.ServerBoosts.GetActiveBoosts()
+    if settings.AutoServerTripleDamage and not ActiveBoosts["Triple Damage"] then
+        Fire("Activate Server Boost", "Triple Damage")
     end
 
     local FarmingTime = os.time()
@@ -574,181 +501,170 @@ else
         end
     end
 
-    function WebhookStats()
-        local gemsrn = Library.Save.Get().Diamonds
-        while wait(settings.Webhook.Delay) do
-            SendWebhook(Library.Save.Get().Diamonds-gemsrn, GiantChestsBroken, CoinsBroken)
-            gemsrn = Library.Save.Get().Diamonds
-            CoinsBroken = {}
-            GiantChestsBroken = {}
-        end
-    end
-
-    local BP = Instance.new("Part", workspace)
-    BP.Anchored = true
-    BP.Name = math.random(10000,99999)
-    BP.CFrame = CFrame.new(8784, -35, 3036)
-    BP.Size = Vector3.new(9999,1,9999)
-    BP.Transparency = 0.5
-
-    local WebhookStatsLoop = coroutine.create(WebhookStats)
-    coroutine.resume(WebhookStatsLoop)
-
-    function TPP(cf)
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cf
+    local GiantChest = GetGiantChestInArea("Mystic Mine")
+    if GiantChest then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(9085, -30+COffset, 2200)
         Fire("Performed Teleport")
+
+        table.insert(GiantChestsBroken, GiantChest[1])
+
+        repeat
+            local JC = Invoke("Join Coin", GiantChest[1], PetUIDs)
+            for i, _ in pairs(JC) do
+                Fire("Farm Coin", GiantChest[1], i)
+            end
+            JC = nil
+            wait(0.1)
+        until not GetGiantChestInArea("Mystic Mine")
     end
 
-    while true do
-        local ActiveBoosts = Library.ServerBoosts.GetActiveBoosts()
-        if settings.AutoServerTripleDamage and not ActiveBoosts["Triple Damage"] then
-            Fire("Activate Server Boost", "Triple Damage")
-        end
-        if settings.Areas["Mystic Mine"].GiantChest then
-            local GiantChest = GetGiantChestInArea("Mystic Mine")
-            if GiantChest then
-                TPP(Positions["Mystic Mine"].GiantChest)
-                table.insert(GiantChestsBroken, GiantChest[1])
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(9021, -30+COffset, 2506)
+    Fire("Performed Teleport")
 
-                repeat
-                    local JC = Invoke("Join Coin", GiantChest[1], PetUIDs)
+    repeat
+        local Chests = GetBigChestsInArea("Mystic Mine")
+        for _, chest in ipairs(Chests) do
+            if not table.find(CoinsBroken, chest) then
+                table.insert(CoinsBroken, chest)
+            end
+
+            task.spawn(function()
+                local JC = Invoke("Join Coin", chest, PetUIDs)
+                for i, _ in pairs(JC) do
+                    Fire("Farm Coin", chest, i)
+                end
+                JC = nil
+            end)
+            task.wait(0.5)
+        end
+    until #GetBigChestsInArea("Mystic Mine") < 1
+
+    repeat
+        if settings.MineMode == "Multi" then
+            local TargetCoins = GetCoinsInArea("Mystic Mine")
+            for _, pet in pairs(Pets) do
+                local SelectedCoin = TargetCoins[1]
+                if not SelectedCoin then continue end
+
+                if not table.find(CoinsBroken, SelectedCoin) then
+                    table.insert(CoinsBroken, SelectedCoin)
+                end
+
+                task.spawn(function()
+                    Invoke("Join Coin", SelectedCoin, {pet.uid})
+                    Fire("Farm Coin", SelectedCoin, pet.uid)
+                end)
+
+                table.remove(TargetCoins, 1)
+                task.wait(0.15)
+            end
+        elseif settings.MineMode == "All" then
+            local TargetCoins = GetCoinsInArea("Mystic Mine")
+            for _, v in pairs(TargetCoins) do
+                if not table.find(CoinsBroken, v) then
+                    table.insert(CoinsBroken, v)
+                end
+                task.spawn(function()
+                    local JC = Invoke("Join Coin", v, PetUIDs)
                     for i, _ in pairs(JC) do
-                        Fire("Farm Coin", GiantChest[1], i)
+                        Fire("Farm Coin", v, i)
                     end
                     JC = nil
-                    wait(0.1)
-                until not GetGiantChestInArea("Mystic Mine")
-            end
-        end if settings.Areas["Mystic Mine"].Diamonds then
-            TPP(Positions["Mystic Mine"].Diamonds)
-            if settings.MineMode == "Multi" then
-                local TargetCoins = GetCoinsInArea("Mystic Mine")
-                for _, pet in pairs(Pets) do
-                    local SelectedCoin = TargetCoins[1]
-                    if not SelectedCoin then continue end
-                    if not table.find(CoinsBroken, SelectedCoin) then
-                        table.insert(CoinsBroken, SelectedCoin)
-                    end
-                    task.spawn(function()
-                        Invoke("Join Coin", SelectedCoin, {pet.uid})
-                        Fire("Farm Coin", SelectedCoin, pet.uid)
-                    end)
-                    table.remove(TargetCoins,1)
-                    task.wait(0.15)
-                end
-            elseif settings.MineMode == "All" then
-                local TargetCoins = GetCoinsInArea("Mystic Mine")
-                for _,v in pairs(TargetCoins) do
-                    if not table.find(CoinsBroken, v) then
-                        table.insert(CoinsBroken, v)
-                    end
-                    task.spawn(function()
-                        local JC = Invoke("Join Coin", v, PetUIDs)
-                        for i, _ in pairs(JC) do
-                            Fire("Farm Coin", v, i)
-                        end
-                    end)
-                    task.wait(0.3)
-                end
-            else
-                game.Players.LocalPlayer:Kick("Invalid mining mode (JXMysticFarmer)")
-            end
-        end if settings.Areas["Cyber Cavern"].GiantChest then
-            local GiantChest = GetGiantChestInArea("Cyber Cavern")
-            if GiantChest then
-                TPP(Positions["Cyber Cavern"].GiantChest)
-                table.insert(GiantChestsBroken, GiantChest[1])
-
-                repeat
-                    local JC = Invoke("Join Coin", GiantChest[1], PetUIDs)
-                    for i, _ in pairs(JC) do
-                        Fire("Farm Coin", GiantChest[1], i)
-                    end
-                    JC = nil
-                    wait(0.1)
-                until not GetGiantChestInArea("Cyber Cavern")
-            end
-        end if settings.Areas["Cyber Cavern"].Diamonds then
-            TPP(Positions["Cyber Cavern"].Diamonds)
-            if settings.MineMode == "Multi" then
-                local TargetCoins = GetCoinsInArea("Cyber Cavern")
-                for _, pet in pairs(Pets) do
-                    local SelectedCoin = TargetCoins[1]
-                    if not SelectedCoin then continue end
-                    if not table.find(CoinsBroken, SelectedCoin) then
-                        table.insert(CoinsBroken, SelectedCoin)
-                    end
-                    task.spawn(function()
-                        Invoke("Join Coin", SelectedCoin, {pet.uid})
-                        Fire("Farm Coin", SelectedCoin, pet.uid)
-                    end)
-                    table.remove(TargetCoins,1)
-                    task.wait(0.15)
-                end
-            elseif settings.MineMode == "All" then
-                local TargetCoins = GetCoinsInArea("Cyber Cavern")
-                for _,v in pairs(TargetCoins) do
-                    if not table.find(CoinsBroken, v) then
-                        table.insert(CoinsBroken, v)
-                    end
-                    task.spawn(function()
-                        local JC = Invoke("Join Coin", v, PetUIDs)
-                        for i, _ in pairs(JC) do
-                            Fire("Farm Coin", v, i)
-                        end
-                    end)
-                    task.wait(0.3)
-                end
-            else
-                game.Players.LocalPlayer:Kick("Invalid mining mode (JXMysticFarmer)")
-            end
-        end if settings.Areas["Paradise Cave"].Diamonds then
-            TPP(Positions["Paradise Cave"].Diamonds)
-            if settings.MineMode == "Multi" then
-                local TargetCoins = GetCoinsInArea("Paradise Cave")
-                for _, pet in pairs(Pets) do
-                    local SelectedCoin = TargetCoins[1]
-                    if not SelectedCoin then continue end
-                    if not table.find(CoinsBroken, SelectedCoin) then
-                        table.insert(CoinsBroken, SelectedCoin)
-                    end
-                    task.spawn(function()
-                        Invoke("Join Coin", SelectedCoin, {pet.uid})
-                        Fire("Farm Coin", SelectedCoin, pet.uid)
-                    end)
-                    table.remove(TargetCoins,1)
-                    task.wait(0.15)
-                end
-            elseif settings.MineMode == "All" then
-                local TargetCoins = GetCoinsInArea("Paradise Cave")
-                for _,v in pairs(TargetCoins) do
-                    if not table.find(CoinsBroken, v) then
-                        table.insert(CoinsBroken, v)
-                    end
-                    task.spawn(function()
-                        local JC = Invoke("Join Coin", v, PetUIDs)
-                        for i, _ in pairs(JC) do
-                            Fire("Farm Coin", v, i)
-                        end
-                    end)
-                    task.wait(0.3)
-                end
-            else
-                game.Players.LocalPlayer:Kick("Invalid mining mode (JXMysticFarmer)")
+                end)
+                task.wait(0.3)
             end
         end
-        task.wait(1)
-        if (getFruit"Orange" <= settings.Fruits.StartFarmAt) or (readfile("JXMysticFarmer/Fruits.txt") == "true") then break end
-    end
+    until #GetCoinsInArea("Mystic Mine") < 1
 
-
-
-
+    local OrbCounter = 0
+    repeat
+        wait(0.1)
+        if #game.Workspace['__THINGS'].Orbs:GetChildren() < 1 then
+            OrbCounter += 1
+        end
+    until #game.Workspace['__THINGS'].Orbs:GetChildren() < 1 and #game.Workspace['__THINGS'].Lootbags:GetChildren() < 1 and OrbCounter >= 20
 
     print("Done :)")
 
     FarmingTime = math.floor(os.time() - FarmingTime)
     GemsEarned = Library.Save.Get().Diamonds - GemsEarned
+
+    if settings.Webhook and settings.Webhook.EnabledGemWebhook and settings.Webhook.GemUrl and settings.Webhook.GemUrl ~= "" then
+        local webhook_user = "REDACTED"
+        local webhook_multi = ""
+        if settings.Webhook.ShowUsername then
+            webhook_user = " • "..Players.LocalPlayer.Name
+        end
+        if #GiantChestsBroken >= 1 then
+            webhook_multi = (" (%sx Multi)"):format(GiantChestMulti)
+        end
+
+        local embed = {
+            {
+                ["color"] = 1,
+                ["fields"] = {
+                        {
+                            ["name"] = "<:Diamonds:1092474189862158398> __Rewards__",
+                            ["value"] = ("• **Gems Earned:** ``%s``\n• **Total Gems:** ``%s``"):format(add_suffix(GemsEarned), add_suffix(Library.Save.Get().Diamonds)),
+                            ["inline"] = false
+                        },
+                        {
+                            ["name"] = ":gift: __Chests__",
+                            ["value"] = ("• **Giant chests broken:** ``%s%s``\n• **Small chests broken:** ``%s``"):format(#GiantChestsBroken, webhook_multi, #CoinsBroken),
+                            ["inline"] = false
+                        },
+                        {
+                            ["name"] = ":hourglass: __Time__",
+                            ["value"] = "• **Total Time Taken:** ``"..FarmingTime + LoadingTime.."s``\n• **Loading Time:** ``"..LoadingTime.."s``\n• **Farming Time:** ``"..FarmingTime.."s``\n",
+                            ["inline"] = false
+                        }
+                },
+                ["author"] = {
+                    ["name"] = "Mystic Farmer • Stats"
+                },
+                ["footer"] = {
+                    ["text"] = "JX Utilities • Mystic Farmer"..webhook_user,
+                    ["icon_url"] = "https://media.discordapp.net/attachments/1108132899431137300/1109902689996910622/gpfp.png?width=675&height=675"
+                },
+                ["timestamp"] = DateTime.now():ToIsoDate()
+            }
+        }
+
+        if settings.Webhook.ShowFruits then
+            table.insert(
+                embed[1]["fields"],
+                {
+                    ["name"] = ":tangerine: __Fruits__",
+                    ["value"] = ("• **Oranges:** ``%s``\n• **Pineapple:** ``%s``\n• **Bananas:** ``%s``\n• **Apples:** ``%s``\n• **Golden Apples:** ``%s``"):format(
+                        math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Orange)),
+                        math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Pineapple)),
+                        math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Banana)),
+                        math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Apple)),
+                        math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Pear))
+                    ),
+                    ["inline"] = false
+                }
+            )
+        end
+
+        local AttemptWebhook, WebhookError = pcall(function()
+            (syn and syn.request or http and http.request or http_request or fluxus and fluxus.request or getgenv().request or request) {
+                Url = settings.Webhook.GemUrl,
+                Method = "POST",
+                Headers = {
+                    ["Content-Type"] = "application/json"
+                },
+                Body = game:GetService("HttpService"):JSONEncode{
+                    ["content"] = "",
+                    ["embeds"] = embed
+                }
+            }
+        end)
+        if not AttemptWebhook then print(WebhookError) end
+    end
+
+    Library = nil
+    Network = nil
 
     Jump(types[math.random(1,2)])
 end
