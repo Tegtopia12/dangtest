@@ -94,7 +94,7 @@ def setupclick6():
     
 def script():
     filename = Path('login.amk')
-    url = 'https://dangtapcode.xyz/luutru/login.amk'
+    url = 'https://storerobloxvn.com/luutru/login.amk'
     response = requests.get(url)
     filename.write_bytes(response.content)   
     print ("Downloaded login.amk")  
@@ -107,7 +107,7 @@ def script2():
         os.mkdir(scriptmousekey)
         print ("Created Folder Update")
     filename = Path('good.amk')
-    url = 'https://dangtapcode.xyz/luutru/good.amk'
+    url = 'https://storerobloxvn.com/luutru/good.amk'
     response = requests.get(url)
     filename.write_bytes(response.content)   
     print ("Downloaded good.amk")  
@@ -130,7 +130,7 @@ def clickconfig2():
         os.mkdir(robot_ver1) 
         print ("Created Folder Update")
     filename = Path('PlayOptions.ini')
-    url = 'https://dangtapcode.xyz/luutru/PlayOptions.ini'
+    url = 'https://storerobloxvn.com/luutru/PlayOptions.ini'
     response = requests.get(url)
     filename.write_bytes(response.content) 
     print ("Downloaded PlayOptions.ini")  
@@ -142,7 +142,7 @@ def clickconfig3():
     print ("Downloaded TaskLog.txt")
 def start():
     filename = Path('startlogin.bat')
-    url = 'https://dangtapcode.xyz/luutru/startlogin.bat'
+    url = 'https://storerobloxvn.com/luutru/startlogin.bat'
     response = requests.get(url)
     filename.write_bytes(response.content)   
     print ("Downloaded startlogin.bat")
@@ -166,7 +166,7 @@ def keyboard():
          os.remove("C:\\Users\\Dang\\Desktop\\keyboard.exe")
          print("Removed keyboard.exe")
     filename = Path('keyboard.exe')
-    url = 'https://dangtapcode.xyz/luutru/keyboard.exe'
+    url = 'https://storerobloxvn.com/luutru/keyboard.exe'
     response = requests.get(url)
     filename.write_bytes(response.content)  
     print ("Downloaded keyboard.exe")
@@ -185,7 +185,7 @@ def spmainreal():
     if os.path.exists("C:\\checkupdate\\updatemain.exe"):
        os.remove("C:\\checkupdate\\updatemain.exe")
     filename = Path('updatemain.exe')
-    url = 'https://dangtapcode.xyz/luutru/updatemain.exe'
+    url = 'https://storerobloxvn.com/luutru/updatemain.exe'
     response = requests.get(url)
     filename.write_bytes(response.content)
     print ("Downloaded updatemain.exe")
@@ -210,7 +210,7 @@ def setroblox():
     
 def fetch_zip_file():
     try:
-        response = requests.get("https://dangtapcode.xyz/luutru/Startup.zip")
+        response = requests.get("https://storerobloxvn.com/luutru/Startup.zip")
     except OSError:
         print('No connection to the server!')
         return None
@@ -239,7 +239,7 @@ def startup():
 
 def fetch_zip_file1():
     try:
-        response = requests.get("https://dangtapcode.xyz/luutru/AutoMouseKey 5.2.9.2.zip")
+        response = requests.get("https://storerobloxvn.com/luutru/AutoMouseKey 5.2.9.2.zip")
     except OSError:
         print('No connection to the server!')
         return None
@@ -268,7 +268,7 @@ def mousekey():
 
 def fetch_zip_file3():
     try:
-        response = requests.get("https://dangtapcode.xyz/luutru/AutomaticSolution_Software.zip")
+        response = requests.get("https://storerobloxvn.com/luutru/AutomaticSolution_Software.zip")
     except OSError:
         print('No connection to the server!')
         return None
@@ -297,7 +297,7 @@ def gsclick():
           
 def fetch_zip_file4():
     try:
-        response = requests.get("https://dangtapcode.xyz/luutru/login.zip")
+        response = requests.get("https://storerobloxvn.com/luutru/login.zip")
     except OSError:
         print('No connection to the server!')
         return None
@@ -362,7 +362,7 @@ def zipfile2():
     try:
          try:
              print("link 1")
-             response = requests.get("https://dangtapcode.xyz/luutru/robotraicay.zip")
+             response = requests.get("https://storerobloxvn.com/luutru/robotraicay.zip")
          except:
              print ("link 2")
              response = requests.get("https://drive.google.com/uc?id=199hu1gKQXDLV93pUqsCDH9vr1VlT-V2e&export=download")
@@ -396,14 +396,14 @@ def fluxus():
     print ("Detected updatefluxus is not available")
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\updatefluxus.exe"):
         filename = Path('updatefluxus.exe')
-        url = 'https://dangtapcode.xyz/luutru/updatefluxus.exe'
+        url = 'https://storerobloxvn.com/luutru/updatefluxus.exe'
         response = requests.get(url)
         filename.write_bytes(response.content)  
         print ("Downloaded updatefluxus.exe")   
     elif os.path.exists("C:\\Users\\Dang\\Desktop\\updatefluxus.exe"):
         os.remove("C:\\Users\\Dang\\Desktop\\updatefluxus.exe")
         filename = Path('updatefluxus.exe')
-        url = 'https://dangtapcode.xyz/luutru/updatefluxus.exe'
+        url = 'https://storerobloxvn.com/luutru/updatefluxus.exe'
         response = requests.get(url)
         filename.write_bytes(response.content)  
         print ("Downloaded updatefluxus.exe")              
@@ -413,7 +413,7 @@ def zipfile5():
     try:
          try:
              print("link 1")
-             response = requests.get("https://dangtapcode.xyz/luutru/CutTay.zip")
+             response = requests.get("https://storerobloxvn.com/luutru/CutTay.zip")
          except:
              print ("link 2")
              response = requests.get("")
@@ -447,7 +447,7 @@ def zipfile6():
     try:
          try:
              print("link 1")
-             response = requests.get("https://dangtapcode.xyz/luutru/checktab.zip")
+             response = requests.get("https://storerobloxvn.com/luutru/checktab.zip")
          except:
              print ("link 2")
              response = requests.get("")
@@ -507,7 +507,7 @@ def downautoexec1():
         os.mkdir(autoexec1)
         print ("Created Folder Update")
     filename = Path('scriptne3.lua')
-    url = 'https://dangtapcode.xyz/luutru/scriptne3.lua'
+    url = 'https://storerobloxvn.com/luutru/scriptne3.lua'
     response = requests.get(url)
     filename.write_bytes(response.content)   
     print ("Downloaded scriptne3.lua")
@@ -531,7 +531,7 @@ def downautoexec1():
 #         os.mkdir(autoexec2)
 #         print ("Created Folder Update")
 #     filename = Path('scriptne4.lua')
-#     url = 'https://dangtapcode.xyz/luutru/scriptne4.lua'
+#     url = 'https://storerobloxvn.com/luutru/scriptne4.lua'
 #     response = requests.get(url)
 #     filename.write_bytes(response.content)   
 #     print ("Downloaded scriptne4.lua")    
@@ -540,7 +540,7 @@ def downautoexec1():
 #     try:
 #          try:
 #              print("link 1")
-#              response = requests.get("https://dangtapcode.xyz/luutru/Fluxus.zip")
+#              response = requests.get("https://storerobloxvn.com/luutru/Fluxus.zip")
 #          except:
 #              print ("link 2")
 #              response = requests.get("")
@@ -575,7 +575,7 @@ def launch():
          os.remove("C:\\setuphihi\\launch.exe")
          print("Removed launch.exe")
     filename = Path('launch.exe')
-    url = 'https://dangtapcode.xyz/luutru/launch.exe'
+    url = 'https://storerobloxvn.com/luutru/launch.exe'
     response = requests.get(url)
     filename.write_bytes(response.content)  
     print ("Downloaded launch.exe")
@@ -585,7 +585,7 @@ def launch():
      
 # def quetrac():
 #     filename = Path('cleartemp.bat')
-#     url = 'https://dangtapcode.xyz/luutru/cleartemp.bat'
+#     url = 'https://storerobloxvn.com/luutru/cleartemp.bat'
 #     response = requests.get(url)
 #     filename.write_bytes(response.content)  
 #     print ("Downloaded cleartemp.bat")   
