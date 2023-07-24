@@ -302,7 +302,7 @@ def dum():
       return ("ok") 
 def downdum():
     filename = Path('fudum.PNG')
-    url = 'https://dangtapcode.xyz/luutru/fudum.PNG'
+    url = 'https://storerobloxvn.com/luutru/fudum.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)
     
@@ -315,7 +315,7 @@ def dum1():
       return ("ok") 
 def downdum1():
     filename = Path('fudum1.PNG')
-    url = 'https://dangtapcode.xyz/luutru/fudum1.PNG'
+    url = 'https://storerobloxvn.com/luutru/fudum1.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)
     
@@ -328,7 +328,7 @@ def dum3():
       return ("ok") 
 def downdum3():
     filename = Path('fudum3.PNG')
-    url = 'https://dangtapcode.xyz/luutru/fudum3.PNG'
+    url = 'https://storerobloxvn.com/luutru/fudum3.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)
     
@@ -341,7 +341,7 @@ def dum4():
       return ("ok") 
 def downdum4():
     filename = Path('fudum4.PNG')
-    url = 'https://dangtapcode.xyz/luutru/fudum4.PNG'
+    url = 'https://storerobloxvn.com/luutru/fudum4.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)
 
@@ -354,7 +354,7 @@ def dum5():
       return ("ok") 
 def downdum5():
     filename = Path('fudum5.PNG')
-    url = 'https://dangtapcode.xyz/luutru/fudum5.PNG'
+    url = 'https://storerobloxvn.com/luutru/fudum5.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)
     
@@ -367,7 +367,7 @@ def dum6():
       return ("ok") 
 def downdum6():
     filename = Path('fudum6.PNG')
-    url = 'https://dangtapcode.xyz/luutru/fudum6.PNG'
+    url = 'https://storerobloxvn.com/luutru/fudum6.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)
 
@@ -380,7 +380,7 @@ def dump1():
       return ("ok") 
 def downdump1():
     filename = Path('fluproblem.PNG')
-    url = 'https://dangtapcode.xyz/luutru/fluproblem.PNG'
+    url = 'https://storerobloxvn.com/luutru/fluproblem.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)
 
@@ -393,7 +393,7 @@ def dump2():
       return ("ok") 
 def downdump2():
     filename = Path('fluproblem2.PNG')
-    url = 'https://dangtapcode.xyz/luutru/fluproblem2.PNG'
+    url = 'https://storerobloxvn.com/luutru/fluproblem2.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)
     
@@ -406,7 +406,7 @@ def dump3():
       return ("ok") 
 def downdump3():
     filename = Path('fluproblem3.PNG')
-    url = 'https://dangtapcode.xyz/luutru/fluproblem3.PNG'
+    url = 'https://storerobloxvn.com/luutru/fluproblem3.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)
     
@@ -419,7 +419,7 @@ def dump4():
       return ("ok") 
 def downdump4():
     filename = Path('fluproblem4.PNG')
-    url = 'https://dangtapcode.xyz/luutru/fluproblem4.PNG'
+    url = 'https://storerobloxvn.com/luutru/fluproblem4.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)        
 def checkdum():
@@ -440,7 +440,7 @@ def checkdum():
 #       return ("ok") 
 # def downmax1():
 #     filename = Path('max1.PNG')
-#     url = 'https://dangtapcode.xyz/luutru/max1.PNG'
+#     url = 'https://storerobloxvn.com/luutru/max1.PNG'
 #     response = requests.get(url)
 #     filename.write_bytes(response.content)
 
@@ -453,7 +453,7 @@ def checkdum():
 #       return ("ok") 
 # def downmax2():
 #     filename = Path('max2.PNG')
-#     url = 'https://dangtapcode.xyz/luutru/max2.PNG'
+#     url = 'https://storerobloxvn.com/luutru/max2.PNG'
 #     response = requests.get(url)
 #     filename.write_bytes(response.content)
 
@@ -466,7 +466,7 @@ def checkdum():
 #       return ("ok") 
 # def downmax3():
 #     filename = Path('max3.PNG')
-#     url = 'https://dangtapcode.xyz/luutru/max3.PNG'
+#     url = 'https://storerobloxvn.com/luutru/max3.PNG'
 #     response = requests.get(url)
 #     filename.write_bytes(response.content)
 
@@ -514,7 +514,7 @@ def loginne():
       return ("ok") 
 def downloginne():
     filename = Path('loginne.PNG')
-    url = 'https://dangtapcode.xyz/luutru/loginne.PNG'
+    url = 'https://storerobloxvn.com/luutru/loginne.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)
 
@@ -527,7 +527,7 @@ def loginne1():
       return ("ok") 
 def downloginne1():
     filename = Path('loginne1.PNG')
-    url = 'https://dangtapcode.xyz/luutru/loginne1.PNG'
+    url = 'https://storerobloxvn.com/luutru/loginne1.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)
 
@@ -540,7 +540,7 @@ def wrongg():
       return ("ok") 
 def downwrongg():
     filename = Path('wrong.PNG')
-    url = 'https://dangtapcode.xyz/luutru/wrong.PNG'
+    url = 'https://storerobloxvn.com/luutru/wrong.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)
 
@@ -553,7 +553,7 @@ def fluuppp():
       return ("ok") 
 def downfluuppp():
     filename = Path('update.PNG')
-    url = 'https://dangtapcode.xyz/luutru/update.PNG'
+    url = 'https://storerobloxvn.com/luutru/update.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content) 
     
@@ -566,7 +566,7 @@ def flukey():
       return ("ok") 
 def downflukey():
     filename = Path('keybug.PNG')
-    url = 'https://dangtapcode.xyz/luutru/keybug.PNG'
+    url = 'https://storerobloxvn.com/luutru/keybug.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)
 
@@ -584,7 +584,7 @@ def cctable():
       return ("ok") 
 def downcctable():
     filename = Path('cctable.PNG')
-    url = 'https://dangtapcode.xyz/luutru/cctable.PNG'
+    url = 'https://storerobloxvn.com/luutru/cctable.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)
 
@@ -597,7 +597,7 @@ def fluxuskey1():
       return ("ok") 
 def downfluxuskey1():
     filename = Path('getkey1.PNG')
-    url = 'https://dangtapcode.xyz/luutru/getkey1.PNG'
+    url = 'https://storerobloxvn.com/luutru/getkey1.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)
     
@@ -610,7 +610,7 @@ def disnehuhu():
       return ("ok") 
 def downdisnehuhu():
     filename = Path('leave.PNG')
-    url = 'https://dangtapcode.xyz/luutru/leave.PNG'
+    url = 'https://storerobloxvn.com/luutru/leave.PNG'
     response = requests.get(url)
     filename.write_bytes(response.content)
                            
