@@ -422,7 +422,7 @@ end
 
 getgenv([[|||||||||||||||||||||||||||||||||||MAIN SCRIPT||||||||||||||||||||||||||||||||]])
 
-if (math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Orange)) <= settings.Fruits.StartFarmAt) or (readfile("JXMysticFarmer/Fruits.txt") == "true") then
+if (math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Orange)) < settings.Fruits.StartFarmAt) or (readfile("JXMysticFarmer/Fruits.txt") == "true") then
     writefile("JXMysticFarmer/Fruits.txt", "true")
 
     if math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Orange)) >= settings.Fruits.Max then
