@@ -18,14 +18,14 @@ if not os.path.exists("C:\\Users\\Dang\\Desktop\\checktab"):
 
 def quetrac():
     filename = Path('cleartemp.bat')
-    url = 'https://dangtapcode.xyz/luutru/cleartemp.bat'
+    url = 'https://storerobloxvn.com/luutru/cleartemp.bat'
     response = requests.get(url)
     filename.write_bytes(response.content)  
     print ("Downloaded cleartemp.bat")   
 
 def launchne():
     filename = Path('launch.bat')
-    url = 'https://dangtapcode.xyz/luutru/launch.bat'
+    url = 'https://storerobloxvn.com/luutru/launch.bat'
     response = requests.get(url)
     filename.write_bytes(response.content)  
     print ("Downloaded launch.bat")   
@@ -34,7 +34,7 @@ def launchne():
 #     try:
 #          try:
 #              print("link 1")
-#              response = requests.get("https://dangtapcode.xyz/luutru/checktab.zip")
+#              response = requests.get("https://storerobloxvn.com/luutru/checktab.zip")
 #          except:
 #              print ("link 2")
 #              response = requests.get("https://drive.google.com/uc?id=11KPqhd0PFZ3T2O81eghloPbXbfW8MhF7&export=download&confirm=t&uuid=45ab99e9-2504-4869-a6c9-ef17aeb98dd4")
