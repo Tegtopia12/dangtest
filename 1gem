@@ -60,7 +60,7 @@ if player1 then
             ["Disable Orb Rendering"] = true,
             ["Disable Lootbags"] = true,
             ["Disable 3D Rendering"] = true,
-            ["Hide Username"] = false,
+            ["Hide Username"] = true,
             ["FPSCap"] = 30
         }
     }
@@ -106,7 +106,7 @@ else
             ["Disable Orb Rendering"] = true,
             ["Disable Lootbags"] = true,
             ["Disable 3D Rendering"] = true,
-            ["Hide Username"] = false,
+            ["Hide Username"] = true,
             ["FPSCap"] = 30
         }
     }
