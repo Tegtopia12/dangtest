@@ -4,7 +4,7 @@ task.spawn(function()
     local PlayerInfos = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get()
     local diamond_1 = PlayerInfos.Diamonds
 
-    wait(120)
+    wait(240)
 
     local PlayerInfos2 = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get()
     local diamond_2 = PlayerInfos2.Diamonds
