@@ -17,15 +17,15 @@ end)
 script_key="QvtVFiBNPxcwdulusNBflfLuizcbXMIb";
 Configs = {
     MysticMine = {
-        ["Giant Chest"] = true,
-        ["Diamonds"] = true
+        ["Giant Chest"] = false,
+        ["Diamonds"] = false
     },
     CyberCavern = {
         ["Giant Chest"] = true,
         ["Diamonds"] = true
     },
     ParadiseCave = {
-        ["Diamonds"] = false
+        ["Diamonds"] = true
     },
     Farming = {
         ["Pet Sending"] = "Single",
