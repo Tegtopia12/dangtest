@@ -14,48 +14,101 @@ task.spawn(function()
     end
 end)
 
-script_key="QvtVFiBNPxcwdulusNBflfLuizcbXMIb";
-Configs = {
-    MysticMine = {
-        ["Giant Chest"] = false,
-        ["Diamonds"] = false
-    },
-    CyberCavern = {
-        ["Giant Chest"] = true,
-        ["Diamonds"] = true
-    },
-    ParadiseCave = {
-        ["Diamonds"] = true
-    },
-    Farming = {
-        ["Pet Sending"] = "Single",
-        ["Auto Orbs"] = true,
-        ["Auto Lootbags"] = true
-    },
-    Fruits = {
-        ["Minimum Fruits"] = 1,
-        ["Maximum Fruits"] = 10,
-        ["Enabled"] = true
-    },
-    Boosts = {
-        ["Triple Server Damage"] = true,
-        ["Triple Damage"] = true
-    },
-    Webhooks = {
-        ["Webhook Url"] = "https://discord.com/api/webhooks/1133271354788024351/4iiP9yfvnAs-9MM6KoUkVWp-FvpCJwCqDU5pki3Sr4xqwMhwpgjZWtLvhIQoKC9uA6OG",
-        ["Time Frame"] = 60
-    },
-    Mailbox = {
-        ["Recipient"] = "Your Username", 
-        ["Minimum Diamonds"] = 50000000000, 
-        ["Enabled"] = false
-    },
-    Performance = {
-        ["Disable Orb Rendering"] = true,
-        ["Disable Lootbags"] = true,
-        ["Disable 3D Rendering"] = false,
-        ["Hide Username"] = true,
-        ["FPSCap"] = 30
+local player = game.Players.LocalPlayer.UserId
+if player == 4568581689 then
+player1 = true
+end
+
+if player1 then
+    script_key="QvtVFiBNPxcwdulusNBflfLuizcbXMIb";
+    Configs = {
+        MysticMine = {
+            ["Giant Chest"] = true,
+            ["Diamonds"] = true
+        },
+        CyberCavern = {
+            ["Giant Chest"] = true,
+            ["Diamonds"] = true
+        },
+        ParadiseCave = {
+            ["Diamonds"] = false
+        },
+        Farming = {
+            ["Pet Sending"] = "Single",
+            ["Auto Orbs"] = true,
+            ["Auto Lootbags"] = true
+        },
+        Fruits = {
+            ["Minimum Fruits"] = 1,
+            ["Maximum Fruits"] = 10,
+            ["Enabled"] = true
+        },
+        Boosts = {
+            ["Triple Server Damage"] = true,
+            ["Triple Damage"] = true
+        },
+        Webhooks = {
+            ["Webhook Url"] = "https://discord.com/api/webhooks/1133271354788024351/4iiP9yfvnAs-9MM6KoUkVWp-FvpCJwCqDU5pki3Sr4xqwMhwpgjZWtLvhIQoKC9uA6OG",
+            ["Time Frame"] = 60
+        },
+        Mailbox = {
+            ["Recipient"] = "Your Username", 
+            ["Minimum Diamonds"] = 50000000000, 
+            ["Enabled"] = false
+        },
+        Performance = {
+            ["Disable Orb Rendering"] = true,
+            ["Disable Lootbags"] = true,
+            ["Disable 3D Rendering"] = false,
+            ["Hide Username"] = true,
+            ["FPSCap"] = 30
+        }
     }
-}
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
+else
+    script_key="QvtVFiBNPxcwdulusNBflfLuizcbXMIb";
+    Configs = {
+        MysticMine = {
+            ["Giant Chest"] = false,
+            ["Diamonds"] = false
+        },
+        CyberCavern = {
+            ["Giant Chest"] = true,
+            ["Diamonds"] = true
+        },
+        ParadiseCave = {
+            ["Diamonds"] = true
+        },
+        Farming = {
+            ["Pet Sending"] = "Single",
+            ["Auto Orbs"] = true,
+            ["Auto Lootbags"] = true
+        },
+        Fruits = {
+            ["Minimum Fruits"] = 1,
+            ["Maximum Fruits"] = 10,
+            ["Enabled"] = true
+        },
+        Boosts = {
+            ["Triple Server Damage"] = true,
+            ["Triple Damage"] = true
+        },
+        Webhooks = {
+            ["Webhook Url"] = "https://discord.com/api/webhooks/1133271354788024351/4iiP9yfvnAs-9MM6KoUkVWp-FvpCJwCqDU5pki3Sr4xqwMhwpgjZWtLvhIQoKC9uA6OG",
+            ["Time Frame"] = 60
+        },
+        Mailbox = {
+            ["Recipient"] = "Your Username", 
+            ["Minimum Diamonds"] = 50000000000, 
+            ["Enabled"] = false
+        },
+        Performance = {
+            ["Disable Orb Rendering"] = true,
+            ["Disable Lootbags"] = true,
+            ["Disable 3D Rendering"] = false,
+            ["Hide Username"] = true,
+            ["FPSCap"] = 30
+        }
+    }
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
+end
