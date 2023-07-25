@@ -1,6 +1,6 @@
 repeat wait() until game:IsLoaded()
 
-dangdapchai = true
+dangdapchai= false
 
 LPH_NO_VIRTUALIZE = function(f) return f end
 
@@ -352,6 +352,127 @@ getgenv([[|||||||||||||||||||||||||||||||||||MAIN SCRIPT||||||||||||||||||||||||
 writefile("JXMysticFarmer/Fruits.txt", "false")
 
 if dangdapchai then
+    writefile("JXMysticFarmer/Fruits.txt", "true")
+-- if (math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Orange)) <= settings.Fruits.StartFarmAt) or (readfile("JXMysticFarmer/Fruits.txt") == "true") then
+--     writefile("JXMysticFarmer/Fruits.txt", "true")
+
+    -- if math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Orange)) >= settings.Fruits.Max then
+    --     writefile("JXMysticFarmer/Fruits.txt", "false")
+    --     Jump(types[math.random(1,2)])
+    --     wait(100)
+    -- end
+
+    local FarmingTime = os.time()
+    wait(10)
+
+    local Worlds = settings.Fruits.Worlds
+    function GetFruits()
+        local Coins = Invoke("Get Coins")
+        local Things = settings.Fruits.FruitsToFarm
+        local Fruit = {}
+        for i,v in pairs(Coins) do
+            local isFruit = false
+            for _, name in pairs(Things) do
+                if v.n == name then
+                    table.insert(Fruit, {i, v})
+                end
+            end
+        end
+        return Fruit
+    end
+
+    function TPToArea(area)
+        local areaTeleport = Library.WorldCmds.GetMap().Teleports:FindFirstChild(area)
+        local Character = game.Players.LocalPlayer.Character
+        local Humanoid = Character.Humanoid
+        local HumanoidRootPart = Character.HumanoidRootPart
+        Character:PivotTo(areaTeleport.CFrame + areaTeleport.CFrame.UpVector * (Humanoid.HipHeight + HumanoidRootPart.Size.Y / 2))
+        Library.Network.Fire("Performed Teleport", area)
+    end
+
+    for i,v in pairs(Worlds) do
+        if tostring(Library.WorldCmds.Get()) ~= tostring(v) then
+            Library.WorldCmds.Load(tostring(v))
+        end
+        wait(0.5)
+        repeat
+            local Fruits = GetFruits()
+            local Pets = Library.PetCmds.GetEquipped()
+            for _, pet in pairs(Pets) do
+                local SelectedFruit = Fruits[1]
+                if SelectedFruit then
+                    TPToArea(SelectedFruit[2].a)
+                    task.wait(0.25)
+                    task.spawn(function()
+                        Invoke("Join Coin", SelectedFruit[1], {pet.uid})
+                        Fire("Farm Coin", SelectedFruit[1], pet.uid)
+                    end)
+                    task.wait(0.1)
+                    table.remove(Fruits, 1)
+                end
+            end
+        until #GetFruits() < 1
+    end
+
+    FarmingTime = math.floor(os.time() - FarmingTime)
+
+    if settings.Webhook and settings.Webhook.EnableFruitWebhook and settings.Webhook.FruitUrl and settings.Webhook.FruitUrl ~= "" then
+        local webhook_user = "REDACTED"
+        local webhook_multi = ""
+        if settings.Webhook.ShowUsername then
+            webhook_user = " • "..Players.LocalPlayer.Name
+        end
+
+        local embed = {
+            {
+                ["color"] = 1,
+                ["fields"] = {
+                        {
+                            ["name"] = ":hourglass: __Time__",
+                            ["value"] = "• **Total Time Taken:** ``"..FarmingTime + LoadingTime.."s``\n• **Loading Time:** ``"..LoadingTime.."s``\n• **Farming Time:** ``"..FarmingTime.."s``\n",
+                            ["inline"] = false
+                        },
+                        {
+                            ["name"] = ":tangerine: __Fruits__",
+                            ["value"] = ("• **Oranges:** ``%s``\n• **Pineapple:** ``%s``\n• **Bananas:** ``%s``\n• **Apples:** ``%s``\n• **Golden Apples:** ``%s``"):format(
+                                math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Orange)),
+                                math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Pineapple)),
+                                math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Banana)),
+                                math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Apple)),
+                                math.ceil(Library.FruitCmds.Get(game.Players.LocalPlayer, Library.FruitCmds.Directory.Pear))
+                            ),
+                            ["inline"] = false
+                        }
+                },
+                ["author"] = {
+                    ["name"] = "Mystic Farmer • Stats"
+                },
+                ["footer"] = {
+                    ["text"] = "JX Utilities • Mystic Farmer"..webhook_user,
+                    ["icon_url"] = "https://media.discordapp.net/attachments/1108132899431137300/1109902689996910622/gpfp.png?width=675&height=675"
+                },
+                ["timestamp"] = DateTime.now():ToIsoDate()
+            }
+        }
+
+        local AttemptWebhook, WebhookError = pcall(function()
+            (syn and syn.request or http and http.request or http_request or fluxus and fluxus.request or getgenv().request or request) {
+                Url = settings.Webhook.FruitUrl,
+                Method = "POST",
+                Headers = {
+                    ["Content-Type"] = "application/json"
+                },
+                Body = game:GetService("HttpService"):JSONEncode{
+                    ["content"] = "",
+                    ["embeds"] = embed
+                }
+            }
+        end)
+        if not AttemptWebhook then print(WebhookError) end
+    end
+    
+    Jump("Low")
+else
     if Library.WorldCmds.Get() ~= "Diamond Mine" then
         Library.WorldCmds.Load("Diamond Mine")
         print(Library.WorldCmds.HasLoaded())
@@ -544,5 +665,5 @@ if dangdapchai then
     Library = nil
     Network = nil
 
-    -- Jump(types[math.random(1,2)])
+    Jump(types[math.random(1,2)])
 end
