@@ -38,7 +38,7 @@ Configs = {
     Performance = {
         ["Disable Orb Rendering"] = true,
         ["Disable Lootbags"] = true,
-        ["Disable 3D Rendering"] = true,
+        ["Disable 3D Rendering"] = false,
         ["Hide Username"] = true,
         ["FPSCap"] = 30
     }
