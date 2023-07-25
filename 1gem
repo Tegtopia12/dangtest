@@ -59,7 +59,7 @@ if player1 then
         Performance = {
             ["Disable Orb Rendering"] = true,
             ["Disable Lootbags"] = true,
-            ["Disable 3D Rendering"] = false,
+            ["Disable 3D Rendering"] = true,
             ["Hide Username"] = true,
             ["FPSCap"] = 30
         }
@@ -105,7 +105,7 @@ else
         Performance = {
             ["Disable Orb Rendering"] = true,
             ["Disable Lootbags"] = true,
-            ["Disable 3D Rendering"] = false,
+            ["Disable 3D Rendering"] = true,
             ["Hide Username"] = true,
             ["FPSCap"] = 30
         }
