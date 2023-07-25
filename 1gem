@@ -40,7 +40,7 @@ if player1 then
         },
         Fruits = {
             ["Minimum Fruits"] = 1,
-            ["Maximum Fruits"] = 10,
+            ["Maximum Fruits"] = 5,
             ["Enabled"] = true
         },
         Boosts = {
@@ -86,7 +86,7 @@ else
         },
         Fruits = {
             ["Minimum Fruits"] = 1,
-            ["Maximum Fruits"] = 10,
+            ["Maximum Fruits"] = 5,
             ["Enabled"] = true
         },
         Boosts = {
