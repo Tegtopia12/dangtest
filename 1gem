@@ -39,7 +39,7 @@ if player1 then
             ["Auto Lootbags"] = true
         },
         Fruits = {
-            ["Minimum Fruits"] = 1,
+            ["Minimum Fruits"] = 0,
             ["Maximum Fruits"] = 5,
             ["Enabled"] = true
         },
@@ -85,7 +85,7 @@ else
             ["Auto Lootbags"] = true
         },
         Fruits = {
-            ["Minimum Fruits"] = 1,
+            ["Minimum Fruits"] = 0,
             ["Maximum Fruits"] = 5,
             ["Enabled"] = true
         },
