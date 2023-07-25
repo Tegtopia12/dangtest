@@ -33,9 +33,9 @@ Configs = {
         ["Auto Lootbags"] = true
     },
     Fruits = {
-        ["Minimum Fruits"] = 0,
-        ["Maximum Fruits"] = 50,
-        ["Enabled"] = false
+        ["Minimum Fruits"] = 1,
+        ["Maximum Fruits"] = 10,
+        ["Enabled"] = true
     },
     Boosts = {
         ["Triple Server Damage"] = true,
