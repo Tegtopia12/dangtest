@@ -28,7 +28,7 @@ if player1 then
         },
         CyberCavern = {
             ["Giant Chest"] = true,
-            ["Diamonds"] = true
+            ["Diamonds"] = false
         },
         ParadiseCave = {
             ["Diamonds"] = false
