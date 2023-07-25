@@ -20,7 +20,7 @@ Configs = {
     Fruits = {
         ["Minimum Fruits"] = 0,
         ["Maximum Fruits"] = 50,
-        ["Enabled"] = true
+        ["Enabled"] = false
     },
     Boosts = {
         ["Triple Server Damage"] = true,
