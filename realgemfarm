@@ -742,7 +742,8 @@ else
         end
         task.wait(1)
         -- if (getFruit"Orange" <= settings.Fruits.StartFarmAt) or (readfile("JXMysticFarmer/Fruits.txt") == "true") then break end
-        if (readfile("JXMysticFarmer/Fruits.txt") == "true") then break end
+        -- if (readfile("JXMysticFarmer/Fruits.txt") == "true") then break end
+        if dangdapchai then break end
     end
 
 
