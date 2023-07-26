@@ -1,114 +1,189 @@
+-- repeat task.wait(3) until game:IsLoaded()
+
+-- task.spawn(function()
+--     local PlayerInfos = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get()
+--     local diamond_1 = PlayerInfos.Diamonds
+
+--     wait(240)
+
+--     local PlayerInfos2 = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get()
+--     local diamond_2 = PlayerInfos2.Diamonds - 100000
+
+--     if diamond_1 >= diamond_2 then
+--         game:Shutdown()
+--     end
+-- end)
+
+-- local player = game.Players.LocalPlayer.UserId
+-- if player == 4568581689 then
+-- player1 = true
+-- end
+
+-- if player1 then
+--     script_key="QvtVFiBNPxcwdulusNBflfLuizcbXMIb";
+--     Configs = {
+--         MysticMine = {
+--             ["Giant Chest"] = true,
+--             ["Diamonds"] = true
+--         },
+--         CyberCavern = {
+--             ["Giant Chest"] = true,
+--             ["Diamonds"] = false
+--         },
+--         ParadiseCave = {
+--             ["Diamonds"] = false
+--         },
+--         Farming = {
+--             ["Pet Sending"] = "Single",
+--             ["Auto Orbs"] = true,
+--             ["Auto Lootbags"] = true
+--         },
+--         Fruits = {
+--             ["Minimum Fruits"] = 0,
+--             ["Maximum Fruits"] = 5,
+--             ["Enabled"] = true
+--         },
+--         Boosts = {
+--             ["Triple Server Damage"] = true,
+--             ["Triple Damage"] = true
+--         },
+--         Webhooks = {
+--             ["Webhook Url"] = "https://discord.com/api/webhooks/1133271354788024351/4iiP9yfvnAs-9MM6KoUkVWp-FvpCJwCqDU5pki3Sr4xqwMhwpgjZWtLvhIQoKC9uA6OG",
+--             ["Time Frame"] = 60
+--         },
+--         Mailbox = {
+--             ["Recipient"] = "Your Username", 
+--             ["Minimum Diamonds"] = 50000000000, 
+--             ["Enabled"] = false
+--         },
+--         Performance = {
+--             ["Disable Orb Rendering"] = true,
+--             ["Disable Lootbags"] = true,
+--             ["Disable 3D Rendering"] = true,
+--             ["Hide Username"] = false,
+--             ["FPSCap"] = 30
+--         }
+--     }
+--     loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
+-- else
+--     script_key="QvtVFiBNPxcwdulusNBflfLuizcbXMIb";
+--     Configs = {
+--         MysticMine = {
+--             ["Giant Chest"] = false,
+--             ["Diamonds"] = false
+--         },
+--         CyberCavern = {
+--             ["Giant Chest"] = true,
+--             ["Diamonds"] = true
+--         },
+--         ParadiseCave = {
+--             ["Diamonds"] = true
+--         },
+--         Farming = {
+--             ["Pet Sending"] = "Single",
+--             ["Auto Orbs"] = true,
+--             ["Auto Lootbags"] = true
+--         },
+--         Fruits = {
+--             ["Minimum Fruits"] = 0,
+--             ["Maximum Fruits"] = 5,
+--             ["Enabled"] = true
+--         },
+--         Boosts = {
+--             ["Triple Server Damage"] = true,
+--             ["Triple Damage"] = true
+--         },
+--         Webhooks = {
+--             ["Webhook Url"] = "https://discord.com/api/webhooks/1133271354788024351/4iiP9yfvnAs-9MM6KoUkVWp-FvpCJwCqDU5pki3Sr4xqwMhwpgjZWtLvhIQoKC9uA6OG",
+--             ["Time Frame"] = 60
+--         },
+--         Mailbox = {
+--             ["Recipient"] = "Your Username", 
+--             ["Minimum Diamonds"] = 50000000000, 
+--             ["Enabled"] = false
+--         },
+--         Performance = {
+--             ["Disable Orb Rendering"] = true,
+--             ["Disable Lootbags"] = true,
+--             ["Disable 3D Rendering"] = true,
+--             ["Hide Username"] = false,
+--             ["FPSCap"] = 30
+--         }
+--     }
+--     loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
+-- end
+
 repeat task.wait(3) until game:IsLoaded()
-
-task.spawn(function()
-    local PlayerInfos = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get()
-    local diamond_1 = PlayerInfos.Diamonds
-
-    wait(240)
-
-    local PlayerInfos2 = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get()
-    local diamond_2 = PlayerInfos2.Diamonds - 100000
-
-    if diamond_1 >= diamond_2 then
-        game:Shutdown()
-    end
-end)
-
-local player = game.Players.LocalPlayer.UserId
-if player == 4568581689 then
-player1 = true
-end
-
-if player1 then
-    script_key="QvtVFiBNPxcwdulusNBflfLuizcbXMIb";
-    Configs = {
-        MysticMine = {
-            ["Giant Chest"] = true,
-            ["Diamonds"] = true
-        },
-        CyberCavern = {
-            ["Giant Chest"] = true,
-            ["Diamonds"] = false
-        },
-        ParadiseCave = {
-            ["Diamonds"] = false
-        },
-        Farming = {
-            ["Pet Sending"] = "Single",
-            ["Auto Orbs"] = true,
-            ["Auto Lootbags"] = true
-        },
-        Fruits = {
-            ["Minimum Fruits"] = 0,
-            ["Maximum Fruits"] = 5,
-            ["Enabled"] = true
-        },
-        Boosts = {
-            ["Triple Server Damage"] = true,
-            ["Triple Damage"] = true
-        },
-        Webhooks = {
-            ["Webhook Url"] = "https://discord.com/api/webhooks/1133271354788024351/4iiP9yfvnAs-9MM6KoUkVWp-FvpCJwCqDU5pki3Sr4xqwMhwpgjZWtLvhIQoKC9uA6OG",
-            ["Time Frame"] = 60
-        },
-        Mailbox = {
-            ["Recipient"] = "Your Username", 
-            ["Minimum Diamonds"] = 50000000000, 
-            ["Enabled"] = false
-        },
-        Performance = {
-            ["Disable Orb Rendering"] = true,
-            ["Disable Lootbags"] = true,
-            ["Disable 3D Rendering"] = true,
-            ["Hide Username"] = false,
-            ["FPSCap"] = 30
+getgenv().DitPSX = {
+    --[[
+        Collapse methods:
+        + "Stand Still" -- Do nothing (still check for daycare/rewards)
+        + "Farm Fruit" -- Farm fruits
+        + "Volcano Chest" -- Open Volcano Egg/Farm Pirate Cove Chest
+        + "Mansion Egg" -- Open Dog Egg/Farm Dog Mansion Chest
+    ]]
+    ["Mine Collapsed Method"] = {
+        ["Method"] = "Farm Fruit",
+        ["Open Amount"] = 8, -- 1 or 3 or 8
+        ["Open Golden Egg"] = false, -- Will open Golden egg instead
+    },
+    ["Auto Triple Damage Boost"] = { -- Active when Farm Fruit/Diamond
+        ["Boost"] = true,
+        ["Server"] = true
+    },
+    ["Auto Boost"] = { -- Active when Open Egg
+        ["Super Lucky"] = true,
+        ["Server Lucky"] = true,
+        ["Ultra Lucky"] = true,
+        ["Triple Coin"] = true
+    },
+    ["Auto Farm Fruit"] = {
+        -- Mainly farm Orange/Apple fruit while farming Diamonds
+        -- Mainly farm Apple/Banana/ while opening Egg
+        ["Enable"] = false,
+        ["Farm when under"] = 50,
+        ["Farm until"] = 100,
+    },
+    ["Auto Mailbox"] = { -- Auto send Diamonds to a person thru Mailbox when your Diamonds more than set diamond
+        ["Enable"] = false,
+        ["Send to"] = "Roblox Username",
+        ["Above amount"] = 100000000000
+    },
+    ["Auto Claim Mailbox"] = true, -- Claim Diamonds on the account received the Diamonds from Auto Mailbox
+    ["Auto Daycare"] = false, -- Auto Claim Daycare and Enroll unequipped/unlocked Pets in your Inventory
+    ["Auto Collect Rewards"] = true, -- Auto Collect Rank/VIP Rewards
+    ["Auto Leave"] = {
+        ["Ping Froze"] = false,
+        ["Got kicked"] = false,
+        ["Leave Timer"] = {
+            ["Enable"] = false,
+            ["After seconds"] = 3600 -- Auto Leave the server after AFK in for set seconds 
         }
-    }
-    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
-else
-    script_key="QvtVFiBNPxcwdulusNBflfLuizcbXMIb";
-    Configs = {
-        MysticMine = {
-            ["Giant Chest"] = false,
-            ["Diamonds"] = false
+    },
+    ["Hop Server"] = {
+        ["Hop Server Cooldown"] = 900, -- Wait set second after Hop Server
+        ["Player nearby"] = true, -- Will hop to low player server if there's a player nearby Mystic Mine (2m cooldown)
+        ["Out of diamond"] = false, -- Will hop to low player server if there are no diamond left to farm
+    },
+    ["Farm Cooldown"] = 0, -- Delay between switch to farm another thing (higher = less crashing)
+    ["Send all"] = false, -- Send all pet to break or not, false will send single to break
+    ["Performance Mode"] = false, -- Enable if you want to AFK overnight, farm will be slower but low chance crashing roblox 
+    ["Swap to Cyber Cavern"] = true, -- Will swap to Cyber Cavern if Mystic Mine out of Diamonds
+    ["Legit Mode"] = false, -- Walk to points on map legit like an normal player, recommended enable with Performance Mode, farm will be slower
+    ["White Screen"] = false, -- Enable for disable game's rendering for less CPU/GPU usage
+    ["Discord Webhook"] = {
+        ["Stats Tracker"] = {
+            ["URL"] = "https://discord.com/api/webhooks/1133592483620733079/s66GXincpeQyYuC109b6JA91xR_CVnIM5nqi53jI6BRAjcO0n-ZZ6QXdz0SX4MWP3uld",
+            ["Cooldown"] = 3600, -- Will notify every set seconds
+        }, 
+        ["Hop Server"] = "https://discord.com/api/webhooks/1133592483620733079/s66GXincpeQyYuC109b6JA91xR_CVnIM5nqi53jI6BRAjcO0n-ZZ6QXdz0SX4MWP3uld",
+        ["Mailbox"] = "https://discord.com/api/webhooks/1133592483620733079/s66GXincpeQyYuC109b6JA91xR_CVnIM5nqi53jI6BRAjcO0n-ZZ6QXdz0SX4MWP3uld",
+        ["Mine Collapse"] = {
+            ["URL"] = "https://discord.com/api/webhooks/1133592483620733079/s66GXincpeQyYuC109b6JA91xR_CVnIM5nqi53jI6BRAjcO0n-ZZ6QXdz0SX4MWP3uld",
+            ["Daily Collapse"] = true, -- Only notify if the collapse are daily (above 10m)
         },
-        CyberCavern = {
-            ["Giant Chest"] = true,
-            ["Diamonds"] = true
-        },
-        ParadiseCave = {
-            ["Diamonds"] = true
-        },
-        Farming = {
-            ["Pet Sending"] = "Single",
-            ["Auto Orbs"] = true,
-            ["Auto Lootbags"] = true
-        },
-        Fruits = {
-            ["Minimum Fruits"] = 0,
-            ["Maximum Fruits"] = 5,
-            ["Enabled"] = true
-        },
-        Boosts = {
-            ["Triple Server Damage"] = true,
-            ["Triple Damage"] = true
-        },
-        Webhooks = {
-            ["Webhook Url"] = "https://discord.com/api/webhooks/1133271354788024351/4iiP9yfvnAs-9MM6KoUkVWp-FvpCJwCqDU5pki3Sr4xqwMhwpgjZWtLvhIQoKC9uA6OG",
-            ["Time Frame"] = 60
-        },
-        Mailbox = {
-            ["Recipient"] = "Your Username", 
-            ["Minimum Diamonds"] = 50000000000, 
-            ["Enabled"] = false
-        },
-        Performance = {
-            ["Disable Orb Rendering"] = true,
-            ["Disable Lootbags"] = true,
-            ["Disable 3D Rendering"] = true,
-            ["Hide Username"] = false,
-            ["FPSCap"] = 30
-        }
-    }
-    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
-end
+        ["Huge Hatch"] = "https://discord.com/api/webhooks/1133592483620733079/s66GXincpeQyYuC109b6JA91xR_CVnIM5nqi53jI6BRAjcO0n-ZZ6QXdz0SX4MWP3uld"
+    },
+}
+script_key="mNzJrpuvJlpxlfFecMEJewUUdYnnwEvg";
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/92d7557e2c88215501719ba3b576b89e.lua"))()
