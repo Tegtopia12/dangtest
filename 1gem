@@ -7,8 +7,10 @@ task.spawn(function()
     
         if kimcuong >= 50000000000 then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/dangbadao/bdqbdndnsd/main/tele1"))()
+            break
         elseif kimcuong == 0 then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/dangbadao/bdqbdndnsd/main/tele1"))()
+            break
         end
     end
 end)
