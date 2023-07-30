@@ -12,7 +12,7 @@ import wget
 from pathlib import Path
 from zipfile import ZipFile
 
-newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer210"
+newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer211"
 verspmainreal = "C:\\checkupdate\\Updated151"
 autoexec1 = "C:\\checkupdate\\UpdateAutoexec8"
 autoexec2 = "C:\\checkupdate\\UpdateAutoexec4"
@@ -738,7 +738,10 @@ def allautoclick():
     #     except:
     #         pass
      
-if not os.path.exists(newver):      
+if not os.path.exists(newver):
+    if os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2"):
+        os.removedirs("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2")
+        print('removed Fluxus Update')      
     fullcheck()
     allautoclick()
     print ("Updated")
