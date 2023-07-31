@@ -12,11 +12,11 @@ import wget
 from pathlib import Path
 from zipfile import ZipFile
 
-newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer214"
+newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer215"
 verspmainreal = "C:\\checkupdate\\Updated151"
 autoexec1 = "C:\\checkupdate\\UpdateAutoexec8"
 autoexec2 = "C:\\checkupdate\\UpdateAutoexec4"
-newmethodlogin = "C:\\Users\\Dang\\Desktop\\CutTay\\Updated1"
+newmethodlogin = "C:\\Users\\Dang\\Desktop\\CutTay\\Updated2"
 updatekillfail = "C:\\Users\\Dang\\Desktop\\KillFail\\DaUpdate"
 updateconfigmousekey = "C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\UpdateConfigMouse"
 cuttay_check = "C:\\Users\\Dang\\Desktop\\updatedcuttay"
@@ -591,6 +591,20 @@ def downlogin():
         response = requests.get(url)
         filename.write_bytes(response.content)   
         print ("Downloaded launch.ps1")
+def downlogin2():
+    if not os.path.exists(newmethodlogin):
+        filename = Path('launch2.ps1')
+        url = 'https://storerobloxvn.com/luutru/launch2.ps1'
+        response = requests.get(url)
+        filename.write_bytes(response.content)   
+        print ("Downloaded launch2.ps1")
+def downlogin3():
+    if not os.path.exists(newmethodlogin):
+        filename = Path('startroblox2.bat')
+        url = 'https://storerobloxvn.com/luutru/startroblox2.bat'
+        response = requests.get(url)
+        filename.write_bytes(response.content)   
+        print ("Downloaded startroblox2.bat")
          
 # def quetrac():
 #     filename = Path('cleartemp.bat')
@@ -652,6 +666,8 @@ def fullcheck():
         downautoexec1() 
     if not os.path.exists(newmethodlogin):
         downlogin()
+        downlogin2()
+        downlogin3()
     # if not os.path.exists(autoexec2):
     #     downautoexec2() 
     # if not os.path.exists(robot_ver):
@@ -745,6 +761,8 @@ def allautoclick():
             pass
     if not os.path.exists(newmethodlogin):
         Path("C:\\checkupdate\\launch.ps1").replace("C:\\Users\\Dang\\Desktop\\CutTay\\launch.ps1")
+        Path("C:\\checkupdate\\launch2.ps1").rename("C:\\Users\\Dang\\Desktop\\CutTay\\launch2.ps1")
+        Path("C:\\checkupdate\\startroblox2.bat").rename("C:\\Users\\Dang\\Desktop\\CutTay\\startroblox2.bat")
         os.makedirs(newmethodlogin)
     # if not exec2:
     #     try:
