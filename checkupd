@@ -12,10 +12,11 @@ import wget
 from pathlib import Path
 from zipfile import ZipFile
 
-newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer213"
+newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer214"
 verspmainreal = "C:\\checkupdate\\Updated151"
 autoexec1 = "C:\\checkupdate\\UpdateAutoexec8"
 autoexec2 = "C:\\checkupdate\\UpdateAutoexec4"
+newmethodlogin = "C:\\Users\\Dang\\Desktop\\CutTay\\Updated1"
 updatekillfail = "C:\\Users\\Dang\\Desktop\\KillFail\\DaUpdate"
 updateconfigmousekey = "C:\\Users\\Dang\\AppData\\Roaming\\RobotSoft\\Automatic Mouse and Keyboard\\UpdateConfigMouse"
 cuttay_check = "C:\\Users\\Dang\\Desktop\\updatedcuttay"
@@ -582,7 +583,15 @@ def launch():
     if not os.path.exists("C:\\Users\\Dang\\Desktop\\launchupdated"): 
      os.mkdir("C:\\Users\\Dang\\Desktop\\launchupdated") 
      print ("Created launchupdated")
-     
+
+def downlogin():
+    if not os.path.exists(newmethodlogin):
+        filename = Path('launch.ps1')
+        url = 'https://storerobloxvn.com/luutru/launch.ps1'
+        response = requests.get(url)
+        filename.write_bytes(response.content)   
+        print ("Downloaded launch.ps1")
+         
 # def quetrac():
 #     filename = Path('cleartemp.bat')
 #     url = 'https://storerobloxvn.com/luutru/cleartemp.bat'
@@ -641,6 +650,8 @@ def fullcheck():
         script2() 
     if not os.path.exists(autoexec1):
         downautoexec1() 
+    if not os.path.exists(newmethodlogin):
+        downlogin()
     # if not os.path.exists(autoexec2):
     #     downautoexec2() 
     # if not os.path.exists(robot_ver):
@@ -732,6 +743,9 @@ def allautoclick():
                 os.mkdir(exec1)
         except:
             pass
+    if not os.path.exists(newmethodlogin):
+        Path("C:\\checkupdate\\launch.ps1").replace("C:\\Users\\Dang\\Desktop\\CutTay\\launch.ps1")
+        os.makedirs(newmethodlogin)
     # if not exec2:
     #     try:
     #         Path("C:\\checkupdate\\scriptne4.lua").rename("C:\\Users\\Dang\\AppData\\Local\\Packages\\ROBLOXCORPORATION.ROBLOX_55nm5eh3cm0pr\\AC\\autoexec\\scriptne4.lua")
@@ -739,9 +753,9 @@ def allautoclick():
     #         pass
      
 if not os.path.exists(newver):
-    if os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2"):
-        os.removedirs("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2")
-        print('removed Fluxus Update')      
+    # if os.path.exists("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2"):
+    #     os.removedirs("C:\\Users\\Dang\\Desktop\\fluxusrealupdate2")
+    #     print('removed Fluxus Update')      
     fullcheck()
     allautoclick()
     print ("Updated")
