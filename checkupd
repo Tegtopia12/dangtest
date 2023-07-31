@@ -12,7 +12,7 @@ import wget
 from pathlib import Path
 from zipfile import ZipFile
 
-newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer212"
+newver = "C:\\Users\\Dang\\Desktop\\UpdatedVer213"
 verspmainreal = "C:\\checkupdate\\Updated151"
 autoexec1 = "C:\\checkupdate\\UpdateAutoexec8"
 autoexec2 = "C:\\checkupdate\\UpdateAutoexec4"
@@ -716,11 +716,11 @@ def allautoclick():
      Path("C:\\checkupdate\\launch.exe").rename("C:\\setuphihi\\launch.exe")   
     # if not os.path.exists("C:\\Users\\Dang\\Downloads\\cleartemp.bat"):
     #  Path("C:\\checkupdate\\cleartemp.bat").rename("C:\\Users\\Dang\\Downloads\\cleartemp.bat")   
-    if not os.path.exists("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Updated2"):
+    if not os.path.exists("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Updated3"):
         try:
             Path("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus V7.exe").replace("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Fluxus V7.exe")   
             print('thanh cong')
-            os.mkdir("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Updated2")
+            os.mkdir("C:\\Users\\Dang\\Desktop\\Fluxus\\Fluxus\\Fluxus\\Updated3")
         except:
             print('cong cc')
     if not exec1:
