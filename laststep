@@ -122,12 +122,12 @@ def checkmaxlv():
             logOut()
             sleep(15)
             # open roblox hehe
-            os.system('"C:\\Users\\Dang\\Desktop\\CutTay\\startroblox.bat"')
+            os.system('"C:\\Users\\Dang\\Desktop\\CutTay\\startroblox2.bat"')
             sleep(10)
             subprocess.call(["taskkill","/F","/IM","Windows10Universal.exe"])
             sleep(3)
             # open roblox
-            os.system('"C:\\Users\\Dang\\Desktop\\CutTay\\startroblox.bat"')
+            os.system('"C:\\Users\\Dang\\Desktop\\CutTay\\startroblox2.bat"')
             sleep(7)
             if os.path.exists("C:\\Users\\Dang\\Desktop\\CutTay\\autoexec"):
                 try:
@@ -152,7 +152,7 @@ def checkmaxlv():
                 print('ok')
             elif not findroblox():
                 print('reopen roblox')
-                os.system('"C:\\Users\\Dang\\Desktop\\CutTay\\startroblox.bat"')
+                os.system('"C:\\Users\\Dang\\Desktop\\CutTay\\startroblox2.bat"')
                 sleep(10)
             # start login tool
             os.system('"C:\\Users\\Dang\\Desktop\\CutTay\\startlogin.bat"')
