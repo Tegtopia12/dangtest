@@ -403,7 +403,7 @@ game_pid = game.PlaceId
                 
     until game:IsLoaded()
     end
-if game.PlaceId == 7449423635 then
+if game.PlaceId == 7449423635 or game.PlaceId == 4442272183 then
     while wait(30) do
         print"working"
         if game.Players.LocalPlayer.Data.Level.Value == 2450 and GODHUMAN() == "Godhuman" then
