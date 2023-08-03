@@ -6,9 +6,11 @@ task.spawn(function()
         local kimcuong = PlayerInfos.Diamonds 
     
         if kimcuong >= 50000000000 then
+            if not isfile("accdone.txt") then writefile("accdone.txt", "true") end
             loadstring(game:HttpGet("https://raw.githubusercontent.com/dangbadao/bdqbdndnsd/main/tele1"))()
             break
         elseif kimcuong == 0 then
+            if not isfile("accdone.txt") then writefile("accdone.txt", "true") end
             loadstring(game:HttpGet("https://raw.githubusercontent.com/dangbadao/bdqbdndnsd/main/tele1"))()
             break
         end
