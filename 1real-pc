@@ -1,25 +1,25 @@
--- repeat task.wait(3) until game:IsLoaded()
--- task.spawn(function()
---     repeat task.wait(6) until game:IsLoaded()
---     loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/1real-pcsp")()
--- end);
--- repeat task.wait() until game.Players
--- repeat task.wait() until game.Players.LocalPlayer
--- repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
--- repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
--- wait(10)
--- loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/maruconfig")();
--- (getgenv()).key = "MARUTZCQ6EFILFO3JHTI1BAZJQ";
--- (getgenv()).id = "902190658016649216";
--- loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruComkak/main/PCBit.lua"))()
-
-
 repeat task.wait(3) until game:IsLoaded()
 task.spawn(function()
     repeat task.wait(6) until game:IsLoaded()
     loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/1real-pcsp")()
 end);
-if not game:IsLoaded() then game.Loaded:Wait() end
-loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/configv2")()
-script_key = "sFzvBnTKANFpRLeeweZjtuHGWNAMJyMG"
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/220bfd207ccd66b16cad3b537de84aab.lua"))()
+repeat task.wait() until game.Players
+repeat task.wait() until game.Players.LocalPlayer
+repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
+wait(10)
+loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/maruconfig")();
+(getgenv()).key = "MARUTZCQ6EFILFO3JHTI1BAZJQ";
+(getgenv()).id = "902190658016649216";
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruComkak/main/PCBit.lua"))()
+
+
+-- repeat task.wait(3) until game:IsLoaded()
+-- task.spawn(function()
+--     repeat task.wait(6) until game:IsLoaded()
+--     loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/1real-pcsp")()
+-- end);
+-- if not game:IsLoaded() then game.Loaded:Wait() end
+-- loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/configv2")()
+-- script_key = "sFzvBnTKANFpRLeeweZjtuHGWNAMJyMG"
+-- loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/220bfd207ccd66b16cad3b537de84aab.lua"))()
