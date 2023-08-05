@@ -407,10 +407,10 @@ if game.PlaceId == 7449423635 or game.PlaceId == 4442272183 then
     while wait(30) do
         print"working"
         if game.Players.LocalPlayer.Data.Level.Value == 2450 and SUPERHUMAN() == "Superhuman" then
-            if game.Players.LocalPlayer.Data.Level.Value == 2450 and SUPERHUMAN() == "Superhuman" then
-                PostCut(urlsheet2, thongtin())
-            elseif game.Players.LocalPlayer.Data.Level.Value == 2450 and GODHUMAN() == "Godhuman" then
+            if game.Players.LocalPlayer.Data.Level.Value == 2450 and GODHUMAN() == "Godhuman" then
                 PostCut(urlsheet, thongtin())
+            elseif game.Players.LocalPlayer.Data.Level.Value == 2450 and SUPERHUMAN() == "Superhuman" then
+                PostCut(urlsheet2, thongtin())
             end
             if not isfile("accdone.txt") then writefile("accdone.txt", "true") end
             local ScreenGui = Instance.new("ScreenGui")
