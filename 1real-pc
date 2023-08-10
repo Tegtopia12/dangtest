@@ -60,7 +60,7 @@ getgenv().DitBF = {
         ["Get True Triple Katana"] = false,
         ["Get Hallow Scythe"] = true,
         ["Get Cursed Dual Katana"] = true,
-        ["Get Soul Guitar"] = true,
+        ["Get Soul Guitar"] = false,
         ["Awake Current Blox Fruit"] = true,
     },
     ["Buy Haki"] = {
