@@ -29,7 +29,7 @@ _G.Race1 = {
     ['Select_Want_Race'] = {"Human"},  
 }
 _G.RamSetting1 = {
-    ["Enable"] = true,
+    ["Enable"] = false,
     ["Delay"] = 90, -- 300 sec
     ["Description"] = {
         [1] = "Race",
