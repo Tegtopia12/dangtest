@@ -1,0 +1,2051 @@
+repeat wait(10) until game:IsLoaded()
+getgenv().Configkk = {
+    ["AutoChooseTeam"] = true
+    }
+repeat wait() 
+if getgenv().Configkk["AutoChooseTeam"] then
+    if game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main"):FindFirstChild("ChooseTeam") then
+        for i, v in pairs(
+            getconnections(
+                game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container.Pirates.Frame.ViewportFrame.TextButton.Activated
+            )
+        ) do
+            v.Function()
+        end
+    end
+end
+until game.Players.LocalPlayer.Team ~= nil and game:IsLoaded()
+AutoFishMan = false
+MinkHumanGhoulAngel = true
+if AutoFishMan == true or MinkHumanGhoulAngel == true then 
+if AutoFishMan == true then 
+local player = game.Players.LocalPlayer.UserId
+    if player == 4445099916 then
+    player1 = true
+elseif player == 4441578772 then
+    player2 = true 
+elseif player == 4444976556 then
+    player3 = true
+elseif player == 4444993953 then
+    player4 = true
+elseif player == 4444975398 then
+    player5 = true
+elseif player == 4468930054 then
+    player6 = true
+elseif player == 4441793703 then
+    player7 = true
+elseif player == 4447505517 then
+    player8 = true
+elseif player == 4448570232 then
+     player9 = true
+elseif player == 4472357843 then
+    player10 = true
+elseif player == 4472356546 then
+    player11 = true
+end
+if player1 or player2 or player3 or player4 or player5 or player6 or player7 or player8 or player9 or player10 or player11 then
+    repeat wait() until game:IsLoaded()
+    pcall(function()
+         game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Gear 1 FUllY FM",
+            Text = "Executed                        GOD D. DANG",
+            Duration = 7200
+            })
+    end) 
+    local placeId = game.PlaceId
+    if placeId == 2753915549 then
+        Sea1 = true
+    elseif placeId == 4442272183 then
+        Sea2 = true
+    elseif placeId == 7449423635 then
+        Sea3 = true
+    end
+    local teleport_table = {
+        location1 = Vector3.new(29523.4844, 15094.6836, -87.5899963, 1, 0, 0, 0, 1, 0, 0, 0, 1),
+        location2 = Vector3.new(28968.2598, 14919.2803, 235.102829, -0.0127710886, 6.20884393e-08, -0.999918461, 5.69246588e-08, 1, 6.13664497e-08, 0.999918461, -5.61363009e-08, -0.0127710886), 
+        location3 = Vector3.new(28673.7539, 14890.333, 454.784668, -0.999662757, 6.05350579e-08, 0.0259688776, 6.1590292e-08, 1, 3.98346351e-08, -0.0259688776, 4.14206305e-08, -0.999662757),
+        location4 = Vector3.new(28491.9004, 14895.6328, -421.81601, 0.0378813557, -1.85148821e-08, 0.999282241, 6.30813801e-08, 1, 1.61368554e-08, -0.999282241, 6.24248173e-08, 0.0378813557),
+        location5 = Vector3.new(29021.0938, 14891.0605, -378.723816, -0.056854438, 2.64024695e-08, -0.998382449, 7.32235961e-09, 1, 2.60282622e-08, 0.998382449, -5.83069326e-09, -0.056854438),
+        location6 = Vector3.new(29237.5762, 14891.0654, -205.46759, -0.0380872823, -1.00234425e-08, -0.999274433, -4.46632917e-08, 1, -8.32838243e-09, 0.999274433, 4.43136798e-08, -0.0380872823),
+        location7 = Vector3.new(28223.6191, 14890.9971, -212.843185, 0.0202199146, -0.0286932718, 0.999383748, 0.00348170614, 0.999584079, 0.0286285803, -0.999789476, 0.0029006931, 0.0203114059)
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and 
+        lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+             a.Completed:Wait()
+             print('ZZZZ!')
+        end
+    end
+    function race()
+       return game:GetService("Players").LocalPlayer.Data.Race.Value
+    end
+        function MoonTextureId()
+            if Sea1 then
+                return game:GetService("Lighting").FantasySky.MoonTextureId
+            elseif Sea2 then
+                return game:GetService("Lighting").FantasySky.MoonTextureId
+            elseif Sea3 then
+                return game:GetService("Lighting").Sky.MoonTextureId
+            end
+        end
+        function CheckMoon()
+            moon8 = "http://www.roblox.com/asset/?id=9709150401"
+            moon7 = "http://www.roblox.com/asset/?id=9709150086"
+            moon6 = "http://www.roblox.com/asset/?id=9709149680"
+            moon5 = "http://www.roblox.com/asset/?id=9709149431"
+            moon4 = "http://www.roblox.com/asset/?id=9709149052"
+            moon3 = "http://www.roblox.com/asset/?id=9709143733"
+            moon2 = "http://www.roblox.com/asset/?id=9709139597"
+            moon1 = "http://www.roblox.com/asset/?id=9709135895"
+            moonreal = MoonTextureId()
+            cofullmoonkothangbeo = "Bad Moon"
+        if moonreal == moon8 or moonreal == moon7 or 6 or moonreal == moon5 or moonreal == moon4 or moonreal == moon3 or moonreal == moon2 or moonreal == moon1 then
+            if moonreal == moon5 then
+                cofullmoonkothangbeo = "Full Moon"
+            elseif moonreal == moon4 then
+                cofullmoonkothangbeo = "Trang 4"
+            else if moonreal == moon3 then
+                cofullmoonkothangbeo = "Trang 3"
+            else if moonreal == moon2 then
+                cofullmoonkothangbeo = "Trang 2"
+            else if moonreal == moon1 then
+                cofullmoonkothangbeo = "Trang 1"
+            else if moonreal == moon8 then
+                cofullmoonkothangbeo = "Trang 8"
+            else if moonreal == moon7 then
+                cofullmoonkothangbeo = "Trang 7"
+            else if moonreal == moon6 then
+                cofullmoonkothangbeo = "Trang 6"
+            end   
+        end
+        end
+        end
+        end
+        end
+        end
+        end
+            return cofullmoonkothangbeo
+        end
+    while wait (1) do
+    if CheckMoon() == "Full Moon" then
+            wait(325)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+                  game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+            wait(50)
+                   game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                   wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+                   wait(11)
+                   game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+             wait(50)
+                    game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                    wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+                    wait(11)
+                    game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+              wait(50)
+                     game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                     wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+                     wait(11)
+                     game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+               wait(50)
+                      game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                      wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+                      wait(11)
+                      game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+                wait(50)
+                       game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                       wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+                       wait(11)
+                       game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+                 wait(50)
+                        game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                        wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+                        wait(11)
+                        game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+                  wait(50)
+                         game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                         wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+                         wait(11)
+                         game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+                   wait(50)
+                          game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                          wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+                          wait(11)
+                          game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+                    wait(50)
+                           game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                           wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+                           wait(11)
+                           game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+                     wait(50)
+                            game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                            wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+  
+    end
+    end
+else
+    pcall(function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+           Title = "Gear 1 Fully 2 FM",
+           Text = "Executed                        GOD D. DANG",
+           Duration = 7200
+           })
+   end) 
+   local placeId = game.PlaceId
+   if placeId == 2753915549 then
+       Sea1 = true
+   elseif placeId == 4442272183 then
+       Sea2 = true
+   elseif placeId == 7449423635 then
+       Sea3 = true
+   end
+   local teleport_table = {
+    location1 = Vector3.new(29523.4844, 15094.6836, -87.5899963, 1, 0, 0, 0, 1, 0, 0, 0, 1),
+    location2 = Vector3.new(28968.2598, 14919.2803, 235.102829, -0.0127710886, 6.20884393e-08, -0.999918461, 5.69246588e-08, 1, 6.13664497e-08, 0.999918461, -5.61363009e-08, -0.0127710886), 
+    location3 = Vector3.new(28673.7539, 14890.333, 454.784668, -0.999662757, 6.05350579e-08, 0.0259688776, 6.1590292e-08, 1, 3.98346351e-08, -0.0259688776, 4.14206305e-08, -0.999662757),
+    location4 = Vector3.new(28491.9004, 14895.6328, -421.81601, 0.0378813557, -1.85148821e-08, 0.999282241, 6.30813801e-08, 1, 1.61368554e-08, -0.999282241, 6.24248173e-08, 0.0378813557),
+    location5 = Vector3.new(29021.0938, 14891.0605, -378.723816, -0.056854438, 2.64024695e-08, -0.998382449, 7.32235961e-09, 1, 2.60282622e-08, 0.998382449, -5.83069326e-09, -0.056854438),
+    location6 = Vector3.new(29237.5762, 14891.0654, -205.46759, -0.0380872823, -1.00234425e-08, -0.999274433, -4.46632917e-08, 1, -8.32838243e-09, 0.999274433, 4.43136798e-08, -0.0380872823),
+    location7 = Vector3.new(28223.6191, 14890.9971, -212.843185, 0.0202199146, -0.0286932718, 0.999383748, 0.00348170614, 0.999584079, 0.0286285803, -0.999789476, 0.0029006931, 0.0203114059)
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+         a.Completed:Wait()
+         print('ZZZZ!')
+    end
+end
+function race()
+   return game:GetService("Players").LocalPlayer.Data.Race.Value
+end
+       function MoonTextureId()
+           if Sea1 then
+               return game:GetService("Lighting").FantasySky.MoonTextureId
+           elseif Sea2 then
+               return game:GetService("Lighting").FantasySky.MoonTextureId
+           elseif Sea3 then
+               return game:GetService("Lighting").Sky.MoonTextureId
+           end
+       end
+       function CheckMoon()
+           moon8 = "http://www.roblox.com/asset/?id=9709150401"
+           moon7 = "http://www.roblox.com/asset/?id=9709150086"
+           moon6 = "http://www.roblox.com/asset/?id=9709149680"
+           moon5 = "http://www.roblox.com/asset/?id=9709149431"
+           moon4 = "http://www.roblox.com/asset/?id=9709149052"
+           moon3 = "http://www.roblox.com/asset/?id=9709143733"
+           moon2 = "http://www.roblox.com/asset/?id=9709139597"
+           moon1 = "http://www.roblox.com/asset/?id=9709135895"
+           moonreal = MoonTextureId()
+           cofullmoonkothangbeo = "Bad Moon"
+       if moonreal == moon8 or moonreal == moon7 or 6 or moonreal == moon5 or moonreal == moon4 or moonreal == moon3 or moonreal == moon2 or moonreal == moon1 then
+           if moonreal == moon5 then
+               cofullmoonkothangbeo = "Full Moon"
+           elseif moonreal == moon4 then
+               cofullmoonkothangbeo = "Trang 4"
+           else if moonreal == moon3 then
+               cofullmoonkothangbeo = "Trang 3"
+           else if moonreal == moon2 then
+               cofullmoonkothangbeo = "Trang 2"
+           else if moonreal == moon1 then
+               cofullmoonkothangbeo = "Trang 1"
+           else if moonreal == moon8 then
+               cofullmoonkothangbeo = "Trang 8"
+           else if moonreal == moon7 then
+               cofullmoonkothangbeo = "Trang 7"
+           else if moonreal == moon6 then
+               cofullmoonkothangbeo = "Trang 6"
+           end   
+       end
+       end
+       end
+       end
+       end
+       end
+       end
+           return cofullmoonkothangbeo
+       end
+       function CheckRace()
+        return game.ReplicatedStorage.Remotes.CommF_:InvokeServer("UpgradeRace", "Check")
+       end 
+       function CheckV4()
+        if CheckRace() then 
+            return "Awakened"
+        else
+            return "Chua Awa Huhu"
+        end
+    end
+    function Racelan3()
+        v4 = CheckV4()
+        vene = "aibiet"
+        if v4 == "Awakened" or v4 == "Chua Awa Huhu" then
+            if v4 == "Awakened" then
+            vene = "Toc4"
+        elseif v4 == "Chua Awa Huhu" then
+            vene = "Chua4"
+        end
+    end
+            return vene
+    end
+       function function6()
+        return math.floor(game.Lighting.ClockTime)
+    end
+    function function7()
+        GameTime = "Error"
+        local c = game.Lighting
+        local c2 = c.ClockTime
+        if c2 >= 16 or c2 < 5 then
+            GameTime = "Night"
+        else
+            GameTime = "Day"
+        end
+        return GameTime
+    end
+    url = "https://discord.com/api/webhooks/1099194825049382962/DnKmGHhBgdFxn0K0HYwm6xdtuEgpO-HXmMtYU2-kV6EP5YnoretAX6AHwwH45FAq7Z8x"
+    Settings = {}
+    function PostWebhook(url, msg)
+        local rq = http_request or request or HttpPost or syn.request
+        local DataCallBack =
+            rq(
+            {
+                Url = url,
+                Method = "POST",
+                Headers = {
+                    ["Content-Type"] = "application/json"
+                },
+                Body = game:GetService("HttpService"):JSONEncode(msg)
+            }
+        )
+        return ""
+    end
+    function GetMsg()
+        InviteScript =
+            'V4 Upgraded'
+        k3 = {}
+        if Settings["PingEveryone"] and Settings["WebhookWhenMirage"] then
+            k3["content"] = "@everyone"
+        else
+            k3["content"] = "V4"
+        end
+        k3["embeds"] = {
+            {
+                ["title"] = "Race V4 Checker",
+                ["fields"] = {
+                    {
+                        ["name"] = "Account:",
+                        ["value"] = "```" .. game.Players.LocalPlayer.Name .. "```",
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "Race:",
+                        ["value"] = "```".. game:GetService("Players").LocalPlayer.Data.Race.Value.. "```",
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "Thong Bao:",
+                        ["value"] = "```lua\n" .. InviteScript .. "\n```",
+                        ["inline"] = true
+                    }
+                }
+            }
+        }
+        return k3
+    end
+    function Race()
+        return game.Players.LocalPlayer.Data.Race.Value
+    end
+    function Race2()
+        local race = "zzz"
+        local toc = Race()
+        if toc == "Fishman" then
+        race = "Fishman"
+    end
+    return race
+    end
+    while wait(3) do
+        if Race2() == "Fishman" then
+              game.ReplicatedStorage.Remotes.CommF_:InvokeServer("BuySharkmanKarate")
+            wait()
+            game.ReplicatedStorage.Remotes.CommF_:InvokeServer("LoadItem", "Tushita")
+            wait(3) break
+            else
+                break
+        end   
+    end
+   local RAMAccount = loadstring(game:HttpGet'https://raw.githubusercontent.com/ic3w0lf22/Roblox-Account-Manager/master/RAMAccount.lua')()
+   local MyAccount = RAMAccount.new(game:GetService'Players'.LocalPlayer.Name)
+   spawn(function()
+    while task.wait(3) do 
+        repeat
+            task.wait()
+        until Racelan3() == "Toc4"
+        if Racelan3() == "Toc4" then
+            PostWebhook(url, GetMsg())
+            wait()
+            MyAccount:SetAlias(CheckV4())
+            break
+        end
+    end
+end)
+    while wait(1) do
+            if CheckMoon() == "Full Moon" then 
+            wait(325)
+            if race() == "Skypiea" then
+                bypass_teleport(teleport_table.location1)
+                wait(2)
+                bypass_teleport(teleport_table.location2)
+                elseif race() == "Ghoul" then
+                    bypass_teleport(teleport_table.location1)
+                wait(2)
+                     bypass_teleport(teleport_table.location3)
+                elseif race() == "Cyborg" then
+                     bypass_teleport(teleport_table.location1)
+                wait(2)
+                     bypass_teleport(teleport_table.location4)
+                elseif race() == "Mink" then
+                     bypass_teleport(teleport_table.location1)
+                wait(2)
+                     bypass_teleport(teleport_table.location5)
+                elseif race() == "Human" then
+                     bypass_teleport(teleport_table.location1)
+                wait(2)
+                     bypass_teleport(teleport_table.location6)
+                elseif race() == "Fishman" then
+                     bypass_teleport(teleport_table.location1)
+                wait(2)
+                     bypass_teleport(teleport_table.location7)
+                end
+                game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+           wait(50)
+           print "ok"
+           wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+           wait(11)
+           game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+      wait(50)
+      print "ok"
+      wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+      wait(11)
+      game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+ wait(50)
+ print "ok"
+ wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+ wait(11)
+ game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+wait(50)
+print "ok"
+wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+wait(11)
+game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+wait(50)
+print "ok"
+wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+wait(11)
+game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+wait(50)
+print "ok"
+wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+wait(11)
+game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+wait(50)
+print "ok"
+wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+wait(11)
+game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+wait(50)
+print "ok"
+wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+wait(11)
+game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+wait(50)
+print "ok"
+wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+wait(11)
+game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+wait(50)
+print "ok"
+wait(1)
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+   
+   end
+end
+end
+    else if MinkHumanGhoulAngel == true then
+        repeat wait() until game:IsLoaded()
+        local player = game.Players.LocalPlayer.UserId
+        if player == 4445099916 then
+        player1 = true
+    elseif player == 4441578772 then
+        player2 = true 
+    elseif player == 4444976556 then
+        player3 = true
+    elseif player == 4444993953 then
+        player4 = true
+    elseif player == 4444975398 then
+        player5 = true
+    elseif player == 4468930054 then
+        player6 = true
+    elseif player == 4441793703 then
+        player7 = true
+    elseif player == 4447505517 then
+        player8 = true
+    elseif player == 4448570232 then
+        player9 = true
+    elseif player == 4472357843 then
+        player10 = true
+    elseif player == 4472356546 then
+        player11 = true
+end
+if player1 or player2 or player3 or player4 or player5 or player6 or player7 or player8 or player9 or player10 or player11 then
+    repeat wait() until game:IsLoaded()
+    pcall(function()
+         game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Gear 1 FUllY",
+            Text = "Executed                        GOD D. DANG",
+            Duration = 7200
+            })
+    end) 
+    local placeId = game.PlaceId
+    if placeId == 2753915549 then
+        Sea1 = true
+    elseif placeId == 4442272183 then
+        Sea2 = true
+    elseif placeId == 7449423635 then
+        Sea3 = true
+    end
+    local teleport_table = {
+        location1 = Vector3.new(29523.4844, 15094.6836, -87.5899963, 1, 0, 0, 0, 1, 0, 0, 0, 1),
+        location2 = Vector3.new(28968.2598, 14919.2803, 235.102829, -0.0127710886, 6.20884393e-08, -0.999918461, 5.69246588e-08, 1, 6.13664497e-08, 0.999918461, -5.61363009e-08, -0.0127710886), 
+        location3 = Vector3.new(28673.7539, 14890.333, 454.784668, -0.999662757, 6.05350579e-08, 0.0259688776, 6.1590292e-08, 1, 3.98346351e-08, -0.0259688776, 4.14206305e-08, -0.999662757),
+        location4 = Vector3.new(28491.9004, 14895.6328, -421.81601, 0.0378813557, -1.85148821e-08, 0.999282241, 6.30813801e-08, 1, 1.61368554e-08, -0.999282241, 6.24248173e-08, 0.0378813557),
+        location5 = Vector3.new(29021.0938, 14891.0605, -378.723816, -0.056854438, 2.64024695e-08, -0.998382449, 7.32235961e-09, 1, 2.60282622e-08, 0.998382449, -5.83069326e-09, -0.056854438),
+        location6 = Vector3.new(29237.5762, 14891.0654, -205.46759, -0.0380872823, -1.00234425e-08, -0.999274433, -4.46632917e-08, 1, -8.32838243e-09, 0.999274433, 4.43136798e-08, -0.0380872823),
+        location7 = Vector3.new(28223.6191, 14890.9971, -212.843185, 0.0202199146, -0.0286932718, 0.999383748, 0.00348170614, 0.999584079, 0.0286285803, -0.999789476, 0.0029006931, 0.0203114059)
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and 
+        lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+             a.Completed:Wait()
+             print('ZZZZ!')
+        end
+    end
+    function race()
+       return game:GetService("Players").LocalPlayer.Data.Race.Value
+    end
+        function MoonTextureId()
+            if Sea1 then
+                return game:GetService("Lighting").FantasySky.MoonTextureId
+            elseif Sea2 then
+                return game:GetService("Lighting").FantasySky.MoonTextureId
+            elseif Sea3 then
+                return game:GetService("Lighting").Sky.MoonTextureId
+            end
+        end
+        function CheckMoon()
+            moon8 = "http://www.roblox.com/asset/?id=9709150401"
+            moon7 = "http://www.roblox.com/asset/?id=9709150086"
+            moon6 = "http://www.roblox.com/asset/?id=9709149680"
+            moon5 = "http://www.roblox.com/asset/?id=9709149431"
+            moon4 = "http://www.roblox.com/asset/?id=9709149052"
+            moon3 = "http://www.roblox.com/asset/?id=9709143733"
+            moon2 = "http://www.roblox.com/asset/?id=9709139597"
+            moon1 = "http://www.roblox.com/asset/?id=9709135895"
+            moonreal = MoonTextureId()
+            cofullmoonkothangbeo = "Bad Moon"
+        if moonreal == moon8 or moonreal == moon7 or 6 or moonreal == moon5 or moonreal == moon4 or moonreal == moon3 or moonreal == moon2 or moonreal == moon1 then
+            if moonreal == moon5 then
+                cofullmoonkothangbeo = "Full Moon"
+            elseif moonreal == moon4 then
+                cofullmoonkothangbeo = "Trang 4"
+            else if moonreal == moon3 then
+                cofullmoonkothangbeo = "Trang 3"
+            else if moonreal == moon2 then
+                cofullmoonkothangbeo = "Trang 2"
+            else if moonreal == moon1 then
+                cofullmoonkothangbeo = "Trang 1"
+            else if moonreal == moon8 then
+                cofullmoonkothangbeo = "Trang 8"
+            else if moonreal == moon7 then
+                cofullmoonkothangbeo = "Trang 7"
+            else if moonreal == moon6 then
+                cofullmoonkothangbeo = "Trang 6"
+            end   
+        end
+        end
+        end
+        end
+        end
+        end
+        end
+            return cofullmoonkothangbeo
+        end
+    while wait (1) do
+    if CheckMoon() == "Full Moon" then
+wait(330)
+if race() == "Skypiea" then
+    bypass_teleport(teleport_table.location1)
+    wait(2)
+    bypass_teleport(teleport_table.location2)
+    elseif race() == "Ghoul" then
+        bypass_teleport(teleport_table.location1)
+    wait(2)
+         bypass_teleport(teleport_table.location3)
+    elseif race() == "Cyborg" then
+         bypass_teleport(teleport_table.location1)
+    wait(2)
+         bypass_teleport(teleport_table.location4)
+    elseif race() == "Mink" then
+         bypass_teleport(teleport_table.location1)
+    wait(2)
+         bypass_teleport(teleport_table.location5)
+    elseif race() == "Human" then
+         bypass_teleport(teleport_table.location1)
+    wait(2)
+         bypass_teleport(teleport_table.location6)
+    elseif race() == "Fishman" then
+         bypass_teleport(teleport_table.location1)
+    wait(2)
+         bypass_teleport(teleport_table.location7)
+    end
+                  game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+            wait(30)
+                   game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                   wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+            wait(11)
+                  game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+            wait(30)
+                 game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                 wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+            wait(11)
+                 game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+           wait(30)
+                game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+             wait(11)
+                  game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+            wait(30)
+                 game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                 wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+            wait(11)
+                  game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+            wait(30)
+                 game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                 wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+            wait(11)
+                  game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+            wait(30)
+                 game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                 wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+            wait(11)
+                  game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+            wait(30)
+                 game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                 wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+         wait(11)
+                  game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+            wait(30)
+                 game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                 wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+            wait(11)
+                  game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+            wait(30)
+                 game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                 wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+            wait(11)
+                  game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+            wait(30)
+                 game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                 wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+            wait(11)
+                 game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+           wait(30)
+                game.Players.LocalPlayer.Character.Humanoid.Health = 0
+                wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+            wait(11)
+                game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+          wait(30)
+               game.Players.LocalPlayer.Character.Humanoid.Health = 0
+               wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+    end
+    end
+else
+    pcall(function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+           Title = "Gear 1 Fully 2",
+           Text = "Executed                        GOD D. DANG",
+           Duration = 7200
+           })
+   end) 
+   local placeId = game.PlaceId
+   if placeId == 2753915549 then
+       Sea1 = true
+   elseif placeId == 4442272183 then
+       Sea2 = true
+   elseif placeId == 7449423635 then
+       Sea3 = true
+   end
+   local teleport_table = {
+    location1 = Vector3.new(29523.4844, 15094.6836, -87.5899963, 1, 0, 0, 0, 1, 0, 0, 0, 1),
+    location2 = Vector3.new(28968.2598, 14919.2803, 235.102829, -0.0127710886, 6.20884393e-08, -0.999918461, 5.69246588e-08, 1, 6.13664497e-08, 0.999918461, -5.61363009e-08, -0.0127710886), 
+    location3 = Vector3.new(28673.7539, 14890.333, 454.784668, -0.999662757, 6.05350579e-08, 0.0259688776, 6.1590292e-08, 1, 3.98346351e-08, -0.0259688776, 4.14206305e-08, -0.999662757),
+    location4 = Vector3.new(28491.9004, 14895.6328, -421.81601, 0.0378813557, -1.85148821e-08, 0.999282241, 6.30813801e-08, 1, 1.61368554e-08, -0.999282241, 6.24248173e-08, 0.0378813557),
+    location5 = Vector3.new(29021.0938, 14891.0605, -378.723816, -0.056854438, 2.64024695e-08, -0.998382449, 7.32235961e-09, 1, 2.60282622e-08, 0.998382449, -5.83069326e-09, -0.056854438),
+    location6 = Vector3.new(29237.5762, 14891.0654, -205.46759, -0.0380872823, -1.00234425e-08, -0.999274433, -4.46632917e-08, 1, -8.32838243e-09, 0.999274433, 4.43136798e-08, -0.0380872823),
+    location7 = Vector3.new(28223.6191, 14890.9971, -212.843185, 0.0202199146, -0.0286932718, 0.999383748, 0.00348170614, 0.999584079, 0.0286285803, -0.999789476, 0.0029006931, 0.0203114059)
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+         a.Completed:Wait()
+         print('ZZZZ!')
+    end
+end
+function race()
+   return game:GetService("Players").LocalPlayer.Data.Race.Value
+end
+       function MoonTextureId()
+           if Sea1 then
+               return game:GetService("Lighting").FantasySky.MoonTextureId
+           elseif Sea2 then
+               return game:GetService("Lighting").FantasySky.MoonTextureId
+           elseif Sea3 then
+               return game:GetService("Lighting").Sky.MoonTextureId
+           end
+       end
+       function CheckMoon()
+           moon8 = "http://www.roblox.com/asset/?id=9709150401"
+           moon7 = "http://www.roblox.com/asset/?id=9709150086"
+           moon6 = "http://www.roblox.com/asset/?id=9709149680"
+           moon5 = "http://www.roblox.com/asset/?id=9709149431"
+           moon4 = "http://www.roblox.com/asset/?id=9709149052"
+           moon3 = "http://www.roblox.com/asset/?id=9709143733"
+           moon2 = "http://www.roblox.com/asset/?id=9709139597"
+           moon1 = "http://www.roblox.com/asset/?id=9709135895"
+           moonreal = MoonTextureId()
+           cofullmoonkothangbeo = "Bad Moon"
+       if moonreal == moon8 or moonreal == moon7 or 6 or moonreal == moon5 or moonreal == moon4 or moonreal == moon3 or moonreal == moon2 or moonreal == moon1 then
+           if moonreal == moon5 then
+               cofullmoonkothangbeo = "Full Moon"
+           elseif moonreal == moon4 then
+               cofullmoonkothangbeo = "Trang 4"
+           else if moonreal == moon3 then
+               cofullmoonkothangbeo = "Trang 3"
+           else if moonreal == moon2 then
+               cofullmoonkothangbeo = "Trang 2"
+           else if moonreal == moon1 then
+               cofullmoonkothangbeo = "Trang 1"
+           else if moonreal == moon8 then
+               cofullmoonkothangbeo = "Trang 8"
+           else if moonreal == moon7 then
+               cofullmoonkothangbeo = "Trang 7"
+           else if moonreal == moon6 then
+               cofullmoonkothangbeo = "Trang 6"
+           end   
+       end
+       end
+       end
+       end
+       end
+       end
+       end
+           return cofullmoonkothangbeo
+       end
+       function CheckRace()
+        return game.ReplicatedStorage.Remotes.CommF_:InvokeServer("UpgradeRace", "Check")
+       end 
+       function CheckV4()
+        if CheckRace() then 
+            return "Awakened"
+        else
+            return "Chua Awa Huhu"
+        end
+    end
+    function Racelan3()
+        v4 = CheckV4()
+        vene = "aibiet"
+        if v4 == "Awakened" or v4 == "Chua Awa Huhu" then
+            if v4 == "Awakened" then
+            vene = "Toc4"
+        elseif v4 == "Chua Awa Huhu" then
+            vene = "Chua4"
+        end
+    end
+            return vene
+    end
+       function function6()
+        return math.floor(game.Lighting.ClockTime)
+    end
+    function function7()
+        GameTime = "Error"
+        local c = game.Lighting
+        local c2 = c.ClockTime
+        if c2 >= 16 or c2 < 5 then
+            GameTime = "Night"
+        else
+            GameTime = "Day"
+        end
+        return GameTime
+    end
+    url = "https://discord.com/api/webhooks/1099194825049382962/DnKmGHhBgdFxn0K0HYwm6xdtuEgpO-HXmMtYU2-kV6EP5YnoretAX6AHwwH45FAq7Z8x"
+    Settings = {}
+    function PostWebhook(url, msg)
+        local rq = http_request or request or HttpPost or syn.request
+        local DataCallBack =
+            rq(
+            {
+                Url = url,
+                Method = "POST",
+                Headers = {
+                    ["Content-Type"] = "application/json"
+                },
+                Body = game:GetService("HttpService"):JSONEncode(msg)
+            }
+        )
+        return ""
+    end
+    function GetMsg()
+        InviteScript =
+            'V4 Upgraded'
+        k3 = {}
+        if Settings["PingEveryone"] and Settings["WebhookWhenMirage"] then
+            k3["content"] = "@everyone"
+        else
+            k3["content"] = "V4"
+        end
+        k3["embeds"] = {
+            {
+                ["title"] = "Race V4 Checker",
+                ["fields"] = {
+                    {
+                        ["name"] = "Account:",
+                        ["value"] = "```" .. game.Players.LocalPlayer.Name .. "```",
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "Race:",
+                        ["value"] = "```".. game:GetService("Players").LocalPlayer.Data.Race.Value.. "```",
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "Thong Bao:",
+                        ["value"] = "```lua\n" .. InviteScript .. "\n```",
+                        ["inline"] = true
+                    }
+                }
+            }
+        }
+        return k3
+    end
+   local RAMAccount = loadstring(game:HttpGet'https://raw.githubusercontent.com/ic3w0lf22/Roblox-Account-Manager/master/RAMAccount.lua')()
+   local MyAccount = RAMAccount.new(game:GetService'Players'.LocalPlayer.Name)
+   spawn(function()
+    while task.wait(3) do 
+        repeat
+            task.wait()
+        until Racelan3() == "Toc4"
+        if Racelan3() == "Toc4" then
+            PostWebhook(url, GetMsg())
+            wait()
+            MyAccount:SetAlias(CheckV4())
+            break
+        end
+    end
+end)
+    while wait(1) do
+            if CheckMoon() == "Full Moon" then 
+                wait(330)
+                if race() == "Skypiea" then
+                    bypass_teleport(teleport_table.location1)
+                    wait(2)
+                    bypass_teleport(teleport_table.location2)
+                    elseif race() == "Ghoul" then
+                        bypass_teleport(teleport_table.location1)
+                    wait(2)
+                         bypass_teleport(teleport_table.location3)
+                    elseif race() == "Cyborg" then
+                         bypass_teleport(teleport_table.location1)
+                    wait(2)
+                         bypass_teleport(teleport_table.location4)
+                    elseif race() == "Mink" then
+                         bypass_teleport(teleport_table.location1)
+                    wait(2)
+                         bypass_teleport(teleport_table.location5)
+                    elseif race() == "Human" then
+                         bypass_teleport(teleport_table.location1)
+                    wait(2)
+                         bypass_teleport(teleport_table.location6)
+                    elseif race() == "Fishman" then
+                         bypass_teleport(teleport_table.location1)
+                    wait(2)
+                         bypass_teleport(teleport_table.location7)
+                    end
+                game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+           wait(30)
+           print "ok"
+           wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+           wait(11)
+                game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+           wait(30)
+           print "ok"
+           wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+           wait(11)
+                game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+           wait(30)
+           print "ok"
+           wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+           wait(11)
+                game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+           wait(30)
+           print "ok"
+           wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+           wait(11)
+                game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+           wait(30)
+           print "ok"
+           wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+           wait(11)
+                game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+           wait(30)
+           print "ok"
+           wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+           wait(11)
+                game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+           wait(30)
+           print "ok"
+           wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+           wait(11)
+                game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+           wait(30)
+           print "ok"
+           wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+           wait(11)
+                game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+           wait(30)
+           print "ok"
+           wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+           wait(11)
+                game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+           wait(30)
+           print "ok"
+           wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+           wait(11)
+                game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+           wait(30)
+           print "ok"
+           wait(9)
+if race() == "Skypiea" then
+bypass_teleport(teleport_table.location1)
+wait(2)
+bypass_teleport(teleport_table.location2)
+elseif race() == "Ghoul" then
+    bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location3)
+elseif race() == "Cyborg" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location4)
+elseif race() == "Mink" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location5)
+elseif race() == "Human" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location6)
+elseif race() == "Fishman" then
+     bypass_teleport(teleport_table.location1)
+wait(2)
+     bypass_teleport(teleport_table.location7)
+end
+           wait(11)
+                game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
+           wait(30)
+           print "ok"
+           wait(1)
+           game.Players.LocalPlayer.Character.Humanoid.Health = 0
+   end
+end
+end
+    end
+end
+end
