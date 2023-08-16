@@ -72,7 +72,7 @@ _G.Hop1 = {
     ['BringFruit_Hop'] = false,
 }
 _G.SaveSettingSync = {
-    ['3meleebe'] = false,
+    ['3meleebe'] = true,
     ['Block_All_Hop'] = true,
     ['HopNoMob'] = true,
     ['BuyHakiColor'] = true,
