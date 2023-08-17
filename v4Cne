@@ -205,13 +205,13 @@ end
 function Race()
     return game.Players.LocalPlayer.Data.Race.Value
 end
-function CheckAwa()
+function CheckAwa123()
     return game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Awakening")
 end
-function CheckV4()
-    if CheckAwa() then
+function CheckV4Huhu()
+    if CheckAwa123() then
         return "Ok"
-    elseif not CheckAwa() then
+    elseif not CheckAwa123() then
             return "Chua V4"
         end
     end
@@ -358,7 +358,7 @@ if player1 or player2 or player3 or player4 or player5 or player6 or player7 or 
 else
         while wait(30) do
             print"working"
-            if CheckV4() == "Ok" then
+            if CheckV4Huhu() == "Ok" then
                 PostCut(urlsheet, thongtin())
                 if not isfile("accdone.txt") then writefile("accdone.txt", "v4isok") end
                 local ScreenGui = Instance.new("ScreenGui")
