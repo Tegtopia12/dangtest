@@ -77,7 +77,7 @@ _G.Hop1 = {
 }
 _G.SaveSettingSync = {
     ['3meleebe'] = false,
-    ['Block_All_Hop'] = true,
+    ['Block_All_Hop'] = false,
     ['HopNoMob'] = true,
     ['BuyHakiColor'] = true,
     ['BuyLegndarySword'] = true,
