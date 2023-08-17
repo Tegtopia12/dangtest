@@ -403,7 +403,7 @@ else
         while wait(30) do
             print"working"
             if CheckToc() == "Human" and CheckV3Human() == "v3" then
-                if not isfile("accdone.txt") then writefile("accdone.txt", "gatcanisok") end
+                game:Shutdown()
                 local ScreenGui = Instance.new("ScreenGui")
                 local Frame = Instance.new("Frame")
                 local TextButton = Instance.new("TextButton")
