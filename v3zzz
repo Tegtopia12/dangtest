@@ -174,10 +174,10 @@ getgenv().DitBF = {
         ["Lock FPS"] = 45,
     },
     ["Raid if Maxed Blox Fruit"] = true,
-    ["Farm boss drops while not maxed"] = true,
-    ["Farm Blox Fruit Mastery if maxed"] = true,
+    ["Farm boss drops while not maxed"] = false,
+    ["Farm Blox Fruit Mastery if maxed"] = false,
     ["Farm method after maxed"] = "Raid Boss Farm - Cake Prince Farm",
-    ["Extra time Farm until unlock skills"] = true,
+    ["Extra time Farm until unlock skills"] = false,
     ["Hop Server"] = {
         ["Type"] = {
             ["[Main] Server Hop"] = true,
@@ -201,12 +201,12 @@ getgenv().DitBF = {
         ["Skyjump"] = true,
         ["Flash Step"] = true,
         ["Observation"] = true,
-        ["Legendary Enhancement"] = true,
+        ["Legendary Enhancement"] = false,
     },
     ["Auto Race"] = "Human",
     ["Blox Fruit Sniper"] = {"Dough-Dough", "Shadow-Shadow", "Venom-Venom", "Control-Control", "Spirit-Spirit", "Dragon-Dragon", "Leopard-Leopard", "Magma-Magma", "Human-Human: Buddha", "Rumble-Rumble", "Paw-Paw", "Blizzard-Blizzard"},
     ["Main Blox Fruit"] = {"Dough-Dough"},
-    ["Eat Sniper Blox Fruits"] = true,
+    ["Eat Sniper Blox Fruits"] = false,
     ["Account Panel"] = {
         ["Enable"] = false,
         ["Delay"] = 300,
@@ -214,20 +214,20 @@ getgenv().DitBF = {
     },
 }
 
-task.spawn(function()
-    repeat task.wait(20) until game:IsLoaded()
-    while wait(3) do
-        if game.PlaceId == 7449423635 then
-            print "sea 3 detected"
-            local args = {
-                [1] = "TravelDressrosa" -- bay den sea 2
-            }
-            game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
-            wait(1)
-            break
-        end
-    end
-end);
+-- task.spawn(function()
+--     repeat task.wait(20) until game:IsLoaded()
+--     while wait(3) do
+--         if game.PlaceId == 7449423635 then
+--             print "sea 3 detected"
+--             local args = {
+--                 [1] = "TravelDressrosa" -- bay den sea 2
+--             }
+--             game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+--             wait(1)
+--             break
+--         end
+--     end
+-- end);
 
 getgenv().Key = "kef69ed14438b0cd2cd3da03"
 repeat wait()spawn(function()loadstring(game:HttpGet("https://ditbloxfruit.cc/client.lua"))()end)wait(60)until S_Timer
