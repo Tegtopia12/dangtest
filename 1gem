@@ -118,7 +118,7 @@ getgenv().Settings = {
         },
         Webhook = {
             ["Webhook Url"] = "https://discord.com/api/webhooks/1133592483620733079/s66GXincpeQyYuC109b6JA91xR_CVnIM5nqi53jI6BRAjcO0n-ZZ6QXdz0SX4MWP3uld",
-            ["Time Frame"] = 60,
+            ["Time Frame"] = 1200,
         },
     },
 }
