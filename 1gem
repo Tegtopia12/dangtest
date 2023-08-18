@@ -105,7 +105,7 @@ getgenv().Settings = {
         Mailbox = {
             ["Send Gems"] = true,
             ["Receiver"] = "dangvjpproxx",
-            ["Detection Amount"] = 50000000000,
+            ["Detection Amount"] = 25000000000,
         },
     },
     Client = {
