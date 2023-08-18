@@ -415,12 +415,12 @@ game_pid = game.PlaceId
 if game.PlaceId == 7449423635 or game.PlaceId == 4442272183 then
     while wait(30) do
         print"working"
-        if game.Players.LocalPlayer.Data.Level.Value == 2450 and GODHUMAN() == "Godhuman" then
-            PostCut(urlsheet, thongtin())
-            if not isfile("accdone.txt") then writefile("accdone.txt", "godhuman") end
-        elseif game.Players.LocalPlayer.Data.Level.Value == 2450 and Gear() == "OK" then
+        if game.Players.LocalPlayer.Data.Level.Value == 2450 and Gear() == "OK" then
             PostCut(urlsheet2, thongtin())
             if not isfile("accdone.txt") then writefile("accdone.txt", "superhuman") end
+        elseif game.Players.LocalPlayer.Data.Level.Value == 2450 and GODHUMAN() == "Godhuman" then
+            PostCut(urlsheet, thongtin())
+            if not isfile("accdone.txt") then writefile("accdone.txt", "godhuman") end
             local ScreenGui = Instance.new("ScreenGui")
             local Frame = Instance.new("Frame")
             local TextButton = Instance.new("TextButton")
