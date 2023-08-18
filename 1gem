@@ -91,10 +91,10 @@ getgenv().Settings = {
             ["Diamonds"] = false,
         },
         Fruits = {
-            ["Farm Fruits"] = false,
+            ["Farm Fruits"] = true,
             ["Pet Sending Mode"] = "Single",
             ["Minimum Fruits"] = 10,
-            ["Maximum Fruits"] = 175,
+            ["Maximum Fruits"] = 150,
         },
     },
     Misc = {
@@ -113,7 +113,7 @@ getgenv().Settings = {
             ["Disable Orb Rendering"] = true,
             ["Disable Lootbags Rendering"] = true,
             ["Disable 3D Rendering"] = false,
-            ["Spoof Names"] = true,
+            ["Spoof Names"] = false,
             ["FPS Cap"] = 45,
         },
         Webhook = {
