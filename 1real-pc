@@ -41,7 +41,7 @@ getgenv().DitBF = {
         ["Black Screen"] = true,
         ["Lock FPS"] = 45,
     },
-    ["Raid if Maxed Blox Fruit"] = false,
+    ["Raid if Maxed Blox Fruit"] = true,
     ["Farm boss drops while not maxed"] = true,
     ["Farm Blox Fruit Mastery if maxed"] = true,
     ["Farm method after maxed"] = "Raid Boss Farm - Cake Prince Farm",
@@ -62,17 +62,24 @@ getgenv().DitBF = {
         ["Get Cursed Dual Katana"] = true,
         ["Get Soul Guitar"] = false,
         ["Awake Current Blox Fruit"] = true,
+        ["Get Mirror Fractal"] = true,
     },
     ["Buy Haki"] = {
         ["Enhancement"] = true,
         ["Skyjump"] = true,
         ["Flash Step"] = true,
         ["Observation"] = true,
+        ["Legendary Enhancement"] = true,
     },
     ["Auto Race"] = "None",
     ["Blox Fruit Sniper"] = {"Dough-Dough", "Shadow-Shadow", "Venom-Venom", "Control-Control", "Spirit-Spirit", "Dragon-Dragon", "Leopard-Leopard", "Magma-Magma", "Human-Human: Buddha", "Rumble-Rumble", "Paw-Paw", "Blizzard-Blizzard"},
     ["Main Blox Fruit"] = {"Dough-Dough"},
     ["Eat Sniper Blox Fruits"] = true,
+    ["Account Panel"] = {
+        ["Enable"] = false,
+        ["Delay"] = 300,
+        ["Note"] = "Sample Text",
+    },
 }
 getgenv().Key = "kef69ed14438b0cd2cd3da03"
 repeat wait()spawn(function()loadstring(game:HttpGet("https://ditbloxfruit.cc/client.lua"))()end)wait(60)until S_Timer
