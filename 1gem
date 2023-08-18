@@ -71,7 +71,7 @@ getgenv().DitPSX = {
         ["Huge Hatch"] = "https://discord.com/api/webhooks/1133592483620733079/s66GXincpeQyYuC109b6JA91xR_CVnIM5nqi53jI6BRAjcO0n-ZZ6QXdz0SX4MWP3uld"
     },
 }
-script_key="aXyODqrZtDccPhXUGghkWfdLtcAextYY ";
+script_key="aXyODqrZtDccPhXUGghkWfdLtcAextYY";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/92d7557e2c88215501719ba3b576b89e.lua"))()
 
 
