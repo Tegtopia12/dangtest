@@ -151,27 +151,39 @@ wait(10)
 -- end)
 
 
+-- while wait(15) do
+--     local Library3 = require(game.ReplicatedStorage.Library)
+--     local ClientModule3 = require(game.ReplicatedStorage.Library.Client)
+--     local Directory3 = require(game.ReplicatedStorage.Library.Directory)
+
+--     local Save3 = require(game.ReplicatedStorage.Library.Client.Save)
+--     local Network3 = require(game.ReplicatedStorage.Library.Client.Network)
+
+
+--     local FireHook3 = hookfunction(debug.getupvalue(Network3.Fire, 1), function(...) return true end)
+
+--         local function UseSignal(Content, ColorToInput)
+--         return Library3.Signal.Fire("Notification", Content, {color = ColorToInput})
+--     end
+
+
+--     local vzz = Save3.Get().DiamondMineData.Earned
+--     print(vzz)
+--     if vzz >= 50000000000 then
+--         if not isfile("accdone.txt") then writefile("accdone.txt", "true") end
+--         break
+--     -- UseSignal("Max gems made", Color3.fromRGB(0,255,0))
+--     end
+-- end
+
 while wait(15) do
-    local Library3 = require(game.ReplicatedStorage.Library)
-    local ClientModule3 = require(game.ReplicatedStorage.Library.Client)
-    local Directory3 = require(game.ReplicatedStorage.Library.Directory)
 
     local Save3 = require(game.ReplicatedStorage.Library.Client.Save)
-    local Network3 = require(game.ReplicatedStorage.Library.Client.Network)
-
-
-    local FireHook3 = hookfunction(debug.getupvalue(Network3.Fire, 1), function(...) return true end)
-
-        local function UseSignal(Content, ColorToInput)
-        return Library3.Signal.Fire("Notification", Content, {color = ColorToInput})
-    end
-
 
     local vzz = Save3.Get().DiamondMineData.Earned
     print(vzz)
     if vzz >= 50000000000 then
         if not isfile("accdone.txt") then writefile("accdone.txt", "true") end
         break
-    -- UseSignal("Max gems made", Color3.fromRGB(0,255,0))
     end
 end
