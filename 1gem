@@ -1,5 +1,10 @@
 repeat task.wait(3) until game:IsLoaded()
 
+getgenv().OutputData = {
+    ["Cooldown"] = 60,
+    ["Type"] = "json",
+}
+
 getgenv().DitPSX = {
     --[[
         Collapse methods:
