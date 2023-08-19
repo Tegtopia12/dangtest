@@ -48,11 +48,11 @@ getgenv().DitPSX = {
         ["Got kicked"] = false,
         ["Leave Timer"] = {
             ["Enable"] = true,
-            ["After seconds"] = 600 -- Auto Leave the server after AFK in for set seconds 
+            ["After seconds"] = 1200 -- Auto Leave the server after AFK in for set seconds 
         }
     },
     ["Hop Server"] = {
-        ["Hop Server Cooldown"] = 600, -- Wait set second after Hop Server
+        ["Hop Server Cooldown"] = 1200, -- Wait set second after Hop Server
         ["Player nearby"] = true, -- Will hop to low player server if there's a player nearby Mystic Mine (2m cooldown)
         ["Out of diamond"] = false, -- Will hop to low player server if there are no diamond left to farm
     },
