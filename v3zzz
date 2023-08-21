@@ -79,8 +79,8 @@ _G.SaveSettingSync = {
     ['3meleebe'] = false,
     ['Block_All_Hop'] = false,
     ['HopNoMob'] = true,
-    ['BuyHakiColor'] = true,
-    ['BuyLegndarySword'] = true,
+    ['BuyHakiColor'] = false,
+    ['BuyLegndarySword'] = false,
     ['AutoSetting_Skill'] = true,
 
     ['WebHookUrl'] = "",
@@ -92,8 +92,8 @@ _G.SaveSettingSync = {
         ['Make_Melee'] = {"Superhuman", "Death Step","Sharkman Karate","Electric Claw","Dargon Talon", "Godhuman"}
     }
     _G.Shop1 = {
-        ['BuyEctoplasItem'] = true,
-        ['BuyCommon'] = true,
+        ['BuyEctoplasItem'] = false,
+        ['BuyCommon'] = false,
         ['BuyHaki'] = true ,-- autobuy Buso haki Skyjump
         ['BuyKabcha'] = true, -- true / false
         ['BuyBisento'] = true,
