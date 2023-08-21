@@ -58,7 +58,7 @@ if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
     _G.Setting1['RedeemOnLv'] = 10
     _G.Setting1['HideUI'] = true
     _G.farmer1 = {
-        ['AutoFarm'] = false, -- true / false
+        ['AutoFarm'] = true, -- true / false
         ["GetMaterialGodhuman"] = false,
         ['Mastery_Farm'] = false, -- true / false
         ['Mastery_Mode'] = {"Fruit","Sword"}, 
