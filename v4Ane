@@ -25,7 +25,7 @@ elseif player == 4472356546 then
 end
 if player1 or player2 or player3 or player4 or player5 or player6 or player7 or player8 or player9 or player10 or player11 then
     -- loadstring auto v4 heree 
-    loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/v4Ane")()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/v4Ane3")()
 else
     -- loadstring auto v4 ver kill player 
     loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/v4Ane2")()
