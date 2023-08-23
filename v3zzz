@@ -175,7 +175,7 @@ getgenv().DitBF = {
     },
     ["Raid if Maxed Blox Fruit"] = true,
     ["Farm boss drops while not maxed"] = true,
-    ["Farm Blox Fruit Mastery if maxed"] = false,
+    ["Farm Blox Fruit Mastery if maxed"] = true,
     ["Farm method after maxed"] = "Raid Boss Farm - Cake Prince Farm",
     ["Extra time Farm until unlock skills"] = true,
     ["Hop Server"] = {
@@ -188,11 +188,11 @@ getgenv().DitBF = {
     },
     ["Do Action"] = {
         ["Get Godhuman"] = true,
-        ["Get Rengoku"] = false,
+        ["Get Rengoku"] = true,
         ["Get True Triple Katana"] = false,
         ["Get Hallow Scythe"] = false,
         ["Get Cursed Dual Katana"] = false,
-        ["Get Soul Guitar"] = false,
+        ["Get Soul Guitar"] = true,
         ["Awake Current Blox Fruit"] = false,
         ["Get Mirror Fractal"] = false,
     },
