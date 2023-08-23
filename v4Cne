@@ -294,6 +294,18 @@ end)
 
 -- settings().Rendering.QualityLevel = "Level01"
 -- here 
+-- anti afk 
+task.spawn(function()
+    print('z1')
+    local vituause = game:GetService("VirtualUser")
+    game:GetService("Players").LocalPlayer.Idled:connect(function()
+    vituause:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    wait(1)
+    vituause:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    end)
+    print('z2')
+end)
+-- anti afk 
 game:service"NetworkClient".ChildRemoved:Connect(function()
     game:Shutdown()
 end)
