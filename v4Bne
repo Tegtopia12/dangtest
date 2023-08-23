@@ -1130,7 +1130,8 @@ if race() == "Skypiea" then
     end
                   game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
             wait(30)
-                   game.Players.LocalPlayer.Character.Humanoid.Health = 0
+               --     game.Players.LocalPlayer.Character.Humanoid.Health = 0
+               print "ok"
                    wait(9)
 if race() == "Skypiea" then
 bypass_teleport(teleport_table.location1)
@@ -1160,7 +1161,7 @@ end
             wait(11)
                   game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
             wait(30)
-                 game.Players.LocalPlayer.Character.Humanoid.Health = 0
+            print "ok"
                  wait(9)
 if race() == "Skypiea" then
 bypass_teleport(teleport_table.location1)
@@ -1190,7 +1191,7 @@ end
             wait(11)
                  game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
            wait(30)
-                game.Players.LocalPlayer.Character.Humanoid.Health = 0
+           print "ok"
                 wait(9)
 if race() == "Skypiea" then
 bypass_teleport(teleport_table.location1)
@@ -1220,7 +1221,7 @@ end
              wait(11)
                   game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
             wait(30)
-                 game.Players.LocalPlayer.Character.Humanoid.Health = 0
+            print "ok"
                  wait(9)
 if race() == "Skypiea" then
 bypass_teleport(teleport_table.location1)
@@ -1250,7 +1251,7 @@ end
             wait(11)
                   game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
             wait(30)
-                 game.Players.LocalPlayer.Character.Humanoid.Health = 0
+            print "ok"
                  wait(9)
 if race() == "Skypiea" then
 bypass_teleport(teleport_table.location1)
@@ -1280,7 +1281,7 @@ end
             wait(11)
                   game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
             wait(30)
-                 game.Players.LocalPlayer.Character.Humanoid.Health = 0
+            print "ok"
                  wait(9)
 if race() == "Skypiea" then
 bypass_teleport(teleport_table.location1)
@@ -1310,7 +1311,7 @@ end
             wait(11)
                   game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
             wait(30)
-                 game.Players.LocalPlayer.Character.Humanoid.Health = 0
+            print "ok"
                  wait(9)
 if race() == "Skypiea" then
 bypass_teleport(teleport_table.location1)
@@ -1340,7 +1341,7 @@ end
          wait(11)
                   game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
             wait(30)
-                 game.Players.LocalPlayer.Character.Humanoid.Health = 0
+            print "ok"
                  wait(9)
 if race() == "Skypiea" then
 bypass_teleport(teleport_table.location1)
@@ -1370,7 +1371,7 @@ end
             wait(11)
                   game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
             wait(30)
-                 game.Players.LocalPlayer.Character.Humanoid.Health = 0
+            print "ok"
                  wait(9)
 if race() == "Skypiea" then
 bypass_teleport(teleport_table.location1)
@@ -1400,7 +1401,7 @@ end
             wait(11)
                   game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
             wait(30)
-                 game.Players.LocalPlayer.Character.Humanoid.Health = 0
+            print "ok"
                  wait(9)
 if race() == "Skypiea" then
 bypass_teleport(teleport_table.location1)
@@ -1430,7 +1431,7 @@ end
             wait(11)
                  game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
            wait(30)
-                game.Players.LocalPlayer.Character.Humanoid.Health = 0
+           print "ok"
                 wait(9)
 if race() == "Skypiea" then
 bypass_teleport(teleport_table.location1)
@@ -1460,7 +1461,7 @@ end
             wait(11)
                 game:service('VirtualInputManager'):SendKeyEvent(true, "T", false, game)
           wait(30)
-               game.Players.LocalPlayer.Character.Humanoid.Health = 0
+          print "ok"
                wait(9)
 if race() == "Skypiea" then
 bypass_teleport(teleport_table.location1)
