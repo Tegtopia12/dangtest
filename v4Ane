@@ -1,15 +1,32 @@
-repeat task.wait(3) until game:IsLoaded()
-spawn(function()
-Configs = {
-        ["Mirange"] = "https://raw.githubusercontent.com/dangbadao/dangtest/main/maruV4"
-    }
-    Config = Configs["Mirange"]
-    if not Config then return print("CC") end 
-    p = game:GetService("HttpService"):JSONDecode(game:HttpGet(Config))
-    if not isfolder("Maru Hub Premium Scripts") then makefolder("Maru Hub Premium Scripts") end 
-    writefile("Maru Hub Premium Scripts".."/".."Blox_Fruits".."-"..game.Players.LocalPlayer.Name..".json",game:GetService("HttpService"):JSONEncode(p))
-end)
-wait(1)
-getgenv().key = "MARUTZCQ6EFILFO3JHTI1BAZJQ";
-getgenv().id = "902190658016649216";
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruComkak/main/PCBit.lua"))()
+repeat wait(3) until game:IsLoaded()
+local player = game.Players.LocalPlayer.UserId
+    if player == 4445099916 then
+    player1 = true
+elseif player == 4441578772 then
+    player2 = true 
+elseif player == 4444976556 then
+    player3 = true
+elseif player == 4444993953 then
+    player4 = true
+elseif player == 4444975398 then
+    player5 = true
+elseif player == 4468930054 then
+    player6 = true
+elseif player == 4441793703 then
+    player7 = true
+elseif player == 4447505517 then
+    player8 = true
+elseif player == 4448570232 then
+     player9 = true
+elseif player == 4472357843 then
+    player10 = true
+elseif player == 4472356546 then
+    player11 = true
+end
+if player1 or player2 or player3 or player4 or player5 or player6 or player7 or player8 or player9 or player10 or player11 then
+    -- loadstring auto v4 heree 
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/v4Ane")()
+else
+    -- loadstring auto v4 ver kill player 
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/v4Ane2")()
+end
