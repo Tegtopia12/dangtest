@@ -1,0 +1,15 @@
+repeat task.wait(3) until game:IsLoaded()
+spawn(function()
+Configs = {
+        ["Mirange"] = "https://raw.githubusercontent.com/dangbadao/dangtest/main/maruv42"
+    }
+    Config = Configs["Mirange"]
+    if not Config then return print("CC") end 
+    p = game:GetService("HttpService"):JSONDecode(game:HttpGet(Config))
+    if not isfolder("Maru Hub Premium Scripts") then makefolder("Maru Hub Premium Scripts") end 
+    writefile("Maru Hub Premium Scripts".."/".."Blox_Fruits".."-"..game.Players.LocalPlayer.Name..".json",game:GetService("HttpService"):JSONEncode(p))
+end)
+wait(1)
+getgenv().key = "MARUTZCQ6EFILFO3JHTI1BAZJQ";
+getgenv().id = "902190658016649216";
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruComkak/main/PCBit.lua"))()
