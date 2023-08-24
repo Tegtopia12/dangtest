@@ -1,0 +1,10 @@
+repeat task.wait() until game:IsLoaded()
+repeat task.wait() until game.Players
+repeat task.wait() until game.Players.LocalPlayer
+repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
+wait(3)
+loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/maruconfig")();
+(getgenv()).key = "MARUTZCQ6EFILFO3JHTI1BAZJQ";
+(getgenv()).id = "902190658016649216";
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruComkak/main/PCBit.lua"))()
