@@ -1,233 +1,233 @@
-repeat task.wait(3) until game:IsLoaded()
-
-if not game:IsLoaded() then game.Loaded:Wait() end
-
-_G.Fruit1 = {
-    ['BuyFruit'] = false, -- true / false
-    ['MainFruit'] = {
-        [1] = "Dough-Dough",
-	[2] = "Leopard-Leopard",
-        [3] = "Blizzard-Blizzard",
-    },
-    ['SelectDevil'] = {
-[1] = "Dough-Dough",
-[2] = "Bird-Bird: Phoenix",
-[3] = "Dragon-Dragon",
-[4] = "Leopard-Leopard",
-[5] = "Blizzard-Blizzard",
-[6] = "Spirit-Spirit",
-[7] = "Venom-Venom",
-[8] = "Human-Human: Buddha",
-[9] = "Rumble-Rumble",
-[10] = "Shadow-Shadow",
-[11] = "Magma-Magma",
-[12] = "Quake-Quake",
-      [13] = "Flame-Flame",
-      [14] = "Ice-Ice",
-    },
-    ['SinperFruit_mode'] = false,
-}
-
-_G.Race1 = {
-    ['RaceSniper'] = true, -- true / false
-    ['Select_Want_Race'] = {"Human"},  
-}
-_G.RamSetting1 = {
-    ["Enable"] = false,
-    ["Delay"] = 90, -- 300 sec
-    ["Description"] = {
-        [1] = "Race",
-        [2] = "Soul Guitar",
-        [3] = "CDK",
-        [4] = "Fruit",
-	[5] = "Beli",
-	[6] = "Mirror",
-        [7] = "Valkyrie",
-    },
-    ["Alias"]  = {
-        --[1] = Choose from above. ["Description"]
-    }
-}
-
-_G.Setting1 = {['WhiteScreen'] = false}
-
-if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
-    _G.Setting1['Team'] = "Pirates"  -- Marines / Pirates
-    _G.Setting1['FPS_Boost'] = false -- true / false -- จอขาว
-    _G.Setting1['AutoRedeem'] = false -- true / false
-    _G.Setting1['RedeemOnLv'] = 10
-    _G.Setting1['HideUI'] = true
-    _G.farmer1 = {
-        ['AutoFarm'] = true, -- true / false
-        ["GetMaterialGodhuman"] = false,
-        ['Mastery_Farm'] = false, -- true / false
-        ['Mastery_Mode'] = {"Fruit","Sword"}, 
-	['FruitFull_skill'] = false,
-	['AutoChangeSword'] = false,
-	['AllSwordMas_MaxLv'] = false,
-        ['Farm_Mode'] =  {"Level" ,"Ectoplas","Rengoku","Bone","DripMama","Cocoa"} --  "Level" / "Bone" /  "Level , Bone"  / "Level , NearMob" /  "Ectoplas" / "Rengoku" / "DripMama" / "NearMob"
-    }
-_G.Sword_Farm = {"Cursed Dual Katana","Saber","Shisui","Tushita","Hallow Scythe","Spikey Trident","Dark Dagger","Buddy Sword","Yama","Saddi","Wando","True Triple Katana","Rengoku","Dark Blade","Canvander","Pole (2nd Form)","Dragon Trident"}
-_G.Hop1 = {
-    ['Tween_Chest'] = false,
-
-    ['Hop_Item_Function'] = false,
-    ['Legendary_Hop'] = false,
-    ['BringFruit_Hop'] = false,
-}
-_G.SaveSettingSync = {
-    ['3meleebe'] = false,
-    ['Block_All_Hop'] = false,
-    ['HopNoMob'] = true,
-    ['BuyHakiColor'] = false,
-    ['BuyLegndarySword'] = false,
-    ['AutoSetting_Skill'] = true,
-
-    ['WebHookUrl'] = "",
-    ['BestSheetUrl'] = "",
-    ['LineToken'] = ''
-}
-    _G.tool1 = {
-        ['AutoMeleeWeapon'] = true, -- true / false
-        ['Make_Melee'] = {"Superhuman", "Death Step","Sharkman Karate","Electric Claw","Dargon Talon", "Godhuman"}
-    }
-    _G.Shop1 = {
-        ['BuyEctoplasItem'] = false,
-        ['BuyCommon'] = false,
-        ['BuyHaki'] = true ,-- autobuy Buso haki Skyjump
-        ['BuyKabcha'] = true, -- true / false
-        ['BuyBisento'] = true,
-        ['BuyTrueTripleKatana'] = true,
-        ['BuyPole2'] = true,
-        ['BoneTrade'] = true
-    }
-    if type(_G.Fruit1) ~= "table" then _G.Fruit1 = {} end
-    _G.Fruit1['RandomFruit'] = true
-    _G.Fruit1['StoreFruit'] = true
-    _G.Fruit1['BringFruit'] = true
-    _G.Fullystats = true
-    _G.sea_I = {
-        ['AutoSea2'] = true, -- true
-        ['SecretQuest'] = false,
-        ['Open_Saber'] = false,
-        ['Pole_v1'] = false
-    }
-     _G.Raid1 = {
-        ['AutoRaid'] = false, -- true / false
-        ['ChipCant_StoreFruit'] = false,
-        ['RaidMode'] = "Awake Skill",-- "Raid Normal" , "Awake Skill"
-        ['GetFruit_Method'] = {"FruitInventory","BringFruit"}
-    }
-    _G.sea_II = {
-        ['AutoSea3'] = false, -- true
-        ['Bartilo'] = true,
-        ['AutoFlower'] = true,
-        ['EvoRaceV3'] = true,
-        ['AutoDarkbeard'] = false
-    }
-     _G.Raid1 = {
-        ['AutoRaid'] = false, -- true / false
-        ['ChipCant_StoreFruit'] = false,
-        ['RaidMode'] = "Awake Skill",-- "Raid Normal" , "Awake Skill"
-        ['GetFruit_Method'] = {"FruitInventory","BringFruit"}
-    }
-    _G.sea_III = {
-        ['AutoPullLever'] = true,
-        ['AutoCDK'] = false,
-        ['SoulGuitar'] = false,
-        ['RainbowHaki'] = false,
-        ['PirateRaid'] = false,
-        ['Scythe'] = false,
-        ['BuddySword'] = false,
-        ['DarkDager'] = false,
-        ['SpikeyTrident'] = false,
-        ['Canvander'] = false,
-        ['Tushita'] = false,
-        ['EliteHunt'] = false,
-        ['Elite_mode'] = "Yama"--"Elite","Yama","God Chalice"
-    }
-    _G.Raid1 = {
-        ['AutoRaid'] = false, -- true / false
-        ['ChipCant_StoreFruit'] = false,
-        ['RaidMode'] = "Awake Skill",-- "Raid Normal" , "Awake Skill"
-        ['GetFruit_Method'] = {"FruitInventory","BringFruit"}
-    }
-
--- task.spawn(function()
---     repeat task.wait(1) until game:IsLoaded()
---     local args = {
---         [1] = "TravelDressrosa" -- bay den sea 2
---    }
---    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
--- end);
-
-script_key = "CHDkcQyeFknJgrIiRgEtrLaUjfSISctf"
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/220bfd207ccd66b16cad3b537de84aab.lua"))()
-
 -- repeat task.wait(3) until game:IsLoaded()
--- repeat task.wait() until game.Players
--- repeat task.wait() until game.Players.LocalPlayer
 
--- getgenv().DitBF = {
---     ["Performance"] = {
---         ["Black Screen"] = false,
---         ["Lock FPS"] = 45,
+-- if not game:IsLoaded() then game.Loaded:Wait() end
+
+-- _G.Fruit1 = {
+--     ['BuyFruit'] = false, -- true / false
+--     ['MainFruit'] = {
+--         [1] = "Dough-Dough",
+-- 	[2] = "Leopard-Leopard",
+--         [3] = "Blizzard-Blizzard",
 --     },
---     ["Raid if Maxed Blox Fruit"] = true,
---     ["Farm boss drops while not maxed"] = true,
---     ["Farm Blox Fruit Mastery if maxed"] = true,
---     ["Farm method after maxed"] = "Raid Boss Farm - Cake Prince Farm",
---     ["Extra time Farm until unlock skills"] = true,
---     ["Hop Server"] = {
---         ["Type"] = {
---             ["[Main] Server Hop"] = true,
---             ["[Farm] Server Hop if Player nearby"] = true,
---             ["[Sea 3 Quest] Server Hop for 1M+ Blox Fruit"] = false,
---         },
---         ["Delay"] = 0,
+--     ['SelectDevil'] = {
+-- [1] = "Dough-Dough",
+-- [2] = "Bird-Bird: Phoenix",
+-- [3] = "Dragon-Dragon",
+-- [4] = "Leopard-Leopard",
+-- [5] = "Blizzard-Blizzard",
+-- [6] = "Spirit-Spirit",
+-- [7] = "Venom-Venom",
+-- [8] = "Human-Human: Buddha",
+-- [9] = "Rumble-Rumble",
+-- [10] = "Shadow-Shadow",
+-- [11] = "Magma-Magma",
+-- [12] = "Quake-Quake",
+--       [13] = "Flame-Flame",
+--       [14] = "Ice-Ice",
 --     },
---     ["Do Action"] = {
---         ["Get Godhuman"] = true,
---         ["Get Rengoku"] = true,
---         ["Get True Triple Katana"] = false,
---         ["Get Hallow Scythe"] = false,
---         ["Get Cursed Dual Katana"] = false,
---         ["Get Soul Guitar"] = true,
---         ["Awake Current Blox Fruit"] = false,
---         ["Get Mirror Fractal"] = false,
---     },
---     ["Buy Haki"] = {
---         ["Enhancement"] = true,
---         ["Skyjump"] = true,
---         ["Flash Step"] = true,
---         ["Observation"] = true,
---         ["Legendary Enhancement"] = false,
---     },
---     ["Auto Race"] = "Human",
---     ["Blox Fruit Sniper"] = {"Dough-Dough", "Shadow-Shadow", "Venom-Venom", "Control-Control", "Spirit-Spirit", "Dragon-Dragon", "Leopard-Leopard", "Magma-Magma", "Human-Human: Buddha", "Rumble-Rumble", "Paw-Paw", "Blizzard-Blizzard"},
---     ["Main Blox Fruit"] = {"Dough-Dough"},
---     ["Eat Sniper Blox Fruits"] = false,
---     ["Account Panel"] = {
---         ["Enable"] = false,
---         ["Delay"] = 300,
---         ["Note"] = "Sample Text",
---     },
+--     ['SinperFruit_mode'] = false,
 -- }
 
+-- _G.Race1 = {
+--     ['RaceSniper'] = true, -- true / false
+--     ['Select_Want_Race'] = {"Human"},  
+-- }
+-- _G.RamSetting1 = {
+--     ["Enable"] = false,
+--     ["Delay"] = 90, -- 300 sec
+--     ["Description"] = {
+--         [1] = "Race",
+--         [2] = "Soul Guitar",
+--         [3] = "CDK",
+--         [4] = "Fruit",
+-- 	[5] = "Beli",
+-- 	[6] = "Mirror",
+--         [7] = "Valkyrie",
+--     },
+--     ["Alias"]  = {
+--         --[1] = Choose from above. ["Description"]
+--     }
+-- }
+
+-- _G.Setting1 = {['WhiteScreen'] = false}
+
+-- if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
+--     _G.Setting1['Team'] = "Pirates"  -- Marines / Pirates
+--     _G.Setting1['FPS_Boost'] = false -- true / false -- จอขาว
+--     _G.Setting1['AutoRedeem'] = false -- true / false
+--     _G.Setting1['RedeemOnLv'] = 10
+--     _G.Setting1['HideUI'] = true
+--     _G.farmer1 = {
+--         ['AutoFarm'] = true, -- true / false
+--         ["GetMaterialGodhuman"] = false,
+--         ['Mastery_Farm'] = false, -- true / false
+--         ['Mastery_Mode'] = {"Fruit","Sword"}, 
+-- 	['FruitFull_skill'] = false,
+-- 	['AutoChangeSword'] = false,
+-- 	['AllSwordMas_MaxLv'] = false,
+--         ['Farm_Mode'] =  {"Level" ,"Ectoplas","Rengoku","Bone","DripMama","Cocoa"} --  "Level" / "Bone" /  "Level , Bone"  / "Level , NearMob" /  "Ectoplas" / "Rengoku" / "DripMama" / "NearMob"
+--     }
+-- _G.Sword_Farm = {"Cursed Dual Katana","Saber","Shisui","Tushita","Hallow Scythe","Spikey Trident","Dark Dagger","Buddy Sword","Yama","Saddi","Wando","True Triple Katana","Rengoku","Dark Blade","Canvander","Pole (2nd Form)","Dragon Trident"}
+-- _G.Hop1 = {
+--     ['Tween_Chest'] = false,
+
+--     ['Hop_Item_Function'] = false,
+--     ['Legendary_Hop'] = false,
+--     ['BringFruit_Hop'] = false,
+-- }
+-- _G.SaveSettingSync = {
+--     ['3meleebe'] = false,
+--     ['Block_All_Hop'] = false,
+--     ['HopNoMob'] = true,
+--     ['BuyHakiColor'] = false,
+--     ['BuyLegndarySword'] = false,
+--     ['AutoSetting_Skill'] = true,
+
+--     ['WebHookUrl'] = "",
+--     ['BestSheetUrl'] = "",
+--     ['LineToken'] = ''
+-- }
+--     _G.tool1 = {
+--         ['AutoMeleeWeapon'] = true, -- true / false
+--         ['Make_Melee'] = {"Superhuman", "Death Step","Sharkman Karate","Electric Claw","Dargon Talon", "Godhuman"}
+--     }
+--     _G.Shop1 = {
+--         ['BuyEctoplasItem'] = false,
+--         ['BuyCommon'] = false,
+--         ['BuyHaki'] = true ,-- autobuy Buso haki Skyjump
+--         ['BuyKabcha'] = true, -- true / false
+--         ['BuyBisento'] = true,
+--         ['BuyTrueTripleKatana'] = true,
+--         ['BuyPole2'] = true,
+--         ['BoneTrade'] = true
+--     }
+--     if type(_G.Fruit1) ~= "table" then _G.Fruit1 = {} end
+--     _G.Fruit1['RandomFruit'] = true
+--     _G.Fruit1['StoreFruit'] = true
+--     _G.Fruit1['BringFruit'] = true
+--     _G.Fullystats = true
+--     _G.sea_I = {
+--         ['AutoSea2'] = true, -- true
+--         ['SecretQuest'] = false,
+--         ['Open_Saber'] = false,
+--         ['Pole_v1'] = false
+--     }
+--      _G.Raid1 = {
+--         ['AutoRaid'] = false, -- true / false
+--         ['ChipCant_StoreFruit'] = false,
+--         ['RaidMode'] = "Awake Skill",-- "Raid Normal" , "Awake Skill"
+--         ['GetFruit_Method'] = {"FruitInventory","BringFruit"}
+--     }
+--     _G.sea_II = {
+--         ['AutoSea3'] = false, -- true
+--         ['Bartilo'] = true,
+--         ['AutoFlower'] = true,
+--         ['EvoRaceV3'] = true,
+--         ['AutoDarkbeard'] = false
+--     }
+--      _G.Raid1 = {
+--         ['AutoRaid'] = false, -- true / false
+--         ['ChipCant_StoreFruit'] = false,
+--         ['RaidMode'] = "Awake Skill",-- "Raid Normal" , "Awake Skill"
+--         ['GetFruit_Method'] = {"FruitInventory","BringFruit"}
+--     }
+--     _G.sea_III = {
+--         ['AutoPullLever'] = true,
+--         ['AutoCDK'] = false,
+--         ['SoulGuitar'] = false,
+--         ['RainbowHaki'] = false,
+--         ['PirateRaid'] = false,
+--         ['Scythe'] = false,
+--         ['BuddySword'] = false,
+--         ['DarkDager'] = false,
+--         ['SpikeyTrident'] = false,
+--         ['Canvander'] = false,
+--         ['Tushita'] = false,
+--         ['EliteHunt'] = false,
+--         ['Elite_mode'] = "Yama"--"Elite","Yama","God Chalice"
+--     }
+--     _G.Raid1 = {
+--         ['AutoRaid'] = false, -- true / false
+--         ['ChipCant_StoreFruit'] = false,
+--         ['RaidMode'] = "Awake Skill",-- "Raid Normal" , "Awake Skill"
+--         ['GetFruit_Method'] = {"FruitInventory","BringFruit"}
+--     }
+
 -- -- task.spawn(function()
--- --     repeat task.wait(20) until game:IsLoaded()
--- --     while wait(3) do
--- --         if game.PlaceId == 7449423635 then
--- --             print "sea 3 detected"
--- --             local args = {
--- --                 [1] = "TravelDressrosa" -- bay den sea 2
--- --             }
--- --             game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
--- --             wait(1)
--- --             break
--- --         end
--- --     end
+-- --     repeat task.wait(1) until game:IsLoaded()
+-- --     local args = {
+-- --         [1] = "TravelDressrosa" -- bay den sea 2
+-- --    }
+-- --    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
 -- -- end);
 
--- getgenv().Key = "kef69ed14438b0cd2cd3da03"
--- repeat wait()spawn(function()loadstring(game:HttpGet("https://ditbloxfruit.cc/client.lua"))()end)wait(60)until S_Timer
+-- script_key = "CHDkcQyeFknJgrIiRgEtrLaUjfSISctf"
+-- loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/220bfd207ccd66b16cad3b537de84aab.lua"))()
+
+repeat task.wait(3) until game:IsLoaded()
+repeat task.wait() until game.Players
+repeat task.wait() until game.Players.LocalPlayer
+
+getgenv().DitBF = {
+    ["Performance"] = {
+        ["Black Screen"] = false,
+        ["Lock FPS"] = 45,
+    },
+    ["Raid if Maxed Blox Fruit"] = true,
+    ["Farm boss drops while not maxed"] = false,
+    ["Farm Blox Fruit Mastery if maxed"] = false,
+    ["Farm method after maxed"] = "Mob Farm - Level Path",
+    ["Extra time Farm until unlock skills"] = false,
+    ["Hop Server"] = {
+        ["Type"] = {
+            ["[Main] Server Hop"] = true,
+            ["[Farm] Server Hop if Player nearby"] = true,
+            ["[Sea 3 Quest] Server Hop for 1M+ Blox Fruit"] = false,
+        },
+        ["Delay"] = 0,
+    },
+    ["Do Action"] = {
+        ["Get Godhuman"] = true,
+        ["Get Rengoku"] = false,
+        ["Get True Triple Katana"] = false,
+        ["Get Hallow Scythe"] = false,
+        ["Get Cursed Dual Katana"] = false,
+        ["Get Soul Guitar"] = true,
+        ["Awake Current Blox Fruit"] = false,
+        ["Get Mirror Fractal"] = false,
+    },
+    ["Buy Haki"] = {
+        ["Enhancement"] = true,
+        ["Skyjump"] = true,
+        ["Flash Step"] = true,
+        ["Observation"] = true,
+        ["Legendary Enhancement"] = false,
+    },
+    ["Auto Race"] = "Human",
+    ["Blox Fruit Sniper"] = {"Dough-Dough", "Shadow-Shadow", "Venom-Venom", "Control-Control", "Spirit-Spirit", "Dragon-Dragon", "Leopard-Leopard", "Magma-Magma", "Human-Human: Buddha", "Rumble-Rumble", "Paw-Paw", "Blizzard-Blizzard"},
+    ["Main Blox Fruit"] = {"Dough-Dough"},
+    ["Eat Sniper Blox Fruits"] = false,
+    ["Account Panel"] = {
+        ["Enable"] = false,
+        ["Delay"] = 300,
+        ["Note"] = "Sample Text",
+    },
+}
+
+-- task.spawn(function()
+--     repeat task.wait(20) until game:IsLoaded()
+--     while wait(3) do
+--         if game.PlaceId == 7449423635 then
+--             print "sea 3 detected"
+--             local args = {
+--                 [1] = "TravelDressrosa" -- bay den sea 2
+--             }
+--             game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+--             wait(1)
+--             break
+--         end
+--     end
+-- end);
+
+getgenv().Key = "kef69ed14438b0cd2cd3da03"
+repeat wait()spawn(function()loadstring(game:HttpGet("https://ditbloxfruit.cc/client.lua"))()end)wait(60)until S_Timer
