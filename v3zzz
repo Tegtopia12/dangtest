@@ -161,7 +161,7 @@ repeat task.wait(3) until game:IsLoaded()
 -- --    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
 -- -- end);
 
--- script_key = "sFzvBnTKANFpRLeeweZjtuHGWNAMJyMG"
+-- script_key = "CHDkcQyeFknJgrIiRgEtrLaUjfSISctf"
 -- loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/220bfd207ccd66b16cad3b537de84aab.lua"))()
 
 -- repeat task.wait(3) until game:IsLoaded()
