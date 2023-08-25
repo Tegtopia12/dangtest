@@ -661,21 +661,21 @@ end
                 break
         end   
     end
-   local RAMAccount = loadstring(game:HttpGet'https://raw.githubusercontent.com/ic3w0lf22/Roblox-Account-Manager/master/RAMAccount.lua')()
-   local MyAccount = RAMAccount.new(game:GetService'Players'.LocalPlayer.Name)
-   spawn(function()
-    while task.wait(3) do 
-        repeat
-            task.wait()
-        until Racelan3() == "Toc4"
-        if Racelan3() == "Toc4" then
-            PostWebhook(url, GetMsg())
-            wait()
-            MyAccount:SetAlias(CheckV4())
-            break
-        end
-    end
-end)
+--    local RAMAccount = loadstring(game:HttpGet'https://raw.githubusercontent.com/ic3w0lf22/Roblox-Account-Manager/master/RAMAccount.lua')()
+--    local MyAccount = RAMAccount.new(game:GetService'Players'.LocalPlayer.Name)
+--    spawn(function()
+--     while task.wait(3) do 
+--         repeat
+--             task.wait()
+--         until Racelan3() == "Toc4"
+--         if Racelan3() == "Toc4" then
+--             PostWebhook(url, GetMsg())
+--             wait()
+--             MyAccount:SetAlias(CheckV4())
+--             break
+--         end
+--     end
+-- end)
     while wait(1) do
             if CheckMoon() == "Full Moon" then 
             wait(325)
@@ -1666,21 +1666,21 @@ end
         }
         return k3
     end
-   local RAMAccount = loadstring(game:HttpGet'https://raw.githubusercontent.com/ic3w0lf22/Roblox-Account-Manager/master/RAMAccount.lua')()
-   local MyAccount = RAMAccount.new(game:GetService'Players'.LocalPlayer.Name)
-   spawn(function()
-    while task.wait(3) do 
-        repeat
-            task.wait()
-        until Racelan3() == "Toc4"
-        if Racelan3() == "Toc4" then
-            PostWebhook(url, GetMsg())
-            wait()
-            MyAccount:SetAlias(CheckV4())
-            break
-        end
-    end
-end)
+--    local RAMAccount = loadstring(game:HttpGet'https://raw.githubusercontent.com/ic3w0lf22/Roblox-Account-Manager/master/RAMAccount.lua')()
+--    local MyAccount = RAMAccount.new(game:GetService'Players'.LocalPlayer.Name)
+--    spawn(function()
+--     while task.wait(3) do 
+--         repeat
+--             task.wait()
+--         until Racelan3() == "Toc4"
+--         if Racelan3() == "Toc4" then
+--             PostWebhook(url, GetMsg())
+--             wait()
+--             MyAccount:SetAlias(CheckV4())
+--             break
+--         end
+--     end
+-- end)
     while wait(1) do
             if CheckMoon() == "Full Moon" then 
                 wait(330)
