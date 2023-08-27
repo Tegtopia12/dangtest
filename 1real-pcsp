@@ -383,7 +383,7 @@ end)
 -- settings().Rendering.QualityLevel = "Level01"
 -- here 
 game:service"NetworkClient".ChildRemoved:Connect(function()
-    PostWebhook(url2, GetMsg2())
+    -- PostWebhook(url2, GetMsg2())
     game_pid = game.PlaceId
     repeat wait()
         if not game:IsLoaded() then
@@ -397,21 +397,22 @@ game:service"NetworkClient".ChildRemoved:Connect(function()
                 
     until game:IsLoaded()
 end)
-if game.Players.LocalPlayer.Data.Level.Value <= 740 then
-wait (300)
-game_pid = game.PlaceId
-    repeat wait()
-        if not game:IsLoaded() then
-            if game_pid == nil then
-                game_pid = game.PlaceId
-            end
-                game:GetService('TeleportService'):TeleportToPlaceInstance(game_pid, game.JobId, game.Players.LocalPlayer)
+-- auto hop khi duoi lv 740
+-- if game.Players.LocalPlayer.Data.Level.Value <= 740 then
+-- wait (300)
+-- game_pid = game.PlaceId
+--     repeat wait()
+--         if not game:IsLoaded() then
+--             if game_pid == nil then
+--                 game_pid = game.PlaceId
+--             end
+--                 game:GetService('TeleportService'):TeleportToPlaceInstance(game_pid, game.JobId, game.Players.LocalPlayer)
                 
-            end
-                game:GetService('TeleportService'):Teleport(game_pid)
+--             end
+--                 game:GetService('TeleportService'):Teleport(game_pid)
                 
-    until game:IsLoaded()
-    end
+--     until game:IsLoaded()
+--     end
 if game.PlaceId == 7449423635 or game.PlaceId == 4442272183 then
     while wait(30) do
         print"working"
