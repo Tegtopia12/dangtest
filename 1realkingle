@@ -1,29 +1,4 @@
 urlsheet = ""
-AutoChooseTeam = true;
-repeat
-    task.wait()
-until game:IsLoaded()
-repeat
-    task.wait()
-until game.Players
-repeat
-    task.wait()
-until game.Players.LocalPlayer
-    if AutoChooseTeam then
-        if game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main"):FindFirstChild("ChooseTeam") then
-            for i, v in pairs(
-                getconnections(
-                    game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container.Pirates.Frame.ViewportFrame.TextButton.Activated
-                )
-            ) do
-                v.Function()
-            end
-        end
-    end
-
-w = task.wait
-t = task
-Settings = {}
 
 function checkGem()
     return game:GetService("Players").LocalPlayer.PlayerStats.Gem.Value
