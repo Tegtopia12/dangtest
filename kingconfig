@@ -1,0 +1,51 @@
+_G.KaitunMode = true 
+_G.Disabled_Hop = true
+
+_G.Buy_DarkLeg  = true
+_G.Buy_WaterStyle  = true
+_G.Buy_Cyborg  = true
+_G.Buy_DragonClaw  = true
+_G.Buy_Electro  = true
+
+_G.Setting_Stats = {
+    ["Melee"] = true,
+    ["Defense"] = true,
+    ["Sword"] = false,
+    ["Fruits"] = false,
+    ["Point"] = 1
+}
+
+_G.Setting_Fruits = {
+    ["Fruit_Eat"] = {
+        'RumbleRumble',
+        'FlameFlame',
+        'MagmaMagma',
+        'LightLight',
+        'GasGas',
+        'IceIce',
+        'SnowSnow',
+        'QuakeQuake',
+        'SpiritSpirit',
+        'PhoenixPhoenix',
+        'DoughDough',
+        'DragonDragon'
+    }
+}
+
+_G.Setting_AutoFarm = {
+    ["Auto_Farm_Kaitun"] = true,
+    ["Auto_Farm_Bounty"] = true,
+    ["Fast_Auto_Farm"] = true,
+    ["Invisibled_Farm"] = true,
+    ["Fps_Cap"] = 35,
+    ["Boot_Fps"] = true,
+    ["White_Screen"] = true,
+    ["Auto_Close_Ui"] = true
+}
+
+_G.Setting_Webhook = {
+    ["Google_Sheets_Api"] = "",
+    ["Discord_Webhook_Api"] = "https://discord.com/api/webhooks/1096682920938311740/VAterVcKlFiyVczqz65yjdslDMHM_k-Tb1rnAIxpICg4bbwkOx_dkphkXlmiFsRaImMV",
+    ["Roblox_Account_Manger_Api"] = false,
+    ["Enabled_All_Api"] = true
+}
