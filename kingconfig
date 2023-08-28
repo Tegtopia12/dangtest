@@ -39,7 +39,7 @@ _G.Setting_AutoFarm = {
     ["Invisibled_Farm"] = false,
     ["Fps_Cap"] = 35,
     ["Boot_Fps"] = true,
-    ["White_Screen"] = true,
+    ["White_Screen"] = false,
     ["Auto_Close_Ui"] = true
 }
 
