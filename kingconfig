@@ -8,7 +8,7 @@ _G.Buy_DragonClaw  = true
 _G.Buy_Electro  = true
 
 _G.Setting_Stats = {
-    ["Melee"] = true,
+    ["Melee"] = false,
     ["Defense"] = true,
     ["Sword"] = true,
     ["Fruits"] = false,
