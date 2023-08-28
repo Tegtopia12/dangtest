@@ -74,10 +74,10 @@ function thongtin()
   };
   return data
 end
--- task.spawn(function()
--- wait(60)
--- game:service('VirtualInputManager'):SendKeyEvent(true, "RightControl", false, game)
--- end)
+task.spawn(function()
+wait(60)
+game:service('VirtualInputManager'):SendKeyEvent(true, "RightControl", false, game)
+end)
 -- here 
 -- repeat wait()
 -- until game:IsLoaded() and game:GetService("Players").LocalPlayer and 
