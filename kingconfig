@@ -10,7 +10,7 @@ _G.Buy_Electro  = true
 _G.Setting_Stats = {
     ["Melee"] = true,
     ["Defense"] = true,
-    ["Sword"] = false,
+    ["Sword"] = true,
     ["Fruits"] = false,
     ["Point"] = 1
 }
