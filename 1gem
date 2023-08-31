@@ -38,7 +38,7 @@ getgenv().DitPSX = {
     ["Auto Mailbox"] = { -- Auto send Diamonds to a person thru Mailbox when your Diamonds more than set diamond
         ["Enable"] = true,
         ["Send to"] = "dangvjpproxx",
-        ["Above amount"] = 25000000000
+        ["Above amount"] = 50000000000
     },
     ["Auto Claim Mailbox"] = true, -- Claim Diamonds on the account received the Diamonds from Auto Mailbox
     ["Auto Daycare"] = false, -- Auto Claim Daycare and Enroll unequipped/unlocked Pets in your Inventory
