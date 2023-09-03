@@ -113,7 +113,7 @@ print"working...."
 if game.PlaceId == 6381829480 then
     while wait(30) do
         print"working"
-        if Level() == "Max LV 4000" and World() == "Sea 2" then
+        if Level() == "Max LV 4000" and World() == "Sea 2" and checkGem() == 600 then
             if not isfile("accdone.txt") then writefile("accdone.txt", "godhuman")
                 PostCut(urlsheet, thongtin())
             end
