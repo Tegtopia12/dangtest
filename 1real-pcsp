@@ -420,7 +420,7 @@ if game.PlaceId == 7449423635 or game.PlaceId == 4442272183 then
             if not isfile("accdone.txt") then writefile("accdone.txt", "superhuman")
                 PostCut(urlsheet2, thongtin())
             end
-        elseif game.Players.LocalPlayer.Data.Level.Value == 2450 and GODHUMAN() == "Godhuman" then
+        elseif game.Players.LocalPlayer.Data.Level.Value == 2450 and GODHUMAN() == "Godhuman" and CDK() == "CDK" then
             if not isfile("accdone.txt") then writefile("accdone.txt", "godhuman")
                 PostCut(urlsheet, thongtin())
             end
