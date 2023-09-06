@@ -13,6 +13,6 @@ end
 if player1 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/dangbadao/bdqbdndnsd/main/toc1"))()
 else
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/dangbadao/bdqbdndnsd/main/toc2"))()
-    -- loadstring(game:HttpGet("https://raw.githubusercontent.com/dangbadao/bdqbdndnsd/main/toc3"))()
+    -- loadstring(game:HttpGet("https://raw.githubusercontent.com/dangbadao/bdqbdndnsd/main/toc2"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/dangbadao/bdqbdndnsd/main/toc3"))()
 end
