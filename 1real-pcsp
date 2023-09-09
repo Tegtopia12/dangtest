@@ -416,11 +416,11 @@ end)
 if game.PlaceId == 7449423635 or game.PlaceId == 4442272183 then
     while wait(30) do
         print"working"
-        if game.Players.LocalPlayer.Data.Level.Value == 2450 and Gear() == "OK" and GODHUMAN() == "Godhuman" then
+        if game.Players.LocalPlayer.Data.Level.Value == 2450 and Gear() == "OK" and GODHUMAN() == "Godhuman" and Beli() >= 2000000 then
             if not isfile("accdone.txt") then writefile("accdone.txt", "superhuman")
                 PostCut(urlsheet2, thongtin())
             end
-        elseif game.Players.LocalPlayer.Data.Level.Value == 2450 and GODHUMAN() == "Godhuman" and CDK() == "CDK" then
+        elseif game.Players.LocalPlayer.Data.Level.Value == 2450 and GODHUMAN() == "Godhuman" and Beli() >= 20000000 then
             if not isfile("accdone.txt") then writefile("accdone.txt", "godhuman")
                 PostCut(urlsheet, thongtin())
             end
