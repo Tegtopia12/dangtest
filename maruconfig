@@ -1,29 +1,99 @@
-_G.Team = "Pirate" -- Marine / Pirate
+_G.Team = "Pirate"
 _G.KAITUN_SCRIPT = true
-_G.Settings_Config = {
-        ["Start_Farm"] = true,
-        ["Kill_Players_Quests"] = true,
-        ["Disabled_Hop"] = false,
-        ["DO_Saber"] = true,
-        ["Disabled_Set3dRenderingEnabled_Default"] = false,
-        ["FPS_BOOST"] = true,
-        ["LOCK_FPS"] = true,
-        ["FPS_AMOUNT"] = 60,
-        ["HopForFind1MFruits"] = false,
-        ["WebHook_Notify"] = false,
-        ["WebHooksUrl"] = "",
-        ["SelectMainFruits"] = {
-            "Dough-Dough",
-            "Leopard-Leopard",
-	    "Blizzard-Blizzard"
-        },
-        ["Select_Fruits"] = {
-            "Dough-Dough", "Shadow-Shadow", "Venom-Venom", "Control-Control", "Spirit-Spirit", "Dragon-Dragon", "Leopard-Leopard", "Magma-Magma", "Human-Human: Buddha", "Rumble-Rumble", "Paw-Paw", "Blizzard-Blizzard"
-        } -- "Bomb-Bomb","Spike-Spike","Chop-Chop","Spring-Spring","Kilo-Kilo","Spin-Spin","Bird: Falcon","Smoke-Smoke","Flame-Flame","Ice-Ice","Sand-Sand","Dark-Dark","Revive-Revive","Diamond-Diamond","Light-Light","Love-Love","Rubber-Rubber","Barrier-Barrier","Magma-Magma","Door-Door","Quake-Quake","Human-Human: Buddha","String-String","Bird-Bird: Phoenix","Rumble-Rumble","Paw-Paw","Gravity-Gravity","Dough-Dough","Shadow-Shadow","Venom-Venom","Control-Control","Soul-Soul","Dragon-Dragon","Leopard-Leopard"
+_G.LogsDes = {
+    ["Enabled"] = false,
+    ["SendAlias"] = false,
+    ["SendDescription"] = false,
+    ["DelaySend"] = 500
 }
-_G.NotifyCationDelete = true
-_G.Close_Ui = true
-_G.Sheet_Logs = false 
-_G.Sheet_API = "" 
-_G.Delay_Sheets = 1500 
-_G.Enabled_SetDescription = false
+_G.MainSettings = {
+        ["EnabledHOP"] = true, 
+        ['FPSBOOST'] = true,
+        ["FPSLOCKAMOUNT"] = 60, 
+        ['WhiteScreen'] = true, 
+        ['CloseUI'] = true, 
+        ["NotifycationExPRemove"] = true, 
+        ['AFKCheck'] = 120,
+        ["LockFragments"] = 30000, 
+        ["LockFruitsRaid"] = { 
+            [1] = "Dough-Dough",
+            [2] = "Dragon-Dragon",
+            [3] = "Leopard-Leopard",
+            [4] = "Human-Human: Buddha",
+            [5] = "Blizzard-Blizzard",
+            [6] = "Rumble-Rumble"
+        }
+    }
+_G.Fruits_Settings = { 
+    ['Main_Fruits'] = {'Dough-Dough'}, 
+    ['Select_Fruits'] = {"Dough-Dough", "Shadow-Shadow", "Venom-Venom", "Control-Control", "Spirit-Spirit", "Dragon-Dragon", "Leopard-Leopard", "Magma-Magma", "Human-Human: Buddha", "Rumble-Rumble", "Paw-Paw", "Blizzard-Blizzard"} -- กินหรือซื้อตอนไม่มีผล
+}
+_G.Quests_Settings = { -- ตั้งค่าเควสหลักๆ
+    ['Rainbow_Haki'] = true,
+    ["MusketeerHat"] = true,
+    ["PullLever"] = true,
+    ['DoughQuests_Mirror'] = {
+        ['Enabled'] = true,
+        ['UseFruits'] = true
+    }        
+}
+_G.Races_Settings = { 
+    ['Race'] = {
+        ['EnabledEvo'] = true,
+        ["v2"] = true,
+        ["v3"] = true
+    }
+}
+_G.Settings_Melee = { 
+    ['Superhuman'] = true,
+    ['DeathStep'] = true,
+    ['SharkmanKarate'] = true,
+    ['ElectricClaw'] = true,
+    ['DragonTalon'] = true,
+    ['Godhuman'] = true
+}
+_G.FarmMastery_Settings = {
+    ['Melee'] = true,
+    ['Sword'] = true,
+    ['DevilFruits'] = true,
+    ['Select_Swords'] = {
+        ["AutoSettings"] = true, 
+        ["ManualSettings"] = { 
+            "Saber",
+            "Canvander",
+            "BuddySword",
+            "Dark Dagger",
+            "True Triple Katana",
+            "Cursed Dual Katana",
+            "Shisui",
+            "Wando",
+            "Saddi",
+            "Yama",
+            "Rengoku",
+            "Tushita",
+            "Hallow Scythe",
+            "Spikey Trident"
+        }
+    }
+}
+_G.SwordSettings = {
+    ['Saber'] = true,
+    ["Pole"] = true,
+    ['MidnightBlade'] = true,
+    ['Shisui'] = true,
+    ['Saddi'] = true,
+    ['Wando'] = true,
+    ['Yama'] = true,
+    ['Rengoku'] = true,
+    ['Canvander'] = true,
+    ['BuddySword'] = true,
+    ['TwinHooks'] = true,
+    ['HallowScryte'] = true,
+    ['TrueTripleKatana'] = true,
+    ['CursedDualKatana'] = true
+}
+_G.GunSettings = { 
+    ['Kabucha'] = true,
+    ['SerpentBow'] = true,
+    ['SoulGuitar'] = true
+}
