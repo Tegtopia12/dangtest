@@ -7,7 +7,7 @@ _G.LogsDes = {
     ["DelaySend"] = 500
 }
 _G.MainSettings = {
-        ["EnabledHOP"] = true, 
+        ["EnabledHOP"] = false, 
         ['FPSBOOST'] = true,
         ["FPSLOCKAMOUNT"] = 60, 
         ['WhiteScreen'] = true, 
