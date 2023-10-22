@@ -97,7 +97,7 @@ wait(10)
 _G.KaitunMode = true
 
 -- [[ Setting Config Farm ]] --
- _G.Disabled_Hop = true
+ _G.Disabled_Hop = false
  _G.Teams = "Pirates" 
  _G.Auto_Kill_Player_Quest = true
  _G.Auto_Farm_Kaitun = true
