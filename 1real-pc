@@ -26,64 +26,6 @@
 
 
 
--- repeat task.wait(3) until game:IsLoaded()
--- task.spawn(function()
---     repeat task.wait(6) until game:IsLoaded()
---     loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/1real-pcsp")()
--- end);
--- repeat task.wait() until game.Players
--- repeat task.wait() until game.Players.LocalPlayer
--- repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
--- repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
--- wait(10)
--- getgenv().DitBF = {
---     ["Performance"] = {
---         ["Black Screen"] = true,
---         ["Lock FPS"] = 45,
---     },
---     ["Raid if Maxed Blox Fruit"] = true,
---     ["Farm boss drops while not maxed"] = true,
---     ["Farm Blox Fruit Mastery if maxed"] = true,
---     ["Farm method after maxed"] = "Raid Boss Farm - Cake Prince Farm",
---     ["Extra time Farm until unlock skills"] = true,
---     ["Hop Server"] = {
---         ["Type"] = {
---             ["[Main] Server Hop"] = false,
---             ["[Farm] Server Hop if Player nearby"] = false,
---             ["[Sea 3 Quest] Server Hop for 1M+ Blox Fruit"] = false,
---         },
---         ["Delay"] = 0,
---     },
---     ["Do Action"] = {
---         ["Get Godhuman"] = true,
---         ["Get Rengoku"] = true,
---         ["Get True Triple Katana"] = false,
---         ["Get Hallow Scythe"] = true,
---         ["Get Cursed Dual Katana"] = true,
---         ["Get Soul Guitar"] = false,
---         ["Awake Current Blox Fruit"] = true,
---         ["Get Mirror Fractal"] = true,
---     },
---     ["Buy Haki"] = {
---         ["Enhancement"] = true,
---         ["Skyjump"] = true,
---         ["Flash Step"] = true,
---         ["Observation"] = true,
---         ["Legendary Enhancement"] = true,
---     },
---     ["Auto Race"] = "Human",
---     ["Blox Fruit Sniper"] = {"Dough-Dough", "Shadow-Shadow", "Venom-Venom", "Control-Control", "Spirit-Spirit", "Dragon-Dragon", "Leopard-Leopard", "Magma-Magma", "Human-Human: Buddha", "Rumble-Rumble", "Paw-Paw", "Blizzard-Blizzard"},
---     ["Main Blox Fruit"] = {"Dough-Dough"},
---     ["Eat Sniper Blox Fruits"] = true,
---     ["Account Panel"] = {
---         ["Enable"] = false,
---         ["Delay"] = 300,
---         ["Note"] = "Sample Text",
---     },
--- }
--- getgenv().Key = "kef69ed14438b0cd2cd3da03"
--- repeat wait()spawn(function()loadstring(game:HttpGet("https://ditbloxfruit.cc/client.lua"))()end)wait(60)until S_Timer
-
 repeat task.wait(3) until game:IsLoaded()
 task.spawn(function()
     repeat task.wait(6) until game:IsLoaded()
@@ -94,34 +36,92 @@ repeat task.wait() until game.Players.LocalPlayer
 repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
 repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
 wait(10)
-_G.KaitunMode = true
-
--- [[ Setting Config Farm ]] --
- _G.Disabled_Hop = false
- _G.Teams = "Pirates" 
- _G.Auto_Kill_Player_Quest = true
- _G.Auto_Farm_Kaitun = true
- _G.Neon_Part = false
-
--- [[ Setting Config Start ]] --
- _G.Setting_Close_Ui = true
- _G.WhiteScreen = false
- _G.Boost_Fps = true
- _G.RTXMode = false
- _G.Fps_Cap = 30
- _G.LockFps = true
-
--- [[ Setting Config Fruits ]] --
- _G.Select_Eat_Fruit = {
-    "Dough-Dough", "Shadow-Shadow", "Venom-Venom", "Control-Control", "Spirit-Spirit", "Dragon-Dragon", "Leopard-Leopard", "Magma-Magma", "Human-Human: Buddha", "Rumble-Rumble", "Paw-Paw", "Blizzard-Blizzard",
+getgenv().DitBF = {
+    ["Performance"] = {
+        ["Black Screen"] = true,
+        ["Lock FPS"] = 45,
+    },
+    ["Raid if Maxed Blox Fruit"] = true,
+    ["Farm boss drops while not maxed"] = true,
+    ["Farm Blox Fruit Mastery if maxed"] = true,
+    ["Farm method after maxed"] = "Raid Boss Farm - Cake Prince Farm",
+    ["Extra time Farm until unlock skills"] = true,
+    ["Hop Server"] = {
+        ["Type"] = {
+            ["[Main] Server Hop"] = false,
+            ["[Farm] Server Hop if Player nearby"] = false,
+            ["[Sea 3 Quest] Server Hop for 1M+ Blox Fruit"] = false,
+        },
+        ["Delay"] = 0,
+    },
+    ["Do Action"] = {
+        ["Get Godhuman"] = true,
+        ["Get Rengoku"] = true,
+        ["Get True Triple Katana"] = false,
+        ["Get Hallow Scythe"] = true,
+        ["Get Cursed Dual Katana"] = true,
+        ["Get Soul Guitar"] = false,
+        ["Awake Current Blox Fruit"] = true,
+        ["Get Mirror Fractal"] = true,
+    },
+    ["Buy Haki"] = {
+        ["Enhancement"] = true,
+        ["Skyjump"] = true,
+        ["Flash Step"] = true,
+        ["Observation"] = true,
+        ["Legendary Enhancement"] = true,
+    },
+    ["Auto Race"] = "Human",
+    ["Blox Fruit Sniper"] = {"Dough-Dough", "Shadow-Shadow", "Venom-Venom", "Control-Control", "Spirit-Spirit", "Dragon-Dragon", "Leopard-Leopard", "Magma-Magma", "Human-Human: Buddha", "Rumble-Rumble", "Paw-Paw", "Blizzard-Blizzard"},
+    ["Main Blox Fruit"] = {"Dough-Dough"},
+    ["Eat Sniper Blox Fruits"] = true,
+    ["Account Panel"] = {
+        ["Enable"] = false,
+        ["Delay"] = 300,
+        ["Note"] = "Sample Text",
+    },
 }
+getgenv().Key = "kef69ed14438b0cd2cd3da03"
+repeat wait()spawn(function()loadstring(game:HttpGet("https://ditbloxfruit.cc/client.lua"))()end)wait(60)until S_Timer
 
--- [[ Setting Notify ]] --
- _G.Sheet_Start = false
- _G.Sheet_Url = ""
- _G.Wait_Sheets = 1500
- _G.RACCM_Start = false
- _G.Wait_RACCM = 999
-(getgenv()).Serial_Key = "NORMALHUB_lDPzoS";
-(getgenv()).Id = "902190658016649216";
-loadstring(game:HttpGet("https://raw.githubusercontent.com/WxHxCxKxExR/Normal_Pc/main/Script.lua"))()
+-- repeat task.wait(3) until game:IsLoaded()
+-- task.spawn(function()
+--     repeat task.wait(6) until game:IsLoaded()
+--     loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/1real-pcsp")()
+-- end);
+-- repeat task.wait() until game.Players
+-- repeat task.wait() until game.Players.LocalPlayer
+-- repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+-- repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
+-- wait(10)
+-- _G.KaitunMode = true
+
+-- -- [[ Setting Config Farm ]] --
+--  _G.Disabled_Hop = false
+--  _G.Teams = "Pirates" 
+--  _G.Auto_Kill_Player_Quest = true
+--  _G.Auto_Farm_Kaitun = true
+--  _G.Neon_Part = false
+
+-- -- [[ Setting Config Start ]] --
+--  _G.Setting_Close_Ui = true
+--  _G.WhiteScreen = false
+--  _G.Boost_Fps = true
+--  _G.RTXMode = false
+--  _G.Fps_Cap = 30
+--  _G.LockFps = true
+
+-- -- [[ Setting Config Fruits ]] --
+--  _G.Select_Eat_Fruit = {
+--     "Dough-Dough", "Shadow-Shadow", "Venom-Venom", "Control-Control", "Spirit-Spirit", "Dragon-Dragon", "Leopard-Leopard", "Magma-Magma", "Human-Human: Buddha", "Rumble-Rumble", "Paw-Paw", "Blizzard-Blizzard",
+-- }
+
+-- -- [[ Setting Notify ]] --
+--  _G.Sheet_Start = false
+--  _G.Sheet_Url = ""
+--  _G.Wait_Sheets = 1500
+--  _G.RACCM_Start = false
+--  _G.Wait_RACCM = 999
+-- (getgenv()).Serial_Key = "NORMALHUB_lDPzoS";
+-- (getgenv()).Id = "902190658016649216";
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/WxHxCxKxExR/Normal_Pc/main/Script.lua"))()
