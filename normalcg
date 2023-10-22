@@ -1,17 +1,26 @@
 _G.KaitunMode = true
+
+-- [[ Setting Config Farm ]] --
+ _G.Disabled_Hop = true
  _G.Teams = "Pirates" 
  _G.Auto_Kill_Player_Quest = true
  _G.Auto_Farm_Kaitun = true
  _G.Neon_Part = false
+
+-- [[ Setting Config Start ]] --
  _G.Setting_Close_Ui = true
- _G.WhiteScreen = true
+ _G.WhiteScreen = false
  _G.Boost_Fps = true
  _G.RTXMode = false
- _G.FpsS = 60
+ _G.Fps_Cap = 30
  _G.LockFps = true
+
+-- [[ Setting Config Fruits ]] --
  _G.Select_Eat_Fruit = {
-"Dough-Dough", "Shadow-Shadow", "Venom-Venom", "Control-Control", "Spirit-Spirit", "Dragon-Dragon", "Leopard-Leopard", "Magma-Magma", "Human-Human: Buddha", "Rumble-Rumble", "Paw-Paw", "Blizzard-Blizzard",
+    "Dough-Dough", "Shadow-Shadow", "Venom-Venom", "Control-Control", "Spirit-Spirit", "Dragon-Dragon", "Leopard-Leopard", "Magma-Magma", "Human-Human: Buddha", "Rumble-Rumble", "Paw-Paw", "Blizzard-Blizzard",
 }
+
+-- [[ Setting Notify ]] --
  _G.Sheet_Start = false
  _G.Sheet_Url = ""
  _G.Wait_Sheets = 1500
