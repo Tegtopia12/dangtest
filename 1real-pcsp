@@ -103,8 +103,8 @@ function SUPERHUMAN()
      end
 end
 function Level()
-    if game.Players.LocalPlayer.Data.Level.Value == 2450 then
-        return "Max LV"
+    if game.Players.LocalPlayer.Data.Level.Value == 2550 then
+        return "Max LV 2"
     else
         return "Chua Max LV"
     end
@@ -277,8 +277,8 @@ function PostCut(urlsheet, messenger)
     return ""
 end
 function Level()
-    if game.Players.LocalPlayer.Data.Level.Value == 2450 then
-        return "Max LV"
+    if game.Players.LocalPlayer.Data.Level.Value == 2550 then
+        return "Max LV 2"
     else
         return "Chua Max LV"
     end
@@ -416,11 +416,11 @@ end)
 if game.PlaceId == 7449423635 or game.PlaceId == 4442272183 then
     while wait(30) do
         print"working"
-        if game.Players.LocalPlayer.Data.Level.Value == 2450 and Gear() == "OK" and GODHUMAN() == "Godhuman" and Beli() >= 1000000 then
+        if game.Players.LocalPlayer.Data.Level.Value == 2550 and Gear() == "OK" and GODHUMAN() == "Godhuman" and Beli() >= 1000000 then
             if not isfile("accdone.txt") then writefile("accdone.txt", "superhuman")
                 PostCut(urlsheet2, thongtin())
             end
-        elseif game.Players.LocalPlayer.Data.Level.Value == 2450 and GODHUMAN() == "Godhuman" and Beli() >= 10000000 then
+        elseif game.Players.LocalPlayer.Data.Level.Value == 2550 and GODHUMAN() == "Godhuman" and Beli() >= 10000000 then
             if not isfile("accdone.txt") then writefile("accdone.txt", "godhuman")
                 PostCut(urlsheet, thongtin())
             end
