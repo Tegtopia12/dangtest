@@ -90,8 +90,8 @@ function GODHUMAN()
      end
 end
 function Level()
-    if game.Players.LocalPlayer.Data.Level.Value == 2450 then
-        return "Max LV"
+    if game.Players.LocalPlayer.Data.Level.Value == 2550 then
+        return "Max LV 2"
     else
         return "Chua Max LV"
     end
@@ -179,8 +179,8 @@ function PostCut(urlsheet, messenger)
     return ""
 end
 function Level()
-    if game.Players.LocalPlayer.Data.Level.Value == 2450 then
-        return "Max LV"
+    if game.Players.LocalPlayer.Data.Level.Value == 2550 then
+        return "Max LV 2"
     else
         return "Chua Max LV"
     end
