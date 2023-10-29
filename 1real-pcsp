@@ -383,7 +383,7 @@ game:GetService("Lighting").GlobalShadows = false
 settings().Rendering.QualityLevel = "Level01"
 -- here 
 game:service"NetworkClient".ChildRemoved:Connect(function()
-    -- PostWebhook(url2, GetMsg2())
+    PostWebhook(url2, GetMsg2())
     game_pid = game.PlaceId
     repeat wait()
         if not game:IsLoaded() then
