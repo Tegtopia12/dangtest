@@ -1,5 +1,9 @@
 repeat wait(3) until game:IsLoaded()
-
+task.spawn(function()
+    repeat task.wait(6) until game:IsLoaded()
+    wait(60)
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/1real-pcsp")()
+end)
 if game.Players.LocalPlayer.Data.Level.Value <= 710 then
     repeat wait(3) until game:IsLoaded()
     repeat task.wait() until game.Players
@@ -65,9 +69,3 @@ elseif game.Players.LocalPlayer.Data.Level.Value >= 710 then
     getgenv().Key = "kef69ed14438b0cd2cd3da03"
     repeat wait()spawn(function()loadstring(game:HttpGet("https://ditbloxfruit.cc/client.lua"))()end)wait(60)until S_Timer
 end
-
-wait(10)
-task.spawn(function()
-    repeat task.wait(6) until game:IsLoaded()
-    loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/1real-pcsp")()
-end)
