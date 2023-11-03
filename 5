@@ -1,296 +1,73 @@
-urlsheet = "https://sheet.best/api/sheets/8fefe820-4bf5-4907-a6a1-a2d427333752"
-urlsheet2 = "https://sheet.best/api/sheets/ed734e60-4c05-4250-a47d-3e860cc89cea"
-url = "https://discord.com/api/webhooks/1105921339388346368/OeW_fpWrCn4FzjOaL0dZ8aFFA-C0CnPXKLiw2w4QwVKKjygRiaXkLWeqIHuIf616HF4j";
-url2 = "https://discord.com/api/webhooks/1105934802709905558/JE_t1SgkffTyiauNlyntkx8mVxpbYdQUES5OnTnD6nqJkbsTEGtzhE0AjbtdO2BxcJZ7";
-AutoChooseTeam = true;
-repeat
-    task.wait()
-until game:IsLoaded()
-repeat
-    task.wait()
-until game.Players
-repeat
-    task.wait()
-until game.Players.LocalPlayer
-    if AutoChooseTeam then
-        if game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main"):FindFirstChild("ChooseTeam") then
-            for i, v in pairs(
-                getconnections(
-                    game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container.Pirates.Frame.ViewportFrame.TextButton.Activated
-                )
-            ) do
-                v.Function()
-            end
-        end
-    end
-w = task.wait
-t = task
-Settings = {}
-local placeId = game.PlaceId
-if placeId == 2753915549 then
-    Sea1 = true
-elseif placeId == 4442272183 then
-    Sea2 = true
-elseif placeId == 7449423635 then
-    Sea3 = true
-end
-function GODHUMAN()
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGodhuman")
-     if not game.Players.LocalPlayer.WeaponAssetCache:FindFirstChild("Godhuman") then
-        return "Chua Co Godhuman"
-     else 
-        return "Godhuman"
-     end
-end
-function SUPERHUMAN()
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySuperhuman")
-     if not game.Players.LocalPlayer.WeaponAssetCache:FindFirstChild("Superhuman") then
-        return "Chua Co Superhuman"
-     else 
-        return "Superhuman"
-     end
-end
-function Level()
-    if game.Players.LocalPlayer.Data.Level.Value == 2550 then
-        return "Max LV 2"
-    else
-        return "Chua Max LV"
-    end
-end
-function Beli()
-     return game.Players.LocalPlayer.Data.Beli.Value
-end
-function Frag()
-    return game.Players.LocalPlayer.Data.Fragments.Value
-end
-function Fruit()
-    return game.Players.LocalPlayer.Data.DevilFruit.Value
-end
-function Sea()
-    if game.PlaceId == 2753915549 then
-        return "Sea1"
-    elseif game.PlaceId == 4442272183 then
-        return "Sea2"
-    elseif game.PlaceId == 7449423635 then
-        return "Sea3"
-end
-end
-local InvenTory = game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer("getInventory")
-function checkCDK()
-zz = "e"
-    for i,v in pairs(InvenTory) do
-            if v["Name"] == "Cursed Dual Katana" then
-                zz = "zz"
-        end
-    end
-    if zz == "zz" then
-        return true
-end
-end
-function CDK()
-    if checkCDK() then
-        return "CDK"
-    else
-        return ""
-    end
-end
-function checkSG()
-zz = "e"
-    for i,v in pairs(InvenTory) do
-            if v["Name"] == "Soul Guitar" then
-                zz = "zz"
-        end
-    end
-    if zz == "zz" then
-        return true
-end
-end
-function SG()
-    if checkSG() then
-        return "SG"
-    else
-        return ""
-    end
-end
-function checkValkyrie()
-    zz = "e"
-        for i,v in pairs(InvenTory) do
-                if v["Name"] == "Valkyrie Helm" then
-                    zz = "zz"
-            end
-        end
-        if zz == "zz" then
-            return true
-    end
-    end
-function Valkyrie()
-    if checkValkyrie() then
-        return "ok"
-    else
-        return "no ok"
-    end
-end
-function checkMirror()
-    zz = "e"
-        for i,v in pairs(InvenTory) do
-                if v["Name"] == "Mirror Fractal" then
-                    zz = "zz"
-            end
-        end
-        if zz == "zz" then
-            return true
-    end
-    end
-function Mirror()
-    if checkMirror() then
-        return "ok"
-    else
-        return "no ok"
-    end
-end
-function Gear()
-    if Mirror() == "ok" and Valkyrie() == "ok" then
-        return "OK"
-    else
-        return ""
-    end
-end
-function CUCKI()
-    if not isfile("cookies.txt") then
-        return ""
-    elseif isfile("cookies.txt") then
-        cookie = readfile("cookies.txt")
-        return cookie
-    end
-end
-function PostCut(urlsheet, messenger)
-    local rq = http_request or request or HttpPost or syn.request
-    local DataCallBack =
-        rq(
-        {
-            Url = urlsheet, urlsheet2,
-            Method = "POST",
-            Headers = {
-                ["Content-Type"] = "application/json"
-            },
-            Body = game:GetService("HttpService"):JSONEncode(messenger)
-        }
-    )
-    return ""
-end
-function Level()
-    if game.Players.LocalPlayer.Data.Level.Value == 2550 then
-        return "Max LV 2"
-    else
-        return "Chua Max LV"
-    end
-end
-function GODHUMAN()
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGodhuman")
-     if not game.Players.LocalPlayer.WeaponAssetCache:FindFirstChild("Godhuman") then
-        return "Chua Co Godhuman"
-     else 
-        return "Godhuman"
-     end
-end
-function Beli()
-    return game.Players.LocalPlayer.Data.Beli.Value
-end
-function Frag()
-   return game.Players.LocalPlayer.Data.Fragments.Value
-end
-function Fruit()
-   return game.Players.LocalPlayer.Data.DevilFruit.Value
-end
-function Sea()
-    if game.PlaceId == 2753915549 then
-        return "Sea1"
-    elseif game.PlaceId == 4442272183 then
-        return "Sea2"
-    elseif game.PlaceId == 7449423635 then
-        return "Sea3"
-end
-end
-function thongtin()
-    data = {
-    ["Username"] = game.Players.LocalPlayer.Name,
-    ["Level"]= Level(),
-    ["Melee"]= GODHUMAN(),
-    ["Fruit"]= Fruit(),
-    ["Fragments"]= Frag(),
-    ["Beli"]= Beli(),
-    ["World"]= Sea(),
-    ["CDK"]= CDK(),
-    ["SG"]= SG(),
-    ["Gear"]= Gear(),
-    ["Cookie"]= CUCKI(),
-  };
-  return data
-end
-task.spawn(function()
-wait(60)
-game:service('VirtualInputManager'):SendKeyEvent(true, "RightControl", false, game)
-end)
--- here 
-repeat wait()
-until game:IsLoaded() and game:GetService("Players").LocalPlayer and 
-game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("LoadingScreen") == nil
-for i,v in next, workspace:GetDescendants() do
-    pcall(function()
-        v.Transparency = 1
-    end)
-end
-for i,v in next, getnilinstances() do
-    pcall(function()
-        v.Transparency = 1
-        for i1,v1 in next, v:GetDescendants() do
-            v1.Transparency = 1
-        end
-    end)
-end
-a = workspace
-a.DescendantAdded:Connect(function(v)
-    pcall(function()
-        v.Transparency = 1
-    end)
-end)
-workspace.ClientAnimatorThrottling = Enum.ClientAnimatorThrottlingMode.Enabled
-workspace.InterpolationThrottling = Enum.InterpolationThrottlingMode.Enabled
-settings():GetService("RenderSettings").EagerBulkExecution = false
-workspace.LevelOfDetail = Enum.ModelLevelOfDetail.Disabled
-game:GetService("Lighting").GlobalShadows = false
+repeat wait(3) until game:IsLoaded()
 
-settings().Rendering.QualityLevel = "Level01"
--- here 
-game:service"NetworkClient".ChildRemoved:Connect(function()
-    -- PostWebhook(url2, GetMsg2())
-    game_pid = game.PlaceId
-    repeat wait()
-        if not game:IsLoaded() then
-            if game_pid == nil then
-                game_pid = game.PlaceId
-            end
-                game:GetService('TeleportService'):TeleportToPlaceInstance(game_pid, game.JobId, game.Players.LocalPlayer)
-                
-            end
-                game:GetService('TeleportService'):Teleport(game_pid)
-                
-    until game:IsLoaded()
-end)
-if game.PlaceId == 7449423635 or game.PlaceId == 4442272183 then
-    while wait(30) do
-        print"working"
-        if game.Players.LocalPlayer.Data.Level.Value == 2550 and Gear() == "OK" and GODHUMAN() == "Godhuman" and Beli() >= 1000 then
-            if not isfile("accdone.txt") then writefile("accdone.txt", "godhuman")
-                PostCut(urlsheet2, thongtin())
-            end
-        elseif game.Players.LocalPlayer.Data.Level.Value == 2550 and GODHUMAN() == "Godhuman" and Beli() >= 1000 then
-            if not isfile("accdone.txt") then writefile("accdone.txt", "godhuman")
-                PostCut(urlsheet, thongtin())
-            end
-            break
-        else
-            print"chua max lv"
-        end
-    end
+if game.Players.LocalPlayer.Data.Level.Value <= 710 then
+    repeat wait(3) until game:IsLoaded()
+    repeat task.wait() until game.Players
+    repeat task.wait() until game.Players.LocalPlayer
+    repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+    repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
+    getgenv().Key = "MARU-NY8AG-I9CF4-0WQQ-JLE78-QTWA"
+    getgenv().id = "1028982712360505444"
+    getgenv().Script_Mode = "Kaitun_Script"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
+
+elseif game.Players.LocalPlayer.Data.Level.Value >= 710 then
+    repeat task.wait() until game.Players
+    repeat task.wait() until game.Players.LocalPlayer
+    repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+    repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
+    getgenv().ForceTeam = "Pirates"
+    getgenv().DitBF = {
+        ["Performance"] = {
+            ["Black Screen"] = true,
+            ["Lock FPS"] = 30,
+        },
+        ["Raid if Maxed Blox Fruit"] = true,
+        ["Farm boss drops while not maxed"] = true,
+        ["Farm Blox Fruit Mastery if maxed"] = true,
+        ["Farm method after maxed"] = "Raid Boss Farm - Cake Prince Farm",
+        ["Extra time Farm until unlock skills"] = true,
+        ["Hop Server"] = {
+            ["Type"] = {
+                ["[Main] Server Hop"] = false,
+                ["[Farm] Server Hop if Player nearby"] = false,
+                ["[Sea 3 Quest] Server Hop for 1M+ Blox Fruit"] = false,
+            },
+            ["Delay"] = 0,
+        },
+        ["Do Action"] = {
+            ["Get Godhuman"] = true,
+            ["Get Rengoku"] = true,
+            ["Get True Triple Katana"] = false,
+            ["Get Hallow Scythe"] = true,
+            ["Get Cursed Dual Katana"] = true,
+            ["Get Soul Guitar"] = false,
+            ["Awake Current Blox Fruit"] = true,
+            ["Get Mirror Fractal"] = true,
+        },
+        ["Buy Haki"] = {
+            ["Enhancement"] = true,
+            ["Skyjump"] = true,
+            ["Flash Step"] = true,
+            ["Observation"] = true,
+            ["Legendary Enhancement"] = true,
+        },
+        ["Auto Race"] = "Human",
+        ["Blox Fruit Sniper"] = {"Sound-Sound", "Mammoth-Mammoth", "Dough-Dough", "Shadow-Shadow", "Venom-Venom", "Control-Control", "Spirit-Spirit", "Dragon-Dragon", "Leopard-Leopard", "Magma-Magma", "Human-Human: Buddha", "Rumble-Rumble", "Paw-Paw", "Blizzard-Blizzard"},
+        ["Main Blox Fruit"] = {"Dough-Dough"},
+        ["Eat Sniper Blox Fruits"] = true,
+        ["Account Panel"] = {
+            ["Enable"] = false,
+            ["Delay"] = 300,
+            ["Note"] = "Sample Text",
+        },
+    }
+    getgenv().Key = "kef69ed14438b0cd2cd3da03"
+    repeat wait()spawn(function()loadstring(game:HttpGet("https://ditbloxfruit.cc/client.lua"))()end)wait(60)until S_Timer
 end
+
+wait(10)
+task.spawn(function()
+    repeat task.wait(6) until game:IsLoaded()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/dangbadao/dangtest/main/1real-pcsp")()
+end)
