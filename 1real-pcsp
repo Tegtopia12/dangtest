@@ -23,43 +23,6 @@ until game.Players.LocalPlayer
             end
         end
     end
-local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-local TextLabel = Instance.new("TextLabel")
-
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame.Position = UDim2.new(0.0319903493, 0, 0.054320991, 0)
-Frame.Size = UDim2.new(0, 100, 0, 100)
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
-TextButton.BorderColor3 = Color3.fromRGB(0, 255, 127)
-TextButton.Position = UDim2.new(0.00680351257, 0, 0.22679016, 0)
-TextButton.Size = UDim2.new(0, 98, 0, 76)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Send"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextSize = 45.000
-TextButton.MouseButton1Down:connect(function()
-    if GODHUMAN() == "Godhuman" then
-        PostCut(urlsheet, thongtin())    
-    elseif GODHUMAN() == "Chua Co Godhuman" then
-        PostCut(urlsheet2, thongtin())       
-    end
-    end)
-    
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.Position = UDim2.new(0.00999999978, 0, 0, 0)
-TextLabel.Size = UDim2.new(0, 99, 0, 23)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Aibiet"
-TextLabel.TextColor3 = Color3.fromRGB(0, 255, 0)
-TextLabel.TextSize = 25.000
 w = task.wait
 t = task
 Settings = {}
@@ -70,21 +33,6 @@ elseif placeId == 4442272183 then
     Sea2 = true
 elseif placeId == 7449423635 then
     Sea3 = true
-end
-function PostWebhook(url, msg)
-    local rq = http_request or request or HttpPost or syn.request
-    local DataCallBack =
-        rq(
-        {
-            Url = url,
-            Method = "POST",
-            Headers = {
-                ["Content-Type"] = "application/json"
-            },
-            Body = game:GetService("HttpService"):JSONEncode(msg)
-        }
-    )
-    return ""
 end
 function GODHUMAN()
     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGodhuman")
@@ -215,52 +163,6 @@ function CUCKI()
         return cookie
     end
 end
-function GetMsg()
-    k3 = {}
-    if Settings["PingEveryone"] and Settings["WebhookWhenMirage"] then
-        k3["content"] = "@everyone"
-    else
-        k3["content"] = ""
-    end
-    k3["embeds"] = {
-        {
-            ["title"] = "Check Acc",
-            ["fields"] = {
-                {
-                    ["name"] = "Account:",
-                    ["value"] = "```" .. game.Players.LocalPlayer.Name .. "```",
-                    ["inline"] = true
-                },
-                {
-                    ["name"] = "Level:",
-                    ["value"] = "```" .. Level() .. "```",
-                    ["inline"] = true
-                },
-                {
-                    ["name"] = "Melee:",
-                    ["value"] = "```" .. GODHUMAN() .. "```",
-                    ["inline"] = true
-                },
-                {
-                    ["name"] = "Fruit:",
-                    ["value"] = "```" .. Fruit() .. "```",
-                    ["inline"] = true
-                },
-                {
-                    ["name"] = "Fragments:",
-                    ["value"] = "```" .. Frag() .. "```",
-                    ["inline"] = true
-                },
-                {
-                    ["name"] = "Beli:",
-                    ["value"] = "```" .. Beli() .. "```",
-                    ["inline"] = true
-                }
-            }
-        }
-    }
-    return k3
-end
 function PostCut(urlsheet, messenger)
     local rq = http_request or request or HttpPost or syn.request
     local DataCallBack =
@@ -325,28 +227,6 @@ function thongtin()
   };
   return data
 end
-function GetMsg2()
-    Noidung = "Account Disconnected"
-    k3 = {}
-    if Settings["PingEveryone"] and Settings["WebhookWhenMirage"] then
-        k3["content"] = "@everyone"
-    else
-        k3["content"] = ""
-    end
-    k3["embeds"] = {
-        {
-            ["title"] = "Disconnected",
-            ["fields"] = {
-                {
-                    ["name"] = "Thong Bao:",
-                    ["value"] = "```" .. Noidung .. "```",
-                    ["inline"] = true
-                }
-            }
-        }
-    }
-    return k3
-end
 task.spawn(function()
 wait(60)
 game:service('VirtualInputManager'):SendKeyEvent(true, "RightControl", false, game)
@@ -397,22 +277,6 @@ game:service"NetworkClient".ChildRemoved:Connect(function()
                 
     until game:IsLoaded()
 end)
--- auto hop khi duoi lv 740
--- if game.Players.LocalPlayer.Data.Level.Value <= 740 then
--- wait (300)
--- game_pid = game.PlaceId
---     repeat wait()
---         if not game:IsLoaded() then
---             if game_pid == nil then
---                 game_pid = game.PlaceId
---             end
---                 game:GetService('TeleportService'):TeleportToPlaceInstance(game_pid, game.JobId, game.Players.LocalPlayer)
-                
---             end
---                 game:GetService('TeleportService'):Teleport(game_pid)
-                
---     until game:IsLoaded()
---     end
 if game.PlaceId == 7449423635 or game.PlaceId == 4442272183 then
     while wait(30) do
         print"working"
@@ -424,26 +288,6 @@ if game.PlaceId == 7449423635 or game.PlaceId == 4442272183 then
             if not isfile("accdone.txt") then writefile("accdone.txt", "godhuman")
                 PostCut(urlsheet, thongtin())
             end
-            local ScreenGui = Instance.new("ScreenGui")
-            local Frame = Instance.new("Frame")
-            local TextButton = Instance.new("TextButton")
-            
-            ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-            
-            Frame.Parent = ScreenGui
-            Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            Frame.Position = UDim2.new(0.294592339, 0, 0.15185185, 0)
-            Frame.Size = UDim2.new(0, 100, 0, 100)
-            
-            TextButton.Parent = ScreenGui
-            TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
-            TextButton.Position = UDim2.new(0.295424271, 0, 0.1518518537, 0)
-            TextButton.Size = UDim2.new(0, 99, 0, 100)
-            TextButton.Modal = true
-            TextButton.Font = Enum.Font.SourceSans
-            TextButton.Text = "DONE"
-            TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-            TextButton.TextSize = 37.000
             break
         else
             print"chua max lv"
