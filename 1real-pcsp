@@ -2,6 +2,26 @@ urlsheet = "https://sheet.best/api/sheets/8fefe820-4bf5-4907-a6a1-a2d427333752"
 urlsheet2 = "https://sheet.best/api/sheets/ed734e60-4c05-4250-a47d-3e860cc89cea"
 url = "https://discord.com/api/webhooks/1105921339388346368/OeW_fpWrCn4FzjOaL0dZ8aFFA-C0CnPXKLiw2w4QwVKKjygRiaXkLWeqIHuIf616HF4j";
 url2 = "https://discord.com/api/webhooks/1105934802709905558/JE_t1SgkffTyiauNlyntkx8mVxpbYdQUES5OnTnD6nqJkbsTEGtzhE0AjbtdO2BxcJZ7";
+
+-- check and save userid and username 
+if isfile("username.txt") then 
+    playerUsername = readfile("username.txt")
+    if playerUsername == game.Players.LocalPlayer.Name then
+        print("nothing")
+    else
+        writefile("username.txt", game.Players.LocalPlayer.Name)
+    end
+end
+
+if isfile("userid.txt") then 
+    playerUserID = readfile("userid.txt")
+    if playerUserID == game.Players.LocalPlayer.UserId then
+        print("nothing")
+    else
+        writefile("userid.txt", game.Players.LocalPlayer.UserId)
+    end
+end
+
 -- AutoChooseTeam = true;
 -- repeat
 --     task.wait()
