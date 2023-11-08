@@ -22,6 +22,15 @@ if isfile("userid.txt") then
     end
 end
 
+-- check and save userid and username part 2
+if not isfile("username.txt") then 
+    writefile("username.txt", game.Players.LocalPlayer.Name)
+end
+
+if isfile("userid.txt") then 
+    writefile("userid.txt", game.Players.LocalPlayer.UserId)
+end
+
 -- AutoChooseTeam = true;
 -- repeat
 --     task.wait()
