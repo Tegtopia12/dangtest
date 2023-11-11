@@ -296,7 +296,7 @@ task.spawn(function()
         writefile("username.txt", game.Players.LocalPlayer.Name)
     end
 
-    if isfile("userid.txt") then 
+    if not isfile("userid.txt") then 
         writefile("userid.txt", game.Players.LocalPlayer.UserId)
     end
 end)
