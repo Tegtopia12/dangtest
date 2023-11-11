@@ -287,13 +287,13 @@ task.spawn(function()
         if playerUserID == game.Players.LocalPlayer.UserId then
             print("nothing")
         else
-            writefile("userid.txt", game.Players.LocalPlayer.UserId)
+            writefile("userid.txt", tostring(game.Players.LocalPlayer.UserId))
         end
     end
 
     -- check and save userid and username part 2
     if not isfile("userid.txt") then 
-        writefile("userid.txt", game.Players.LocalPlayer.UserId)
+        writefile("userid.txt", tostring(game.Players.LocalPlayer.UserId))
     end
 
     if not isfile("username.txt") then 
