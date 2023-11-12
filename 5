@@ -17,6 +17,7 @@ elseif game.Players.LocalPlayer.Data.Level.Value >= 710 then
     repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
     repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
     getgenv().ForceTeam = "Pirates"
+    getgenv().ForceAutoChest = false
     getgenv().DitBF = {
         ["Performance"] = {
             ["Black Screen"] = true,
