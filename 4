@@ -12,15 +12,38 @@ if game.Players.LocalPlayer.Data.Level.Value <= 710 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
 
 elseif game.Players.LocalPlayer.Data.Level.Value >= 710 then
-    repeat wait(3) until game:IsLoaded()
-    repeat task.wait() until game.Players
-    repeat task.wait() until game.Players.LocalPlayer
-    repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
-    repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
-    getgenv().Key = "MARU-NY8AG-I9CF4-0WQQ-JLE78-QTWA"
-    getgenv().id = "1028982712360505444"
-    getgenv().Script_Mode = "Kaitun_Script"
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
+    
+    if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
+
+    _G.Delay_Upload = 300
+    _G.Select_Fruit = {
+        ['Main'] = {'Dough-Dough'}, 
+        ['Select Fruit'] = {'Sound-Sound", "Mammoth-Mammoth", "Dough-Dough", "Venom-Venom", "Spirit-Spirit", "Dragon-Dragon", "Leopard-Leopard", "Magma-Magma", "Human-Human: Buddha", "Rumble-Rumble", "Blizzard-Blizzard'} 
+    }
+    _G.Mastery_Farm = { 
+        ['Melee'] = true,
+        ['Devil Fruit'] = true,
+        ['Sword'] = true,
+        ['Gun'] = false
+    }
+    _G.Race_Evo = {
+        ['Level'] = {1,2,3}, 
+        ['Enabled'] = true
+    }
+
+    script_key="JoraKmPdwBnYfDMXXsvBsGykvayeCDrC";
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/londnee/code/main/m.lua"))()
+
+
+    -- repeat wait(3) until game:IsLoaded()
+    -- repeat task.wait() until game.Players
+    -- repeat task.wait() until game.Players.LocalPlayer
+    -- repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+    -- repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
+    -- getgenv().Key = "MARU-NY8AG-I9CF4-0WQQ-JLE78-QTWA"
+    -- getgenv().id = "1028982712360505444"
+    -- getgenv().Script_Mode = "Kaitun_Script"
+    -- loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
 
     -- repeat task.wait() until game.Players
     -- repeat task.wait() until game.Players.LocalPlayer
