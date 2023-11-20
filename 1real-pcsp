@@ -61,6 +61,9 @@ TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "Aibiet"
 TextLabel.TextColor3 = Color3.fromRGB(0, 255, 0)
 TextLabel.TextSize = 25.000    
+
+isBestChangeExcuted = true
+
 w = task.wait
 t = task
 Settings = {}
